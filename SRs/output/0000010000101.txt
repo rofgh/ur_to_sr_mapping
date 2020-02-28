@@ -1,0 +1,1230 @@
+DEC	Aux S Not Verb                                    	
+DEC	Aux S Not Verb                                    	
+DEC	Aux S Not Verb                                    	
+DEC	Aux S Not Verb                                    	
+DEC	Aux S Not Verb O1                                 	
+DEC	Aux S Not Verb O1                                 	
+DEC	Aux S Not Verb O1                                 	
+DEC	Aux S Not Verb O1                                 	
+DEC	Aux S Not Verb O1 O2                              	
+DEC	Aux S Not Verb O1 O2                              	
+DEC	Aux S Not Verb O1 O2                              	
+DEC	Aux S Not Verb O1 O2 P O3                         	
+DEC	Aux S Not Verb O1 O2 P O3                         	
+DEC	Aux S Not Verb O1 P O3                            	
+DEC	Aux S Not Verb O1 P O3                            	
+DEC	Aux S Not Verb O1 P O3                            	
+DEC	Aux S Not Verb P O3                               	
+DEC	Aux S Not Verb P O3                               	
+DEC	Aux S Not Verb P O3                               	
+DEC	Aux S Never Verb                                  	
+DEC	Aux S Never Verb                                  	
+DEC	Aux S Never Verb                                  	
+DEC	Aux S Never Verb                                  	
+DEC	Aux S Verb                                        	
+DEC	Aux S Verb                                        	
+DEC	Aux S Verb                                        	
+DEC	Aux S Verb                                        	
+DEC	Aux S Never Verb O1                               	
+DEC	Aux S Never Verb O1                               	
+DEC	Aux S Never Verb O1                               	
+DEC	Aux S Never Verb O1                               	
+DEC	Aux S Verb O1                                     	
+DEC	Aux S Verb O1                                     	
+DEC	Aux S Verb O1                                     	
+DEC	Aux S Verb O1                                     	
+DEC	Aux S Never Verb O1 O2                            	
+DEC	Aux S Never Verb O1 O2                            	
+DEC	Aux S Never Verb O1 O2                            	
+DEC	Aux S Verb O1 O2                                  	
+DEC	Aux S Verb O1 O2                                  	
+DEC	Aux S Verb O1 O2                                  	
+DEC	Aux S Never Verb O1 O2 P O3                       	
+DEC	Aux S Never Verb O1 O2 P O3                       	
+DEC	Aux S Verb O1 O2 P O3                             	
+DEC	Aux S Verb O1 O2 P O3                             	
+DEC	Aux S Never Verb O1 P O3                          	
+DEC	Aux S Never Verb O1 P O3                          	
+DEC	Aux S Never Verb O1 P O3                          	
+DEC	Aux S Verb O1 P O3                                	
+DEC	Aux S Verb O1 P O3                                	
+DEC	Aux S Verb O1 P O3                                	
+DEC	Aux S Never Verb P O3                             	
+DEC	Aux S Never Verb P O3                             	
+DEC	Aux S Never Verb P O3                             	
+DEC	Aux S Verb P O3                                   	
+DEC	Aux S Verb P O3                                   	
+DEC	Aux S Verb P O3                                   	
+DEC	Adv Aux S Not Verb                                	
+DEC	Adv Aux S Not Verb O1                             	
+DEC	Adv Aux S Not Verb O1 O2                          	
+DEC	Adv Aux S Not Verb O1 O2 P O3                     	
+DEC	Adv Aux S Not Verb O1 P O3                        	
+DEC	Adv Aux S Not Verb P O3                           	
+DEC	Adv Aux S Never Verb                              	
+DEC	Adv Aux S Verb                                    	
+DEC	Adv Aux S Never Verb O1                           	
+DEC	Adv Aux S Verb O1                                 	
+DEC	Adv Aux S Never Verb O1 O2                        	
+DEC	Adv Aux S Verb O1 O2                              	
+DEC	Adv Aux S Never Verb O1 O2 P O3                   	
+DEC	Adv Aux S Verb O1 O2 P O3                         	
+DEC	Adv Aux S Never Verb O1 P O3                      	
+DEC	Adv Aux S Verb O1 P O3                            	
+DEC	Adv Aux S Never Verb P O3                         	
+DEC	Adv Aux S Verb P O3                               	
+DEC	Aux S Not Verb Adv                                	
+DEC	Aux S Not Verb Adv                                	
+DEC	Aux S Not Verb Adv                                	
+DEC	Aux S Not Verb O2 Adv                             	
+DEC	Aux S Not Verb O2 P O3 Adv                        	
+DEC	Aux S Not Verb O2 P O3                            	
+DEC	Aux S Not Verb O2                                 	
+DEC	Aux S Not Verb P O3 Adv                           	
+DEC	Aux S Not Verb P O3 Adv                           	
+DEC	Aux S Not Verb P O3                               	
+DEC	Aux S Not Verb P O3                               	
+DEC	Aux S Not Verb P O3                               	
+DEC	Aux S Not Verb                                    	
+DEC	Aux S Not Verb                                    	
+DEC	Aux S Not Verb                                    	
+DEC	Aux S Not Verb                                    	
+DEC	Aux S Never Verb Adv                              	
+DEC	Aux S Never Verb Adv                              	
+DEC	Aux S Never Verb Adv                              	
+DEC	Aux S Verb Adv                                    	
+DEC	Aux S Verb Adv                                    	
+DEC	Aux S Verb Adv                                    	
+DEC	Aux S Never Verb O2 Adv                           	
+DEC	Aux S Verb O2 Adv                                 	
+DEC	Aux S Never Verb O2 P O3 Adv                      	
+DEC	Aux S Verb O2 P O3 Adv                            	
+DEC	Aux S Never Verb O2 P O3                          	
+DEC	Aux S Verb O2 P O3                                	
+DEC	Aux S Never Verb O2                               	
+DEC	Aux S Verb O2                                     	
+DEC	Aux S Never Verb P O3 Adv                         	
+DEC	Aux S Never Verb P O3 Adv                         	
+DEC	Aux S Verb P O3 Adv                               	
+DEC	Aux S Verb P O3 Adv                               	
+DEC	Aux S Never Verb P O3                             	
+DEC	Aux S Never Verb P O3                             	
+DEC	Aux S Never Verb P O3                             	
+DEC	Aux S Verb P O3                                   	
+DEC	Aux S Verb P O3                                   	
+DEC	Aux S Verb P O3                                   	
+DEC	Aux S Never Verb                                  	
+DEC	Aux S Never Verb                                  	
+DEC	Aux S Never Verb                                  	
+DEC	Aux S Never Verb                                  	
+DEC	Aux S Verb                                        	
+DEC	Aux S Verb                                        	
+DEC	Aux S Verb                                        	
+DEC	Aux S Verb                                        	
+DEC	O1 Aux S Not Verb Adv                             	
+DEC	O1 Aux S Not Verb O2 Adv                          	
+DEC	O1 Aux S Not Verb O2 P O3 Adv                     	
+DEC	O1 Aux S Not Verb O2 P O3                         	
+DEC	O1 Aux S Not Verb O2                              	
+DEC	O1 Aux S Not Verb P O3 Adv                        	
+DEC	O1 Aux S Not Verb P O3                            	
+DEC	O1 Aux S Not Verb                                 	
+DEC	O1 Aux S Never Verb Adv                           	
+DEC	O1 Aux S Verb Adv                                 	
+DEC	O1 Aux S Never Verb O2 Adv                        	
+DEC	O1 Aux S Verb O2 Adv                              	
+DEC	O1 Aux S Never Verb O2 P O3 Adv                   	
+DEC	O1 Aux S Verb O2 P O3 Adv                         	
+DEC	O1 Aux S Never Verb O2 P O3                       	
+DEC	O1 Aux S Verb O2 P O3                             	
+DEC	O1 Aux S Never Verb O2                            	
+DEC	O1 Aux S Verb O2                                  	
+DEC	O1 Aux S Never Verb P O3 Adv                      	
+DEC	O1 Aux S Verb P O3 Adv                            	
+DEC	O1 Aux S Never Verb P O3                          	
+DEC	O1 Aux S Verb P O3                                	
+DEC	O1 Aux S Never Verb                               	
+DEC	O1 Aux S Verb                                     	
+DEC	Aux S Not Verb O1 Adv                             	
+DEC	Aux S Not Verb O1 Adv                             	
+DEC	Aux S Not Verb O1 Adv                             	
+DEC	Aux S Not Verb O1 P O3 Adv                        	
+DEC	Aux S Not Verb O1 P O3 Adv                        	
+DEC	Aux S Not Verb O1 P O3                            	
+DEC	Aux S Not Verb O1 P O3                            	
+DEC	Aux S Not Verb O1 P O3                            	
+DEC	Aux S Not Verb O1                                 	
+DEC	Aux S Not Verb O1                                 	
+DEC	Aux S Not Verb O1                                 	
+DEC	Aux S Not Verb O1                                 	
+DEC	Aux S Never Verb O1 Adv                           	
+DEC	Aux S Never Verb O1 Adv                           	
+DEC	Aux S Never Verb O1 Adv                           	
+DEC	Aux S Verb O1 Adv                                 	
+DEC	Aux S Verb O1 Adv                                 	
+DEC	Aux S Verb O1 Adv                                 	
+DEC	Aux S Never Verb O1 P O3 Adv                      	
+DEC	Aux S Never Verb O1 P O3 Adv                      	
+DEC	Aux S Verb O1 P O3 Adv                            	
+DEC	Aux S Verb O1 P O3 Adv                            	
+DEC	Aux S Never Verb O1 P O3                          	
+DEC	Aux S Never Verb O1 P O3                          	
+DEC	Aux S Never Verb O1 P O3                          	
+DEC	Aux S Verb O1 P O3                                	
+DEC	Aux S Verb O1 P O3                                	
+DEC	Aux S Verb O1 P O3                                	
+DEC	Aux S Never Verb O1                               	
+DEC	Aux S Never Verb O1                               	
+DEC	Aux S Never Verb O1                               	
+DEC	Aux S Never Verb O1                               	
+DEC	Aux S Verb O1                                     	
+DEC	Aux S Verb O1                                     	
+DEC	Aux S Verb O1                                     	
+DEC	Aux S Verb O1                                     	
+DEC	O2 Aux S Not Verb O1 Adv                          	
+DEC	O2 Aux S Not Verb O1 P O3 Adv                     	
+DEC	O2 Aux S Not Verb O1 P O3                         	
+DEC	O2 Aux S Not Verb O1                              	
+DEC	O2 Aux S Never Verb O1 Adv                        	
+DEC	O2 Aux S Verb O1 Adv                              	
+DEC	O2 Aux S Never Verb O1 P O3 Adv                   	
+DEC	O2 Aux S Verb O1 P O3 Adv                         	
+DEC	O2 Aux S Never Verb O1 P O3                       	
+DEC	O2 Aux S Verb O1 P O3                             	
+DEC	O2 Aux S Never Verb O1                            	
+DEC	O2 Aux S Verb O1                                  	
+DEC	Aux S Not Verb O1 O2 Adv                          	
+DEC	Aux S Not Verb O1 O2 Adv                          	
+DEC	Aux S Not Verb O1 O2                              	
+DEC	Aux S Not Verb O1 O2                              	
+DEC	Aux S Not Verb O1 O2                              	
+DEC	Aux S Not Verb O1 Adv                             	
+DEC	Aux S Not Verb O1 Adv                             	
+DEC	Aux S Not Verb O1 Adv                             	
+DEC	Aux S Not Verb O1                                 	
+DEC	Aux S Not Verb O1                                 	
+DEC	Aux S Not Verb O1                                 	
+DEC	Aux S Not Verb O1                                 	
+DEC	Aux S Not Verb Adv                                	
+DEC	Aux S Not Verb Adv                                	
+DEC	Aux S Not Verb Adv                                	
+DEC	Aux S Not Verb                                    	
+DEC	Aux S Not Verb                                    	
+DEC	Aux S Not Verb                                    	
+DEC	Aux S Not Verb                                    	
+DEC	Aux S Never Verb O1 O2 Adv                        	
+DEC	Aux S Never Verb O1 O2 Adv                        	
+DEC	Aux S Verb O1 O2 Adv                              	
+DEC	Aux S Verb O1 O2 Adv                              	
+DEC	Aux S Never Verb O1 O2                            	
+DEC	Aux S Never Verb O1 O2                            	
+DEC	Aux S Never Verb O1 O2                            	
+DEC	Aux S Verb O1 O2                                  	
+DEC	Aux S Verb O1 O2                                  	
+DEC	Aux S Verb O1 O2                                  	
+DEC	Aux S Never Verb O1 Adv                           	
+DEC	Aux S Never Verb O1 Adv                           	
+DEC	Aux S Never Verb O1 Adv                           	
+DEC	Aux S Verb O1 Adv                                 	
+DEC	Aux S Verb O1 Adv                                 	
+DEC	Aux S Verb O1 Adv                                 	
+DEC	Aux S Never Verb O1                               	
+DEC	Aux S Never Verb O1                               	
+DEC	Aux S Never Verb O1                               	
+DEC	Aux S Never Verb O1                               	
+DEC	Aux S Verb O1                                     	
+DEC	Aux S Verb O1                                     	
+DEC	Aux S Verb O1                                     	
+DEC	Aux S Verb O1                                     	
+DEC	Aux S Never Verb Adv                              	
+DEC	Aux S Never Verb Adv                              	
+DEC	Aux S Never Verb Adv                              	
+DEC	Aux S Verb Adv                                    	
+DEC	Aux S Verb Adv                                    	
+DEC	Aux S Verb Adv                                    	
+DEC	Aux S Never Verb                                  	
+DEC	Aux S Never Verb                                  	
+DEC	Aux S Never Verb                                  	
+DEC	Aux S Never Verb                                  	
+DEC	Aux S Verb                                        	
+DEC	Aux S Verb                                        	
+DEC	Aux S Verb                                        	
+DEC	Aux S Verb                                        	
+DEC	Aux Not Verb Adv                                  	
+DEC	Aux Not Verb O1 Adv                               	
+DEC	Aux Not Verb O1 O2 Adv                            	
+DEC	Aux Not Verb O1 O2 P O3 Adv                       	
+DEC	Aux Not Verb O1 O2 P O3                           	
+DEC	Aux Not Verb O1 O2                                	
+DEC	Aux Not Verb O1 P O3 Adv                          	
+DEC	Aux Not Verb O1 P O3                              	
+DEC	Aux Not Verb O1                                   	
+DEC	Aux Not Verb P O3 Adv                             	
+DEC	Aux Not Verb P O3                                 	
+DEC	Aux Not Verb                                      	
+DEC	Aux Never Verb Adv                                	
+DEC	Aux Verb Adv                                      	
+DEC	Aux Never Verb O1 Adv                             	
+DEC	Aux Verb O1 Adv                                   	
+DEC	Aux Never Verb O1 O2 Adv                          	
+DEC	Aux Verb O1 O2 Adv                                	
+DEC	Aux Never Verb O1 O2 P O3 Adv                     	
+DEC	Aux Verb O1 O2 P O3 Adv                           	
+DEC	Aux Never Verb O1 O2 P O3                         	
+DEC	Aux Verb O1 O2 P O3                               	
+DEC	Aux Never Verb O1 O2                              	
+DEC	Aux Verb O1 O2                                    	
+DEC	Aux Never Verb O1 P O3 Adv                        	
+DEC	Aux Verb O1 P O3 Adv                              	
+DEC	Aux Never Verb O1 P O3                            	
+DEC	Aux Verb O1 P O3                                  	
+DEC	Aux Never Verb O1                                 	
+DEC	Aux Verb O1                                       	
+DEC	Aux Never Verb P O3 Adv                           	
+DEC	Aux Verb P O3 Adv                                 	
+DEC	Aux Never Verb P O3                               	
+DEC	Aux Verb P O3                                     	
+DEC	Aux Never Verb                                    	
+DEC	Aux Verb                                          	
+DEC	S Aux Not Verb Adv                                	
+DEC	S Aux Not Verb O1 Adv                             	
+DEC	S Aux Not Verb O1 O2 Adv                          	
+DEC	S Aux Not Verb O1 O2 P O3 Adv                     	
+DEC	S Aux Not Verb O1 O2 P O3                         	
+DEC	S Aux Not Verb O1 O2                              	
+DEC	S Aux Not Verb O1 P O3 Adv                        	
+DEC	S Aux Not Verb O1 P O3                            	
+DEC	S Aux Not Verb O1                                 	
+DEC	S Aux Not Verb P O3 Adv                           	
+DEC	S Aux Not Verb P O3                               	
+DEC	S Aux Not Verb                                    	
+DEC	S Aux Never Verb Adv                              	
+DEC	S Aux Verb Adv                                    	
+DEC	S Aux Never Verb O1 Adv                           	
+DEC	S Aux Verb O1 Adv                                 	
+DEC	S Aux Never Verb O1 O2 Adv                        	
+DEC	S Aux Verb O1 O2 Adv                              	
+DEC	S Aux Never Verb O1 O2 P O3 Adv                   	
+DEC	S Aux Verb O1 O2 P O3 Adv                         	
+DEC	S Aux Never Verb O1 O2 P O3                       	
+DEC	S Aux Verb O1 O2 P O3                             	
+DEC	S Aux Never Verb O1 O2                            	
+DEC	S Aux Verb O1 O2                                  	
+DEC	S Aux Never Verb O1 P O3 Adv                      	
+DEC	S Aux Verb O1 P O3 Adv                            	
+DEC	S Aux Never Verb O1 P O3                          	
+DEC	S Aux Verb O1 P O3                                	
+DEC	S Aux Never Verb O1                               	
+DEC	S Aux Verb O1                                     	
+DEC	S Aux Never Verb P O3 Adv                         	
+DEC	S Aux Verb P O3 Adv                               	
+DEC	S Aux Never Verb P O3                             	
+DEC	S Aux Verb P O3                                   	
+DEC	S Aux Never Verb                                  	
+DEC	S Aux Verb                                        	
+DEC	P O3 Aux S Not Verb O1 O2 Adv                     	
+DEC	P O3 Aux S Not Verb O1 O2                         	
+DEC	P O3 Aux S Not Verb O1 Adv                        	
+DEC	P O3 Aux S Not Verb O1                            	
+DEC	P O3 Aux S Not Verb Adv                           	
+DEC	P O3 Aux S Not Verb                               	
+DEC	P O3 Aux S Never Verb O1 O2 Adv                   	
+DEC	P O3 Aux S Verb O1 O2 Adv                         	
+DEC	P O3 Aux S Never Verb O1 O2                       	
+DEC	P O3 Aux S Verb O1 O2                             	
+DEC	P O3 Aux S Never Verb O1 Adv                      	
+DEC	P O3 Aux S Verb O1 Adv                            	
+DEC	P O3 Aux S Never Verb O1                          	
+DEC	P O3 Aux S Verb O1                                	
+DEC	P O3 Aux S Never Verb Adv                         	
+DEC	P O3 Aux S Verb Adv                               	
+DEC	P O3 Aux S Never Verb                             	
+DEC	P O3 Aux S Verb                                   	
+IMP	Not Verb Adv                                      	
+IMP	Not Verb O1 Adv                                   	
+IMP	Not Verb O1 O2 Adv                                	
+IMP	Not Verb O1 O2 P O3 Adv                           	
+IMP	Not Verb O1 O2 P O3                               	
+IMP	Not Verb O1 O2                                    	
+IMP	Not Verb O1 P O3 Adv                              	
+IMP	Not Verb O1 P O3                                  	
+IMP	Not Verb O1                                       	
+IMP	Not Verb P O3 Adv                                 	
+IMP	Not Verb P O3                                     	
+IMP	Not Verb                                          	
+IMP	Never Verb Adv                                    	
+IMP	Verb Adv                                          	
+IMP	Never Verb O1 Adv                                 	
+IMP	Verb O1 Adv                                       	
+IMP	Never Verb O1 O2 Adv                              	
+IMP	Verb O1 O2 Adv                                    	
+IMP	Never Verb O1 O2 P O3 Adv                         	
+IMP	Verb O1 O2 P O3 Adv                               	
+IMP	Never Verb O1 O2 P O3                             	
+IMP	Verb O1 O2 P O3                                   	
+IMP	Never Verb O1 O2                                  	
+IMP	Verb O1 O2                                        	
+IMP	Never Verb O1 P O3 Adv                            	
+IMP	Verb O1 P O3 Adv                                  	
+IMP	Never Verb O1 P O3                                	
+IMP	Verb O1 P O3                                      	
+IMP	Never Verb O1                                     	
+IMP	Verb O1                                           	
+IMP	Never Verb P O3 Adv                               	
+IMP	Verb P O3 Adv                                     	
+IMP	Never Verb P O3                                   	
+IMP	Verb P O3                                         	
+IMP	Never Verb                                        	
+IMP	Verb                                              	
+Q  	Aux S Not Verb Adv                                	
+Q  	Aux S Not Verb Adv                                	
+Q  	Aux S Not Verb Adv                                	
+Q  	Aux S Not Verb O1 Adv                             	
+Q  	Aux S Not Verb O1 Adv                             	
+Q  	Aux S Not Verb O1 Adv                             	
+Q  	Aux S Not Verb O1 O2 Adv                          	
+Q  	Aux S Not Verb O1 O2 Adv                          	
+Q  	Aux S Not Verb O1 O2 P O3 Adv                     	
+Q  	Aux S Not Verb O1 O2 P O3                         	
+Q  	Aux S Not Verb O1 O2 P O3                         	
+Q  	Aux S Not Verb O1 O2                              	
+Q  	Aux S Not Verb O1 O2                              	
+Q  	Aux S Not Verb O1 O2                              	
+Q  	Aux S Not Verb O1 P O3 Adv                        	
+Q  	Aux S Not Verb O1 P O3 Adv                        	
+Q  	Aux S Not Verb O1 P O3                            	
+Q  	Aux S Not Verb O1 P O3                            	
+Q  	Aux S Not Verb O1 P O3                            	
+Q  	Aux S Not Verb O1                                 	
+Q  	Aux S Not Verb O1                                 	
+Q  	Aux S Not Verb O1                                 	
+Q  	Aux S Not Verb O1                                 	
+Q  	Aux S Not Verb P O3 Adv                           	
+Q  	Aux S Not Verb P O3 Adv                           	
+Q  	Aux S Not Verb P O3                               	
+Q  	Aux S Not Verb P O3                               	
+Q  	Aux S Not Verb P O3                               	
+Q  	Aux S Not Verb                                    	
+Q  	Aux S Not Verb                                    	
+Q  	Aux S Not Verb                                    	
+Q  	Aux S Not Verb                                    	
+Q  	Aux S Never Verb Adv                              	
+Q  	Aux S Never Verb Adv                              	
+Q  	Aux S Never Verb Adv                              	
+Q  	Aux S Verb Adv                                    	
+Q  	Aux S Verb Adv                                    	
+Q  	Aux S Verb Adv                                    	
+Q  	Aux S Never Verb O1 Adv                           	
+Q  	Aux S Never Verb O1 Adv                           	
+Q  	Aux S Never Verb O1 Adv                           	
+Q  	Aux S Verb O1 Adv                                 	
+Q  	Aux S Verb O1 Adv                                 	
+Q  	Aux S Verb O1 Adv                                 	
+Q  	Aux S Never Verb O1 O2 Adv                        	
+Q  	Aux S Never Verb O1 O2 Adv                        	
+Q  	Aux S Verb O1 O2 Adv                              	
+Q  	Aux S Verb O1 O2 Adv                              	
+Q  	Aux S Never Verb O1 O2 P O3 Adv                   	
+Q  	Aux S Verb O1 O2 P O3 Adv                         	
+Q  	Aux S Never Verb O1 O2 P O3                       	
+Q  	Aux S Never Verb O1 O2 P O3                       	
+Q  	Aux S Verb O1 O2 P O3                             	
+Q  	Aux S Verb O1 O2 P O3                             	
+Q  	Aux S Never Verb O1 O2                            	
+Q  	Aux S Never Verb O1 O2                            	
+Q  	Aux S Never Verb O1 O2                            	
+Q  	Aux S Verb O1 O2                                  	
+Q  	Aux S Verb O1 O2                                  	
+Q  	Aux S Verb O1 O2                                  	
+Q  	Aux S Never Verb O1 P O3 Adv                      	
+Q  	Aux S Never Verb O1 P O3 Adv                      	
+Q  	Aux S Verb O1 P O3 Adv                            	
+Q  	Aux S Verb O1 P O3 Adv                            	
+Q  	Aux S Never Verb O1 P O3                          	
+Q  	Aux S Never Verb O1 P O3                          	
+Q  	Aux S Never Verb O1 P O3                          	
+Q  	Aux S Verb O1 P O3                                	
+Q  	Aux S Verb O1 P O3                                	
+Q  	Aux S Verb O1 P O3                                	
+Q  	Aux S Never Verb O1                               	
+Q  	Aux S Never Verb O1                               	
+Q  	Aux S Never Verb O1                               	
+Q  	Aux S Never Verb O1                               	
+Q  	Aux S Verb O1                                     	
+Q  	Aux S Verb O1                                     	
+Q  	Aux S Verb O1                                     	
+Q  	Aux S Verb O1                                     	
+Q  	Aux S Never Verb P O3 Adv                         	
+Q  	Aux S Never Verb P O3 Adv                         	
+Q  	Aux S Verb P O3 Adv                               	
+Q  	Aux S Verb P O3 Adv                               	
+Q  	Aux S Never Verb P O3                             	
+Q  	Aux S Never Verb P O3                             	
+Q  	Aux S Never Verb P O3                             	
+Q  	Aux S Verb P O3                                   	
+Q  	Aux S Verb P O3                                   	
+Q  	Aux S Verb P O3                                   	
+Q  	Aux S Never Verb                                  	
+Q  	Aux S Never Verb                                  	
+Q  	Aux S Never Verb                                  	
+Q  	Aux S Never Verb                                  	
+Q  	Aux S Verb                                        	
+Q  	Aux S Verb                                        	
+Q  	Aux S Verb                                        	
+Q  	Aux S Verb                                        	
+Q  	Aux S Not Verb O1 O2 P O3[+WH]                    	
+Q  	Aux S Not Verb O1 O2[+WH]                         	
+Q  	Aux S Not Verb O1 O2[+WH]                         	
+Q  	Aux S Not Verb O1 O2[+WH] P O3                    	
+Q  	Aux S Not Verb O1 P O3[+WH]                       	
+Q  	Aux S Not Verb O1 P O3[+WH]                       	
+Q  	Aux S Not Verb O1[+WH]                            	
+Q  	Aux S Not Verb O1[+WH]                            	
+Q  	Aux S Not Verb O1[+WH]                            	
+Q  	Aux S Not Verb O1[+WH] O2                         	
+Q  	Aux S Not Verb O1[+WH] O2                         	
+Q  	Aux S Not Verb O1[+WH] O2 P O3                    	
+Q  	Aux S Not Verb O1[+WH] P O3                       	
+Q  	Aux S Not Verb O1[+WH] P O3                       	
+Q  	Aux S Not Verb P O3[+WH]                          	
+Q  	Aux S Not Verb P O3[+WH]                          	
+Q  	Aux S Never Verb O1 O2 P O3[+WH]                  	
+Q  	Aux S Verb O1 O2 P O3[+WH]                        	
+Q  	Aux S Never Verb O1 O2[+WH]                       	
+Q  	Aux S Never Verb O1 O2[+WH]                       	
+Q  	Aux S Verb O1 O2[+WH]                             	
+Q  	Aux S Verb O1 O2[+WH]                             	
+Q  	Aux S Never Verb O1 O2[+WH] P O3                  	
+Q  	Aux S Verb O1 O2[+WH] P O3                        	
+Q  	Aux S Never Verb O1 P O3[+WH]                     	
+Q  	Aux S Never Verb O1 P O3[+WH]                     	
+Q  	Aux S Verb O1 P O3[+WH]                           	
+Q  	Aux S Verb O1 P O3[+WH]                           	
+Q  	Aux S Never Verb O1[+WH]                          	
+Q  	Aux S Never Verb O1[+WH]                          	
+Q  	Aux S Never Verb O1[+WH]                          	
+Q  	Aux S Verb O1[+WH]                                	
+Q  	Aux S Verb O1[+WH]                                	
+Q  	Aux S Verb O1[+WH]                                	
+Q  	Aux S Never Verb O1[+WH] O2                       	
+Q  	Aux S Never Verb O1[+WH] O2                       	
+Q  	Aux S Verb O1[+WH] O2                             	
+Q  	Aux S Verb O1[+WH] O2                             	
+Q  	Aux S Never Verb O1[+WH] O2 P O3                  	
+Q  	Aux S Verb O1[+WH] O2 P O3                        	
+Q  	Aux S Never Verb O1[+WH] P O3                     	
+Q  	Aux S Never Verb O1[+WH] P O3                     	
+Q  	Aux S Verb O1[+WH] P O3                           	
+Q  	Aux S Verb O1[+WH] P O3                           	
+Q  	Aux S Never Verb P O3[+WH]                        	
+Q  	Aux S Never Verb P O3[+WH]                        	
+Q  	Aux S Verb P O3[+WH]                              	
+Q  	Aux S Verb P O3[+WH]                              	
+Q  	Aux S[+WH] Not Verb                               	
+Q  	Aux S[+WH] Not Verb                               	
+Q  	Aux S[+WH] Not Verb                               	
+Q  	Aux S[+WH] Not Verb O1                            	
+Q  	Aux S[+WH] Not Verb O1                            	
+Q  	Aux S[+WH] Not Verb O1                            	
+Q  	Aux S[+WH] Not Verb O1 O2                         	
+Q  	Aux S[+WH] Not Verb O1 O2                         	
+Q  	Aux S[+WH] Not Verb O1 O2 P O3                    	
+Q  	Aux S[+WH] Not Verb O1 P O3                       	
+Q  	Aux S[+WH] Not Verb O1 P O3                       	
+Q  	Aux S[+WH] Not Verb P O3                          	
+Q  	Aux S[+WH] Not Verb P O3                          	
+Q  	Aux S[+WH] Never Verb                             	
+Q  	Aux S[+WH] Never Verb                             	
+Q  	Aux S[+WH] Never Verb                             	
+Q  	Aux S[+WH] Verb                                   	
+Q  	Aux S[+WH] Verb                                   	
+Q  	Aux S[+WH] Verb                                   	
+Q  	Aux S[+WH] Never Verb O1                          	
+Q  	Aux S[+WH] Never Verb O1                          	
+Q  	Aux S[+WH] Never Verb O1                          	
+Q  	Aux S[+WH] Verb O1                                	
+Q  	Aux S[+WH] Verb O1                                	
+Q  	Aux S[+WH] Verb O1                                	
+Q  	Aux S[+WH] Never Verb O1 O2                       	
+Q  	Aux S[+WH] Never Verb O1 O2                       	
+Q  	Aux S[+WH] Verb O1 O2                             	
+Q  	Aux S[+WH] Verb O1 O2                             	
+Q  	Aux S[+WH] Never Verb O1 O2 P O3                  	
+Q  	Aux S[+WH] Verb O1 O2 P O3                        	
+Q  	Aux S[+WH] Never Verb O1 P O3                     	
+Q  	Aux S[+WH] Never Verb O1 P O3                     	
+Q  	Aux S[+WH] Verb O1 P O3                           	
+Q  	Aux S[+WH] Verb O1 P O3                           	
+Q  	Aux S[+WH] Never Verb P O3                        	
+Q  	Aux S[+WH] Never Verb P O3                        	
+Q  	Aux S[+WH] Verb P O3                              	
+Q  	Aux S[+WH] Verb P O3                              	
+Q  	Adv Aux S Not Verb O1 O2 P O3[+WH]                	
+Q  	Adv Aux S Not Verb O1 O2[+WH]                     	
+Q  	Adv Aux S Not Verb O1 O2[+WH] P O3                	
+Q  	Adv Aux S Not Verb O1 P O3[+WH]                   	
+Q  	Adv Aux S Not Verb O1[+WH]                        	
+Q  	Adv Aux S Not Verb O1[+WH] O2                     	
+Q  	Adv Aux S Not Verb O1[+WH] O2 P O3                	
+Q  	Adv Aux S Not Verb O1[+WH] P O3                   	
+Q  	Adv Aux S Not Verb P O3[+WH]                      	
+Q  	Adv Aux S Never Verb O1 O2 P O3[+WH]              	
+Q  	Adv Aux S Verb O1 O2 P O3[+WH]                    	
+Q  	Adv Aux S Never Verb O1 O2[+WH]                   	
+Q  	Adv Aux S Verb O1 O2[+WH]                         	
+Q  	Adv Aux S Never Verb O1 O2[+WH] P O3              	
+Q  	Adv Aux S Verb O1 O2[+WH] P O3                    	
+Q  	Adv Aux S Never Verb O1 P O3[+WH]                 	
+Q  	Adv Aux S Verb O1 P O3[+WH]                       	
+Q  	Adv Aux S Never Verb O1[+WH]                      	
+Q  	Adv Aux S Verb O1[+WH]                            	
+Q  	Adv Aux S Never Verb O1[+WH] O2                   	
+Q  	Adv Aux S Verb O1[+WH] O2                         	
+Q  	Adv Aux S Never Verb O1[+WH] O2 P O3              	
+Q  	Adv Aux S Verb O1[+WH] O2 P O3                    	
+Q  	Adv Aux S Never Verb O1[+WH] P O3                 	
+Q  	Adv Aux S Verb O1[+WH] P O3                       	
+Q  	Adv Aux S Never Verb P O3[+WH]                    	
+Q  	Adv Aux S Verb P O3[+WH]                          	
+Q  	Adv Aux S[+WH] Not Verb                           	
+Q  	Adv Aux S[+WH] Not Verb O1                        	
+Q  	Adv Aux S[+WH] Not Verb O1 O2                     	
+Q  	Adv Aux S[+WH] Not Verb O1 O2 P O3                	
+Q  	Adv Aux S[+WH] Not Verb O1 P O3                   	
+Q  	Adv Aux S[+WH] Not Verb P O3                      	
+Q  	Adv Aux S[+WH] Never Verb                         	
+Q  	Adv Aux S[+WH] Verb                               	
+Q  	Adv Aux S[+WH] Never Verb O1                      	
+Q  	Adv Aux S[+WH] Verb O1                            	
+Q  	Adv Aux S[+WH] Never Verb O1 O2                   	
+Q  	Adv Aux S[+WH] Verb O1 O2                         	
+Q  	Adv Aux S[+WH] Never Verb O1 O2 P O3              	
+Q  	Adv Aux S[+WH] Verb O1 O2 P O3                    	
+Q  	Adv Aux S[+WH] Never Verb O1 P O3                 	
+Q  	Adv Aux S[+WH] Verb O1 P O3                       	
+Q  	Adv Aux S[+WH] Never Verb P O3                    	
+Q  	Adv Aux S[+WH] Verb P O3                          	
+Q  	Adv[+WH] Aux S Not Verb                           	
+Q  	Adv[+WH] Aux S Not Verb O1                        	
+Q  	Adv[+WH] Aux S Not Verb O1 O2                     	
+Q  	Adv[+WH] Aux S Not Verb O1 O2 P O3                	
+Q  	Adv[+WH] Aux S Not Verb O1 P O3                   	
+Q  	Adv[+WH] Aux S Not Verb P O3                      	
+Q  	Adv[+WH] Aux S Never Verb                         	
+Q  	Adv[+WH] Aux S Verb                               	
+Q  	Adv[+WH] Aux S Never Verb O1                      	
+Q  	Adv[+WH] Aux S Verb O1                            	
+Q  	Adv[+WH] Aux S Never Verb O1 O2                   	
+Q  	Adv[+WH] Aux S Verb O1 O2                         	
+Q  	Adv[+WH] Aux S Never Verb O1 O2 P O3              	
+Q  	Adv[+WH] Aux S Verb O1 O2 P O3                    	
+Q  	Adv[+WH] Aux S Never Verb O1 P O3                 	
+Q  	Adv[+WH] Aux S Verb O1 P O3                       	
+Q  	Adv[+WH] Aux S Never Verb P O3                    	
+Q  	Adv[+WH] Aux S Verb P O3                          	
+Q  	Aux S Not Verb Adv[+WH]                           	
+Q  	Aux S Not Verb Adv[+WH]                           	
+Q  	Aux S Not Verb O2 Adv[+WH]                        	
+Q  	Aux S Not Verb O2 P O3 Adv[+WH]                   	
+Q  	Aux S Not Verb O2 P O3[+WH] Adv                   	
+Q  	Aux S Not Verb O2 P O3[+WH]                       	
+Q  	Aux S Not Verb O2[+WH] Adv                        	
+Q  	Aux S Not Verb O2[+WH] P O3 Adv                   	
+Q  	Aux S Not Verb O2[+WH] P O3                       	
+Q  	Aux S Not Verb O2[+WH]                            	
+Q  	Aux S Not Verb P O3 Adv[+WH]                      	
+Q  	Aux S Not Verb P O3[+WH] Adv                      	
+Q  	Aux S Not Verb P O3[+WH]                          	
+Q  	Aux S Not Verb P O3[+WH]                          	
+Q  	Aux S Never Verb Adv[+WH]                         	
+Q  	Aux S Never Verb Adv[+WH]                         	
+Q  	Aux S Verb Adv[+WH]                               	
+Q  	Aux S Verb Adv[+WH]                               	
+Q  	Aux S Never Verb O2 Adv[+WH]                      	
+Q  	Aux S Verb O2 Adv[+WH]                            	
+Q  	Aux S Never Verb O2 P O3 Adv[+WH]                 	
+Q  	Aux S Verb O2 P O3 Adv[+WH]                       	
+Q  	Aux S Never Verb O2 P O3[+WH] Adv                 	
+Q  	Aux S Verb O2 P O3[+WH] Adv                       	
+Q  	Aux S Never Verb O2 P O3[+WH]                     	
+Q  	Aux S Verb O2 P O3[+WH]                           	
+Q  	Aux S Never Verb O2[+WH] Adv                      	
+Q  	Aux S Verb O2[+WH] Adv                            	
+Q  	Aux S Never Verb O2[+WH] P O3 Adv                 	
+Q  	Aux S Verb O2[+WH] P O3 Adv                       	
+Q  	Aux S Never Verb O2[+WH] P O3                     	
+Q  	Aux S Verb O2[+WH] P O3                           	
+Q  	Aux S Never Verb O2[+WH]                          	
+Q  	Aux S Verb O2[+WH]                                	
+Q  	Aux S Never Verb P O3 Adv[+WH]                    	
+Q  	Aux S Verb P O3 Adv[+WH]                          	
+Q  	Aux S Never Verb P O3[+WH] Adv                    	
+Q  	Aux S Verb P O3[+WH] Adv                          	
+Q  	Aux S Never Verb P O3[+WH]                        	
+Q  	Aux S Never Verb P O3[+WH]                        	
+Q  	Aux S Verb P O3[+WH]                              	
+Q  	Aux S Verb P O3[+WH]                              	
+Q  	Aux S[+WH] Not Verb Adv                           	
+Q  	Aux S[+WH] Not Verb Adv                           	
+Q  	Aux S[+WH] Not Verb O2 Adv                        	
+Q  	Aux S[+WH] Not Verb O2 P O3 Adv                   	
+Q  	Aux S[+WH] Not Verb O2 P O3                       	
+Q  	Aux S[+WH] Not Verb O2                            	
+Q  	Aux S[+WH] Not Verb P O3 Adv                      	
+Q  	Aux S[+WH] Not Verb P O3                          	
+Q  	Aux S[+WH] Not Verb P O3                          	
+Q  	Aux S[+WH] Not Verb                               	
+Q  	Aux S[+WH] Not Verb                               	
+Q  	Aux S[+WH] Not Verb                               	
+Q  	Aux S[+WH] Never Verb Adv                         	
+Q  	Aux S[+WH] Never Verb Adv                         	
+Q  	Aux S[+WH] Verb Adv                               	
+Q  	Aux S[+WH] Verb Adv                               	
+Q  	Aux S[+WH] Never Verb O2 Adv                      	
+Q  	Aux S[+WH] Verb O2 Adv                            	
+Q  	Aux S[+WH] Never Verb O2 P O3 Adv                 	
+Q  	Aux S[+WH] Verb O2 P O3 Adv                       	
+Q  	Aux S[+WH] Never Verb O2 P O3                     	
+Q  	Aux S[+WH] Verb O2 P O3                           	
+Q  	Aux S[+WH] Never Verb O2                          	
+Q  	Aux S[+WH] Verb O2                                	
+Q  	Aux S[+WH] Never Verb P O3 Adv                    	
+Q  	Aux S[+WH] Verb P O3 Adv                          	
+Q  	Aux S[+WH] Never Verb P O3                        	
+Q  	Aux S[+WH] Never Verb P O3                        	
+Q  	Aux S[+WH] Verb P O3                              	
+Q  	Aux S[+WH] Verb P O3                              	
+Q  	Aux S[+WH] Never Verb                             	
+Q  	Aux S[+WH] Never Verb                             	
+Q  	Aux S[+WH] Never Verb                             	
+Q  	Aux S[+WH] Verb                                   	
+Q  	Aux S[+WH] Verb                                   	
+Q  	Aux S[+WH] Verb                                   	
+Q  	O1 Aux S Not Verb Adv[+WH]                        	
+Q  	O1 Aux S Not Verb O2 Adv[+WH]                     	
+Q  	O1 Aux S Not Verb O2 P O3 Adv[+WH]                	
+Q  	O1 Aux S Not Verb O2 P O3[+WH] Adv                	
+Q  	O1 Aux S Not Verb O2 P O3[+WH]                    	
+Q  	O1 Aux S Not Verb O2[+WH] Adv                     	
+Q  	O1 Aux S Not Verb O2[+WH] P O3 Adv                	
+Q  	O1 Aux S Not Verb O2[+WH] P O3                    	
+Q  	O1 Aux S Not Verb O2[+WH]                         	
+Q  	O1 Aux S Not Verb P O3 Adv[+WH]                   	
+Q  	O1 Aux S Not Verb P O3[+WH] Adv                   	
+Q  	O1 Aux S Not Verb P O3[+WH]                       	
+Q  	O1 Aux S Never Verb Adv[+WH]                      	
+Q  	O1 Aux S Verb Adv[+WH]                            	
+Q  	O1 Aux S Never Verb O2 Adv[+WH]                   	
+Q  	O1 Aux S Verb O2 Adv[+WH]                         	
+Q  	O1 Aux S Never Verb O2 P O3 Adv[+WH]              	
+Q  	O1 Aux S Verb O2 P O3 Adv[+WH]                    	
+Q  	O1 Aux S Never Verb O2 P O3[+WH] Adv              	
+Q  	O1 Aux S Verb O2 P O3[+WH] Adv                    	
+Q  	O1 Aux S Never Verb O2 P O3[+WH]                  	
+Q  	O1 Aux S Verb O2 P O3[+WH]                        	
+Q  	O1 Aux S Never Verb O2[+WH] Adv                   	
+Q  	O1 Aux S Verb O2[+WH] Adv                         	
+Q  	O1 Aux S Never Verb O2[+WH] P O3 Adv              	
+Q  	O1 Aux S Verb O2[+WH] P O3 Adv                    	
+Q  	O1 Aux S Never Verb O2[+WH] P O3                  	
+Q  	O1 Aux S Verb O2[+WH] P O3                        	
+Q  	O1 Aux S Never Verb O2[+WH]                       	
+Q  	O1 Aux S Verb O2[+WH]                             	
+Q  	O1 Aux S Never Verb P O3 Adv[+WH]                 	
+Q  	O1 Aux S Verb P O3 Adv[+WH]                       	
+Q  	O1 Aux S Never Verb P O3[+WH] Adv                 	
+Q  	O1 Aux S Verb P O3[+WH] Adv                       	
+Q  	O1 Aux S Never Verb P O3[+WH]                     	
+Q  	O1 Aux S Verb P O3[+WH]                           	
+Q  	O1 Aux S[+WH] Not Verb Adv                        	
+Q  	O1 Aux S[+WH] Not Verb O2 Adv                     	
+Q  	O1 Aux S[+WH] Not Verb O2 P O3 Adv                	
+Q  	O1 Aux S[+WH] Not Verb O2 P O3                    	
+Q  	O1 Aux S[+WH] Not Verb O2                         	
+Q  	O1 Aux S[+WH] Not Verb P O3 Adv                   	
+Q  	O1 Aux S[+WH] Not Verb P O3                       	
+Q  	O1 Aux S[+WH] Not Verb                            	
+Q  	O1 Aux S[+WH] Never Verb Adv                      	
+Q  	O1 Aux S[+WH] Verb Adv                            	
+Q  	O1 Aux S[+WH] Never Verb O2 Adv                   	
+Q  	O1 Aux S[+WH] Verb O2 Adv                         	
+Q  	O1 Aux S[+WH] Never Verb O2 P O3 Adv              	
+Q  	O1 Aux S[+WH] Verb O2 P O3 Adv                    	
+Q  	O1 Aux S[+WH] Never Verb O2 P O3                  	
+Q  	O1 Aux S[+WH] Verb O2 P O3                        	
+Q  	O1 Aux S[+WH] Never Verb O2                       	
+Q  	O1 Aux S[+WH] Verb O2                             	
+Q  	O1 Aux S[+WH] Never Verb P O3 Adv                 	
+Q  	O1 Aux S[+WH] Verb P O3 Adv                       	
+Q  	O1 Aux S[+WH] Never Verb P O3                     	
+Q  	O1 Aux S[+WH] Verb P O3                           	
+Q  	O1 Aux S[+WH] Never Verb                          	
+Q  	O1 Aux S[+WH] Verb                                	
+Q  	O1[+WH] Aux S Not Verb Adv                        	
+Q  	O1[+WH] Aux S Not Verb O2 Adv                     	
+Q  	O1[+WH] Aux S Not Verb O2 P O3 Adv                	
+Q  	O1[+WH] Aux S Not Verb O2 P O3                    	
+Q  	O1[+WH] Aux S Not Verb O2                         	
+Q  	O1[+WH] Aux S Not Verb P O3 Adv                   	
+Q  	O1[+WH] Aux S Not Verb P O3                       	
+Q  	O1[+WH] Aux S Not Verb                            	
+Q  	O1[+WH] Aux S Never Verb Adv                      	
+Q  	O1[+WH] Aux S Verb Adv                            	
+Q  	O1[+WH] Aux S Never Verb O2 Adv                   	
+Q  	O1[+WH] Aux S Verb O2 Adv                         	
+Q  	O1[+WH] Aux S Never Verb O2 P O3 Adv              	
+Q  	O1[+WH] Aux S Verb O2 P O3 Adv                    	
+Q  	O1[+WH] Aux S Never Verb O2 P O3                  	
+Q  	O1[+WH] Aux S Verb O2 P O3                        	
+Q  	O1[+WH] Aux S Never Verb O2                       	
+Q  	O1[+WH] Aux S Verb O2                             	
+Q  	O1[+WH] Aux S Never Verb P O3 Adv                 	
+Q  	O1[+WH] Aux S Verb P O3 Adv                       	
+Q  	O1[+WH] Aux S Never Verb P O3                     	
+Q  	O1[+WH] Aux S Verb P O3                           	
+Q  	O1[+WH] Aux S Never Verb                          	
+Q  	O1[+WH] Aux S Verb                                	
+Q  	Aux S Not Verb O1 Adv[+WH]                        	
+Q  	Aux S Not Verb O1 Adv[+WH]                        	
+Q  	Aux S Not Verb O1 P O3 Adv[+WH]                   	
+Q  	Aux S Not Verb O1 P O3[+WH] Adv                   	
+Q  	Aux S Not Verb O1 P O3[+WH]                       	
+Q  	Aux S Not Verb O1 P O3[+WH]                       	
+Q  	Aux S Not Verb O1[+WH] Adv                        	
+Q  	Aux S Not Verb O1[+WH] Adv                        	
+Q  	Aux S Not Verb O1[+WH] P O3 Adv                   	
+Q  	Aux S Not Verb O1[+WH] P O3                       	
+Q  	Aux S Not Verb O1[+WH] P O3                       	
+Q  	Aux S Not Verb O1[+WH]                            	
+Q  	Aux S Not Verb O1[+WH]                            	
+Q  	Aux S Not Verb O1[+WH]                            	
+Q  	Aux S Never Verb O1 Adv[+WH]                      	
+Q  	Aux S Never Verb O1 Adv[+WH]                      	
+Q  	Aux S Verb O1 Adv[+WH]                            	
+Q  	Aux S Verb O1 Adv[+WH]                            	
+Q  	Aux S Never Verb O1 P O3 Adv[+WH]                 	
+Q  	Aux S Verb O1 P O3 Adv[+WH]                       	
+Q  	Aux S Never Verb O1 P O3[+WH] Adv                 	
+Q  	Aux S Verb O1 P O3[+WH] Adv                       	
+Q  	Aux S Never Verb O1 P O3[+WH]                     	
+Q  	Aux S Never Verb O1 P O3[+WH]                     	
+Q  	Aux S Verb O1 P O3[+WH]                           	
+Q  	Aux S Verb O1 P O3[+WH]                           	
+Q  	Aux S Never Verb O1[+WH] Adv                      	
+Q  	Aux S Never Verb O1[+WH] Adv                      	
+Q  	Aux S Verb O1[+WH] Adv                            	
+Q  	Aux S Verb O1[+WH] Adv                            	
+Q  	Aux S Never Verb O1[+WH] P O3 Adv                 	
+Q  	Aux S Verb O1[+WH] P O3 Adv                       	
+Q  	Aux S Never Verb O1[+WH] P O3                     	
+Q  	Aux S Never Verb O1[+WH] P O3                     	
+Q  	Aux S Verb O1[+WH] P O3                           	
+Q  	Aux S Verb O1[+WH] P O3                           	
+Q  	Aux S Never Verb O1[+WH]                          	
+Q  	Aux S Never Verb O1[+WH]                          	
+Q  	Aux S Never Verb O1[+WH]                          	
+Q  	Aux S Verb O1[+WH]                                	
+Q  	Aux S Verb O1[+WH]                                	
+Q  	Aux S Verb O1[+WH]                                	
+Q  	Aux S[+WH] Not Verb O1 Adv                        	
+Q  	Aux S[+WH] Not Verb O1 Adv                        	
+Q  	Aux S[+WH] Not Verb O1 P O3 Adv                   	
+Q  	Aux S[+WH] Not Verb O1 P O3                       	
+Q  	Aux S[+WH] Not Verb O1 P O3                       	
+Q  	Aux S[+WH] Not Verb O1                            	
+Q  	Aux S[+WH] Not Verb O1                            	
+Q  	Aux S[+WH] Not Verb O1                            	
+Q  	Aux S[+WH] Never Verb O1 Adv                      	
+Q  	Aux S[+WH] Never Verb O1 Adv                      	
+Q  	Aux S[+WH] Verb O1 Adv                            	
+Q  	Aux S[+WH] Verb O1 Adv                            	
+Q  	Aux S[+WH] Never Verb O1 P O3 Adv                 	
+Q  	Aux S[+WH] Verb O1 P O3 Adv                       	
+Q  	Aux S[+WH] Never Verb O1 P O3                     	
+Q  	Aux S[+WH] Never Verb O1 P O3                     	
+Q  	Aux S[+WH] Verb O1 P O3                           	
+Q  	Aux S[+WH] Verb O1 P O3                           	
+Q  	Aux S[+WH] Never Verb O1                          	
+Q  	Aux S[+WH] Never Verb O1                          	
+Q  	Aux S[+WH] Never Verb O1                          	
+Q  	Aux S[+WH] Verb O1                                	
+Q  	Aux S[+WH] Verb O1                                	
+Q  	Aux S[+WH] Verb O1                                	
+Q  	O2 Aux S Not Verb O1 Adv[+WH]                     	
+Q  	O2 Aux S Not Verb O1 P O3 Adv[+WH]                	
+Q  	O2 Aux S Not Verb O1 P O3[+WH] Adv                	
+Q  	O2 Aux S Not Verb O1 P O3[+WH]                    	
+Q  	O2 Aux S Not Verb O1[+WH] Adv                     	
+Q  	O2 Aux S Not Verb O1[+WH] P O3 Adv                	
+Q  	O2 Aux S Not Verb O1[+WH] P O3                    	
+Q  	O2 Aux S Not Verb O1[+WH]                         	
+Q  	O2 Aux S Never Verb O1 Adv[+WH]                   	
+Q  	O2 Aux S Verb O1 Adv[+WH]                         	
+Q  	O2 Aux S Never Verb O1 P O3 Adv[+WH]              	
+Q  	O2 Aux S Verb O1 P O3 Adv[+WH]                    	
+Q  	O2 Aux S Never Verb O1 P O3[+WH] Adv              	
+Q  	O2 Aux S Verb O1 P O3[+WH] Adv                    	
+Q  	O2 Aux S Never Verb O1 P O3[+WH]                  	
+Q  	O2 Aux S Verb O1 P O3[+WH]                        	
+Q  	O2 Aux S Never Verb O1[+WH] Adv                   	
+Q  	O2 Aux S Verb O1[+WH] Adv                         	
+Q  	O2 Aux S Never Verb O1[+WH] P O3 Adv              	
+Q  	O2 Aux S Verb O1[+WH] P O3 Adv                    	
+Q  	O2 Aux S Never Verb O1[+WH] P O3                  	
+Q  	O2 Aux S Verb O1[+WH] P O3                        	
+Q  	O2 Aux S Never Verb O1[+WH]                       	
+Q  	O2 Aux S Verb O1[+WH]                             	
+Q  	O2 Aux S[+WH] Not Verb O1 Adv                     	
+Q  	O2 Aux S[+WH] Not Verb O1 P O3 Adv                	
+Q  	O2 Aux S[+WH] Not Verb O1 P O3                    	
+Q  	O2 Aux S[+WH] Not Verb O1                         	
+Q  	O2 Aux S[+WH] Never Verb O1 Adv                   	
+Q  	O2 Aux S[+WH] Verb O1 Adv                         	
+Q  	O2 Aux S[+WH] Never Verb O1 P O3 Adv              	
+Q  	O2 Aux S[+WH] Verb O1 P O3 Adv                    	
+Q  	O2 Aux S[+WH] Never Verb O1 P O3                  	
+Q  	O2 Aux S[+WH] Verb O1 P O3                        	
+Q  	O2 Aux S[+WH] Never Verb O1                       	
+Q  	O2 Aux S[+WH] Verb O1                             	
+Q  	O2[+WH] Aux S Not Verb O1 Adv                     	
+Q  	O2[+WH] Aux S Not Verb O1 P O3 Adv                	
+Q  	O2[+WH] Aux S Not Verb O1 P O3                    	
+Q  	O2[+WH] Aux S Not Verb O1                         	
+Q  	O2[+WH] Aux S Never Verb O1 Adv                   	
+Q  	O2[+WH] Aux S Verb O1 Adv                         	
+Q  	O2[+WH] Aux S Never Verb O1 P O3 Adv              	
+Q  	O2[+WH] Aux S Verb O1 P O3 Adv                    	
+Q  	O2[+WH] Aux S Never Verb O1 P O3                  	
+Q  	O2[+WH] Aux S Verb O1 P O3                        	
+Q  	O2[+WH] Aux S Never Verb O1                       	
+Q  	O2[+WH] Aux S Verb O1                             	
+Q  	Aux S Not Verb O1 O2 Adv[+WH]                     	
+Q  	Aux S Not Verb O1 O2[+WH] Adv                     	
+Q  	Aux S Not Verb O1 O2[+WH]                         	
+Q  	Aux S Not Verb O1 O2[+WH]                         	
+Q  	Aux S Not Verb O1 Adv[+WH]                        	
+Q  	Aux S Not Verb O1 Adv[+WH]                        	
+Q  	Aux S Not Verb O1[+WH] O2 Adv                     	
+Q  	Aux S Not Verb O1[+WH] O2                         	
+Q  	Aux S Not Verb O1[+WH] O2                         	
+Q  	Aux S Not Verb O1[+WH] Adv                        	
+Q  	Aux S Not Verb O1[+WH] Adv                        	
+Q  	Aux S Not Verb O1[+WH]                            	
+Q  	Aux S Not Verb O1[+WH]                            	
+Q  	Aux S Not Verb O1[+WH]                            	
+Q  	Aux S Not Verb Adv[+WH]                           	
+Q  	Aux S Not Verb Adv[+WH]                           	
+Q  	Aux S Never Verb O1 O2 Adv[+WH]                   	
+Q  	Aux S Verb O1 O2 Adv[+WH]                         	
+Q  	Aux S Never Verb O1 O2[+WH] Adv                   	
+Q  	Aux S Verb O1 O2[+WH] Adv                         	
+Q  	Aux S Never Verb O1 O2[+WH]                       	
+Q  	Aux S Never Verb O1 O2[+WH]                       	
+Q  	Aux S Verb O1 O2[+WH]                             	
+Q  	Aux S Verb O1 O2[+WH]                             	
+Q  	Aux S Never Verb O1 Adv[+WH]                      	
+Q  	Aux S Never Verb O1 Adv[+WH]                      	
+Q  	Aux S Verb O1 Adv[+WH]                            	
+Q  	Aux S Verb O1 Adv[+WH]                            	
+Q  	Aux S Never Verb O1[+WH] O2 Adv                   	
+Q  	Aux S Verb O1[+WH] O2 Adv                         	
+Q  	Aux S Never Verb O1[+WH] O2                       	
+Q  	Aux S Never Verb O1[+WH] O2                       	
+Q  	Aux S Verb O1[+WH] O2                             	
+Q  	Aux S Verb O1[+WH] O2                             	
+Q  	Aux S Never Verb O1[+WH] Adv                      	
+Q  	Aux S Never Verb O1[+WH] Adv                      	
+Q  	Aux S Verb O1[+WH] Adv                            	
+Q  	Aux S Verb O1[+WH] Adv                            	
+Q  	Aux S Never Verb O1[+WH]                          	
+Q  	Aux S Never Verb O1[+WH]                          	
+Q  	Aux S Never Verb O1[+WH]                          	
+Q  	Aux S Verb O1[+WH]                                	
+Q  	Aux S Verb O1[+WH]                                	
+Q  	Aux S Verb O1[+WH]                                	
+Q  	Aux S Never Verb Adv[+WH]                         	
+Q  	Aux S Never Verb Adv[+WH]                         	
+Q  	Aux S Verb Adv[+WH]                               	
+Q  	Aux S Verb Adv[+WH]                               	
+Q  	Aux S[+WH] Not Verb O1 O2 Adv                     	
+Q  	Aux S[+WH] Not Verb O1 O2                         	
+Q  	Aux S[+WH] Not Verb O1 O2                         	
+Q  	Aux S[+WH] Not Verb O1 Adv                        	
+Q  	Aux S[+WH] Not Verb O1 Adv                        	
+Q  	Aux S[+WH] Not Verb O1                            	
+Q  	Aux S[+WH] Not Verb O1                            	
+Q  	Aux S[+WH] Not Verb O1                            	
+Q  	Aux S[+WH] Not Verb Adv                           	
+Q  	Aux S[+WH] Not Verb Adv                           	
+Q  	Aux S[+WH] Not Verb                               	
+Q  	Aux S[+WH] Not Verb                               	
+Q  	Aux S[+WH] Not Verb                               	
+Q  	Aux S[+WH] Never Verb O1 O2 Adv                   	
+Q  	Aux S[+WH] Verb O1 O2 Adv                         	
+Q  	Aux S[+WH] Never Verb O1 O2                       	
+Q  	Aux S[+WH] Never Verb O1 O2                       	
+Q  	Aux S[+WH] Verb O1 O2                             	
+Q  	Aux S[+WH] Verb O1 O2                             	
+Q  	Aux S[+WH] Never Verb O1 Adv                      	
+Q  	Aux S[+WH] Never Verb O1 Adv                      	
+Q  	Aux S[+WH] Verb O1 Adv                            	
+Q  	Aux S[+WH] Verb O1 Adv                            	
+Q  	Aux S[+WH] Never Verb O1                          	
+Q  	Aux S[+WH] Never Verb O1                          	
+Q  	Aux S[+WH] Never Verb O1                          	
+Q  	Aux S[+WH] Verb O1                                	
+Q  	Aux S[+WH] Verb O1                                	
+Q  	Aux S[+WH] Verb O1                                	
+Q  	Aux S[+WH] Never Verb Adv                         	
+Q  	Aux S[+WH] Never Verb Adv                         	
+Q  	Aux S[+WH] Verb Adv                               	
+Q  	Aux S[+WH] Verb Adv                               	
+Q  	Aux S[+WH] Never Verb                             	
+Q  	Aux S[+WH] Never Verb                             	
+Q  	Aux S[+WH] Never Verb                             	
+Q  	Aux S[+WH] Verb                                   	
+Q  	Aux S[+WH] Verb                                   	
+Q  	Aux S[+WH] Verb                                   	
+Q  	Aux Not Verb Adv[+WH]                             	
+Q  	Aux Not Verb O1 Adv[+WH]                          	
+Q  	Aux Not Verb O1 O2 Adv[+WH]                       	
+Q  	Aux Not Verb O1 O2 P O3 Adv[+WH]                  	
+Q  	Aux Not Verb O1 O2 P O3[+WH] Adv                  	
+Q  	Aux Not Verb O1 O2 P O3[+WH]                      	
+Q  	Aux Not Verb O1 O2[+WH] Adv                       	
+Q  	Aux Not Verb O1 O2[+WH] P O3 Adv                  	
+Q  	Aux Not Verb O1 O2[+WH] P O3                      	
+Q  	Aux Not Verb O1 O2[+WH]                           	
+Q  	Aux Not Verb O1 P O3 Adv[+WH]                     	
+Q  	Aux Not Verb O1 P O3[+WH] Adv                     	
+Q  	Aux Not Verb O1 P O3[+WH]                         	
+Q  	Aux Not Verb O1[+WH] Adv                          	
+Q  	Aux Not Verb O1[+WH] O2 Adv                       	
+Q  	Aux Not Verb O1[+WH] O2 P O3 Adv                  	
+Q  	Aux Not Verb O1[+WH] O2 P O3                      	
+Q  	Aux Not Verb O1[+WH] O2                           	
+Q  	Aux Not Verb O1[+WH] P O3 Adv                     	
+Q  	Aux Not Verb O1[+WH] P O3                         	
+Q  	Aux Not Verb O1[+WH]                              	
+Q  	Aux Not Verb P O3 Adv[+WH]                        	
+Q  	Aux Not Verb P O3[+WH] Adv                        	
+Q  	Aux Not Verb P O3[+WH]                            	
+Q  	Aux Never Verb Adv[+WH]                           	
+Q  	Aux Verb Adv[+WH]                                 	
+Q  	Aux Never Verb O1 Adv[+WH]                        	
+Q  	Aux Verb O1 Adv[+WH]                              	
+Q  	Aux Never Verb O1 O2 Adv[+WH]                     	
+Q  	Aux Verb O1 O2 Adv[+WH]                           	
+Q  	Aux Never Verb O1 O2 P O3 Adv[+WH]                	
+Q  	Aux Verb O1 O2 P O3 Adv[+WH]                      	
+Q  	Aux Never Verb O1 O2 P O3[+WH] Adv                	
+Q  	Aux Verb O1 O2 P O3[+WH] Adv                      	
+Q  	Aux Never Verb O1 O2 P O3[+WH]                    	
+Q  	Aux Verb O1 O2 P O3[+WH]                          	
+Q  	Aux Never Verb O1 O2[+WH] Adv                     	
+Q  	Aux Verb O1 O2[+WH] Adv                           	
+Q  	Aux Never Verb O1 O2[+WH] P O3 Adv                	
+Q  	Aux Verb O1 O2[+WH] P O3 Adv                      	
+Q  	Aux Never Verb O1 O2[+WH] P O3                    	
+Q  	Aux Verb O1 O2[+WH] P O3                          	
+Q  	Aux Never Verb O1 O2[+WH]                         	
+Q  	Aux Verb O1 O2[+WH]                               	
+Q  	Aux Never Verb O1 P O3 Adv[+WH]                   	
+Q  	Aux Verb O1 P O3 Adv[+WH]                         	
+Q  	Aux Never Verb O1 P O3[+WH] Adv                   	
+Q  	Aux Verb O1 P O3[+WH] Adv                         	
+Q  	Aux Never Verb O1 P O3[+WH]                       	
+Q  	Aux Verb O1 P O3[+WH]                             	
+Q  	Aux Never Verb O1[+WH] Adv                        	
+Q  	Aux Verb O1[+WH] Adv                              	
+Q  	Aux Never Verb O1[+WH] O2 Adv                     	
+Q  	Aux Verb O1[+WH] O2 Adv                           	
+Q  	Aux Never Verb O1[+WH] O2 P O3 Adv                	
+Q  	Aux Verb O1[+WH] O2 P O3 Adv                      	
+Q  	Aux Never Verb O1[+WH] O2 P O3                    	
+Q  	Aux Verb O1[+WH] O2 P O3                          	
+Q  	Aux Never Verb O1[+WH] O2                         	
+Q  	Aux Verb O1[+WH] O2                               	
+Q  	Aux Never Verb O1[+WH] P O3 Adv                   	
+Q  	Aux Verb O1[+WH] P O3 Adv                         	
+Q  	Aux Never Verb O1[+WH] P O3                       	
+Q  	Aux Verb O1[+WH] P O3                             	
+Q  	Aux Never Verb O1[+WH]                            	
+Q  	Aux Verb O1[+WH]                                  	
+Q  	Aux Never Verb P O3 Adv[+WH]                      	
+Q  	Aux Verb P O3 Adv[+WH]                            	
+Q  	Aux Never Verb P O3[+WH] Adv                      	
+Q  	Aux Verb P O3[+WH] Adv                            	
+Q  	Aux Never Verb P O3[+WH]                          	
+Q  	Aux Verb P O3[+WH]                                	
+Q  	S Aux Not Verb Adv[+WH]                           	
+Q  	S Aux Not Verb O1 Adv[+WH]                        	
+Q  	S Aux Not Verb O1 O2 Adv[+WH]                     	
+Q  	S Aux Not Verb O1 O2 P O3 Adv[+WH]                	
+Q  	S Aux Not Verb O1 O2 P O3[+WH] Adv                	
+Q  	S Aux Not Verb O1 O2 P O3[+WH]                    	
+Q  	S Aux Not Verb O1 O2[+WH] Adv                     	
+Q  	S Aux Not Verb O1 O2[+WH] P O3 Adv                	
+Q  	S Aux Not Verb O1 O2[+WH] P O3                    	
+Q  	S Aux Not Verb O1 O2[+WH]                         	
+Q  	S Aux Not Verb O1 P O3 Adv[+WH]                   	
+Q  	S Aux Not Verb O1 P O3[+WH] Adv                   	
+Q  	S Aux Not Verb O1 P O3[+WH]                       	
+Q  	S Aux Not Verb O1[+WH] Adv                        	
+Q  	S Aux Not Verb O1[+WH] O2 Adv                     	
+Q  	S Aux Not Verb O1[+WH] O2 P O3 Adv                	
+Q  	S Aux Not Verb O1[+WH] O2 P O3                    	
+Q  	S Aux Not Verb O1[+WH] O2                         	
+Q  	S Aux Not Verb O1[+WH] P O3 Adv                   	
+Q  	S Aux Not Verb O1[+WH] P O3                       	
+Q  	S Aux Not Verb O1[+WH]                            	
+Q  	S Aux Not Verb P O3 Adv[+WH]                      	
+Q  	S Aux Not Verb P O3[+WH] Adv                      	
+Q  	S Aux Not Verb P O3[+WH]                          	
+Q  	S Aux Never Verb Adv[+WH]                         	
+Q  	S Aux Verb Adv[+WH]                               	
+Q  	S Aux Never Verb O1 Adv[+WH]                      	
+Q  	S Aux Verb O1 Adv[+WH]                            	
+Q  	S Aux Never Verb O1 O2 Adv[+WH]                   	
+Q  	S Aux Verb O1 O2 Adv[+WH]                         	
+Q  	S Aux Never Verb O1 O2 P O3 Adv[+WH]              	
+Q  	S Aux Verb O1 O2 P O3 Adv[+WH]                    	
+Q  	S Aux Never Verb O1 O2 P O3[+WH] Adv              	
+Q  	S Aux Verb O1 O2 P O3[+WH] Adv                    	
+Q  	S Aux Never Verb O1 O2 P O3[+WH]                  	
+Q  	S Aux Verb O1 O2 P O3[+WH]                        	
+Q  	S Aux Never Verb O1 O2[+WH] Adv                   	
+Q  	S Aux Verb O1 O2[+WH] Adv                         	
+Q  	S Aux Never Verb O1 O2[+WH] P O3 Adv              	
+Q  	S Aux Verb O1 O2[+WH] P O3 Adv                    	
+Q  	S Aux Never Verb O1 O2[+WH] P O3                  	
+Q  	S Aux Verb O1 O2[+WH] P O3                        	
+Q  	S Aux Never Verb O1 O2[+WH]                       	
+Q  	S Aux Verb O1 O2[+WH]                             	
+Q  	S Aux Never Verb O1 P O3 Adv[+WH]                 	
+Q  	S Aux Verb O1 P O3 Adv[+WH]                       	
+Q  	S Aux Never Verb O1 P O3[+WH] Adv                 	
+Q  	S Aux Verb O1 P O3[+WH] Adv                       	
+Q  	S Aux Never Verb O1 P O3[+WH]                     	
+Q  	S Aux Verb O1 P O3[+WH]                           	
+Q  	S Aux Never Verb O1[+WH] Adv                      	
+Q  	S Aux Verb O1[+WH] Adv                            	
+Q  	S Aux Never Verb O1[+WH] O2 Adv                   	
+Q  	S Aux Verb O1[+WH] O2 Adv                         	
+Q  	S Aux Never Verb O1[+WH] O2 P O3 Adv              	
+Q  	S Aux Verb O1[+WH] O2 P O3 Adv                    	
+Q  	S Aux Never Verb O1[+WH] O2 P O3                  	
+Q  	S Aux Verb O1[+WH] O2 P O3                        	
+Q  	S Aux Never Verb O1[+WH] O2                       	
+Q  	S Aux Verb O1[+WH] O2                             	
+Q  	S Aux Never Verb O1[+WH] P O3 Adv                 	
+Q  	S Aux Verb O1[+WH] P O3 Adv                       	
+Q  	S Aux Never Verb O1[+WH] P O3                     	
+Q  	S Aux Verb O1[+WH] P O3                           	
+Q  	S Aux Never Verb O1[+WH]                          	
+Q  	S Aux Verb O1[+WH]                                	
+Q  	S Aux Never Verb P O3 Adv[+WH]                    	
+Q  	S Aux Verb P O3 Adv[+WH]                          	
+Q  	S Aux Never Verb P O3[+WH] Adv                    	
+Q  	S Aux Verb P O3[+WH] Adv                          	
+Q  	S Aux Never Verb P O3[+WH]                        	
+Q  	S Aux Verb P O3[+WH]                              	
+Q  	S[+WH] Aux Not Verb Adv                           	
+Q  	S[+WH] Aux Not Verb O1 Adv                        	
+Q  	S[+WH] Aux Not Verb O1 O2 Adv                     	
+Q  	S[+WH] Aux Not Verb O1 O2 P O3 Adv                	
+Q  	S[+WH] Aux Not Verb O1 O2 P O3                    	
+Q  	S[+WH] Aux Not Verb O1 O2                         	
+Q  	S[+WH] Aux Not Verb O1 P O3 Adv                   	
+Q  	S[+WH] Aux Not Verb O1 P O3                       	
+Q  	S[+WH] Aux Not Verb O1                            	
+Q  	S[+WH] Aux Not Verb P O3 Adv                      	
+Q  	S[+WH] Aux Not Verb P O3                          	
+Q  	S[+WH] Aux Not Verb                               	
+Q  	S[+WH] Aux Never Verb Adv                         	
+Q  	S[+WH] Aux Verb Adv                               	
+Q  	S[+WH] Aux Never Verb O1 Adv                      	
+Q  	S[+WH] Aux Verb O1 Adv                            	
+Q  	S[+WH] Aux Never Verb O1 O2 Adv                   	
+Q  	S[+WH] Aux Verb O1 O2 Adv                         	
+Q  	S[+WH] Aux Never Verb O1 O2 P O3 Adv              	
+Q  	S[+WH] Aux Verb O1 O2 P O3 Adv                    	
+Q  	S[+WH] Aux Never Verb O1 O2 P O3                  	
+Q  	S[+WH] Aux Verb O1 O2 P O3                        	
+Q  	S[+WH] Aux Never Verb O1 O2                       	
+Q  	S[+WH] Aux Verb O1 O2                             	
+Q  	S[+WH] Aux Never Verb O1 P O3 Adv                 	
+Q  	S[+WH] Aux Verb O1 P O3 Adv                       	
+Q  	S[+WH] Aux Never Verb O1 P O3                     	
+Q  	S[+WH] Aux Verb O1 P O3                           	
+Q  	S[+WH] Aux Never Verb O1                          	
+Q  	S[+WH] Aux Verb O1                                	
+Q  	S[+WH] Aux Never Verb P O3 Adv                    	
+Q  	S[+WH] Aux Verb P O3 Adv                          	
+Q  	S[+WH] Aux Never Verb P O3                        	
+Q  	S[+WH] Aux Verb P O3                              	
+Q  	S[+WH] Aux Never Verb                             	
+Q  	S[+WH] Aux Verb                                   	
+Q  	P O3 Aux S Not Verb O1 O2 Adv[+WH]                	
+Q  	P O3 Aux S Not Verb O1 O2[+WH] Adv                	
+Q  	P O3 Aux S Not Verb O1 O2[+WH]                    	
+Q  	P O3 Aux S Not Verb O1 Adv[+WH]                   	
+Q  	P O3 Aux S Not Verb O1[+WH] O2 Adv                	
+Q  	P O3 Aux S Not Verb O1[+WH] O2                    	
+Q  	P O3 Aux S Not Verb O1[+WH] Adv                   	
+Q  	P O3 Aux S Not Verb O1[+WH]                       	
+Q  	P O3 Aux S Not Verb Adv[+WH]                      	
+Q  	P O3 Aux S Never Verb O1 O2 Adv[+WH]              	
+Q  	P O3 Aux S Verb O1 O2 Adv[+WH]                    	
+Q  	P O3 Aux S Never Verb O1 O2[+WH] Adv              	
+Q  	P O3 Aux S Verb O1 O2[+WH] Adv                    	
+Q  	P O3 Aux S Never Verb O1 O2[+WH]                  	
+Q  	P O3 Aux S Verb O1 O2[+WH]                        	
+Q  	P O3 Aux S Never Verb O1 Adv[+WH]                 	
+Q  	P O3 Aux S Verb O1 Adv[+WH]                       	
+Q  	P O3 Aux S Never Verb O1[+WH] O2 Adv              	
+Q  	P O3 Aux S Verb O1[+WH] O2 Adv                    	
+Q  	P O3 Aux S Never Verb O1[+WH] O2                  	
+Q  	P O3 Aux S Verb O1[+WH] O2                        	
+Q  	P O3 Aux S Never Verb O1[+WH] Adv                 	
+Q  	P O3 Aux S Verb O1[+WH] Adv                       	
+Q  	P O3 Aux S Never Verb O1[+WH]                     	
+Q  	P O3 Aux S Verb O1[+WH]                           	
+Q  	P O3 Aux S Never Verb Adv[+WH]                    	
+Q  	P O3 Aux S Verb Adv[+WH]                          	
+Q  	P O3 Aux S[+WH] Not Verb O1 O2 Adv                	
+Q  	P O3 Aux S[+WH] Not Verb O1 O2                    	
+Q  	P O3 Aux S[+WH] Not Verb O1 Adv                   	
+Q  	P O3 Aux S[+WH] Not Verb O1                       	
+Q  	P O3 Aux S[+WH] Not Verb Adv                      	
+Q  	P O3 Aux S[+WH] Not Verb                          	
+Q  	P O3 Aux S[+WH] Never Verb O1 O2 Adv              	
+Q  	P O3 Aux S[+WH] Verb O1 O2 Adv                    	
+Q  	P O3 Aux S[+WH] Never Verb O1 O2                  	
+Q  	P O3 Aux S[+WH] Verb O1 O2                        	
+Q  	P O3 Aux S[+WH] Never Verb O1 Adv                 	
+Q  	P O3 Aux S[+WH] Verb O1 Adv                       	
+Q  	P O3 Aux S[+WH] Never Verb O1                     	
+Q  	P O3 Aux S[+WH] Verb O1                           	
+Q  	P O3 Aux S[+WH] Never Verb Adv                    	
+Q  	P O3 Aux S[+WH] Verb Adv                          	
+Q  	P O3 Aux S[+WH] Never Verb                        	
+Q  	P O3 Aux S[+WH] Verb                              	
+Q  	P O3[+WH] Aux S Not Verb O1 O2 Adv                	
+Q  	P O3[+WH] Aux S Not Verb O1 O2                    	
+Q  	P O3[+WH] Aux S Not Verb O1 Adv                   	
+Q  	P O3[+WH] Aux S Not Verb O1                       	
+Q  	P O3[+WH] Aux S Not Verb Adv                      	
+Q  	P O3[+WH] Aux S Not Verb                          	
+Q  	P O3[+WH] Aux S Never Verb O1 O2 Adv              	
+Q  	P O3[+WH] Aux S Verb O1 O2 Adv                    	
+Q  	P O3[+WH] Aux S Never Verb O1 O2                  	
+Q  	P O3[+WH] Aux S Verb O1 O2                        	
+Q  	P O3[+WH] Aux S Never Verb O1 Adv                 	
+Q  	P O3[+WH] Aux S Verb O1 Adv                       	
+Q  	P O3[+WH] Aux S Never Verb O1                     	
+Q  	P O3[+WH] Aux S Verb O1                           	
+Q  	P O3[+WH] Aux S Never Verb Adv                    	
+Q  	P O3[+WH] Aux S Verb Adv                          	
+Q  	P O3[+WH] Aux S Never Verb                        	
+Q  	P O3[+WH] Aux S Verb                              	
