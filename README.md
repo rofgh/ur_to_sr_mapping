@@ -5,4 +5,7 @@
         
         The flat.txt file needs to be saved in the SRs file, as it is too big to put on GitHub
 
-        Then the script is run by with the following "python 0001110001110 0 0" where the first 13 digit argument is the list of parameter settings, the second argument is whether you want UR bracketed representations to be printed, and the third argument is whether you want the list to have gaps where the SRs are missing for that language (i.e. for that set of parameters)
+        Then the script is run by with the following "python 0001110001110 0 0" where the first 13 digit
+        argument is the list of parameter settings, the second argument is whether you want UR bracketed
+        representations to be printed, and the third argument is whether you want the list to have gaps
+        where the SRs are missing for that language (i.e. for that set of parameters)
