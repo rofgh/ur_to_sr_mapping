@@ -3,7 +3,8 @@
     # SRs/GRABBER
         The grabber script allows us to look at the SRs for a specific set of parameter settings.
         
-        The [flat.txt file](http://www.colag.cs.hunter.cuny.edu/grammar/data/COLAG_2011_flat.zip) needs to be saved in the SRs file, as it is too big to put on GitHub
+        The [flat.txt file]<http://www.colag.cs.hunter.cuny.edu/grammar/data/COLAG_2011_flat.zip> needs to be
+        saved in the SRs file, as it is too big to put on GitHub
 
         Then the script is run by with the following "python 0001110001110 0 0" 
         Arg1 13 digit argument is the list of parameter settings
