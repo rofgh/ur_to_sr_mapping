@@ -368,20 +368,26 @@ summary {
 
 <div id="hidden-sin" class="section level1">
 <h1>Hidden-Sin</h1>
-<pre><code># SRs/GRABBER
-    The grabber script allows us to look at the SRs for a specific set of parameter settings.
-    
-    The [flat.txt file](http://www.colag.cs.hunter.cuny.edu/grammar/data/COLAG_2011_flat.zip) needs to be
-    saved in the SRs file, as it is too big to put on GitHub
-
-    Then the script is run by with the following:
-    
-    $ python 0001110001110 0 0
-
-    Arg1 13 digit argument is the list of parameter settings
-    Arg2 is whether you want UR bracketed representations to be printed
-    ARg3 is whether you want the list to have gaps where the SRs are missing for that
-    language (i.e. for that set of parameters)</code></pre>
+<div id="srsgrabber" class="section level2">
+<h2>SRs/GRABBER</h2>
+<p>The grabber script allows us to look at the SRs and associated bracketed UR trees for a specific set of parameter settings.</p>
+<p>The <a href="http://www.colag.cs.hunter.cuny.edu/grammar/data/COLAG_2011_flat.zip">flat.txt file</a> needs to be saved in your branch’s SRs folder, as it is too big to put on GitHub</p>
+<p>Example for running script:</p>
+<pre class="bash"><code>$ python grabber.py 0001110001110 0 0</code></pre>
+<p>Arg1: 13 digit list of parameter settings<br />
+Arg2: 0/1, whether you want UR bracketed representations to be printed<br />
+Arg3: 0/1, whether you want the list to have gaps where the SRs are missing for that language (i.e. for that set of parameters)</p>
+<p>When you run the script it will produce a .txt file for that language with the parameter settings as the name, containing a tab delimited list of the SRs, sorted by the UR ID.</p>
+<p>Arg2 off, Arg3 on:</p>
+<pre class="bash"><code>UR #    ILLOC   SR  
+0:          Q       Aux S Never Verb                                    
+1:                                  
+2:          Q       Aux S Never Verb O1 O2</code></pre>
+<p>Arg2 on, Arg3 off:</p>
+<pre class="bash"><code>UR #    ILLOC   SR  
+0:          Q       Aux S Never Verb                                    (CP[ILLOC DEC][+FIN]&quot;Adv[+NULL][+TOPIC]&quot;(Cbar[ILLOC DEC][+FIN][SLASH Adv](C[ILLOC DEC][+FIN]&quot;Aux[+FIN]&quot;)(IP[ILLOC DEC][+FIN][SLASH Adv][SLASH Aux]&quot;S&quot;(Ibar[ILLOC DEC][+FIN][SLASH Adv][SLASH Aux](I[ILLOC DEC][+FIN][SLASH Aux]&quot;Aux[+FIN][+NULL][SLASH Aux]&quot;)(NegP[SLASH Adv]&quot;Never&quot;(Negbar[SLASH Adv](VP[SLASH Adv](Vbar[SLASH Adv](V&quot;Verb&quot;)&quot;Adv[+NULL][SLASH Adv]&quot;))))))))        132
+2:          Q       Aux S Never Verb O1 O2                              (CP[ILLOC DEC][+FIN]&quot;Adv[+NULL][+TOPIC]&quot;(Cbar[ILLOC DEC][+FIN][SLASH Adv](C[ILLOC DEC][+FIN]&quot;Aux[+FIN]&quot;)(IP[ILLOC DEC][+FIN][SLASH Adv][SLASH Aux]&quot;S&quot;(Ibar[ILLOC DEC][+FIN][SLASH Adv][SLASH Aux](I[ILLOC DEC][+FIN][SLASH Aux]&quot;Aux[+FIN][+NULL][SLASH Aux]&quot;)(NegP[SLASH Adv]&quot;Never&quot;(Negbar[SLASH Adv](VP[SLASH Adv](Vbar[SLASH Adv](V&quot;Verb&quot;)&quot;O1&quot;&quot;O2&quot;&quot;Adv[+NULL][SLASH Adv]&quot;))))))))        132 </code></pre>
+</div>
 </div>
 
 
