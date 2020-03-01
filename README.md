@@ -12,7 +12,7 @@ Then the script is run by with the following:
 $ python 0001110001110 0 0
 ```
 
-Arg1 13 digit argument is the list of parameter settings
-Arg2 is whether you want UR bracketed representations to be printed
+Arg1 13 digit argument is the list of parameter settings\
+Arg2 is whether you want UR bracketed representations to be printed\
 ARg3 is whether you want the list to have gaps where the SRs are missing for that
 language (i.e. for that set of parameters)
