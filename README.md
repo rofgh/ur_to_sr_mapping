@@ -22,16 +22,16 @@ When you run the script it will produce a .txt file for that language with the p
 Arg2 off, Arg3 on:
 ```bash
 UR #	ILLOC	SR	
-0:	        Q  	    Aux S Never Verb                                  	
+0:	    Q  	    Aux S Never Verb                                  	
 1:                              	
-2:	        Q  	    Aux S Never Verb O1 O2
+2:	    Q  	    Aux S Never Verb O1 O2
 ```
 
 Arg2 on, Arg3 off:
 ```bash
 UR #	ILLOC	SR	
-0:	        Q  	    Aux S Never Verb                                  	(CP[ILLOC DEC][+FIN]"Adv[+NULL][+TOPIC]"(Cbar[ILLOC DEC][+FIN][SLASH Adv](C[ILLOC DEC][+FIN]"Aux[+FIN]")(IP[ILLOC DEC][+FIN][SLASH Adv][SLASH Aux]"S"(Ibar[ILLOC DEC][+FIN][SLASH Adv][SLASH Aux](I[ILLOC DEC][+FIN][SLASH Aux]"Aux[+FIN][+NULL][SLASH Aux]")(NegP[SLASH Adv]"Never"(Negbar[SLASH Adv](VP[SLASH Adv](Vbar[SLASH Adv](V"Verb")"Adv[+NULL][SLASH Adv]"))))))))        132
-2:	        Q  	    Aux S Never Verb O1 O2                            	(CP[ILLOC DEC][+FIN]"Adv[+NULL][+TOPIC]"(Cbar[ILLOC DEC][+FIN][SLASH Adv](C[ILLOC DEC][+FIN]"Aux[+FIN]")(IP[ILLOC DEC][+FIN][SLASH Adv][SLASH Aux]"S"(Ibar[ILLOC DEC][+FIN][SLASH Adv][SLASH Aux](I[ILLOC DEC][+FIN][SLASH Aux]"Aux[+FIN][+NULL][SLASH Aux]")(NegP[SLASH Adv]"Never"(Negbar[SLASH Adv](VP[SLASH Adv](Vbar[SLASH Adv](V"Verb")"O1""O2""Adv[+NULL][SLASH Adv]"))))))))        132	
+0:	    Q  	    Aux S Never Verb                                  	(CP[ILLOC DEC][+FIN]"Adv[+NULL][+TOPIC]"(Cbar[ILLOC DEC][+FIN][SLASH Adv](C[ILLOC DEC][+FIN]"Aux[+FIN]")(IP[ILLOC DEC][+FIN][SLASH Adv][SLASH Aux]"S"(Ibar[ILLOC DEC][+FIN][SLASH Adv][SLASH Aux](I[ILLOC DEC][+FIN][SLASH Aux]"Aux[+FIN][+NULL][SLASH Aux]")(NegP[SLASH Adv]"Never"(Negbar[SLASH Adv](VP[SLASH Adv](Vbar[SLASH Adv](V"Verb")"Adv[+NULL][SLASH Adv]"))))))))        132
+2:	    Q  	    Aux S Never Verb O1 O2                            	(CP[ILLOC DEC][+FIN]"Adv[+NULL][+TOPIC]"(Cbar[ILLOC DEC][+FIN][SLASH Adv](C[ILLOC DEC][+FIN]"Aux[+FIN]")(IP[ILLOC DEC][+FIN][SLASH Adv][SLASH Aux]"S"(Ibar[ILLOC DEC][+FIN][SLASH Adv][SLASH Aux](I[ILLOC DEC][+FIN][SLASH Aux]"Aux[+FIN][+NULL][SLASH Aux]")(NegP[SLASH Adv]"Never"(Negbar[SLASH Adv](VP[SLASH Adv](Vbar[SLASH Adv](V"Verb")"O1""O2""Adv[+NULL][SLASH Adv]"))))))))        132	
 ```
 
 
