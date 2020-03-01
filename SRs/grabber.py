@@ -1,4 +1,4 @@
-#INPUT: 0001110001110 0
+#INPUT: 0001110001110 0 0
 #sys.argv[1]: parameter settings in binary form, thirteen digits long: "0001110001110" 
 #sys.argv[2]: do you want to see the UR treelets?
 
@@ -22,7 +22,7 @@ try:
     else:
         URon = False
 except:
-    print "did you enter a second argument?  Do you want to see the URs or not?"
+    print "\nMissing Argument 2: Do you want to see the URs or not?"
     exit()
 try:
     if int(sys.argv[3]) == 1:
@@ -30,7 +30,7 @@ try:
     else:
         gaps = False
 except:
-    print "Missing Argument 3: Do you want to see gaps for the missing/unrealizable URs?"
+    print "\nMissing Argument 3: Do you want to see gaps for the missing/unrealizable URs?"
     exit()
 
 all = open("COLAG_2011_flat.txt")
