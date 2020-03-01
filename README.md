@@ -8,6 +8,7 @@
 
         Then the script is run by with the following:
         
+        ```bash
         $ python 0001110001110 0 0
 
         Arg1 13 digit argument is the list of parameter settings
