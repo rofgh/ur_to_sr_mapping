@@ -13,12 +13,14 @@ import sys
 from collections import defaultdict
 
 para = sys.argv[1]
+out_filename = "output/"+para
 if len(para) != 13:
     print "\nWrong parameter settings length, it should be thirteen digits long! Try again!"
     exit()
 try:
     if int(sys.argv[2]) == 1:
         URon = True
+        out_filename += "UR"
     else:
         URon = False
 except:
@@ -27,14 +29,15 @@ except:
 try:
     if int(sys.argv[3]) == 1:
         gaps = True
+        out_filename += "gaps"
     else:
         gaps = False
 except:
     print "\nMissing Argument 3: Do you want to see gaps for the missing/unrealizable URs?"
     exit()
+out_filename += ".txt"
 
 all = open("COLAG_2011_flat.txt")
-out_filename = "output/"+para+".txt"
 
 SR_dict = defaultdict(lambda:'')
 SR_dict["header"] = ["UR #", "ILLOC", "SR"]
@@ -56,6 +59,9 @@ for line in all.readlines():
             SR_dict[int(line[5])] = [line[1], line[2]]
             #print SR_dict[int(line[5])]
 print "\nFound "+str(count)+" SRs for this parameter"
+if count == 0:
+    print "no printout required\n"
+    exit()
 with open(out_filename, 'w') as f:
     outp = ''
     for x in SR_dict["header"]:
@@ -77,7 +83,7 @@ with open(out_filename, 'w') as f:
                     outp += col+"\t"
                 #print outp
                 f.write(outp+"\n")
-print "Printed to:    "+"output/"+para+".txt\n"
+print "Printed to:    "+str(out_filename)+"\n"
 
 
 

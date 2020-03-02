@@ -1,7 +1,7 @@
 # Hidden-Sin
  
 ## SRs/GRABBER
-The grabber script allows us to look at the SRs and associated bracketed UR trees for a specific set of parameter settings.
+The grabber script allows us to look at the SRs and associated bracketed UR trees for specific parameter settings.
 
 The [flat.txt file](http://www.colag.cs.hunter.cuny.edu/grammar/data/COLAG_2011_flat.zip) needs to be
 saved in your branch's SRs folder, as it is too big to put on GitHub
