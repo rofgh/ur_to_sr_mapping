@@ -1,2 +1,12 @@
 
 SRs/COLAG_2011_flat.txt
+S_F_Y_Data_Files/COLAG_2011_flat.txt
+S_F_Y_Data_Files/COLAG_2011_flat.zip
+S_F_Y_Data_Files/COLAG_2011_relational.zip
+S_F_Y_Data_Files/COLAG_2011_relational/COLAG_2011_gramms.txt
+S_F_Y_Data_Files/COLAG_2011_relational/COLAG_2011_ids.txt
+S_F_Y_Data_Files/COLAG_2011_relational/COLAG_2011_sents.txt
+S_F_Y_Data_Files/COLAG_2011_relational/COLAG_2011_structs.txt
+EDL Learner/3 param desc.txt
+EDL Learner/parameter_rules.txt
+EDL Learner/language_creator.py
