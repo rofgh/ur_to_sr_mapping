@@ -18,7 +18,7 @@ except:
     exit()
 out_filename = "output/"+para
 if len(para) != 13:
-    print "\nWrong parameter settings length, it should be thirteen digits long! Try again!"
+    print("\nWrong parameter settings length, it should be thirteen digits long! Try again!")
     exit()
 try:
     if int(sys.argv[2]) == 1:
@@ -27,7 +27,7 @@ try:
     else:
         URon = False
 except:
-    print "\nMissing Argument 2: Do you want to see the URs or not?"
+    print("\nMissing Argument 2: Do you want to see the URs or not?")
     exit()
 try:
     if int(sys.argv[3]) == 1:
@@ -36,7 +36,7 @@ try:
     else:
         gaps = False
 except:
-    print "\nMissing Argument 3: Do you want to see gaps for the missing/unrealizable URs?"
+    print("\nMissing Argument 3: Do you want to see gaps for the missing/unrealizable URs?")
     exit()
 out_filename += ".txt"
 
@@ -51,7 +51,7 @@ for line in all.readlines():
     if line[0] == para:
         count += 1
         #print "found matching parameter and UR #:"+line[5]
-        if line[5] > highest_line5:
+        if int(line[5]) > highest_line5:
             highest_line5 = int(line[5])
         if URon == True:
             #print "true"
@@ -61,9 +61,9 @@ for line in all.readlines():
             #print "false"
             SR_dict[int(line[5])] = [line[1], line[2]]
             #print SR_dict[int(line[5])]
-print "\nFound "+str(count)+" SRs for this parameter"
+print("\nFound "+str(count)+" SRs for this parameter")
 if count == 0:
-    print "no printout required\n"
+    print("no printout required\n")
     exit()
 with open(out_filename, 'w') as f:
     outp = ''
@@ -86,7 +86,7 @@ with open(out_filename, 'w') as f:
                     outp += col+"\t"
                 #print outp
                 f.write(outp+"\n")
-print "Printed to:    "+str(out_filename)+"\n"
+print("Printed to:    "+str(out_filename)+"\n")
 
 
 

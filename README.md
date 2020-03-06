@@ -1,12 +1,21 @@
 # Hidden-Sin
- 
-## SRs/GRABBER
-The grabber script allows us to look at the SRs and associated bracketed UR trees for specific parameter settings.
+
+## Data_Maker/obj-maker.py
+The object-based data maker, when fully implemented, should produce all the realizable SRs for each language.  These SRs should hopefully match the SRs found below in the Grabber, which looks at the CoLAG's SRs.
+
+```bash
+$ python3 obj-maker.py
+```
+
+
+
+## SRs/grabber.py
+The grabber script allows us to look at the SRs and associated bracketed UR trees for specific parameter settings of the CoLAG languages.
 
 The [flat.txt file](http://www.colag.cs.hunter.cuny.edu/grammar/data/COLAG_2011_flat.zip) needs to be
 saved in your branch's SRs folder, as it is too big to put on GitHub
 
-Example for running script:
+Example for running script (python 2 & 3 compatible):
 
 ```bash
 $ python grabber.py 0001110001110 0 0
