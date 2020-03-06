@@ -11,8 +11,11 @@
 
 import sys
 from collections import defaultdict
-
-para = sys.argv[1]
+try:
+    para = sys.argv[1]
+except:
+    print("\nFirst argument is the list of parameter settings!\n")
+    exit()
 out_filename = "output/"+para
 if len(para) != 13:
     print "\nWrong parameter settings length, it should be thirteen digits long! Try again!"
@@ -20,7 +23,7 @@ if len(para) != 13:
 try:
     if int(sys.argv[2]) == 1:
         URon = True
-        out_filename += "UR"
+        out_filename += "_UR"
     else:
         URon = False
 except:
@@ -29,7 +32,7 @@ except:
 try:
     if int(sys.argv[3]) == 1:
         gaps = True
-        out_filename += "gaps"
+        out_filename += "_gaps"
     else:
         gaps = False
 except:
