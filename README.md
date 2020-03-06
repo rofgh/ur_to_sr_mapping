@@ -34,4 +34,6 @@ UR #	ILLOC	SR
 2:	Q  	    Aux S Never Verb O1 O2                            	(CP[ILLOC DEC][+FIN]"Adv[+NULL][+TOPIC]"(Cbar[ILLOC DEC][+FIN][SLASH Adv](C[ILLOC DEC][+FIN]"Aux[+FIN]")(IP[ILLOC DEC][+FIN][SLASH Adv][SLASH Aux]"S"(Ibar[ILLOC DEC][+FIN][SLASH Adv][SLASH Aux](I[ILLOC DEC][+FIN][SLASH Aux]"Aux[+FIN][+NULL][SLASH Aux]")(NegP[SLASH Adv]"Never"(Negbar[SLASH Adv](VP[SLASH Adv](Vbar[SLASH Adv](V"Verb")"O1""O2""Adv[+NULL][SLASH Adv]"))))))))        132	
 ```
 
+Our thoughts/description/notes for the languages can be found [here](https://docs.google.com/document/d/1J_fS85IQWB9MPXB96ccHrKF_JHXn44iVyyemQOeFJQo/edit?usp=sharing)
+
 
