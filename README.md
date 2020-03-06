@@ -1,16 +1,17 @@
 # Hidden-Sin
 
-## Data_Maker/obj-maker.py
+## obj-maker.py
 The object-based data maker, when fully implemented, should produce all the realizable SRs for each language.  These SRs should hopefully match the SRs found below in the Grabber, which looks at the CoLAG's SRs.
 
+NOT python2 compatible:
 ```bash
 $ python3 obj-maker.py
 ```
 
-When the script is run it will create a file (multiple files may be needed) with the list of SRs created by each language (i.e. each of the different possible parameter setting combinations)
+When the script is run it will create a file with the list of SRs created by each language (i.e. each of the different possible parameter setting combinations).  I haven't decided on the format of the file yet, so no point in entering it here as of now.  I want to be able to compare these SRs with the CoLAG SRs, but we won't have the UR IDs, so I am going to have to come up with some way to smartly do the comparison....?
 
 
-## SRs/grabber.py
+## grabber.py
 The grabber script allows us to look at the SRs and associated bracketed UR trees for specific parameter settings of the CoLAG languages.
 
 The [flat.txt file](http://www.colag.cs.hunter.cuny.edu/grammar/data/COLAG_2011_flat.zip) needs to be
@@ -25,7 +26,7 @@ $ python grabber.py 0001110001110 0 0
 Arg1: 13 digit list of parameter settings (a list of all realizable setting combos is in [all_real_p.txt](https://github.com/rofgh/Hidden-Sin/blob/master/SRs/all_real_p.txt))\
 Arg2: 0/1, whether you want UR bracketed representations to be printed ("_UR")\
 Arg3: 0/1, whether you want the list to have gaps where the SRs are missing for that 
-language (i.e. for that set of parameters) ("_gaps")\
+language (i.e. for that set of parameters) ("_gaps")
 
 When you run the script it will produce a .txt file for that language with the parameter settings as the name, containing a tab delimited list of the SRs, sorted by the UR ID.
 
