@@ -16,7 +16,7 @@ import time
 def get_one(para, out_filename, URon, gaps):
     data = open("SRs/COLAG_2011_flat.txt")
     SR_dict = defaultdict(lambda:'')
-    SR_dict["header"] = ["UR #", "ILLOC", "SR"]
+    SR_dict["header"] = ["BracketedTree #", "ILLOC Force", "SOW", "Bracketed Tree"]
     highest_line5 = 0
     count = 0
     for line in data.readlines():
