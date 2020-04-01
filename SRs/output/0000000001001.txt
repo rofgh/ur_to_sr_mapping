@@ -1,4 +1,4 @@
-UR #	ILLOC	SR	
+BracketedTree #	ILLOC Force	SOW	Bracketed Tree	
 816	DEC	Adv S Aux Never Verb                              	
 817	DEC	Adv S Aux Never Verb O1                           	
 818	DEC	Adv S Aux Never Verb O1 O2                        	

@@ -1,4 +1,4 @@
-UR #	ILLOC	SR	
+BracketedTree #	ILLOC Force	SOW	Bracketed Tree	
 2016	DEC	Adv[+WA] Aux S Never Verb                         	
 2017	DEC	Adv[+WA] Aux S Never Verb O1                      	
 2018	DEC	Adv[+WA] Aux S Never Verb O1 O2                   	

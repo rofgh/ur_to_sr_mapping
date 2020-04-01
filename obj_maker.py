@@ -13,7 +13,29 @@ they allow or disallow some of the fundamental changes?
 #3:
 When do nodes become null = False?  It must happen before, for example, 
 the NullTop and NullSub parameters disallow this, eh?
+
+#4:
+Does it work to make [+WH] a daughter of it's attachment node
+and it will always get printed to the right of that node?
+
+#5:
+For VtoI movement, at the moment the mechanism requires the daughters to be set up, so the get_daughters
+function will have to have been run
+
+#6:
+TOPIC   = Topic Node
+    TOPIC.mother = CP
+if '[+WH]' in node.name:
+    new = node.name
+    node.name = new.remove('[+WH]')
+    WH      = node
+    node.daughter += Wh
+
+These both need to point to the same node if they are the same....
 '''
+def produce():
+    return
+    
 def produce_UR():
     UR = []
     class Node:
@@ -43,9 +65,9 @@ def produce_UR():
     Cbar    = Node(" Cbar",     CP)
     ka      = Node(" ka",       Cbar)
     SP      = Node(" SP",       Cbar)
-    wa      = Node("-wa",       Cbar)
-    that    = Node(" that",     Cbar)
-    Wh      = Node("[+WH]",     Cbar)
+    wa      = Node("-wa",       None)
+    #that    = Node(" that",     Cbar)
+    Wh      = Node("[+WH]",     None)
     S       = Node(" S",        SP)
     IP      = Node(" IP",       SP)
     Aux     = Node(" Aux",      IP)
@@ -65,71 +87,65 @@ def produce_UR():
     O3      = Node(" O3",       PP)
 
     # HEAD nodes:
-    head_nodes  = [ka, wa, that, Wh, S, Aux, Not, Nev, Adv, P, V, Vbar1, Vbar2]
+    head_nodes  = [ka, S, Aux, Not, Nev, P, V, Vbar1, Vbar2]
     for x in head_nodes:
         x.head = True
 
     # REALIZABLE nodes:
-    real_nodes  = [ka, wa, Wh, S, Aux, Not, Nev, Adv, O2, P, O3, V, O1]
+    real_nodes  = [ka, wa, Wh, S, Aux, Not, Nev, V, O1, O2, P, O3, Adv]
     for x in real_nodes:
         x.real  = True
 
     # TOPICALIZABLE nodes:
-    top_nodes   = [that, S, Adv, O2, PP, Vbar1, O1]
-    #wa doesn't really belong in here, right, since it is ALWAYS topicalized, if non-null, right...?
-    #what does it look like when "That" is topicalized??
-    for x in top_nodes:
-        x.top   = True
-
-    # Nodes under IP (i.e. they will flip according to parameter 2!):
+    top_nodes   = [S, Adv, O2, PP, O3, O1]
+    
+    # Nodes BG under IP (i.e. they will flip according to Parameter 2!):
     IP_nodes    = [Aux, NegP, Not, Nev, VP, Adv, Vbar3, Vbar2, O2, PP, P, O3, Vbar1, V, O1]
     for x in IP_nodes:
         x.phrase = IP
 
-    # Nodes under CP (i.e. they will flip according to Parameter 3!):
-    CP_nodes    = [Cbar, ka, SP, wa, that, Wh]
+    # Nodes BG under CP (i.e. they will flip according to Parameter 3!):
+    CP_nodes    = [Cbar, ka, SP, Wh]
     for x in CP_nodes:
         x.phrase = CP
 
-    # Nodes under SP (i.e. they will flip according to Parameter 1!):
+    # Nodes BG under SP (i.e. they will flip according to Parameter 1!):
     SP_nodes    = [S, IP]
     for x in SP_nodes:
         x.phrase = SP
 
-    '''
-    # All nodes turned on for now, but this should be done elsewhere
-    for x in UR:
-        x.null = False
-    '''
-    return UR
+    # Nodes that can take +WH feature
+    WH_nodes    = [S, Adv, O1, O2, O3]
 
+    return UR
+#initialize the illocutionary force, which (dis)allows certain nodes and movement?
+# Q: Wh becomes realized and non-null
+# DEC: ???
+# IMP: Imperatives are immune to all parametric variation except headedness
 def illoc_force_setup(UR, illoc):
-    print(UR)
-    if illoc == "Q":
-        Wh.null = False
-    if illoc == "D":
-        S.null = False
-        V.null = False
-    if illoc == "I":
-        V.null = False
-
+    for x in UR:
+        if x.name == "[+WH]" and illoc == "Q":
+            x.null = False
+        if x.name == " S" and illoc == "D":
+            x.null = False  
+        if x.name == " V" and illoc == "D":
+            x.null = False
+        if x.name == " V" and illoc == "I":
+            x.null = False
     return UR
-    #initialize the illocutionary force, which (dis)allows certain nodes and movement?
-    # Q: Wh becomes realized and non-null
-    # DEC: ???
-    # IMP: Imperatives are immune to all parametric variation except headedness,
-    # but what is allowed or obligatory in IMPs (i.e. maximal projection?)
-    # Is there a separate setting for each illoc force in each para?
     pass
 
 def process_parameters(Pa, UR):
-
+    headedness_values = []
 ########################################### PARAMETERS ###########################################
 ########################################### HEADEDNESS PARAMETERS ###
     ### PARAMETER 1 ### ONLY AFFECTS HEADEDNESS OF NODES WITHIN SP (i.e. S)
+    if Pa[0] == 0:
+        headedness_values[0] = "L"
+    if Pa[0] == 1:
+        headedness_values[0] = "R"
+    '''
     sps = [x for x in UR if x.phrase == SP]
-    # print("\nWHATS IN SP:")
-    # [print(x.name) for x in sps]
     if Pa[0] == 0:
         for node in sps:
             if node.head == True:
@@ -142,8 +158,13 @@ def process_parameters(Pa, UR):
                 node.pos = "R"
             else:
                 node.pos = "L"
-
+    '''
     ### PARAMETER 2 (Pa[1]) ###  ONLY AFFECTS HEADEDNESS OF NODES WITHIN IP
+    if Pa[1] == 0:
+        headedness_values[1] = "L"
+    if Pa[1] == 1:
+        headedness_values[1] = "R"
+    '''   
     ips = [x for x in UR if x.phrase == IP]
     if Pa[1] == 0:
         for node in ips:
@@ -157,15 +178,21 @@ def process_parameters(Pa, UR):
             if node.head == True:
                 node.pos    = "R"
             else:
-                node.pos    = "L"
-    # print("\nWHATS IN IP:")
-    # [print(x.name,"\t", x.pos) for x in ips]
-
+                node.pos    = "L"    
+    '''
+    ###### Parameter settings aren't needed beyond here if Imperative
+    if ILLOC == "I":
+        return
 
     ### PARAMETER 3 (Pa[2]) ### ONLY AFFECTS HEADEDNESS OF NODES WITHIN CP
+    # ka or a QInv/ItoC Aux/Verb are the only things that move for this parameter
+    # If Pa[2]==1 and Pa[10]==1 and Aux == True: Aux will be CP final (and necessarily sentence final)
+    if Pa[2] == 0:
+        headedness_values[2] = "L"
+    if Pa[2] == 1:
+        headedness_values[2] = "R"
+    '''
     cps = [x for x in UR if x.phrase == CP]
-    # print("\nWHATS IN CP:")
-    # [print(x.name) for x in cps]
     if Pa[2] == 0:
         for node in cps:
             if node.head == True:
@@ -178,6 +205,7 @@ def process_parameters(Pa, UR):
                 node.pos = "R"
             else:
                 node.pos = "L"
+    '''
     '''
 ########################################### EXISTENTIAL PARAMETERS ###
     ### PARAMETER 4 (Pa[3]) ### OptTop
@@ -192,74 +220,163 @@ def process_parameters(Pa, UR):
         Topic is optional (Can we just leave it off?)
         Same as above plus no topics?  
     '''
+    '''
     ### PARAMETER 5 (Pa[4]) ### Null Subject
     
     if Pa[4] == 0:
         pass
     # The following setting should have more SRs if they all (i.e. null and non-null) get realized...
     if Pa[4] == 1:
+        # S can be null or not
         S.null = True
     '''
-
+    '''
     ### PARAMETER 6 (Pa[5]) ### Null Topic
     #No null topic
     if Pa[5] == 0:
         # topic is always realized, so:
         pass
     if Pa[5] == 1:
-        ignore the SRs that would be the same as the above setting, so:
-        for x in top_nodes:
+        Excluding the sentences created by this setting being off, above, this language will create
+        only Obligatory NullTop, unless changed a bit:
+        #Whichever word is the topic:
+            #TOPIC can be null or not
             x.null = True
-
+    '''
 ########################################### MOVEMENT PARAMETERS ###
+    '''
     ### PARAMETER 7 (Pa[6]) ### Wh-Movement
+    #Wh-in situ
     if Pa[6] == 0:
+        pass
+    # [+WH] word goes to Spec,CP (NOT Spec,C') (NOT AFFECTED BY CP HEADEDNESS)
     if Pa[6] == 1:
-
+        if TOPIC != WH:
+            #ERRORORORORO
+            pass
+        for x in nodes:
+            if x.daughter == Wh:
+                x.mother = CP
+    '''
+    '''
     ### PARAMETER 8 (Pa[7]) ### Preposition Stranding
-    # PP must move as a group
+    # P is topicalized (Never O3), PP must move as a group
     if Pa[7] == 0:
         pass
-    # O3 can be topicalized without P
+    # O3 is topicalized (Never P), P does not have to move 
     if Pa[7] == 1:
-        O3.top = True
-
+        O3.top  = True
+    '''
+    '''
     ### PARAMETER 9 (Pa[8]) ### Topic Marking
     if Pa[8] == 0:
         wa.null = True
     if Pa[8] == 1:
+        #if there is a topicalized item, attach [+WA] to it
         wa.null = False
-
+    '''
+    '''
     ### PARAMETER 10 (Pa[9]) ### VtoI Movement
     if Pa[9] == 0:
+        #If off, no movement occurs
+        pass
     if Pa[9] == 1:
-
+        #If on, Verb tries to move to Spec,IP, unless Aux already occupies this node
+        For current nodes:
+            if Aux.inUR:
+                pass
+            else:
+                Verb.mother = IP
+    '''
     ### PARAMETER 11 (Pa[10]) ### ItoC Movement
     if Pa[10] == 0:
+        pass
     if Pa[10] == 1:
-
+        # +ItoC invalidates the need for P13 so we can just turn it off
+        pa[13] = 0
+        # This requires a base-generated Aux or a VtoI Verb
+        # If no BG Aux
+        if Aux.inUR == False:
+            if Pa[9] == 0:
+                # Not parseable
+                no_parse()
+            else:
+                assert Verb.mother == IP, "Verb didn't move"
+                ItoC(V)
+        #BG Aux
+        else:
+            assert Aux.mother == IP, "Aux already moved?"
+            ItoC(Aux)
+    '''      
     ### PARAMETER 12 (Pa[11]) ### Affix Hopping
+    # Does not allow Verb to stay in VP without an outside Aux
     if Pa[11] == 0:
+        if Aux.inUR == True:
+            pass
+        if Aux.inUR == False:
+            # not parseable
+            noparse()
+    #  Allows Verb to take finiteness inside the VP
     if Pa[11] == 1:
-
-    ### PARAMETER 13 (Pa[12]) ### Q-Inv
-    if Pa[12] == 0:
-    if Pa[12] == 1:
+        if Pa[9] == 1:
+            # Not parseable
+            noparse()
+        else:
+            pass
     '''
-    return UR
+    ##### Parameter settings aren't needed after here for Declaratives
+    if ILLOC == "D":
+        return
 
+    ### PARAMETER 13 (Pa[12]) ### Q-Inv  (i.e. ItoC for Qs)
 
-### Now that all the parameters are set, apply the changes:
-### How to step through all the possible topics, for example?
-### [that, S, Adv, O2, PP, Vbar1, O1]
-'''
-if Pa[3] == True:
-    for x in top_nodes:
-        Produce an SR for each topicalizable node, all other settings being the same....
-'''
-    #Does this happen after all movement?
-    # generate the daughters
+    if Pa[12] == 0:
+        if Pa[10] == 0:
+            # ka appears only in languages where P11 and P13 are off
+            ka.null = False
+        else:
+            pass
+    if Pa[12] == 1:
+        # This requires a base-generated Aux or a VtoI Verb
+        # If no BG Aux
+        if Aux.inUR == False:
+            if Pa[9] == 0:
+                # Not parseable
+                noparse()
+            else:
+                assert V.mother == IP, "Verb didn't move up, so can't continue"
+                ItoC(V)
+        #BG Aux
+        else:
+            assert Aux.mother == IP, "Aux already moved?"
+            ItoC(Aux)
+    return UR, headedness_values
 
+def noparse():
+    output = "Not parseable"
+    output(output)
+
+def output(x):
+    #print to terminal
+    print(x)
+    #print to output file:
+    with open(out_filename, 'w') as f:
+        f.write(x)
+
+def ItoC(node):
+        node.mother = Cbar
+        CP_nodes.append(node)
+        IP_nodes.remove(node)
+
+def set_head_position(UR, headedness_values):
+    for node in UR:
+        if node.phrase == SP:
+            node.pos = headedness_values[0]
+        if node.phrase == IP:
+            node.pos = headedness_values[1]
+        if node.phrase == CP:
+            node.pos = headedness_values[2]
+            
 def get_daughters(UR):
     for x in UR:
         if x.mother:
@@ -269,39 +386,30 @@ def get_daughters(UR):
             pass
     return UR
         
+#######EXPAND: jumps through the nodes and realizes them if they are realizable
+# then opens their daughters, if there are any (meaning that if you are a realizable node with daughters
+# you get realized then expand)
+
 def expand(node):
+    if node.real == True and node.inUR == True and node.null == False:
+        realize(node)
     lis = node.daughters
     if len(lis) != 0:
         for x in lis:
             if x.pos == "L":
                 expand(x)
-            if x.pos == "R":
-                pass
+        for x in lis:
+            if x.pos == None:
+                expand(x)
         for x in lis:
             if x.pos == "R":
                 expand(x)
-            if x.pos == "L":
-                pass
-    if len(lis) == 0:
-        realize(node)
 
+#######REALIZE: if a realizable node is reached, it's x.name is printed
 def realize(node):
-    if node.null == False:
-        if node.real == True:
-            print(node.name, end = '')
+        print(node.name, end = '')
+        return
 
-    '''
-
-
-    f = expand(CP)
-    for x in f:
-        if x.pos == "L":
-            realize(x)
-            expand(x)
-        if x.pos == "R":
-            realize(x)
-            expand(x)
-    '''
 def UR_permutations(base_UR):
     many_URs = []
     l1 = ["Aux", "Nev", "Adv", "O2", "PP", "O1"]

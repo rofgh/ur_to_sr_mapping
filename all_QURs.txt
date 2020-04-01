@@ -1,0 +1,1088 @@
+ S	 Verb	
+ S	 Verb	 Aux	
+ S	 Verb	 NegP	
+ S	 Verb	 Adv	
+ S	 Verb	 O1	
+ S	 Verb	 O2	
+ S	 Verb	 PP	
+ S	 Verb	 Aux	 NegP	
+ S	 Verb	 Aux	 Adv	
+ S	 Verb	 Aux	 O1	
+ S	 Verb	 Aux	 O2	
+ S	 Verb	 Aux	 PP	
+ S	 Verb	 NegP	 Adv	
+ S	 Verb	 NegP	 O1	
+ S	 Verb	 NegP	 O2	
+ S	 Verb	 NegP	 PP	
+ S	 Verb	 Adv	 O1	
+ S	 Verb	 Adv	 O2	
+ S	 Verb	 Adv	 PP	
+ S	 Verb	 O1	 O2	
+ S	 Verb	 O1	 PP	
+ S	 Verb	 O2	 PP	
+ S	 Verb	 Aux	 NegP	 Adv	
+ S	 Verb	 Aux	 NegP	 O1	
+ S	 Verb	 Aux	 NegP	 O2	
+ S	 Verb	 Aux	 NegP	 PP	
+ S	 Verb	 Aux	 Adv	 O1	
+ S	 Verb	 Aux	 Adv	 O2	
+ S	 Verb	 Aux	 Adv	 PP	
+ S	 Verb	 Aux	 O1	 O2	
+ S	 Verb	 Aux	 O1	 PP	
+ S	 Verb	 Aux	 O2	 PP	
+ S	 Verb	 NegP	 Adv	 O1	
+ S	 Verb	 NegP	 Adv	 O2	
+ S	 Verb	 NegP	 Adv	 PP	
+ S	 Verb	 NegP	 O1	 O2	
+ S	 Verb	 NegP	 O1	 PP	
+ S	 Verb	 NegP	 O2	 PP	
+ S	 Verb	 Adv	 O1	 O2	
+ S	 Verb	 Adv	 O1	 PP	
+ S	 Verb	 Adv	 O2	 PP	
+ S	 Verb	 O1	 O2	 PP	
+ S	 Verb	 Aux	 NegP	 Adv	 O1	
+ S	 Verb	 Aux	 NegP	 Adv	 O2	
+ S	 Verb	 Aux	 NegP	 Adv	 PP	
+ S	 Verb	 Aux	 NegP	 O1	 O2	
+ S	 Verb	 Aux	 NegP	 O1	 PP	
+ S	 Verb	 Aux	 NegP	 O2	 PP	
+ S	 Verb	 Aux	 Adv	 O1	 O2	
+ S	 Verb	 Aux	 Adv	 O1	 PP	
+ S	 Verb	 Aux	 Adv	 O2	 PP	
+ S	 Verb	 Aux	 O1	 O2	 PP	
+ S	 Verb	 NegP	 Adv	 O1	 O2	
+ S	 Verb	 NegP	 Adv	 O1	 PP	
+ S	 Verb	 NegP	 Adv	 O2	 PP	
+ S	 Verb	 NegP	 O1	 O2	 PP	
+ S	 Verb	 Adv	 O1	 O2	 PP	
+ S	 Verb	 Aux	 NegP	 Adv	 O1	 O2	
+ S	 Verb	 Aux	 NegP	 Adv	 O1	 PP	
+ S	 Verb	 Aux	 NegP	 Adv	 O2	 PP	
+ S	 Verb	 Aux	 NegP	 O1	 O2	 PP	
+ S	 Verb	 Aux	 Adv	 O1	 O2	 PP	
+ S	 Verb	 NegP	 Adv	 O1	 O2	 PP	
+ S	 Verb	 Aux	 NegP	 Adv	 O1	 O2	 PP	
+ S+t	 Verb	
+ S+t	 Verb	 Aux	
+ S+t	 Verb	 NegP	
+ S+t	 Verb	 Adv	
+ S	 Verb	 Adv+t	
+ S+t	 Verb	 O1	
+ S	 Verb	 O1+t	
+ S+t	 Verb	 O2	
+ S	 Verb	 O2+t	
+ S+t	 Verb	 PP	
+ S	 Verb	 PP+t	
+ S+t	 Verb	 Aux	 NegP	
+ S+t	 Verb	 Aux	 Adv	
+ S	 Verb	 Aux	 Adv+t	
+ S+t	 Verb	 Aux	 O1	
+ S	 Verb	 Aux	 O1+t	
+ S+t	 Verb	 Aux	 O2	
+ S	 Verb	 Aux	 O2+t	
+ S+t	 Verb	 Aux	 PP	
+ S	 Verb	 Aux	 PP+t	
+ S+t	 Verb	 NegP	 Adv	
+ S	 Verb	 NegP	 Adv+t	
+ S+t	 Verb	 NegP	 O1	
+ S	 Verb	 NegP	 O1+t	
+ S+t	 Verb	 NegP	 O2	
+ S	 Verb	 NegP	 O2+t	
+ S+t	 Verb	 NegP	 PP	
+ S	 Verb	 NegP	 PP+t	
+ S+t	 Verb	 Adv	 O1	
+ S	 Verb	 Adv+t	 O1	
+ S	 Verb	 Adv	 O1+t	
+ S+t	 Verb	 Adv	 O2	
+ S	 Verb	 Adv+t	 O2	
+ S	 Verb	 Adv	 O2+t	
+ S+t	 Verb	 Adv	 PP	
+ S	 Verb	 Adv+t	 PP	
+ S	 Verb	 Adv	 PP+t	
+ S+t	 Verb	 O1	 O2	
+ S	 Verb	 O1+t	 O2	
+ S	 Verb	 O1	 O2+t	
+ S+t	 Verb	 O1	 PP	
+ S	 Verb	 O1+t	 PP	
+ S	 Verb	 O1	 PP+t	
+ S+t	 Verb	 O2	 PP	
+ S	 Verb	 O2+t	 PP	
+ S	 Verb	 O2	 PP+t	
+ S+t	 Verb	 Aux	 NegP	 Adv	
+ S	 Verb	 Aux	 NegP	 Adv+t	
+ S+t	 Verb	 Aux	 NegP	 O1	
+ S	 Verb	 Aux	 NegP	 O1+t	
+ S+t	 Verb	 Aux	 NegP	 O2	
+ S	 Verb	 Aux	 NegP	 O2+t	
+ S+t	 Verb	 Aux	 NegP	 PP	
+ S	 Verb	 Aux	 NegP	 PP+t	
+ S+t	 Verb	 Aux	 Adv	 O1	
+ S	 Verb	 Aux	 Adv+t	 O1	
+ S	 Verb	 Aux	 Adv	 O1+t	
+ S+t	 Verb	 Aux	 Adv	 O2	
+ S	 Verb	 Aux	 Adv+t	 O2	
+ S	 Verb	 Aux	 Adv	 O2+t	
+ S+t	 Verb	 Aux	 Adv	 PP	
+ S	 Verb	 Aux	 Adv+t	 PP	
+ S	 Verb	 Aux	 Adv	 PP+t	
+ S+t	 Verb	 Aux	 O1	 O2	
+ S	 Verb	 Aux	 O1+t	 O2	
+ S	 Verb	 Aux	 O1	 O2+t	
+ S+t	 Verb	 Aux	 O1	 PP	
+ S	 Verb	 Aux	 O1+t	 PP	
+ S	 Verb	 Aux	 O1	 PP+t	
+ S+t	 Verb	 Aux	 O2	 PP	
+ S	 Verb	 Aux	 O2+t	 PP	
+ S	 Verb	 Aux	 O2	 PP+t	
+ S+t	 Verb	 NegP	 Adv	 O1	
+ S	 Verb	 NegP	 Adv+t	 O1	
+ S	 Verb	 NegP	 Adv	 O1+t	
+ S+t	 Verb	 NegP	 Adv	 O2	
+ S	 Verb	 NegP	 Adv+t	 O2	
+ S	 Verb	 NegP	 Adv	 O2+t	
+ S+t	 Verb	 NegP	 Adv	 PP	
+ S	 Verb	 NegP	 Adv+t	 PP	
+ S	 Verb	 NegP	 Adv	 PP+t	
+ S+t	 Verb	 NegP	 O1	 O2	
+ S	 Verb	 NegP	 O1+t	 O2	
+ S	 Verb	 NegP	 O1	 O2+t	
+ S+t	 Verb	 NegP	 O1	 PP	
+ S	 Verb	 NegP	 O1+t	 PP	
+ S	 Verb	 NegP	 O1	 PP+t	
+ S+t	 Verb	 NegP	 O2	 PP	
+ S	 Verb	 NegP	 O2+t	 PP	
+ S	 Verb	 NegP	 O2	 PP+t	
+ S+t	 Verb	 Adv	 O1	 O2	
+ S	 Verb	 Adv+t	 O1	 O2	
+ S	 Verb	 Adv	 O1+t	 O2	
+ S	 Verb	 Adv	 O1	 O2+t	
+ S+t	 Verb	 Adv	 O1	 PP	
+ S	 Verb	 Adv+t	 O1	 PP	
+ S	 Verb	 Adv	 O1+t	 PP	
+ S	 Verb	 Adv	 O1	 PP+t	
+ S+t	 Verb	 Adv	 O2	 PP	
+ S	 Verb	 Adv+t	 O2	 PP	
+ S	 Verb	 Adv	 O2+t	 PP	
+ S	 Verb	 Adv	 O2	 PP+t	
+ S+t	 Verb	 O1	 O2	 PP	
+ S	 Verb	 O1+t	 O2	 PP	
+ S	 Verb	 O1	 O2+t	 PP	
+ S	 Verb	 O1	 O2	 PP+t	
+ S+t	 Verb	 Aux	 NegP	 Adv	 O1	
+ S	 Verb	 Aux	 NegP	 Adv+t	 O1	
+ S	 Verb	 Aux	 NegP	 Adv	 O1+t	
+ S+t	 Verb	 Aux	 NegP	 Adv	 O2	
+ S	 Verb	 Aux	 NegP	 Adv+t	 O2	
+ S	 Verb	 Aux	 NegP	 Adv	 O2+t	
+ S+t	 Verb	 Aux	 NegP	 Adv	 PP	
+ S	 Verb	 Aux	 NegP	 Adv+t	 PP	
+ S	 Verb	 Aux	 NegP	 Adv	 PP+t	
+ S+t	 Verb	 Aux	 NegP	 O1	 O2	
+ S	 Verb	 Aux	 NegP	 O1+t	 O2	
+ S	 Verb	 Aux	 NegP	 O1	 O2+t	
+ S+t	 Verb	 Aux	 NegP	 O1	 PP	
+ S	 Verb	 Aux	 NegP	 O1+t	 PP	
+ S	 Verb	 Aux	 NegP	 O1	 PP+t	
+ S+t	 Verb	 Aux	 NegP	 O2	 PP	
+ S	 Verb	 Aux	 NegP	 O2+t	 PP	
+ S	 Verb	 Aux	 NegP	 O2	 PP+t	
+ S+t	 Verb	 Aux	 Adv	 O1	 O2	
+ S	 Verb	 Aux	 Adv+t	 O1	 O2	
+ S	 Verb	 Aux	 Adv	 O1+t	 O2	
+ S	 Verb	 Aux	 Adv	 O1	 O2+t	
+ S+t	 Verb	 Aux	 Adv	 O1	 PP	
+ S	 Verb	 Aux	 Adv+t	 O1	 PP	
+ S	 Verb	 Aux	 Adv	 O1+t	 PP	
+ S	 Verb	 Aux	 Adv	 O1	 PP+t	
+ S+t	 Verb	 Aux	 Adv	 O2	 PP	
+ S	 Verb	 Aux	 Adv+t	 O2	 PP	
+ S	 Verb	 Aux	 Adv	 O2+t	 PP	
+ S	 Verb	 Aux	 Adv	 O2	 PP+t	
+ S+t	 Verb	 Aux	 O1	 O2	 PP	
+ S	 Verb	 Aux	 O1+t	 O2	 PP	
+ S	 Verb	 Aux	 O1	 O2+t	 PP	
+ S	 Verb	 Aux	 O1	 O2	 PP+t	
+ S+t	 Verb	 NegP	 Adv	 O1	 O2	
+ S	 Verb	 NegP	 Adv+t	 O1	 O2	
+ S	 Verb	 NegP	 Adv	 O1+t	 O2	
+ S	 Verb	 NegP	 Adv	 O1	 O2+t	
+ S+t	 Verb	 NegP	 Adv	 O1	 PP	
+ S	 Verb	 NegP	 Adv+t	 O1	 PP	
+ S	 Verb	 NegP	 Adv	 O1+t	 PP	
+ S	 Verb	 NegP	 Adv	 O1	 PP+t	
+ S+t	 Verb	 NegP	 Adv	 O2	 PP	
+ S	 Verb	 NegP	 Adv+t	 O2	 PP	
+ S	 Verb	 NegP	 Adv	 O2+t	 PP	
+ S	 Verb	 NegP	 Adv	 O2	 PP+t	
+ S+t	 Verb	 NegP	 O1	 O2	 PP	
+ S	 Verb	 NegP	 O1+t	 O2	 PP	
+ S	 Verb	 NegP	 O1	 O2+t	 PP	
+ S	 Verb	 NegP	 O1	 O2	 PP+t	
+ S+t	 Verb	 Adv	 O1	 O2	 PP	
+ S	 Verb	 Adv+t	 O1	 O2	 PP	
+ S	 Verb	 Adv	 O1+t	 O2	 PP	
+ S	 Verb	 Adv	 O1	 O2+t	 PP	
+ S	 Verb	 Adv	 O1	 O2	 PP+t	
+ S+t	 Verb	 Aux	 NegP	 Adv	 O1	 O2	
+ S	 Verb	 Aux	 NegP	 Adv+t	 O1	 O2	
+ S	 Verb	 Aux	 NegP	 Adv	 O1+t	 O2	
+ S	 Verb	 Aux	 NegP	 Adv	 O1	 O2+t	
+ S+t	 Verb	 Aux	 NegP	 Adv	 O1	 PP	
+ S	 Verb	 Aux	 NegP	 Adv+t	 O1	 PP	
+ S	 Verb	 Aux	 NegP	 Adv	 O1+t	 PP	
+ S	 Verb	 Aux	 NegP	 Adv	 O1	 PP+t	
+ S+t	 Verb	 Aux	 NegP	 Adv	 O2	 PP	
+ S	 Verb	 Aux	 NegP	 Adv+t	 O2	 PP	
+ S	 Verb	 Aux	 NegP	 Adv	 O2+t	 PP	
+ S	 Verb	 Aux	 NegP	 Adv	 O2	 PP+t	
+ S+t	 Verb	 Aux	 NegP	 O1	 O2	 PP	
+ S	 Verb	 Aux	 NegP	 O1+t	 O2	 PP	
+ S	 Verb	 Aux	 NegP	 O1	 O2+t	 PP	
+ S	 Verb	 Aux	 NegP	 O1	 O2	 PP+t	
+ S+t	 Verb	 Aux	 Adv	 O1	 O2	 PP	
+ S	 Verb	 Aux	 Adv+t	 O1	 O2	 PP	
+ S	 Verb	 Aux	 Adv	 O1+t	 O2	 PP	
+ S	 Verb	 Aux	 Adv	 O1	 O2+t	 PP	
+ S	 Verb	 Aux	 Adv	 O1	 O2	 PP+t	
+ S+t	 Verb	 NegP	 Adv	 O1	 O2	 PP	
+ S	 Verb	 NegP	 Adv+t	 O1	 O2	 PP	
+ S	 Verb	 NegP	 Adv	 O1+t	 O2	 PP	
+ S	 Verb	 NegP	 Adv	 O1	 O2+t	 PP	
+ S	 Verb	 NegP	 Adv	 O1	 O2	 PP+t	
+ S+t	 Verb	 Aux	 NegP	 Adv	 O1	 O2	 PP	
+ S	 Verb	 Aux	 NegP	 Adv+t	 O1	 O2	 PP	
+ S	 Verb	 Aux	 NegP	 Adv	 O1+t	 O2	 PP	
+ S	 Verb	 Aux	 NegP	 Adv	 O1	 O2+t	 PP	
+ S	 Verb	 Aux	 NegP	 Adv	 O1	 O2	 PP+t	
+ S+wh	 Verb	
+ S+wh	 Verb	 Aux	
+ S+wh	 Verb	 NegP	
+ S+wh	 Verb	 Adv	
+ S	 Verb	 Adv+wh	
+ S+wh	 Verb	 O1	
+ S	 Verb	 O1+wh	
+ S+wh	 Verb	 O2	
+ S	 Verb	 O2+wh	
+ S+wh	 Verb	 PP	
+ S	 Verb	 PP+wh	
+ S+wh	 Verb	 Aux	 NegP	
+ S+wh	 Verb	 Aux	 Adv	
+ S	 Verb	 Aux	 Adv+wh	
+ S+wh	 Verb	 Aux	 O1	
+ S	 Verb	 Aux	 O1+wh	
+ S+wh	 Verb	 Aux	 O2	
+ S	 Verb	 Aux	 O2+wh	
+ S+wh	 Verb	 Aux	 PP	
+ S	 Verb	 Aux	 PP+wh	
+ S+wh	 Verb	 NegP	 Adv	
+ S	 Verb	 NegP	 Adv+wh	
+ S+wh	 Verb	 NegP	 O1	
+ S	 Verb	 NegP	 O1+wh	
+ S+wh	 Verb	 NegP	 O2	
+ S	 Verb	 NegP	 O2+wh	
+ S+wh	 Verb	 NegP	 PP	
+ S	 Verb	 NegP	 PP+wh	
+ S+wh	 Verb	 Adv	 O1	
+ S	 Verb	 Adv+wh	 O1	
+ S	 Verb	 Adv	 O1+wh	
+ S+wh	 Verb	 Adv	 O2	
+ S	 Verb	 Adv+wh	 O2	
+ S	 Verb	 Adv	 O2+wh	
+ S+wh	 Verb	 Adv	 PP	
+ S	 Verb	 Adv+wh	 PP	
+ S	 Verb	 Adv	 PP+wh	
+ S+wh	 Verb	 O1	 O2	
+ S	 Verb	 O1+wh	 O2	
+ S	 Verb	 O1	 O2+wh	
+ S+wh	 Verb	 O1	 PP	
+ S	 Verb	 O1+wh	 PP	
+ S	 Verb	 O1	 PP+wh	
+ S+wh	 Verb	 O2	 PP	
+ S	 Verb	 O2+wh	 PP	
+ S	 Verb	 O2	 PP+wh	
+ S+wh	 Verb	 Aux	 NegP	 Adv	
+ S	 Verb	 Aux	 NegP	 Adv+wh	
+ S+wh	 Verb	 Aux	 NegP	 O1	
+ S	 Verb	 Aux	 NegP	 O1+wh	
+ S+wh	 Verb	 Aux	 NegP	 O2	
+ S	 Verb	 Aux	 NegP	 O2+wh	
+ S+wh	 Verb	 Aux	 NegP	 PP	
+ S	 Verb	 Aux	 NegP	 PP+wh	
+ S+wh	 Verb	 Aux	 Adv	 O1	
+ S	 Verb	 Aux	 Adv+wh	 O1	
+ S	 Verb	 Aux	 Adv	 O1+wh	
+ S+wh	 Verb	 Aux	 Adv	 O2	
+ S	 Verb	 Aux	 Adv+wh	 O2	
+ S	 Verb	 Aux	 Adv	 O2+wh	
+ S+wh	 Verb	 Aux	 Adv	 PP	
+ S	 Verb	 Aux	 Adv+wh	 PP	
+ S	 Verb	 Aux	 Adv	 PP+wh	
+ S+wh	 Verb	 Aux	 O1	 O2	
+ S	 Verb	 Aux	 O1+wh	 O2	
+ S	 Verb	 Aux	 O1	 O2+wh	
+ S+wh	 Verb	 Aux	 O1	 PP	
+ S	 Verb	 Aux	 O1+wh	 PP	
+ S	 Verb	 Aux	 O1	 PP+wh	
+ S+wh	 Verb	 Aux	 O2	 PP	
+ S	 Verb	 Aux	 O2+wh	 PP	
+ S	 Verb	 Aux	 O2	 PP+wh	
+ S+wh	 Verb	 NegP	 Adv	 O1	
+ S	 Verb	 NegP	 Adv+wh	 O1	
+ S	 Verb	 NegP	 Adv	 O1+wh	
+ S+wh	 Verb	 NegP	 Adv	 O2	
+ S	 Verb	 NegP	 Adv+wh	 O2	
+ S	 Verb	 NegP	 Adv	 O2+wh	
+ S+wh	 Verb	 NegP	 Adv	 PP	
+ S	 Verb	 NegP	 Adv+wh	 PP	
+ S	 Verb	 NegP	 Adv	 PP+wh	
+ S+wh	 Verb	 NegP	 O1	 O2	
+ S	 Verb	 NegP	 O1+wh	 O2	
+ S	 Verb	 NegP	 O1	 O2+wh	
+ S+wh	 Verb	 NegP	 O1	 PP	
+ S	 Verb	 NegP	 O1+wh	 PP	
+ S	 Verb	 NegP	 O1	 PP+wh	
+ S+wh	 Verb	 NegP	 O2	 PP	
+ S	 Verb	 NegP	 O2+wh	 PP	
+ S	 Verb	 NegP	 O2	 PP+wh	
+ S+wh	 Verb	 Adv	 O1	 O2	
+ S	 Verb	 Adv+wh	 O1	 O2	
+ S	 Verb	 Adv	 O1+wh	 O2	
+ S	 Verb	 Adv	 O1	 O2+wh	
+ S+wh	 Verb	 Adv	 O1	 PP	
+ S	 Verb	 Adv+wh	 O1	 PP	
+ S	 Verb	 Adv	 O1+wh	 PP	
+ S	 Verb	 Adv	 O1	 PP+wh	
+ S+wh	 Verb	 Adv	 O2	 PP	
+ S	 Verb	 Adv+wh	 O2	 PP	
+ S	 Verb	 Adv	 O2+wh	 PP	
+ S	 Verb	 Adv	 O2	 PP+wh	
+ S+wh	 Verb	 O1	 O2	 PP	
+ S	 Verb	 O1+wh	 O2	 PP	
+ S	 Verb	 O1	 O2+wh	 PP	
+ S	 Verb	 O1	 O2	 PP+wh	
+ S+wh	 Verb	 Aux	 NegP	 Adv	 O1	
+ S	 Verb	 Aux	 NegP	 Adv+wh	 O1	
+ S	 Verb	 Aux	 NegP	 Adv	 O1+wh	
+ S+wh	 Verb	 Aux	 NegP	 Adv	 O2	
+ S	 Verb	 Aux	 NegP	 Adv+wh	 O2	
+ S	 Verb	 Aux	 NegP	 Adv	 O2+wh	
+ S+wh	 Verb	 Aux	 NegP	 Adv	 PP	
+ S	 Verb	 Aux	 NegP	 Adv+wh	 PP	
+ S	 Verb	 Aux	 NegP	 Adv	 PP+wh	
+ S+wh	 Verb	 Aux	 NegP	 O1	 O2	
+ S	 Verb	 Aux	 NegP	 O1+wh	 O2	
+ S	 Verb	 Aux	 NegP	 O1	 O2+wh	
+ S+wh	 Verb	 Aux	 NegP	 O1	 PP	
+ S	 Verb	 Aux	 NegP	 O1+wh	 PP	
+ S	 Verb	 Aux	 NegP	 O1	 PP+wh	
+ S+wh	 Verb	 Aux	 NegP	 O2	 PP	
+ S	 Verb	 Aux	 NegP	 O2+wh	 PP	
+ S	 Verb	 Aux	 NegP	 O2	 PP+wh	
+ S+wh	 Verb	 Aux	 Adv	 O1	 O2	
+ S	 Verb	 Aux	 Adv+wh	 O1	 O2	
+ S	 Verb	 Aux	 Adv	 O1+wh	 O2	
+ S	 Verb	 Aux	 Adv	 O1	 O2+wh	
+ S+wh	 Verb	 Aux	 Adv	 O1	 PP	
+ S	 Verb	 Aux	 Adv+wh	 O1	 PP	
+ S	 Verb	 Aux	 Adv	 O1+wh	 PP	
+ S	 Verb	 Aux	 Adv	 O1	 PP+wh	
+ S+wh	 Verb	 Aux	 Adv	 O2	 PP	
+ S	 Verb	 Aux	 Adv+wh	 O2	 PP	
+ S	 Verb	 Aux	 Adv	 O2+wh	 PP	
+ S	 Verb	 Aux	 Adv	 O2	 PP+wh	
+ S+wh	 Verb	 Aux	 O1	 O2	 PP	
+ S	 Verb	 Aux	 O1+wh	 O2	 PP	
+ S	 Verb	 Aux	 O1	 O2+wh	 PP	
+ S	 Verb	 Aux	 O1	 O2	 PP+wh	
+ S+wh	 Verb	 NegP	 Adv	 O1	 O2	
+ S	 Verb	 NegP	 Adv+wh	 O1	 O2	
+ S	 Verb	 NegP	 Adv	 O1+wh	 O2	
+ S	 Verb	 NegP	 Adv	 O1	 O2+wh	
+ S+wh	 Verb	 NegP	 Adv	 O1	 PP	
+ S	 Verb	 NegP	 Adv+wh	 O1	 PP	
+ S	 Verb	 NegP	 Adv	 O1+wh	 PP	
+ S	 Verb	 NegP	 Adv	 O1	 PP+wh	
+ S+wh	 Verb	 NegP	 Adv	 O2	 PP	
+ S	 Verb	 NegP	 Adv+wh	 O2	 PP	
+ S	 Verb	 NegP	 Adv	 O2+wh	 PP	
+ S	 Verb	 NegP	 Adv	 O2	 PP+wh	
+ S+wh	 Verb	 NegP	 O1	 O2	 PP	
+ S	 Verb	 NegP	 O1+wh	 O2	 PP	
+ S	 Verb	 NegP	 O1	 O2+wh	 PP	
+ S	 Verb	 NegP	 O1	 O2	 PP+wh	
+ S+wh	 Verb	 Adv	 O1	 O2	 PP	
+ S	 Verb	 Adv+wh	 O1	 O2	 PP	
+ S	 Verb	 Adv	 O1+wh	 O2	 PP	
+ S	 Verb	 Adv	 O1	 O2+wh	 PP	
+ S	 Verb	 Adv	 O1	 O2	 PP+wh	
+ S+wh	 Verb	 Aux	 NegP	 Adv	 O1	 O2	
+ S	 Verb	 Aux	 NegP	 Adv+wh	 O1	 O2	
+ S	 Verb	 Aux	 NegP	 Adv	 O1+wh	 O2	
+ S	 Verb	 Aux	 NegP	 Adv	 O1	 O2+wh	
+ S+wh	 Verb	 Aux	 NegP	 Adv	 O1	 PP	
+ S	 Verb	 Aux	 NegP	 Adv+wh	 O1	 PP	
+ S	 Verb	 Aux	 NegP	 Adv	 O1+wh	 PP	
+ S	 Verb	 Aux	 NegP	 Adv	 O1	 PP+wh	
+ S+wh	 Verb	 Aux	 NegP	 Adv	 O2	 PP	
+ S	 Verb	 Aux	 NegP	 Adv+wh	 O2	 PP	
+ S	 Verb	 Aux	 NegP	 Adv	 O2+wh	 PP	
+ S	 Verb	 Aux	 NegP	 Adv	 O2	 PP+wh	
+ S+wh	 Verb	 Aux	 NegP	 O1	 O2	 PP	
+ S	 Verb	 Aux	 NegP	 O1+wh	 O2	 PP	
+ S	 Verb	 Aux	 NegP	 O1	 O2+wh	 PP	
+ S	 Verb	 Aux	 NegP	 O1	 O2	 PP+wh	
+ S+wh	 Verb	 Aux	 Adv	 O1	 O2	 PP	
+ S	 Verb	 Aux	 Adv+wh	 O1	 O2	 PP	
+ S	 Verb	 Aux	 Adv	 O1+wh	 O2	 PP	
+ S	 Verb	 Aux	 Adv	 O1	 O2+wh	 PP	
+ S	 Verb	 Aux	 Adv	 O1	 O2	 PP+wh	
+ S+wh	 Verb	 NegP	 Adv	 O1	 O2	 PP	
+ S	 Verb	 NegP	 Adv+wh	 O1	 O2	 PP	
+ S	 Verb	 NegP	 Adv	 O1+wh	 O2	 PP	
+ S	 Verb	 NegP	 Adv	 O1	 O2+wh	 PP	
+ S	 Verb	 NegP	 Adv	 O1	 O2	 PP+wh	
+ S+wh	 Verb	 Aux	 NegP	 Adv	 O1	 O2	 PP	
+ S	 Verb	 Aux	 NegP	 Adv+wh	 O1	 O2	 PP	
+ S	 Verb	 Aux	 NegP	 Adv	 O1+wh	 O2	 PP	
+ S	 Verb	 Aux	 NegP	 Adv	 O1	 O2+wh	 PP	
+ S	 Verb	 Aux	 NegP	 Adv	 O1	 O2	 PP+wh	
+ S+t+wh	 Verb	
+ S+t+wh	 Verb	 Aux	
+ S+t+wh	 Verb	 NegP	
+ S+t	 Verb	 Adv+wh	
+ S+t+wh	 Verb	 Adv	
+ S+wh	 Verb	 Adv+t	
+ S	 Verb	 Adv+t+wh	
+ S+t	 Verb	 O1+wh	
+ S+t+wh	 Verb	 O1	
+ S+wh	 Verb	 O1+t	
+ S	 Verb	 O1+t+wh	
+ S+t	 Verb	 O2+wh	
+ S+t+wh	 Verb	 O2	
+ S+wh	 Verb	 O2+t	
+ S	 Verb	 O2+t+wh	
+ S+t	 Verb	 PP+wh	
+ S+t+wh	 Verb	 PP	
+ S+wh	 Verb	 PP+t	
+ S	 Verb	 PP+t+wh	
+ S+t+wh	 Verb	 Aux	 NegP	
+ S+t	 Verb	 Aux	 Adv+wh	
+ S+t+wh	 Verb	 Aux	 Adv	
+ S+wh	 Verb	 Aux	 Adv+t	
+ S	 Verb	 Aux	 Adv+t+wh	
+ S+t	 Verb	 Aux	 O1+wh	
+ S+t+wh	 Verb	 Aux	 O1	
+ S+wh	 Verb	 Aux	 O1+t	
+ S	 Verb	 Aux	 O1+t+wh	
+ S+t	 Verb	 Aux	 O2+wh	
+ S+t+wh	 Verb	 Aux	 O2	
+ S+wh	 Verb	 Aux	 O2+t	
+ S	 Verb	 Aux	 O2+t+wh	
+ S+t	 Verb	 Aux	 PP+wh	
+ S+t+wh	 Verb	 Aux	 PP	
+ S+wh	 Verb	 Aux	 PP+t	
+ S	 Verb	 Aux	 PP+t+wh	
+ S+t	 Verb	 NegP	 Adv+wh	
+ S+t+wh	 Verb	 NegP	 Adv	
+ S+wh	 Verb	 NegP	 Adv+t	
+ S	 Verb	 NegP	 Adv+t+wh	
+ S+t	 Verb	 NegP	 O1+wh	
+ S+t+wh	 Verb	 NegP	 O1	
+ S+wh	 Verb	 NegP	 O1+t	
+ S	 Verb	 NegP	 O1+t+wh	
+ S+t	 Verb	 NegP	 O2+wh	
+ S+t+wh	 Verb	 NegP	 O2	
+ S+wh	 Verb	 NegP	 O2+t	
+ S	 Verb	 NegP	 O2+t+wh	
+ S+t	 Verb	 NegP	 PP+wh	
+ S+t+wh	 Verb	 NegP	 PP	
+ S+wh	 Verb	 NegP	 PP+t	
+ S	 Verb	 NegP	 PP+t+wh	
+ S+t	 Verb	 Adv+wh	 O1	
+ S+t	 Verb	 Adv	 O1+wh	
+ S+t+wh	 Verb	 Adv	 O1	
+ S+wh	 Verb	 Adv+t	 O1	
+ S	 Verb	 Adv+t	 O1+wh	
+ S	 Verb	 Adv+t+wh	 O1	
+ S+wh	 Verb	 Adv	 O1+t	
+ S	 Verb	 Adv+wh	 O1+t	
+ S	 Verb	 Adv	 O1+t+wh	
+ S+t	 Verb	 Adv+wh	 O2	
+ S+t	 Verb	 Adv	 O2+wh	
+ S+t+wh	 Verb	 Adv	 O2	
+ S+wh	 Verb	 Adv+t	 O2	
+ S	 Verb	 Adv+t	 O2+wh	
+ S	 Verb	 Adv+t+wh	 O2	
+ S+wh	 Verb	 Adv	 O2+t	
+ S	 Verb	 Adv+wh	 O2+t	
+ S	 Verb	 Adv	 O2+t+wh	
+ S+t	 Verb	 Adv+wh	 PP	
+ S+t	 Verb	 Adv	 PP+wh	
+ S+t+wh	 Verb	 Adv	 PP	
+ S+wh	 Verb	 Adv+t	 PP	
+ S	 Verb	 Adv+t	 PP+wh	
+ S	 Verb	 Adv+t+wh	 PP	
+ S+wh	 Verb	 Adv	 PP+t	
+ S	 Verb	 Adv+wh	 PP+t	
+ S	 Verb	 Adv	 PP+t+wh	
+ S+t	 Verb	 O1+wh	 O2	
+ S+t	 Verb	 O1	 O2+wh	
+ S+t+wh	 Verb	 O1	 O2	
+ S+wh	 Verb	 O1+t	 O2	
+ S	 Verb	 O1+t	 O2+wh	
+ S	 Verb	 O1+t+wh	 O2	
+ S+wh	 Verb	 O1	 O2+t	
+ S	 Verb	 O1+wh	 O2+t	
+ S	 Verb	 O1	 O2+t+wh	
+ S+t	 Verb	 O1+wh	 PP	
+ S+t	 Verb	 O1	 PP+wh	
+ S+t+wh	 Verb	 O1	 PP	
+ S+wh	 Verb	 O1+t	 PP	
+ S	 Verb	 O1+t	 PP+wh	
+ S	 Verb	 O1+t+wh	 PP	
+ S+wh	 Verb	 O1	 PP+t	
+ S	 Verb	 O1+wh	 PP+t	
+ S	 Verb	 O1	 PP+t+wh	
+ S+t	 Verb	 O2+wh	 PP	
+ S+t	 Verb	 O2	 PP+wh	
+ S+t+wh	 Verb	 O2	 PP	
+ S+wh	 Verb	 O2+t	 PP	
+ S	 Verb	 O2+t	 PP+wh	
+ S	 Verb	 O2+t+wh	 PP	
+ S+wh	 Verb	 O2	 PP+t	
+ S	 Verb	 O2+wh	 PP+t	
+ S	 Verb	 O2	 PP+t+wh	
+ S+t	 Verb	 Aux	 NegP	 Adv+wh	
+ S+t+wh	 Verb	 Aux	 NegP	 Adv	
+ S+wh	 Verb	 Aux	 NegP	 Adv+t	
+ S	 Verb	 Aux	 NegP	 Adv+t+wh	
+ S+t	 Verb	 Aux	 NegP	 O1+wh	
+ S+t+wh	 Verb	 Aux	 NegP	 O1	
+ S+wh	 Verb	 Aux	 NegP	 O1+t	
+ S	 Verb	 Aux	 NegP	 O1+t+wh	
+ S+t	 Verb	 Aux	 NegP	 O2+wh	
+ S+t+wh	 Verb	 Aux	 NegP	 O2	
+ S+wh	 Verb	 Aux	 NegP	 O2+t	
+ S	 Verb	 Aux	 NegP	 O2+t+wh	
+ S+t	 Verb	 Aux	 NegP	 PP+wh	
+ S+t+wh	 Verb	 Aux	 NegP	 PP	
+ S+wh	 Verb	 Aux	 NegP	 PP+t	
+ S	 Verb	 Aux	 NegP	 PP+t+wh	
+ S+t	 Verb	 Aux	 Adv+wh	 O1	
+ S+t	 Verb	 Aux	 Adv	 O1+wh	
+ S+t+wh	 Verb	 Aux	 Adv	 O1	
+ S+wh	 Verb	 Aux	 Adv+t	 O1	
+ S	 Verb	 Aux	 Adv+t	 O1+wh	
+ S	 Verb	 Aux	 Adv+t+wh	 O1	
+ S+wh	 Verb	 Aux	 Adv	 O1+t	
+ S	 Verb	 Aux	 Adv+wh	 O1+t	
+ S	 Verb	 Aux	 Adv	 O1+t+wh	
+ S+t	 Verb	 Aux	 Adv+wh	 O2	
+ S+t	 Verb	 Aux	 Adv	 O2+wh	
+ S+t+wh	 Verb	 Aux	 Adv	 O2	
+ S+wh	 Verb	 Aux	 Adv+t	 O2	
+ S	 Verb	 Aux	 Adv+t	 O2+wh	
+ S	 Verb	 Aux	 Adv+t+wh	 O2	
+ S+wh	 Verb	 Aux	 Adv	 O2+t	
+ S	 Verb	 Aux	 Adv+wh	 O2+t	
+ S	 Verb	 Aux	 Adv	 O2+t+wh	
+ S+t	 Verb	 Aux	 Adv+wh	 PP	
+ S+t	 Verb	 Aux	 Adv	 PP+wh	
+ S+t+wh	 Verb	 Aux	 Adv	 PP	
+ S+wh	 Verb	 Aux	 Adv+t	 PP	
+ S	 Verb	 Aux	 Adv+t	 PP+wh	
+ S	 Verb	 Aux	 Adv+t+wh	 PP	
+ S+wh	 Verb	 Aux	 Adv	 PP+t	
+ S	 Verb	 Aux	 Adv+wh	 PP+t	
+ S	 Verb	 Aux	 Adv	 PP+t+wh	
+ S+t	 Verb	 Aux	 O1+wh	 O2	
+ S+t	 Verb	 Aux	 O1	 O2+wh	
+ S+t+wh	 Verb	 Aux	 O1	 O2	
+ S+wh	 Verb	 Aux	 O1+t	 O2	
+ S	 Verb	 Aux	 O1+t	 O2+wh	
+ S	 Verb	 Aux	 O1+t+wh	 O2	
+ S+wh	 Verb	 Aux	 O1	 O2+t	
+ S	 Verb	 Aux	 O1+wh	 O2+t	
+ S	 Verb	 Aux	 O1	 O2+t+wh	
+ S+t	 Verb	 Aux	 O1+wh	 PP	
+ S+t	 Verb	 Aux	 O1	 PP+wh	
+ S+t+wh	 Verb	 Aux	 O1	 PP	
+ S+wh	 Verb	 Aux	 O1+t	 PP	
+ S	 Verb	 Aux	 O1+t	 PP+wh	
+ S	 Verb	 Aux	 O1+t+wh	 PP	
+ S+wh	 Verb	 Aux	 O1	 PP+t	
+ S	 Verb	 Aux	 O1+wh	 PP+t	
+ S	 Verb	 Aux	 O1	 PP+t+wh	
+ S+t	 Verb	 Aux	 O2+wh	 PP	
+ S+t	 Verb	 Aux	 O2	 PP+wh	
+ S+t+wh	 Verb	 Aux	 O2	 PP	
+ S+wh	 Verb	 Aux	 O2+t	 PP	
+ S	 Verb	 Aux	 O2+t	 PP+wh	
+ S	 Verb	 Aux	 O2+t+wh	 PP	
+ S+wh	 Verb	 Aux	 O2	 PP+t	
+ S	 Verb	 Aux	 O2+wh	 PP+t	
+ S	 Verb	 Aux	 O2	 PP+t+wh	
+ S+t	 Verb	 NegP	 Adv+wh	 O1	
+ S+t	 Verb	 NegP	 Adv	 O1+wh	
+ S+t+wh	 Verb	 NegP	 Adv	 O1	
+ S+wh	 Verb	 NegP	 Adv+t	 O1	
+ S	 Verb	 NegP	 Adv+t	 O1+wh	
+ S	 Verb	 NegP	 Adv+t+wh	 O1	
+ S+wh	 Verb	 NegP	 Adv	 O1+t	
+ S	 Verb	 NegP	 Adv+wh	 O1+t	
+ S	 Verb	 NegP	 Adv	 O1+t+wh	
+ S+t	 Verb	 NegP	 Adv+wh	 O2	
+ S+t	 Verb	 NegP	 Adv	 O2+wh	
+ S+t+wh	 Verb	 NegP	 Adv	 O2	
+ S+wh	 Verb	 NegP	 Adv+t	 O2	
+ S	 Verb	 NegP	 Adv+t	 O2+wh	
+ S	 Verb	 NegP	 Adv+t+wh	 O2	
+ S+wh	 Verb	 NegP	 Adv	 O2+t	
+ S	 Verb	 NegP	 Adv+wh	 O2+t	
+ S	 Verb	 NegP	 Adv	 O2+t+wh	
+ S+t	 Verb	 NegP	 Adv+wh	 PP	
+ S+t	 Verb	 NegP	 Adv	 PP+wh	
+ S+t+wh	 Verb	 NegP	 Adv	 PP	
+ S+wh	 Verb	 NegP	 Adv+t	 PP	
+ S	 Verb	 NegP	 Adv+t	 PP+wh	
+ S	 Verb	 NegP	 Adv+t+wh	 PP	
+ S+wh	 Verb	 NegP	 Adv	 PP+t	
+ S	 Verb	 NegP	 Adv+wh	 PP+t	
+ S	 Verb	 NegP	 Adv	 PP+t+wh	
+ S+t	 Verb	 NegP	 O1+wh	 O2	
+ S+t	 Verb	 NegP	 O1	 O2+wh	
+ S+t+wh	 Verb	 NegP	 O1	 O2	
+ S+wh	 Verb	 NegP	 O1+t	 O2	
+ S	 Verb	 NegP	 O1+t	 O2+wh	
+ S	 Verb	 NegP	 O1+t+wh	 O2	
+ S+wh	 Verb	 NegP	 O1	 O2+t	
+ S	 Verb	 NegP	 O1+wh	 O2+t	
+ S	 Verb	 NegP	 O1	 O2+t+wh	
+ S+t	 Verb	 NegP	 O1+wh	 PP	
+ S+t	 Verb	 NegP	 O1	 PP+wh	
+ S+t+wh	 Verb	 NegP	 O1	 PP	
+ S+wh	 Verb	 NegP	 O1+t	 PP	
+ S	 Verb	 NegP	 O1+t	 PP+wh	
+ S	 Verb	 NegP	 O1+t+wh	 PP	
+ S+wh	 Verb	 NegP	 O1	 PP+t	
+ S	 Verb	 NegP	 O1+wh	 PP+t	
+ S	 Verb	 NegP	 O1	 PP+t+wh	
+ S+t	 Verb	 NegP	 O2+wh	 PP	
+ S+t	 Verb	 NegP	 O2	 PP+wh	
+ S+t+wh	 Verb	 NegP	 O2	 PP	
+ S+wh	 Verb	 NegP	 O2+t	 PP	
+ S	 Verb	 NegP	 O2+t	 PP+wh	
+ S	 Verb	 NegP	 O2+t+wh	 PP	
+ S+wh	 Verb	 NegP	 O2	 PP+t	
+ S	 Verb	 NegP	 O2+wh	 PP+t	
+ S	 Verb	 NegP	 O2	 PP+t+wh	
+ S+t	 Verb	 Adv+wh	 O1	 O2	
+ S+t	 Verb	 Adv	 O1+wh	 O2	
+ S+t	 Verb	 Adv	 O1	 O2+wh	
+ S+t+wh	 Verb	 Adv	 O1	 O2	
+ S+wh	 Verb	 Adv+t	 O1	 O2	
+ S	 Verb	 Adv+t	 O1+wh	 O2	
+ S	 Verb	 Adv+t	 O1	 O2+wh	
+ S	 Verb	 Adv+t+wh	 O1	 O2	
+ S+wh	 Verb	 Adv	 O1+t	 O2	
+ S	 Verb	 Adv+wh	 O1+t	 O2	
+ S	 Verb	 Adv	 O1+t	 O2+wh	
+ S	 Verb	 Adv	 O1+t+wh	 O2	
+ S+wh	 Verb	 Adv	 O1	 O2+t	
+ S	 Verb	 Adv+wh	 O1	 O2+t	
+ S	 Verb	 Adv	 O1+wh	 O2+t	
+ S	 Verb	 Adv	 O1	 O2+t+wh	
+ S+t	 Verb	 Adv+wh	 O1	 PP	
+ S+t	 Verb	 Adv	 O1+wh	 PP	
+ S+t	 Verb	 Adv	 O1	 PP+wh	
+ S+t+wh	 Verb	 Adv	 O1	 PP	
+ S+wh	 Verb	 Adv+t	 O1	 PP	
+ S	 Verb	 Adv+t	 O1+wh	 PP	
+ S	 Verb	 Adv+t	 O1	 PP+wh	
+ S	 Verb	 Adv+t+wh	 O1	 PP	
+ S+wh	 Verb	 Adv	 O1+t	 PP	
+ S	 Verb	 Adv+wh	 O1+t	 PP	
+ S	 Verb	 Adv	 O1+t	 PP+wh	
+ S	 Verb	 Adv	 O1+t+wh	 PP	
+ S+wh	 Verb	 Adv	 O1	 PP+t	
+ S	 Verb	 Adv+wh	 O1	 PP+t	
+ S	 Verb	 Adv	 O1+wh	 PP+t	
+ S	 Verb	 Adv	 O1	 PP+t+wh	
+ S+t	 Verb	 Adv+wh	 O2	 PP	
+ S+t	 Verb	 Adv	 O2+wh	 PP	
+ S+t	 Verb	 Adv	 O2	 PP+wh	
+ S+t+wh	 Verb	 Adv	 O2	 PP	
+ S+wh	 Verb	 Adv+t	 O2	 PP	
+ S	 Verb	 Adv+t	 O2+wh	 PP	
+ S	 Verb	 Adv+t	 O2	 PP+wh	
+ S	 Verb	 Adv+t+wh	 O2	 PP	
+ S+wh	 Verb	 Adv	 O2+t	 PP	
+ S	 Verb	 Adv+wh	 O2+t	 PP	
+ S	 Verb	 Adv	 O2+t	 PP+wh	
+ S	 Verb	 Adv	 O2+t+wh	 PP	
+ S+wh	 Verb	 Adv	 O2	 PP+t	
+ S	 Verb	 Adv+wh	 O2	 PP+t	
+ S	 Verb	 Adv	 O2+wh	 PP+t	
+ S	 Verb	 Adv	 O2	 PP+t+wh	
+ S+t	 Verb	 O1+wh	 O2	 PP	
+ S+t	 Verb	 O1	 O2+wh	 PP	
+ S+t	 Verb	 O1	 O2	 PP+wh	
+ S+t+wh	 Verb	 O1	 O2	 PP	
+ S+wh	 Verb	 O1+t	 O2	 PP	
+ S	 Verb	 O1+t	 O2+wh	 PP	
+ S	 Verb	 O1+t	 O2	 PP+wh	
+ S	 Verb	 O1+t+wh	 O2	 PP	
+ S+wh	 Verb	 O1	 O2+t	 PP	
+ S	 Verb	 O1+wh	 O2+t	 PP	
+ S	 Verb	 O1	 O2+t	 PP+wh	
+ S	 Verb	 O1	 O2+t+wh	 PP	
+ S+wh	 Verb	 O1	 O2	 PP+t	
+ S	 Verb	 O1+wh	 O2	 PP+t	
+ S	 Verb	 O1	 O2+wh	 PP+t	
+ S	 Verb	 O1	 O2	 PP+t+wh	
+ S+t	 Verb	 Aux	 NegP	 Adv+wh	 O1	
+ S+t	 Verb	 Aux	 NegP	 Adv	 O1+wh	
+ S+t+wh	 Verb	 Aux	 NegP	 Adv	 O1	
+ S+wh	 Verb	 Aux	 NegP	 Adv+t	 O1	
+ S	 Verb	 Aux	 NegP	 Adv+t	 O1+wh	
+ S	 Verb	 Aux	 NegP	 Adv+t+wh	 O1	
+ S+wh	 Verb	 Aux	 NegP	 Adv	 O1+t	
+ S	 Verb	 Aux	 NegP	 Adv+wh	 O1+t	
+ S	 Verb	 Aux	 NegP	 Adv	 O1+t+wh	
+ S+t	 Verb	 Aux	 NegP	 Adv+wh	 O2	
+ S+t	 Verb	 Aux	 NegP	 Adv	 O2+wh	
+ S+t+wh	 Verb	 Aux	 NegP	 Adv	 O2	
+ S+wh	 Verb	 Aux	 NegP	 Adv+t	 O2	
+ S	 Verb	 Aux	 NegP	 Adv+t	 O2+wh	
+ S	 Verb	 Aux	 NegP	 Adv+t+wh	 O2	
+ S+wh	 Verb	 Aux	 NegP	 Adv	 O2+t	
+ S	 Verb	 Aux	 NegP	 Adv+wh	 O2+t	
+ S	 Verb	 Aux	 NegP	 Adv	 O2+t+wh	
+ S+t	 Verb	 Aux	 NegP	 Adv+wh	 PP	
+ S+t	 Verb	 Aux	 NegP	 Adv	 PP+wh	
+ S+t+wh	 Verb	 Aux	 NegP	 Adv	 PP	
+ S+wh	 Verb	 Aux	 NegP	 Adv+t	 PP	
+ S	 Verb	 Aux	 NegP	 Adv+t	 PP+wh	
+ S	 Verb	 Aux	 NegP	 Adv+t+wh	 PP	
+ S+wh	 Verb	 Aux	 NegP	 Adv	 PP+t	
+ S	 Verb	 Aux	 NegP	 Adv+wh	 PP+t	
+ S	 Verb	 Aux	 NegP	 Adv	 PP+t+wh	
+ S+t	 Verb	 Aux	 NegP	 O1+wh	 O2	
+ S+t	 Verb	 Aux	 NegP	 O1	 O2+wh	
+ S+t+wh	 Verb	 Aux	 NegP	 O1	 O2	
+ S+wh	 Verb	 Aux	 NegP	 O1+t	 O2	
+ S	 Verb	 Aux	 NegP	 O1+t	 O2+wh	
+ S	 Verb	 Aux	 NegP	 O1+t+wh	 O2	
+ S+wh	 Verb	 Aux	 NegP	 O1	 O2+t	
+ S	 Verb	 Aux	 NegP	 O1+wh	 O2+t	
+ S	 Verb	 Aux	 NegP	 O1	 O2+t+wh	
+ S+t	 Verb	 Aux	 NegP	 O1+wh	 PP	
+ S+t	 Verb	 Aux	 NegP	 O1	 PP+wh	
+ S+t+wh	 Verb	 Aux	 NegP	 O1	 PP	
+ S+wh	 Verb	 Aux	 NegP	 O1+t	 PP	
+ S	 Verb	 Aux	 NegP	 O1+t	 PP+wh	
+ S	 Verb	 Aux	 NegP	 O1+t+wh	 PP	
+ S+wh	 Verb	 Aux	 NegP	 O1	 PP+t	
+ S	 Verb	 Aux	 NegP	 O1+wh	 PP+t	
+ S	 Verb	 Aux	 NegP	 O1	 PP+t+wh	
+ S+t	 Verb	 Aux	 NegP	 O2+wh	 PP	
+ S+t	 Verb	 Aux	 NegP	 O2	 PP+wh	
+ S+t+wh	 Verb	 Aux	 NegP	 O2	 PP	
+ S+wh	 Verb	 Aux	 NegP	 O2+t	 PP	
+ S	 Verb	 Aux	 NegP	 O2+t	 PP+wh	
+ S	 Verb	 Aux	 NegP	 O2+t+wh	 PP	
+ S+wh	 Verb	 Aux	 NegP	 O2	 PP+t	
+ S	 Verb	 Aux	 NegP	 O2+wh	 PP+t	
+ S	 Verb	 Aux	 NegP	 O2	 PP+t+wh	
+ S+t	 Verb	 Aux	 Adv+wh	 O1	 O2	
+ S+t	 Verb	 Aux	 Adv	 O1+wh	 O2	
+ S+t	 Verb	 Aux	 Adv	 O1	 O2+wh	
+ S+t+wh	 Verb	 Aux	 Adv	 O1	 O2	
+ S+wh	 Verb	 Aux	 Adv+t	 O1	 O2	
+ S	 Verb	 Aux	 Adv+t	 O1+wh	 O2	
+ S	 Verb	 Aux	 Adv+t	 O1	 O2+wh	
+ S	 Verb	 Aux	 Adv+t+wh	 O1	 O2	
+ S+wh	 Verb	 Aux	 Adv	 O1+t	 O2	
+ S	 Verb	 Aux	 Adv+wh	 O1+t	 O2	
+ S	 Verb	 Aux	 Adv	 O1+t	 O2+wh	
+ S	 Verb	 Aux	 Adv	 O1+t+wh	 O2	
+ S+wh	 Verb	 Aux	 Adv	 O1	 O2+t	
+ S	 Verb	 Aux	 Adv+wh	 O1	 O2+t	
+ S	 Verb	 Aux	 Adv	 O1+wh	 O2+t	
+ S	 Verb	 Aux	 Adv	 O1	 O2+t+wh	
+ S+t	 Verb	 Aux	 Adv+wh	 O1	 PP	
+ S+t	 Verb	 Aux	 Adv	 O1+wh	 PP	
+ S+t	 Verb	 Aux	 Adv	 O1	 PP+wh	
+ S+t+wh	 Verb	 Aux	 Adv	 O1	 PP	
+ S+wh	 Verb	 Aux	 Adv+t	 O1	 PP	
+ S	 Verb	 Aux	 Adv+t	 O1+wh	 PP	
+ S	 Verb	 Aux	 Adv+t	 O1	 PP+wh	
+ S	 Verb	 Aux	 Adv+t+wh	 O1	 PP	
+ S+wh	 Verb	 Aux	 Adv	 O1+t	 PP	
+ S	 Verb	 Aux	 Adv+wh	 O1+t	 PP	
+ S	 Verb	 Aux	 Adv	 O1+t	 PP+wh	
+ S	 Verb	 Aux	 Adv	 O1+t+wh	 PP	
+ S+wh	 Verb	 Aux	 Adv	 O1	 PP+t	
+ S	 Verb	 Aux	 Adv+wh	 O1	 PP+t	
+ S	 Verb	 Aux	 Adv	 O1+wh	 PP+t	
+ S	 Verb	 Aux	 Adv	 O1	 PP+t+wh	
+ S+t	 Verb	 Aux	 Adv+wh	 O2	 PP	
+ S+t	 Verb	 Aux	 Adv	 O2+wh	 PP	
+ S+t	 Verb	 Aux	 Adv	 O2	 PP+wh	
+ S+t+wh	 Verb	 Aux	 Adv	 O2	 PP	
+ S+wh	 Verb	 Aux	 Adv+t	 O2	 PP	
+ S	 Verb	 Aux	 Adv+t	 O2+wh	 PP	
+ S	 Verb	 Aux	 Adv+t	 O2	 PP+wh	
+ S	 Verb	 Aux	 Adv+t+wh	 O2	 PP	
+ S+wh	 Verb	 Aux	 Adv	 O2+t	 PP	
+ S	 Verb	 Aux	 Adv+wh	 O2+t	 PP	
+ S	 Verb	 Aux	 Adv	 O2+t	 PP+wh	
+ S	 Verb	 Aux	 Adv	 O2+t+wh	 PP	
+ S+wh	 Verb	 Aux	 Adv	 O2	 PP+t	
+ S	 Verb	 Aux	 Adv+wh	 O2	 PP+t	
+ S	 Verb	 Aux	 Adv	 O2+wh	 PP+t	
+ S	 Verb	 Aux	 Adv	 O2	 PP+t+wh	
+ S+t	 Verb	 Aux	 O1+wh	 O2	 PP	
+ S+t	 Verb	 Aux	 O1	 O2+wh	 PP	
+ S+t	 Verb	 Aux	 O1	 O2	 PP+wh	
+ S+t+wh	 Verb	 Aux	 O1	 O2	 PP	
+ S+wh	 Verb	 Aux	 O1+t	 O2	 PP	
+ S	 Verb	 Aux	 O1+t	 O2+wh	 PP	
+ S	 Verb	 Aux	 O1+t	 O2	 PP+wh	
+ S	 Verb	 Aux	 O1+t+wh	 O2	 PP	
+ S+wh	 Verb	 Aux	 O1	 O2+t	 PP	
+ S	 Verb	 Aux	 O1+wh	 O2+t	 PP	
+ S	 Verb	 Aux	 O1	 O2+t	 PP+wh	
+ S	 Verb	 Aux	 O1	 O2+t+wh	 PP	
+ S+wh	 Verb	 Aux	 O1	 O2	 PP+t	
+ S	 Verb	 Aux	 O1+wh	 O2	 PP+t	
+ S	 Verb	 Aux	 O1	 O2+wh	 PP+t	
+ S	 Verb	 Aux	 O1	 O2	 PP+t+wh	
+ S+t	 Verb	 NegP	 Adv+wh	 O1	 O2	
+ S+t	 Verb	 NegP	 Adv	 O1+wh	 O2	
+ S+t	 Verb	 NegP	 Adv	 O1	 O2+wh	
+ S+t+wh	 Verb	 NegP	 Adv	 O1	 O2	
+ S+wh	 Verb	 NegP	 Adv+t	 O1	 O2	
+ S	 Verb	 NegP	 Adv+t	 O1+wh	 O2	
+ S	 Verb	 NegP	 Adv+t	 O1	 O2+wh	
+ S	 Verb	 NegP	 Adv+t+wh	 O1	 O2	
+ S+wh	 Verb	 NegP	 Adv	 O1+t	 O2	
+ S	 Verb	 NegP	 Adv+wh	 O1+t	 O2	
+ S	 Verb	 NegP	 Adv	 O1+t	 O2+wh	
+ S	 Verb	 NegP	 Adv	 O1+t+wh	 O2	
+ S+wh	 Verb	 NegP	 Adv	 O1	 O2+t	
+ S	 Verb	 NegP	 Adv+wh	 O1	 O2+t	
+ S	 Verb	 NegP	 Adv	 O1+wh	 O2+t	
+ S	 Verb	 NegP	 Adv	 O1	 O2+t+wh	
+ S+t	 Verb	 NegP	 Adv+wh	 O1	 PP	
+ S+t	 Verb	 NegP	 Adv	 O1+wh	 PP	
+ S+t	 Verb	 NegP	 Adv	 O1	 PP+wh	
+ S+t+wh	 Verb	 NegP	 Adv	 O1	 PP	
+ S+wh	 Verb	 NegP	 Adv+t	 O1	 PP	
+ S	 Verb	 NegP	 Adv+t	 O1+wh	 PP	
+ S	 Verb	 NegP	 Adv+t	 O1	 PP+wh	
+ S	 Verb	 NegP	 Adv+t+wh	 O1	 PP	
+ S+wh	 Verb	 NegP	 Adv	 O1+t	 PP	
+ S	 Verb	 NegP	 Adv+wh	 O1+t	 PP	
+ S	 Verb	 NegP	 Adv	 O1+t	 PP+wh	
+ S	 Verb	 NegP	 Adv	 O1+t+wh	 PP	
+ S+wh	 Verb	 NegP	 Adv	 O1	 PP+t	
+ S	 Verb	 NegP	 Adv+wh	 O1	 PP+t	
+ S	 Verb	 NegP	 Adv	 O1+wh	 PP+t	
+ S	 Verb	 NegP	 Adv	 O1	 PP+t+wh	
+ S+t	 Verb	 NegP	 Adv+wh	 O2	 PP	
+ S+t	 Verb	 NegP	 Adv	 O2+wh	 PP	
+ S+t	 Verb	 NegP	 Adv	 O2	 PP+wh	
+ S+t+wh	 Verb	 NegP	 Adv	 O2	 PP	
+ S+wh	 Verb	 NegP	 Adv+t	 O2	 PP	
+ S	 Verb	 NegP	 Adv+t	 O2+wh	 PP	
+ S	 Verb	 NegP	 Adv+t	 O2	 PP+wh	
+ S	 Verb	 NegP	 Adv+t+wh	 O2	 PP	
+ S+wh	 Verb	 NegP	 Adv	 O2+t	 PP	
+ S	 Verb	 NegP	 Adv+wh	 O2+t	 PP	
+ S	 Verb	 NegP	 Adv	 O2+t	 PP+wh	
+ S	 Verb	 NegP	 Adv	 O2+t+wh	 PP	
+ S+wh	 Verb	 NegP	 Adv	 O2	 PP+t	
+ S	 Verb	 NegP	 Adv+wh	 O2	 PP+t	
+ S	 Verb	 NegP	 Adv	 O2+wh	 PP+t	
+ S	 Verb	 NegP	 Adv	 O2	 PP+t+wh	
+ S+t	 Verb	 NegP	 O1+wh	 O2	 PP	
+ S+t	 Verb	 NegP	 O1	 O2+wh	 PP	
+ S+t	 Verb	 NegP	 O1	 O2	 PP+wh	
+ S+t+wh	 Verb	 NegP	 O1	 O2	 PP	
+ S+wh	 Verb	 NegP	 O1+t	 O2	 PP	
+ S	 Verb	 NegP	 O1+t	 O2+wh	 PP	
+ S	 Verb	 NegP	 O1+t	 O2	 PP+wh	
+ S	 Verb	 NegP	 O1+t+wh	 O2	 PP	
+ S+wh	 Verb	 NegP	 O1	 O2+t	 PP	
+ S	 Verb	 NegP	 O1+wh	 O2+t	 PP	
+ S	 Verb	 NegP	 O1	 O2+t	 PP+wh	
+ S	 Verb	 NegP	 O1	 O2+t+wh	 PP	
+ S+wh	 Verb	 NegP	 O1	 O2	 PP+t	
+ S	 Verb	 NegP	 O1+wh	 O2	 PP+t	
+ S	 Verb	 NegP	 O1	 O2+wh	 PP+t	
+ S	 Verb	 NegP	 O1	 O2	 PP+t+wh	
+ S+t	 Verb	 Adv+wh	 O1	 O2	 PP	
+ S+t	 Verb	 Adv	 O1+wh	 O2	 PP	
+ S+t	 Verb	 Adv	 O1	 O2+wh	 PP	
+ S+t	 Verb	 Adv	 O1	 O2	 PP+wh	
+ S+t+wh	 Verb	 Adv	 O1	 O2	 PP	
+ S+wh	 Verb	 Adv+t	 O1	 O2	 PP	
+ S	 Verb	 Adv+t	 O1+wh	 O2	 PP	
+ S	 Verb	 Adv+t	 O1	 O2+wh	 PP	
+ S	 Verb	 Adv+t	 O1	 O2	 PP+wh	
+ S	 Verb	 Adv+t+wh	 O1	 O2	 PP	
+ S+wh	 Verb	 Adv	 O1+t	 O2	 PP	
+ S	 Verb	 Adv+wh	 O1+t	 O2	 PP	
+ S	 Verb	 Adv	 O1+t	 O2+wh	 PP	
+ S	 Verb	 Adv	 O1+t	 O2	 PP+wh	
+ S	 Verb	 Adv	 O1+t+wh	 O2	 PP	
+ S+wh	 Verb	 Adv	 O1	 O2+t	 PP	
+ S	 Verb	 Adv+wh	 O1	 O2+t	 PP	
+ S	 Verb	 Adv	 O1+wh	 O2+t	 PP	
+ S	 Verb	 Adv	 O1	 O2+t	 PP+wh	
+ S	 Verb	 Adv	 O1	 O2+t+wh	 PP	
+ S+wh	 Verb	 Adv	 O1	 O2	 PP+t	
+ S	 Verb	 Adv+wh	 O1	 O2	 PP+t	
+ S	 Verb	 Adv	 O1+wh	 O2	 PP+t	
+ S	 Verb	 Adv	 O1	 O2+wh	 PP+t	
+ S	 Verb	 Adv	 O1	 O2	 PP+t+wh	
+ S+t	 Verb	 Aux	 NegP	 Adv+wh	 O1	 O2	
+ S+t	 Verb	 Aux	 NegP	 Adv	 O1+wh	 O2	
+ S+t	 Verb	 Aux	 NegP	 Adv	 O1	 O2+wh	
+ S+t+wh	 Verb	 Aux	 NegP	 Adv	 O1	 O2	
+ S+wh	 Verb	 Aux	 NegP	 Adv+t	 O1	 O2	
+ S	 Verb	 Aux	 NegP	 Adv+t	 O1+wh	 O2	
+ S	 Verb	 Aux	 NegP	 Adv+t	 O1	 O2+wh	
+ S	 Verb	 Aux	 NegP	 Adv+t+wh	 O1	 O2	
+ S+wh	 Verb	 Aux	 NegP	 Adv	 O1+t	 O2	
+ S	 Verb	 Aux	 NegP	 Adv+wh	 O1+t	 O2	
+ S	 Verb	 Aux	 NegP	 Adv	 O1+t	 O2+wh	
+ S	 Verb	 Aux	 NegP	 Adv	 O1+t+wh	 O2	
+ S+wh	 Verb	 Aux	 NegP	 Adv	 O1	 O2+t	
+ S	 Verb	 Aux	 NegP	 Adv+wh	 O1	 O2+t	
+ S	 Verb	 Aux	 NegP	 Adv	 O1+wh	 O2+t	
+ S	 Verb	 Aux	 NegP	 Adv	 O1	 O2+t+wh	
+ S+t	 Verb	 Aux	 NegP	 Adv+wh	 O1	 PP	
+ S+t	 Verb	 Aux	 NegP	 Adv	 O1+wh	 PP	
+ S+t	 Verb	 Aux	 NegP	 Adv	 O1	 PP+wh	
+ S+t+wh	 Verb	 Aux	 NegP	 Adv	 O1	 PP	
+ S+wh	 Verb	 Aux	 NegP	 Adv+t	 O1	 PP	
+ S	 Verb	 Aux	 NegP	 Adv+t	 O1+wh	 PP	
+ S	 Verb	 Aux	 NegP	 Adv+t	 O1	 PP+wh	
+ S	 Verb	 Aux	 NegP	 Adv+t+wh	 O1	 PP	
+ S+wh	 Verb	 Aux	 NegP	 Adv	 O1+t	 PP	
+ S	 Verb	 Aux	 NegP	 Adv+wh	 O1+t	 PP	
+ S	 Verb	 Aux	 NegP	 Adv	 O1+t	 PP+wh	
+ S	 Verb	 Aux	 NegP	 Adv	 O1+t+wh	 PP	
+ S+wh	 Verb	 Aux	 NegP	 Adv	 O1	 PP+t	
+ S	 Verb	 Aux	 NegP	 Adv+wh	 O1	 PP+t	
+ S	 Verb	 Aux	 NegP	 Adv	 O1+wh	 PP+t	
+ S	 Verb	 Aux	 NegP	 Adv	 O1	 PP+t+wh	
+ S+t	 Verb	 Aux	 NegP	 Adv+wh	 O2	 PP	
+ S+t	 Verb	 Aux	 NegP	 Adv	 O2+wh	 PP	
+ S+t	 Verb	 Aux	 NegP	 Adv	 O2	 PP+wh	
+ S+t+wh	 Verb	 Aux	 NegP	 Adv	 O2	 PP	
+ S+wh	 Verb	 Aux	 NegP	 Adv+t	 O2	 PP	
+ S	 Verb	 Aux	 NegP	 Adv+t	 O2+wh	 PP	
+ S	 Verb	 Aux	 NegP	 Adv+t	 O2	 PP+wh	
+ S	 Verb	 Aux	 NegP	 Adv+t+wh	 O2	 PP	
+ S+wh	 Verb	 Aux	 NegP	 Adv	 O2+t	 PP	
+ S	 Verb	 Aux	 NegP	 Adv+wh	 O2+t	 PP	
+ S	 Verb	 Aux	 NegP	 Adv	 O2+t	 PP+wh	
+ S	 Verb	 Aux	 NegP	 Adv	 O2+t+wh	 PP	
+ S+wh	 Verb	 Aux	 NegP	 Adv	 O2	 PP+t	
+ S	 Verb	 Aux	 NegP	 Adv+wh	 O2	 PP+t	
+ S	 Verb	 Aux	 NegP	 Adv	 O2+wh	 PP+t	
+ S	 Verb	 Aux	 NegP	 Adv	 O2	 PP+t+wh	
+ S+t	 Verb	 Aux	 NegP	 O1+wh	 O2	 PP	
+ S+t	 Verb	 Aux	 NegP	 O1	 O2+wh	 PP	
+ S+t	 Verb	 Aux	 NegP	 O1	 O2	 PP+wh	
+ S+t+wh	 Verb	 Aux	 NegP	 O1	 O2	 PP	
+ S+wh	 Verb	 Aux	 NegP	 O1+t	 O2	 PP	
+ S	 Verb	 Aux	 NegP	 O1+t	 O2+wh	 PP	
+ S	 Verb	 Aux	 NegP	 O1+t	 O2	 PP+wh	
+ S	 Verb	 Aux	 NegP	 O1+t+wh	 O2	 PP	
+ S+wh	 Verb	 Aux	 NegP	 O1	 O2+t	 PP	
+ S	 Verb	 Aux	 NegP	 O1+wh	 O2+t	 PP	
+ S	 Verb	 Aux	 NegP	 O1	 O2+t	 PP+wh	
+ S	 Verb	 Aux	 NegP	 O1	 O2+t+wh	 PP	
+ S+wh	 Verb	 Aux	 NegP	 O1	 O2	 PP+t	
+ S	 Verb	 Aux	 NegP	 O1+wh	 O2	 PP+t	
+ S	 Verb	 Aux	 NegP	 O1	 O2+wh	 PP+t	
+ S	 Verb	 Aux	 NegP	 O1	 O2	 PP+t+wh	
+ S+t	 Verb	 Aux	 Adv+wh	 O1	 O2	 PP	
+ S+t	 Verb	 Aux	 Adv	 O1+wh	 O2	 PP	
+ S+t	 Verb	 Aux	 Adv	 O1	 O2+wh	 PP	
+ S+t	 Verb	 Aux	 Adv	 O1	 O2	 PP+wh	
+ S+t+wh	 Verb	 Aux	 Adv	 O1	 O2	 PP	
+ S+wh	 Verb	 Aux	 Adv+t	 O1	 O2	 PP	
+ S	 Verb	 Aux	 Adv+t	 O1+wh	 O2	 PP	
+ S	 Verb	 Aux	 Adv+t	 O1	 O2+wh	 PP	
+ S	 Verb	 Aux	 Adv+t	 O1	 O2	 PP+wh	
+ S	 Verb	 Aux	 Adv+t+wh	 O1	 O2	 PP	
+ S+wh	 Verb	 Aux	 Adv	 O1+t	 O2	 PP	
+ S	 Verb	 Aux	 Adv+wh	 O1+t	 O2	 PP	
+ S	 Verb	 Aux	 Adv	 O1+t	 O2+wh	 PP	
+ S	 Verb	 Aux	 Adv	 O1+t	 O2	 PP+wh	
+ S	 Verb	 Aux	 Adv	 O1+t+wh	 O2	 PP	
+ S+wh	 Verb	 Aux	 Adv	 O1	 O2+t	 PP	
+ S	 Verb	 Aux	 Adv+wh	 O1	 O2+t	 PP	
+ S	 Verb	 Aux	 Adv	 O1+wh	 O2+t	 PP	
+ S	 Verb	 Aux	 Adv	 O1	 O2+t	 PP+wh	
+ S	 Verb	 Aux	 Adv	 O1	 O2+t+wh	 PP	
+ S+wh	 Verb	 Aux	 Adv	 O1	 O2	 PP+t	
+ S	 Verb	 Aux	 Adv+wh	 O1	 O2	 PP+t	
+ S	 Verb	 Aux	 Adv	 O1+wh	 O2	 PP+t	
+ S	 Verb	 Aux	 Adv	 O1	 O2+wh	 PP+t	
+ S	 Verb	 Aux	 Adv	 O1	 O2	 PP+t+wh	
+ S+t	 Verb	 NegP	 Adv+wh	 O1	 O2	 PP	
+ S+t	 Verb	 NegP	 Adv	 O1+wh	 O2	 PP	
+ S+t	 Verb	 NegP	 Adv	 O1	 O2+wh	 PP	
+ S+t	 Verb	 NegP	 Adv	 O1	 O2	 PP+wh	
+ S+t+wh	 Verb	 NegP	 Adv	 O1	 O2	 PP	
+ S+wh	 Verb	 NegP	 Adv+t	 O1	 O2	 PP	
+ S	 Verb	 NegP	 Adv+t	 O1+wh	 O2	 PP	
+ S	 Verb	 NegP	 Adv+t	 O1	 O2+wh	 PP	
+ S	 Verb	 NegP	 Adv+t	 O1	 O2	 PP+wh	
+ S	 Verb	 NegP	 Adv+t+wh	 O1	 O2	 PP	
+ S+wh	 Verb	 NegP	 Adv	 O1+t	 O2	 PP	
+ S	 Verb	 NegP	 Adv+wh	 O1+t	 O2	 PP	
+ S	 Verb	 NegP	 Adv	 O1+t	 O2+wh	 PP	
+ S	 Verb	 NegP	 Adv	 O1+t	 O2	 PP+wh	
+ S	 Verb	 NegP	 Adv	 O1+t+wh	 O2	 PP	
+ S+wh	 Verb	 NegP	 Adv	 O1	 O2+t	 PP	
+ S	 Verb	 NegP	 Adv+wh	 O1	 O2+t	 PP	
+ S	 Verb	 NegP	 Adv	 O1+wh	 O2+t	 PP	
+ S	 Verb	 NegP	 Adv	 O1	 O2+t	 PP+wh	
+ S	 Verb	 NegP	 Adv	 O1	 O2+t+wh	 PP	
+ S+wh	 Verb	 NegP	 Adv	 O1	 O2	 PP+t	
+ S	 Verb	 NegP	 Adv+wh	 O1	 O2	 PP+t	
+ S	 Verb	 NegP	 Adv	 O1+wh	 O2	 PP+t	
+ S	 Verb	 NegP	 Adv	 O1	 O2+wh	 PP+t	
+ S	 Verb	 NegP	 Adv	 O1	 O2	 PP+t+wh	
+ S+t	 Verb	 Aux	 NegP	 Adv+wh	 O1	 O2	 PP	
+ S+t	 Verb	 Aux	 NegP	 Adv	 O1+wh	 O2	 PP	
+ S+t	 Verb	 Aux	 NegP	 Adv	 O1	 O2+wh	 PP	
+ S+t	 Verb	 Aux	 NegP	 Adv	 O1	 O2	 PP+wh	
+ S+t+wh	 Verb	 Aux	 NegP	 Adv	 O1	 O2	 PP	
+ S+wh	 Verb	 Aux	 NegP	 Adv+t	 O1	 O2	 PP	
+ S	 Verb	 Aux	 NegP	 Adv+t	 O1+wh	 O2	 PP	
+ S	 Verb	 Aux	 NegP	 Adv+t	 O1	 O2+wh	 PP	
+ S	 Verb	 Aux	 NegP	 Adv+t	 O1	 O2	 PP+wh	
+ S	 Verb	 Aux	 NegP	 Adv+t+wh	 O1	 O2	 PP	
+ S+wh	 Verb	 Aux	 NegP	 Adv	 O1+t	 O2	 PP	
+ S	 Verb	 Aux	 NegP	 Adv+wh	 O1+t	 O2	 PP	
+ S	 Verb	 Aux	 NegP	 Adv	 O1+t	 O2+wh	 PP	
+ S	 Verb	 Aux	 NegP	 Adv	 O1+t	 O2	 PP+wh	
+ S	 Verb	 Aux	 NegP	 Adv	 O1+t+wh	 O2	 PP	
+ S+wh	 Verb	 Aux	 NegP	 Adv	 O1	 O2+t	 PP	
+ S	 Verb	 Aux	 NegP	 Adv+wh	 O1	 O2+t	 PP	
+ S	 Verb	 Aux	 NegP	 Adv	 O1+wh	 O2+t	 PP	
+ S	 Verb	 Aux	 NegP	 Adv	 O1	 O2+t	 PP+wh	
+ S	 Verb	 Aux	 NegP	 Adv	 O1	 O2+t+wh	 PP	
+ S+wh	 Verb	 Aux	 NegP	 Adv	 O1	 O2	 PP+t	
+ S	 Verb	 Aux	 NegP	 Adv+wh	 O1	 O2	 PP+t	
+ S	 Verb	 Aux	 NegP	 Adv	 O1+wh	 O2	 PP+t	
+ S	 Verb	 Aux	 NegP	 Adv	 O1	 O2+wh	 PP+t	
+ S	 Verb	 Aux	 NegP	 Adv	 O1	 O2	 PP+t+wh	
