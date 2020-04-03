@@ -7,6 +7,7 @@ producing, hopefully, a list of SRs/SOWs
 from obj_maker  import produce
 from nodes      import nodes
 from parameters import apply_parameters
+from UR_writer.all_URs  import all_URs
 
 # generates all the language possibilities
 def languages(english=True):
@@ -52,6 +53,7 @@ def forces():
 
 
 if __name__ == '__main__':
+    all_URs()
     with open("all_all.txt", 'w') as f:
         for language in languages():
             for force in forces():
