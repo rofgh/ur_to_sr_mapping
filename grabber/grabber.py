@@ -14,7 +14,7 @@ from collections import defaultdict
 import time
 
 def get_one(para, out_filename, URon, gaps):
-    data = open("SRs/COLAG_2011_flat.txt")
+    data = open("../SRs/COLAG_2011_flat.txt")
     SR_dict = defaultdict(lambda:'')
     SR_dict["header"] = ["BracketedTree #", "ILLOC Force", "SOW", "Bracketed Tree"]
     highest_line5 = 0
@@ -67,7 +67,7 @@ def get_all(URon=False, gaps=False):
     for x in range(0, 8192):
         para = str(format(x, '013b'))
         #print(para)
-        out_filename = "SRs/output/"+para+".txt"
+        out_filename = "../SRs/output/"+para+".txt"
         get_one(para, out_filename, URon, gaps)
 
 
@@ -97,7 +97,7 @@ if __name__ == '__main__':
         else:
             print("\nFirst argument is the list of parameter settings!\n")
             exit()
-    out_filename = "SRs/output/"+par
+    out_filename = "../SRs/output/"+par
     if len(par) != 13:
         print("\nWrong parameter settings length, it should be thirteen digits long! Try again!")
         exit()
