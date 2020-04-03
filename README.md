@@ -11,7 +11,7 @@ IGNORE THE BELOW, UNTIL UPDATE
 
 
 ## SR.creator.py
-There is a [section to comment](https://github.com/rofgh/Hidden-Sin/blob/434a7e9c970c35f01e21bf55bc15415f6532940e/SR_creator.py#L13-L21) out if you want only english (or any list of specific languages), 
+There is a [function boolean](https://github.com/rofgh/Hidden-Sin/blob/434a7e9c970c35f01e21bf55bc15415f6532940e/SR_creator.py#L12) to set to False if you want all languages, otherwise english = True and it will only produce for english, ie. [0,0,0,1,0,0,1,1,0,0,0,1,1].
 
 NOT python2 compatible:
 ```bash

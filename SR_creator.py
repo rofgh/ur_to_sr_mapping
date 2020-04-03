@@ -9,21 +9,24 @@ from nodes      import nodes
 from parameters import apply_parameters
 
 # generates all the language possibilities
-def languages():
-    #Comment out until ### to just do english
-    # for x in range(0, 8192):
-    #     language = []
-    #     for digit in format(x, '013b'):
-    #         if digit == '0':
-    #             language.append(0)
-    #         if digit == '1':
-    #             language.append(1)
-    #     yield language
-    ### English only:
-    english = [[0,0,0,1,0,0,1,1,0,0,0,1,1]]
-    return english
+def languages(english=True):
+    # FOR ALL LANGUAGES
+    if english == False:
+        for x in range(0, 8192):
+            language = []
+            for digit in format(x, '013b'):
+                if digit == '0':
+                    language.append(0)
+                if digit == '1':
+                    language.append(1)
+            yield language
+    ### English only: (Or add other specific languages)
+    if english == True:
+        english = [[0,0,0,1,0,0,1,1,0,0,0,1,1]]
+        for x in english:
+            yield x
 
-# selects a force and produces all the possible URs for that force
+# selects a illocutionary force and produces all the possible URs for that force
 def activate_force(force):
     filename = "UR_writer/all_"+force+"URs.txt"
     with open(filename, 'r') as u:
