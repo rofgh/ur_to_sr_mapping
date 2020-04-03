@@ -1,27 +1,17 @@
 # Hidden-Sin
 ## UR_writer
 
-WRITE ME!
-
-
-## README NEEDS RE-WRITING AFTER .PY FILE SPLITS and GENERAL EXTENSION
-Right now there are four main .py files:
-SR_creator.py, which is the user-run script
-nodes.py, which creates a tree for each representation
-parameters.py, which is the code for each parameter
-obj_maker.py, which is the original script, being harvested and split for better script interaction
-
-
-IGNORE THE BELOW, UNTIL UPDATE
-## obj-maker.py
-The object-based data maker, when fully implemented, should produce all the realizable SRs for each language.  These SRs should hopefully match the SRs found below in the Grabber, which looks at the CoLAG's SRs.
-
 NOT python2 compatible:
 ```bash
-$ python3 obj-maker.py
+$ python3 all_URs.py
+$ python3 all_DURs.py
+$ python3 all_IURs.py
+$ python3 all_QURs.py
 ```
 
-When the script is run it will create a file with the list of SRs created by each language (i.e. each of the different possible parameter setting combinations).  I haven't decided on the format of the file yet, so no point in entering it here as of now.  I want to be able to compare these SRs with the CoLAG SRs, but we won't have the UR IDs, so I am going to have to come up with some way to smartly do the comparison....?
+When the script is run it will create a file with the list of URs possible for each force, language-agnostic.
+
+The output of these is used as the starting URs for the SR_creator.py
 
 
 ## grabber.py

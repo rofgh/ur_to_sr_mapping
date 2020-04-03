@@ -4,10 +4,12 @@ takes the UR list, at all_URs.txt, for each one of them it runs the obj-maker, a
 producing, hopefully, a list of SRs/SOWs
 '''
 
-from obj_maker  import produce
-from nodes      import nodes
-from parameters import apply_parameters
-from UR_writer.all_URs  import all_URs
+#from modules    import *
+
+from modules.nodes      import nodes
+from modules.parameters import apply_parameters
+from modules.URs        import all_URs
+
 
 # generates all the language possibilities
 def languages(english=True):
@@ -54,7 +56,9 @@ def forces():
 
 if __name__ == '__main__':
     all_URs()
-    with open("all_all.txt", 'w') as f:
+    count = 0
+    filename = "all_all.txt"
+    with open(filename, 'w') as f:
         for language in languages():
             for force in forces():
                 all_URs = activate_force(force)
@@ -63,7 +67,7 @@ if __name__ == '__main__':
                     node = apply_parameters(language, force, node)
                     if node != "Not parseable!":
                         #SR = produce(language, force, ur, nodes)
-                        print("Hmmm")
+                        count += 1
                         pass
                     else:
                         SR = node
@@ -73,4 +77,4 @@ if __name__ == '__main__':
                     f.write(ur)
                     #f.write(ur+"\t")
                     #f.write(SR)
-
+    print("assessed "+str(count)+" trees and wrote them to "+filename)

@@ -10,8 +10,11 @@ obj_maker.py, which is the original script, being harvested and split for better
 IGNORE THE BELOW, UNTIL UPDATE
 
 
+
 ## SR.creator.py
-There is a [function boolean](https://github.com/rofgh/Hidden-Sin/blob/434a7e9c970c35f01e21bf55bc15415f6532940e/SR_creator.py#L12) to set to False if you want all languages, otherwise english = True and it will only produce for english, ie. [0,0,0,1,0,0,1,1,0,0,0,1,1].
+SR_creator.py creates SRs/SOWs for all the language-agnostic URs (created by all_URs.py), for whatever languages are selected:
+
+There is a [boolean](https://github.com/rofgh/Hidden-Sin/blob/434a7e9c970c35f01e21bf55bc15415f6532940e/SR_creator.py#L12) to set to False if you want all languages, otherwise english = True and it will only produce for english, ie. [0,0,0,1,0,0,1,1,0,0,0,1,1].
 
 NOT python2 compatible:
 ```bash

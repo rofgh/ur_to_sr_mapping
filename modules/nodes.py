@@ -80,6 +80,8 @@ def nodes(UR):
     SP_nodes    = [S, IP]
     for x in SP_nodes:
         x.phrase = SP
+
+     
     for node in nodes:
         if node.name in UR:
             node.inUR = True

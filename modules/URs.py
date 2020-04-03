@@ -82,7 +82,7 @@ def all_QURS():
     #     for y in x:
     #         print(y, end="\t")
 
-    with open("all_QURs.txt", 'w') as f:
+    with open("UR_writer/all_QURs.txt", 'w') as f:
         for UR in total:
             for item in UR:
                 f.write(str(item)+"\t")
@@ -158,7 +158,7 @@ def all_DURS():
     #     for y in x:
     #         print(y, end="\t")
 
-    with open("all_DURs.txt", 'w') as f:
+    with open("UR_writer/all_DURs.txt", 'w') as f:
         for UR in total:
             for item in UR:
                 f.write(str(item)+"\t")
@@ -224,7 +224,7 @@ def all_IURS():
     #     for y in x:
     #         print(y, end="\t")
 
-    with open("all_IURs.txt", 'w') as f:
+    with open("UR_writer/all_IURs.txt", 'w') as f:
         for UR in total:
             for item in UR:
                 f.write(str(item)+"\t")
