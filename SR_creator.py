@@ -25,7 +25,7 @@ def languages():
 
 # selects a force and produces all the possible URs for that force
 def activate_force(force):
-    filename = "all_"+force+"URs.txt"
+    filename = "UR_writer/all_"+force+"URs.txt"
     with open(filename, 'r') as u:
         URs = u
         all_URs = []
