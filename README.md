@@ -4,10 +4,21 @@ Right now there are four main .py files:
 SR_creator.py, which is the user-run script
 nodes.py, which creates a tree for each representation
 parameters.py, which is the code for each parameter
-obj_maker.py, which is the original script, being harvested and split for better script interaction
+obj_maker.py, which is the original script, being harvested and split for better script interaction, it may be obsolete soon.
 
 
 IGNORE THE BELOW, UNTIL UPDATE
+
+
+## SR.creator.py
+There is a [section to comment](https://github.com/rofgh/Hidden-Sin/blob/434a7e9c970c35f01e21bf55bc15415f6532940e/SR_creator.py#L13-L21) out if you want only english (or any list of specific languages), 
+
+NOT python2 compatible:
+```bash
+$ python3 SR_creator.py
+```
+
+
 ## obj-maker.py
 The object-based data maker, when fully implemented, should produce all the realizable SRs for each language.  These SRs should hopefully match the SRs found below in the Grabber, which looks at the CoLAG's SRs.
 
