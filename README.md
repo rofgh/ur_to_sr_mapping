@@ -1,6 +1,13 @@
 # Hidden-Sin
 ## README NEEDS RE-WRITING AFTER .PY FILE SPLITS and GENERAL EXTENSION
+Right now there are four main .py files:
+SR_creator.py, which is the user-run script
+nodes.py, which creates a tree for each representation
+parameters.py, which is the code for each parameter
+obj_maker.py, which is the original script, being harvested and split for better script interaction
 
+
+IGNORE THE BELOW, UNTIL UPDATE
 ## obj-maker.py
 The object-based data maker, when fully implemented, should produce all the realizable SRs for each language.  These SRs should hopefully match the SRs found below in the Grabber, which looks at the CoLAG's SRs.
 
