@@ -1,4 +1,5 @@
 # Hidden-Sin
+## README NEEDS RE-WRITING AFTER .PY FILE SPLITS and GENERAL EXTENSION
 
 ## obj-maker.py
 The object-based data maker, when fully implemented, should produce all the realizable SRs for each language.  These SRs should hopefully match the SRs found below in the Grabber, which looks at the CoLAG's SRs.
