@@ -1,9 +1,8 @@
 # Hidden-Sin
 ## README NEEDS RE-WRITING AFTER .PY FILE SPLITS and GENERAL EXTENSION
 Right now there are four main .py files:  
+
 SR_creator.py, which is the user-run script  
-nodes.py, which creates a tree for each representation  
-parameters.py, which is the code for each parameter  
 obj_maker.py, which is the original script, being harvested and split for better script interaction, it may be obsolete soon.
 
 
@@ -11,7 +10,7 @@ IGNORE THE BELOW, UNTIL UPDATE
 
 
 
-## SR.creator.py
+## SR_creator.py
 SR_creator.py creates SRs/SOWs for all the language-agnostic URs (created by all_URs.py), for whatever languages are selected:
 
 There is a [boolean](https://github.com/rofgh/Hidden-Sin/blob/434a7e9c970c35f01e21bf55bc15415f6532940e/SR_creator.py#L12) to set to False if you want all languages, otherwise english = True and it will only produce for english, ie. [0,0,0,1,0,0,1,1,0,0,0,1,1].
@@ -20,6 +19,13 @@ NOT python2 compatible:
 ```bash
 $ python3 SR_creator.py
 ```
+
+SR Creator uses the following main modules:
+
+nodes.py, which creates a list of node objects for each representation (i.e. a tree)
+parameters.py, which applies each parameter setting according to the language that is provided
+
+
 
 
 ## obj-maker.py
