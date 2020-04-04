@@ -14,7 +14,7 @@ When the script is run it will create a file with the list of URs possible for e
 The output of these is used as the starting URs for the SR_creator.py
 
 
-## grabber.py
+## TEMPLATE FROM grabber.py
 The grabber script allows us to look at the SRs and associated bracketed UR trees for specific parameter settings of the CoLAG languages.
 
 The [flat.txt file](http://www.colag.cs.hunter.cuny.edu/grammar/data/COLAG_2011_flat.zip) needs to be
