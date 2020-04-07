@@ -58,8 +58,12 @@ def forces():
 
 if __name__ == '__main__':
     try:
-        all = bool(sys.argv[1])
-    except: 
+        arg = sys.argv[1]
+        if arg == 'True':
+            all = True
+        else:
+            all = False
+    except:
         all = False
     all_URs()
     treecount = 0
