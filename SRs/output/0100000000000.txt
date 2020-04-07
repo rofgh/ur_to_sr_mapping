@@ -1,0 +1,547 @@
+BracketedTree #	ILLOC Force	SOW	Bracketed Tree	
+864	DEC	Adv S O1 Verb Not Aux                             	
+865	DEC	Adv S O2 O1 Verb Not Aux                          	
+866	DEC	Adv S O3 P O1 Verb Not Aux                        	
+867	DEC	Adv S O3 P O2 O1 Verb Not Aux                     	
+868	DEC	Adv S O3 P Verb Not Aux                           	
+869	DEC	Adv S Verb Not Aux                                	
+870	DEC	Adv S O1 Verb Never Aux                           	
+871	DEC	Adv S O2 O1 Verb Never Aux                        	
+872	DEC	Adv S O3 P O1 Verb Never Aux                      	
+873	DEC	Adv S O3 P O2 O1 Verb Never Aux                   	
+874	DEC	Adv S O3 P Verb Never Aux                         	
+875	DEC	Adv S Verb Never Aux                              	
+900	DEC	Adv S O1 Verb Aux                                 	
+901	DEC	Adv S O2 O1 Verb Aux                              	
+902	DEC	Adv S O3 P O1 Verb Aux                            	
+903	DEC	Adv S O3 P O2 O1 Verb Aux                         	
+904	DEC	Adv S O3 P Verb Aux                               	
+905	DEC	Adv S Verb Aux                                    	
+4512	DEC	O1 S Adv Verb Not Aux                             	
+4513	DEC	O1 S Adv O2 Verb Not Aux                          	
+4514	DEC	O1 S Adv O3 P Verb Not Aux                        	
+4515	DEC	O1 S Adv O3 P O2 Verb Not Aux                     	
+4516	DEC	O1 S Verb Not Aux                                 	
+4517	DEC	O1 S O2 Verb Not Aux                              	
+4518	DEC	O1 S O3 P Verb Not Aux                            	
+4519	DEC	O1 S O3 P O2 Verb Not Aux                         	
+4520	DEC	O1 S Adv Verb Never Aux                           	
+4521	DEC	O1 S Adv O2 Verb Never Aux                        	
+4522	DEC	O1 S Adv O3 P Verb Never Aux                      	
+4523	DEC	O1 S Adv O3 P O2 Verb Never Aux                   	
+4524	DEC	O1 S Verb Never Aux                               	
+4525	DEC	O1 S O2 Verb Never Aux                            	
+4526	DEC	O1 S O3 P Verb Never Aux                          	
+4527	DEC	O1 S O3 P O2 Verb Never Aux                       	
+4560	DEC	O1 S Adv Verb Aux                                 	
+4561	DEC	O1 S Adv O2 Verb Aux                              	
+4562	DEC	O1 S Adv O3 P Verb Aux                            	
+4563	DEC	O1 S Adv O3 P O2 Verb Aux                         	
+4564	DEC	O1 S Verb Aux                                     	
+4565	DEC	O1 S O2 Verb Aux                                  	
+4566	DEC	O1 S O3 P Verb Aux                                	
+4567	DEC	O1 S O3 P O2 Verb Aux                             	
+8416	DEC	O2 S Adv O1 Verb Not Aux                          	
+8417	DEC	O2 S Adv O3 P O1 Verb Not Aux                     	
+8418	DEC	O2 S O1 Verb Not Aux                              	
+8419	DEC	O2 S O3 P O1 Verb Not Aux                         	
+8420	DEC	O2 S Adv O1 Verb Never Aux                        	
+8421	DEC	O2 S Adv O3 P O1 Verb Never Aux                   	
+8422	DEC	O2 S O1 Verb Never Aux                            	
+8423	DEC	O2 S O3 P O1 Verb Never Aux                       	
+8440	DEC	O2 S Adv O1 Verb Aux                              	
+8441	DEC	O2 S Adv O3 P O1 Verb Aux                         	
+8442	DEC	O2 S O1 Verb Aux                                  	
+8443	DEC	O2 S O3 P O1 Verb Aux                             	
+15668	DEC	S Adv O1 Verb Not Aux                             	
+15669	DEC	S Adv O2 O1 Verb Not Aux                          	
+15670	DEC	S Adv O3 P O1 Verb Not Aux                        	
+15671	DEC	S Adv O3 P O2 O1 Verb Not Aux                     	
+15672	DEC	S Adv O3 P Verb Not Aux                           	
+15673	DEC	S Adv Verb Not Aux                                	
+15674	DEC	S O1 Verb Not Aux                                 	
+15675	DEC	S O2 O1 Verb Not Aux                              	
+15676	DEC	S O3 P O1 Verb Not Aux                            	
+15677	DEC	S O3 P O2 O1 Verb Not Aux                         	
+15678	DEC	S O3 P Verb Not Aux                               	
+15679	DEC	S Verb Not Aux                                    	
+15680	DEC	S Adv O1 Verb Never Aux                           	
+15681	DEC	S Adv O2 O1 Verb Never Aux                        	
+15682	DEC	S Adv O3 P O1 Verb Never Aux                      	
+15683	DEC	S Adv O3 P O2 O1 Verb Never Aux                   	
+15684	DEC	S Adv O3 P Verb Never Aux                         	
+15685	DEC	S Adv Verb Never Aux                              	
+15686	DEC	S O1 Verb Never Aux                               	
+15687	DEC	S O2 O1 Verb Never Aux                            	
+15688	DEC	S O3 P O1 Verb Never Aux                          	
+15689	DEC	S O3 P O2 O1 Verb Never Aux                       	
+15690	DEC	S O3 P Verb Never Aux                             	
+15691	DEC	S Verb Never Aux                                  	
+15740	DEC	S Adv O1 Verb Aux                                 	
+15741	DEC	S Adv O2 O1 Verb Aux                              	
+15742	DEC	S Adv O3 P O1 Verb Aux                            	
+15743	DEC	S Adv O3 P O2 O1 Verb Aux                         	
+15744	DEC	S Adv O3 P Verb Aux                               	
+15745	DEC	S Adv Verb Aux                                    	
+15746	DEC	S O1 Verb Aux                                     	
+15747	DEC	S O2 O1 Verb Aux                                  	
+15748	DEC	S O3 P O1 Verb Aux                                	
+15749	DEC	S O3 P O2 O1 Verb Aux                             	
+15750	DEC	S O3 P Verb Aux                                   	
+15751	DEC	S Verb Aux                                        	
+20890	DEC	O3 P S Adv O1 Verb Not Aux                        	
+20891	DEC	O3 P S Adv O2 O1 Verb Not Aux                     	
+20892	DEC	O3 P S Adv Verb Not Aux                           	
+20893	DEC	O3 P S O1 Verb Not Aux                            	
+20894	DEC	O3 P S O2 O1 Verb Not Aux                         	
+20895	DEC	O3 P S Verb Not Aux                               	
+20896	DEC	O3 P S Adv O1 Verb Never Aux                      	
+20897	DEC	O3 P S Adv O2 O1 Verb Never Aux                   	
+20898	DEC	O3 P S Adv Verb Never Aux                         	
+20899	DEC	O3 P S O1 Verb Never Aux                          	
+20900	DEC	O3 P S O2 O1 Verb Never Aux                       	
+20901	DEC	O3 P S Verb Never Aux                             	
+20920	DEC	O3 P S Adv O1 Verb Aux                            	
+20921	DEC	O3 P S Adv O2 O1 Verb Aux                         	
+20922	DEC	O3 P S Adv Verb Aux                               	
+20923	DEC	O3 P S O1 Verb Aux                                	
+20924	DEC	O3 P S O2 O1 Verb Aux                             	
+20925	DEC	O3 P S Verb Aux                                   	
+23536	IMP	Adv O1 Verb Not                                   	
+23537	IMP	Adv O2 O1 Verb Not                                	
+23538	IMP	Adv O3 P O1 Verb Not                              	
+23539	IMP	Adv O3 P O2 O1 Verb Not                           	
+23540	IMP	Adv O3 P Verb Not                                 	
+23541	IMP	Adv Verb Not                                      	
+23542	IMP	O1 Verb Not                                       	
+23543	IMP	O2 O1 Verb Not                                    	
+23544	IMP	O3 P O1 Verb Not                                  	
+23545	IMP	O3 P O2 O1 Verb Not                               	
+23546	IMP	O3 P Verb Not                                     	
+23547	IMP	Verb Not                                          	
+23548	IMP	Adv O1 Verb Never                                 	
+23549	IMP	Adv O2 O1 Verb Never                              	
+23550	IMP	Adv O3 P O1 Verb Never                            	
+23551	IMP	Adv O3 P O2 O1 Verb Never                         	
+23552	IMP	Adv O3 P Verb Never                               	
+23553	IMP	Adv Verb Never                                    	
+23554	IMP	O1 Verb Never                                     	
+23555	IMP	O2 O1 Verb Never                                  	
+23556	IMP	O3 P O1 Verb Never                                	
+23557	IMP	O3 P O2 O1 Verb Never                             	
+23558	IMP	O3 P Verb Never                                   	
+23559	IMP	Verb Never                                        	
+23560	IMP	Adv O1 Verb                                       	
+23561	IMP	Adv O2 O1 Verb                                    	
+23562	IMP	Adv O3 P O1 Verb                                  	
+23563	IMP	Adv O3 P O2 O1 Verb                               	
+23564	IMP	Adv O3 P Verb                                     	
+23565	IMP	Adv Verb                                          	
+23566	IMP	O1 Verb                                           	
+23567	IMP	O2 O1 Verb                                        	
+23568	IMP	O3 P O1 Verb                                      	
+23569	IMP	O3 P O2 O1 Verb                                   	
+23570	IMP	O3 P Verb                                         	
+23571	IMP	Verb                                              	
+24436	Q  	ka S Adv O1 Verb Not Aux                          	
+24437	Q  	ka S Adv O2 O1 Verb Not Aux                       	
+24438	Q  	ka S Adv O3 P O1 Verb Not Aux                     	
+24439	Q  	ka S Adv O3 P O2 O1 Verb Not Aux                  	
+24440	Q  	ka S Adv O3 P Verb Not Aux                        	
+24441	Q  	ka S Adv Verb Not Aux                             	
+24442	Q  	ka S O1 Verb Not Aux                              	
+24443	Q  	ka S O2 O1 Verb Not Aux                           	
+24444	Q  	ka S O3 P O1 Verb Not Aux                         	
+24445	Q  	ka S O3 P O2 O1 Verb Not Aux                      	
+24446	Q  	ka S O3 P Verb Not Aux                            	
+24447	Q  	ka S Verb Not Aux                                 	
+24448	Q  	ka S Adv O1 Verb Never Aux                        	
+24449	Q  	ka S Adv O2 O1 Verb Never Aux                     	
+24450	Q  	ka S Adv O3 P O1 Verb Never Aux                   	
+24451	Q  	ka S Adv O3 P O2 O1 Verb Never Aux                	
+24452	Q  	ka S Adv O3 P Verb Never Aux                      	
+24453	Q  	ka S Adv Verb Never Aux                           	
+24454	Q  	ka S O1 Verb Never Aux                            	
+24455	Q  	ka S O2 O1 Verb Never Aux                         	
+24456	Q  	ka S O3 P O1 Verb Never Aux                       	
+24457	Q  	ka S O3 P O2 O1 Verb Never Aux                    	
+24458	Q  	ka S O3 P Verb Never Aux                          	
+24459	Q  	ka S Verb Never Aux                               	
+24508	Q  	ka S Adv O1 Verb Aux                              	
+24509	Q  	ka S Adv O2 O1 Verb Aux                           	
+24510	Q  	ka S Adv O3 P O1 Verb Aux                         	
+24511	Q  	ka S Adv O3 P O2 O1 Verb Aux                      	
+24512	Q  	ka S Adv O3 P Verb Aux                            	
+24513	Q  	ka S Adv Verb Aux                                 	
+24514	Q  	ka S O1 Verb Aux                                  	
+24515	Q  	ka S O2 O1 Verb Aux                               	
+24516	Q  	ka S O3 P O1 Verb Aux                             	
+24517	Q  	ka S O3 P O2 O1 Verb Aux                          	
+24518	Q  	ka S O3 P Verb Aux                                	
+24519	Q  	ka S Verb Aux                                     	
+28796	Q  	Adv ka S O1[+WH] Verb Not Aux                     	
+28797	Q  	Adv ka S O2 O1[+WH] Verb Not Aux                  	
+28798	Q  	Adv ka S O2[+WH] O1 Verb Not Aux                  	
+28799	Q  	Adv ka S O3 P O1[+WH] Verb Not Aux                	
+28800	Q  	Adv ka S O3 P O2 O1[+WH] Verb Not Aux             	
+28801	Q  	Adv ka S O3 P O2[+WH] O1 Verb Not Aux             	
+28802	Q  	Adv ka S O3[+WH] P O1 Verb Not Aux                	
+28803	Q  	Adv ka S O3[+WH] P O2 O1 Verb Not Aux             	
+28804	Q  	Adv ka S O3[+WH] P Verb Not Aux                   	
+28805	Q  	Adv ka S O1[+WH] Verb Never Aux                   	
+28806	Q  	Adv ka S O2 O1[+WH] Verb Never Aux                	
+28807	Q  	Adv ka S O2[+WH] O1 Verb Never Aux                	
+28808	Q  	Adv ka S O3 P O1[+WH] Verb Never Aux              	
+28809	Q  	Adv ka S O3 P O2 O1[+WH] Verb Never Aux           	
+28810	Q  	Adv ka S O3 P O2[+WH] O1 Verb Never Aux           	
+28811	Q  	Adv ka S O3[+WH] P O1 Verb Never Aux              	
+28812	Q  	Adv ka S O3[+WH] P O2 O1 Verb Never Aux           	
+28813	Q  	Adv ka S O3[+WH] P Verb Never Aux                 	
+28850	Q  	Adv ka S O1[+WH] Verb Aux                         	
+28851	Q  	Adv ka S O2 O1[+WH] Verb Aux                      	
+28852	Q  	Adv ka S O2[+WH] O1 Verb Aux                      	
+28853	Q  	Adv ka S O3 P O1[+WH] Verb Aux                    	
+28854	Q  	Adv ka S O3 P O2 O1[+WH] Verb Aux                 	
+28855	Q  	Adv ka S O3 P O2[+WH] O1 Verb Aux                 	
+28856	Q  	Adv ka S O3[+WH] P O1 Verb Aux                    	
+28857	Q  	Adv ka S O3[+WH] P O2 O1 Verb Aux                 	
+28858	Q  	Adv ka S O3[+WH] P Verb Aux                       	
+29060	Q  	Adv ka S[+WH] O1 Verb Not Aux                     	
+29061	Q  	Adv ka S[+WH] O2 O1 Verb Not Aux                  	
+29062	Q  	Adv ka S[+WH] O3 P O1 Verb Not Aux                	
+29063	Q  	Adv ka S[+WH] O3 P O2 O1 Verb Not Aux             	
+29064	Q  	Adv ka S[+WH] O3 P Verb Not Aux                   	
+29065	Q  	Adv ka S[+WH] Verb Not Aux                        	
+29066	Q  	Adv ka S[+WH] O1 Verb Never Aux                   	
+29067	Q  	Adv ka S[+WH] O2 O1 Verb Never Aux                	
+29068	Q  	Adv ka S[+WH] O3 P O1 Verb Never Aux              	
+29069	Q  	Adv ka S[+WH] O3 P O2 O1 Verb Never Aux           	
+29070	Q  	Adv ka S[+WH] O3 P Verb Never Aux                 	
+29071	Q  	Adv ka S[+WH] Verb Never Aux                      	
+29096	Q  	Adv ka S[+WH] O1 Verb Aux                         	
+29097	Q  	Adv ka S[+WH] O2 O1 Verb Aux                      	
+29098	Q  	Adv ka S[+WH] O3 P O1 Verb Aux                    	
+29099	Q  	Adv ka S[+WH] O3 P O2 O1 Verb Aux                 	
+29100	Q  	Adv ka S[+WH] O3 P Verb Aux                       	
+29101	Q  	Adv ka S[+WH] Verb Aux                            	
+35204	Q  	Adv[+WH] ka S O1 Verb Not Aux                     	
+35205	Q  	Adv[+WH] ka S O2 O1 Verb Not Aux                  	
+35206	Q  	Adv[+WH] ka S O3 P O1 Verb Not Aux                	
+35207	Q  	Adv[+WH] ka S O3 P O2 O1 Verb Not Aux             	
+35208	Q  	Adv[+WH] ka S O3 P Verb Not Aux                   	
+35209	Q  	Adv[+WH] ka S Verb Not Aux                        	
+35210	Q  	Adv[+WH] ka S O1 Verb Never Aux                   	
+35211	Q  	Adv[+WH] ka S O2 O1 Verb Never Aux                	
+35212	Q  	Adv[+WH] ka S O3 P O1 Verb Never Aux              	
+35213	Q  	Adv[+WH] ka S O3 P O2 O1 Verb Never Aux           	
+35214	Q  	Adv[+WH] ka S O3 P Verb Never Aux                 	
+35215	Q  	Adv[+WH] ka S Verb Never Aux                      	
+35240	Q  	Adv[+WH] ka S O1 Verb Aux                         	
+35241	Q  	Adv[+WH] ka S O2 O1 Verb Aux                      	
+35242	Q  	Adv[+WH] ka S O3 P O1 Verb Aux                    	
+35243	Q  	Adv[+WH] ka S O3 P O2 O1 Verb Aux                 	
+35244	Q  	Adv[+WH] ka S O3 P Verb Aux                       	
+35245	Q  	Adv[+WH] ka S Verb Aux                            	
+39316	Q  	O1 ka S Adv O2[+WH] Verb Not Aux                  	
+39317	Q  	O1 ka S Adv O3 P O2[+WH] Verb Not Aux             	
+39318	Q  	O1 ka S Adv O3[+WH] P Verb Not Aux                	
+39319	Q  	O1 ka S Adv O3[+WH] P O2 Verb Not Aux             	
+39320	Q  	O1 ka S Adv[+WH] Verb Not Aux                     	
+39321	Q  	O1 ka S Adv[+WH] O2 Verb Not Aux                  	
+39322	Q  	O1 ka S Adv[+WH] O3 P Verb Not Aux                	
+39323	Q  	O1 ka S Adv[+WH] O3 P O2 Verb Not Aux             	
+39324	Q  	O1 ka S O2[+WH] Verb Not Aux                      	
+39325	Q  	O1 ka S O3 P O2[+WH] Verb Not Aux                 	
+39326	Q  	O1 ka S O3[+WH] P Verb Not Aux                    	
+39327	Q  	O1 ka S O3[+WH] P O2 Verb Not Aux                 	
+39328	Q  	O1 ka S Adv O2[+WH] Verb Never Aux                	
+39329	Q  	O1 ka S Adv O3 P O2[+WH] Verb Never Aux           	
+39330	Q  	O1 ka S Adv O3[+WH] P Verb Never Aux              	
+39331	Q  	O1 ka S Adv O3[+WH] P O2 Verb Never Aux           	
+39332	Q  	O1 ka S Adv[+WH] Verb Never Aux                   	
+39333	Q  	O1 ka S Adv[+WH] O2 Verb Never Aux                	
+39334	Q  	O1 ka S Adv[+WH] O3 P Verb Never Aux              	
+39335	Q  	O1 ka S Adv[+WH] O3 P O2 Verb Never Aux           	
+39336	Q  	O1 ka S O2[+WH] Verb Never Aux                    	
+39337	Q  	O1 ka S O3 P O2[+WH] Verb Never Aux               	
+39338	Q  	O1 ka S O3[+WH] P Verb Never Aux                  	
+39339	Q  	O1 ka S O3[+WH] P O2 Verb Never Aux               	
+39388	Q  	O1 ka S Adv O2[+WH] Verb Aux                      	
+39389	Q  	O1 ka S Adv O3 P O2[+WH] Verb Aux                 	
+39390	Q  	O1 ka S Adv O3[+WH] P Verb Aux                    	
+39391	Q  	O1 ka S Adv O3[+WH] P O2 Verb Aux                 	
+39392	Q  	O1 ka S Adv[+WH] Verb Aux                         	
+39393	Q  	O1 ka S Adv[+WH] O2 Verb Aux                      	
+39394	Q  	O1 ka S Adv[+WH] O3 P Verb Aux                    	
+39395	Q  	O1 ka S Adv[+WH] O3 P O2 Verb Aux                 	
+39396	Q  	O1 ka S O2[+WH] Verb Aux                          	
+39397	Q  	O1 ka S O3 P O2[+WH] Verb Aux                     	
+39398	Q  	O1 ka S O3[+WH] P Verb Aux                        	
+39399	Q  	O1 ka S O3[+WH] P O2 Verb Aux                     	
+39668	Q  	O1 ka S[+WH] Adv Verb Not Aux                     	
+39669	Q  	O1 ka S[+WH] Adv O2 Verb Not Aux                  	
+39670	Q  	O1 ka S[+WH] Adv O3 P Verb Not Aux                	
+39671	Q  	O1 ka S[+WH] Adv O3 P O2 Verb Not Aux             	
+39672	Q  	O1 ka S[+WH] Verb Not Aux                         	
+39673	Q  	O1 ka S[+WH] O2 Verb Not Aux                      	
+39674	Q  	O1 ka S[+WH] O3 P Verb Not Aux                    	
+39675	Q  	O1 ka S[+WH] O3 P O2 Verb Not Aux                 	
+39676	Q  	O1 ka S[+WH] Adv Verb Never Aux                   	
+39677	Q  	O1 ka S[+WH] Adv O2 Verb Never Aux                	
+39678	Q  	O1 ka S[+WH] Adv O3 P Verb Never Aux              	
+39679	Q  	O1 ka S[+WH] Adv O3 P O2 Verb Never Aux           	
+39680	Q  	O1 ka S[+WH] Verb Never Aux                       	
+39681	Q  	O1 ka S[+WH] O2 Verb Never Aux                    	
+39682	Q  	O1 ka S[+WH] O3 P Verb Never Aux                  	
+39683	Q  	O1 ka S[+WH] O3 P O2 Verb Never Aux               	
+39716	Q  	O1 ka S[+WH] Adv Verb Aux                         	
+39717	Q  	O1 ka S[+WH] Adv O2 Verb Aux                      	
+39718	Q  	O1 ka S[+WH] Adv O3 P Verb Aux                    	
+39719	Q  	O1 ka S[+WH] Adv O3 P O2 Verb Aux                 	
+39720	Q  	O1 ka S[+WH] Verb Aux                             	
+39721	Q  	O1 ka S[+WH] O2 Verb Aux                          	
+39722	Q  	O1 ka S[+WH] O3 P Verb Aux                        	
+39723	Q  	O1 ka S[+WH] O3 P O2 Verb Aux                     	
+47860	Q  	O1[+WH] ka S Adv Verb Not Aux                     	
+47861	Q  	O1[+WH] ka S Adv O2 Verb Not Aux                  	
+47862	Q  	O1[+WH] ka S Adv O3 P Verb Not Aux                	
+47863	Q  	O1[+WH] ka S Adv O3 P O2 Verb Not Aux             	
+47864	Q  	O1[+WH] ka S Verb Not Aux                         	
+47865	Q  	O1[+WH] ka S O2 Verb Not Aux                      	
+47866	Q  	O1[+WH] ka S O3 P Verb Not Aux                    	
+47867	Q  	O1[+WH] ka S O3 P O2 Verb Not Aux                 	
+47868	Q  	O1[+WH] ka S Adv Verb Never Aux                   	
+47869	Q  	O1[+WH] ka S Adv O2 Verb Never Aux                	
+47870	Q  	O1[+WH] ka S Adv O3 P Verb Never Aux              	
+47871	Q  	O1[+WH] ka S Adv O3 P O2 Verb Never Aux           	
+47872	Q  	O1[+WH] ka S Verb Never Aux                       	
+47873	Q  	O1[+WH] ka S O2 Verb Never Aux                    	
+47874	Q  	O1[+WH] ka S O3 P Verb Never Aux                  	
+47875	Q  	O1[+WH] ka S O3 P O2 Verb Never Aux               	
+47908	Q  	O1[+WH] ka S Adv Verb Aux                         	
+47909	Q  	O1[+WH] ka S Adv O2 Verb Aux                      	
+47910	Q  	O1[+WH] ka S Adv O3 P Verb Aux                    	
+47911	Q  	O1[+WH] ka S Adv O3 P O2 Verb Aux                 	
+47912	Q  	O1[+WH] ka S Verb Aux                             	
+47913	Q  	O1[+WH] ka S O2 Verb Aux                          	
+47914	Q  	O1[+WH] ka S O3 P Verb Aux                        	
+47915	Q  	O1[+WH] ka S O3 P O2 Verb Aux                     	
+51092	Q  	O2 ka S Adv O1[+WH] Verb Not Aux                  	
+51093	Q  	O2 ka S Adv O3 P O1[+WH] Verb Not Aux             	
+51094	Q  	O2 ka S Adv O3[+WH] P O1 Verb Not Aux             	
+51095	Q  	O2 ka S Adv[+WH] O1 Verb Not Aux                  	
+51096	Q  	O2 ka S Adv[+WH] O3 P O1 Verb Not Aux             	
+51097	Q  	O2 ka S O1[+WH] Verb Not Aux                      	
+51098	Q  	O2 ka S O3 P O1[+WH] Verb Not Aux                 	
+51099	Q  	O2 ka S O3[+WH] P O1 Verb Not Aux                 	
+51100	Q  	O2 ka S Adv O1[+WH] Verb Never Aux                	
+51101	Q  	O2 ka S Adv O3 P O1[+WH] Verb Never Aux           	
+51102	Q  	O2 ka S Adv O3[+WH] P O1 Verb Never Aux           	
+51103	Q  	O2 ka S Adv[+WH] O1 Verb Never Aux                	
+51104	Q  	O2 ka S Adv[+WH] O3 P O1 Verb Never Aux           	
+51105	Q  	O2 ka S O1[+WH] Verb Never Aux                    	
+51106	Q  	O2 ka S O3 P O1[+WH] Verb Never Aux               	
+51107	Q  	O2 ka S O3[+WH] P O1 Verb Never Aux               	
+51140	Q  	O2 ka S Adv O1[+WH] Verb Aux                      	
+51141	Q  	O2 ka S Adv O3 P O1[+WH] Verb Aux                 	
+51142	Q  	O2 ka S Adv O3[+WH] P O1 Verb Aux                 	
+51143	Q  	O2 ka S Adv[+WH] O1 Verb Aux                      	
+51144	Q  	O2 ka S Adv[+WH] O3 P O1 Verb Aux                 	
+51145	Q  	O2 ka S O1[+WH] Verb Aux                          	
+51146	Q  	O2 ka S O3 P O1[+WH] Verb Aux                     	
+51147	Q  	O2 ka S O3[+WH] P O1 Verb Aux                     	
+51316	Q  	O2 ka S[+WH] Adv O1 Verb Not Aux                  	
+51317	Q  	O2 ka S[+WH] Adv O3 P O1 Verb Not Aux             	
+51318	Q  	O2 ka S[+WH] O1 Verb Not Aux                      	
+51319	Q  	O2 ka S[+WH] O3 P O1 Verb Not Aux                 	
+51320	Q  	O2 ka S[+WH] Adv O1 Verb Never Aux                	
+51321	Q  	O2 ka S[+WH] Adv O3 P O1 Verb Never Aux           	
+51322	Q  	O2 ka S[+WH] O1 Verb Never Aux                    	
+51323	Q  	O2 ka S[+WH] O3 P O1 Verb Never Aux               	
+51340	Q  	O2 ka S[+WH] Adv O1 Verb Aux                      	
+51341	Q  	O2 ka S[+WH] Adv O3 P O1 Verb Aux                 	
+51342	Q  	O2 ka S[+WH] O1 Verb Aux                          	
+51343	Q  	O2 ka S[+WH] O3 P O1 Verb Aux                     	
+56148	Q  	O2[+WH] ka S Adv O1 Verb Not Aux                  	
+56149	Q  	O2[+WH] ka S Adv O3 P O1 Verb Not Aux             	
+56150	Q  	O2[+WH] ka S O1 Verb Not Aux                      	
+56151	Q  	O2[+WH] ka S O3 P O1 Verb Not Aux                 	
+56152	Q  	O2[+WH] ka S Adv O1 Verb Never Aux                	
+56153	Q  	O2[+WH] ka S Adv O3 P O1 Verb Never Aux           	
+56154	Q  	O2[+WH] ka S O1 Verb Never Aux                    	
+56155	Q  	O2[+WH] ka S O3 P O1 Verb Never Aux               	
+56172	Q  	O2[+WH] ka S Adv O1 Verb Aux                      	
+56173	Q  	O2[+WH] ka S Adv O3 P O1 Verb Aux                 	
+56174	Q  	O2[+WH] ka S O1 Verb Aux                          	
+56175	Q  	O2[+WH] ka S O3 P O1 Verb Aux                     	
+71700	Q  	S ka Adv O1[+WH] Verb Not Aux                     	
+71701	Q  	S ka Adv O2 O1[+WH] Verb Not Aux                  	
+71702	Q  	S ka Adv O2[+WH] O1 Verb Not Aux                  	
+71703	Q  	S ka Adv O3 P O1[+WH] Verb Not Aux                	
+71704	Q  	S ka Adv O3 P O2 O1[+WH] Verb Not Aux             	
+71705	Q  	S ka Adv O3 P O2[+WH] O1 Verb Not Aux             	
+71706	Q  	S ka Adv O3[+WH] P O1 Verb Not Aux                	
+71707	Q  	S ka Adv O3[+WH] P O2 O1 Verb Not Aux             	
+71708	Q  	S ka Adv O3[+WH] P Verb Not Aux                   	
+71709	Q  	S ka Adv[+WH] O1 Verb Not Aux                     	
+71710	Q  	S ka Adv[+WH] O2 O1 Verb Not Aux                  	
+71711	Q  	S ka Adv[+WH] O3 P O1 Verb Not Aux                	
+71712	Q  	S ka Adv[+WH] O3 P O2 O1 Verb Not Aux             	
+71713	Q  	S ka Adv[+WH] O3 P Verb Not Aux                   	
+71714	Q  	S ka Adv[+WH] Verb Not Aux                        	
+71715	Q  	S ka O1[+WH] Verb Not Aux                         	
+71716	Q  	S ka O2 O1[+WH] Verb Not Aux                      	
+71717	Q  	S ka O2[+WH] O1 Verb Not Aux                      	
+71718	Q  	S ka O3 P O1[+WH] Verb Not Aux                    	
+71719	Q  	S ka O3 P O2 O1[+WH] Verb Not Aux                 	
+71720	Q  	S ka O3 P O2[+WH] O1 Verb Not Aux                 	
+71721	Q  	S ka O3[+WH] P O1 Verb Not Aux                    	
+71722	Q  	S ka O3[+WH] P O2 O1 Verb Not Aux                 	
+71723	Q  	S ka O3[+WH] P Verb Not Aux                       	
+71724	Q  	S ka Adv O1[+WH] Verb Never Aux                   	
+71725	Q  	S ka Adv O2 O1[+WH] Verb Never Aux                	
+71726	Q  	S ka Adv O2[+WH] O1 Verb Never Aux                	
+71727	Q  	S ka Adv O3 P O1[+WH] Verb Never Aux              	
+71728	Q  	S ka Adv O3 P O2 O1[+WH] Verb Never Aux           	
+71729	Q  	S ka Adv O3 P O2[+WH] O1 Verb Never Aux           	
+71730	Q  	S ka Adv O3[+WH] P O1 Verb Never Aux              	
+71731	Q  	S ka Adv O3[+WH] P O2 O1 Verb Never Aux           	
+71732	Q  	S ka Adv O3[+WH] P Verb Never Aux                 	
+71733	Q  	S ka Adv[+WH] O1 Verb Never Aux                   	
+71734	Q  	S ka Adv[+WH] O2 O1 Verb Never Aux                	
+71735	Q  	S ka Adv[+WH] O3 P O1 Verb Never Aux              	
+71736	Q  	S ka Adv[+WH] O3 P O2 O1 Verb Never Aux           	
+71737	Q  	S ka Adv[+WH] O3 P Verb Never Aux                 	
+71738	Q  	S ka Adv[+WH] Verb Never Aux                      	
+71739	Q  	S ka O1[+WH] Verb Never Aux                       	
+71740	Q  	S ka O2 O1[+WH] Verb Never Aux                    	
+71741	Q  	S ka O2[+WH] O1 Verb Never Aux                    	
+71742	Q  	S ka O3 P O1[+WH] Verb Never Aux                  	
+71743	Q  	S ka O3 P O2 O1[+WH] Verb Never Aux               	
+71744	Q  	S ka O3 P O2[+WH] O1 Verb Never Aux               	
+71745	Q  	S ka O3[+WH] P O1 Verb Never Aux                  	
+71746	Q  	S ka O3[+WH] P O2 O1 Verb Never Aux               	
+71747	Q  	S ka O3[+WH] P Verb Never Aux                     	
+71844	Q  	S ka Adv O1[+WH] Verb Aux                         	
+71845	Q  	S ka Adv O2 O1[+WH] Verb Aux                      	
+71846	Q  	S ka Adv O2[+WH] O1 Verb Aux                      	
+71847	Q  	S ka Adv O3 P O1[+WH] Verb Aux                    	
+71848	Q  	S ka Adv O3 P O2 O1[+WH] Verb Aux                 	
+71849	Q  	S ka Adv O3 P O2[+WH] O1 Verb Aux                 	
+71850	Q  	S ka Adv O3[+WH] P O1 Verb Aux                    	
+71851	Q  	S ka Adv O3[+WH] P O2 O1 Verb Aux                 	
+71852	Q  	S ka Adv O3[+WH] P Verb Aux                       	
+71853	Q  	S ka Adv[+WH] O1 Verb Aux                         	
+71854	Q  	S ka Adv[+WH] O2 O1 Verb Aux                      	
+71855	Q  	S ka Adv[+WH] O3 P O1 Verb Aux                    	
+71856	Q  	S ka Adv[+WH] O3 P O2 O1 Verb Aux                 	
+71857	Q  	S ka Adv[+WH] O3 P Verb Aux                       	
+71858	Q  	S ka Adv[+WH] Verb Aux                            	
+71859	Q  	S ka O1[+WH] Verb Aux                             	
+71860	Q  	S ka O2 O1[+WH] Verb Aux                          	
+71861	Q  	S ka O2[+WH] O1 Verb Aux                          	
+71862	Q  	S ka O3 P O1[+WH] Verb Aux                        	
+71863	Q  	S ka O3 P O2 O1[+WH] Verb Aux                     	
+71864	Q  	S ka O3 P O2[+WH] O1 Verb Aux                     	
+71865	Q  	S ka O3[+WH] P O1 Verb Aux                        	
+71866	Q  	S ka O3[+WH] P O2 O1 Verb Aux                     	
+71867	Q  	S ka O3[+WH] P Verb Aux                           	
+78008	Q  	S[+WH] ka Adv O1 Verb Not Aux                     	
+78009	Q  	S[+WH] ka Adv O2 O1 Verb Not Aux                  	
+78010	Q  	S[+WH] ka Adv O3 P O1 Verb Not Aux                	
+78011	Q  	S[+WH] ka Adv O3 P O2 O1 Verb Not Aux             	
+78012	Q  	S[+WH] ka Adv O3 P Verb Not Aux                   	
+78013	Q  	S[+WH] ka Adv Verb Not Aux                        	
+78014	Q  	S[+WH] ka O1 Verb Not Aux                         	
+78015	Q  	S[+WH] ka O2 O1 Verb Not Aux                      	
+78016	Q  	S[+WH] ka O3 P O1 Verb Not Aux                    	
+78017	Q  	S[+WH] ka O3 P O2 O1 Verb Not Aux                 	
+78018	Q  	S[+WH] ka O3 P Verb Not Aux                       	
+78019	Q  	S[+WH] ka Verb Not Aux                            	
+78020	Q  	S[+WH] ka Adv O1 Verb Never Aux                   	
+78021	Q  	S[+WH] ka Adv O2 O1 Verb Never Aux                	
+78022	Q  	S[+WH] ka Adv O3 P O1 Verb Never Aux              	
+78023	Q  	S[+WH] ka Adv O3 P O2 O1 Verb Never Aux           	
+78024	Q  	S[+WH] ka Adv O3 P Verb Never Aux                 	
+78025	Q  	S[+WH] ka Adv Verb Never Aux                      	
+78026	Q  	S[+WH] ka O1 Verb Never Aux                       	
+78027	Q  	S[+WH] ka O2 O1 Verb Never Aux                    	
+78028	Q  	S[+WH] ka O3 P O1 Verb Never Aux                  	
+78029	Q  	S[+WH] ka O3 P O2 O1 Verb Never Aux               	
+78030	Q  	S[+WH] ka O3 P Verb Never Aux                     	
+78031	Q  	S[+WH] ka Verb Never Aux                          	
+78080	Q  	S[+WH] ka Adv O1 Verb Aux                         	
+78081	Q  	S[+WH] ka Adv O2 O1 Verb Aux                      	
+78082	Q  	S[+WH] ka Adv O3 P O1 Verb Aux                    	
+78083	Q  	S[+WH] ka Adv O3 P O2 O1 Verb Aux                 	
+78084	Q  	S[+WH] ka Adv O3 P Verb Aux                       	
+78085	Q  	S[+WH] ka Adv Verb Aux                            	
+78086	Q  	S[+WH] ka O1 Verb Aux                             	
+78087	Q  	S[+WH] ka O2 O1 Verb Aux                          	
+78088	Q  	S[+WH] ka O3 P O1 Verb Aux                        	
+78089	Q  	S[+WH] ka O3 P O2 O1 Verb Aux                     	
+78090	Q  	S[+WH] ka O3 P Verb Aux                           	
+78091	Q  	S[+WH] ka Verb Aux                                	
+86001	Q  	O3 P ka S Adv O1[+WH] Verb Not Aux                	
+86002	Q  	O3 P ka S Adv O2 O1[+WH] Verb Not Aux             	
+86003	Q  	O3 P ka S Adv O2[+WH] O1 Verb Not Aux             	
+86004	Q  	O3 P ka S Adv[+WH] O1 Verb Not Aux                	
+86005	Q  	O3 P ka S Adv[+WH] O2 O1 Verb Not Aux             	
+86006	Q  	O3 P ka S Adv[+WH] Verb Not Aux                   	
+86007	Q  	O3 P ka S O1[+WH] Verb Not Aux                    	
+86008	Q  	O3 P ka S O2 O1[+WH] Verb Not Aux                 	
+86009	Q  	O3 P ka S O2[+WH] O1 Verb Not Aux                 	
+86010	Q  	O3 P ka S Adv O1[+WH] Verb Never Aux              	
+86011	Q  	O3 P ka S Adv O2 O1[+WH] Verb Never Aux           	
+86012	Q  	O3 P ka S Adv O2[+WH] O1 Verb Never Aux           	
+86013	Q  	O3 P ka S Adv[+WH] O1 Verb Never Aux              	
+86014	Q  	O3 P ka S Adv[+WH] O2 O1 Verb Never Aux           	
+86015	Q  	O3 P ka S Adv[+WH] Verb Never Aux                 	
+86016	Q  	O3 P ka S O1[+WH] Verb Never Aux                  	
+86017	Q  	O3 P ka S O2 O1[+WH] Verb Never Aux               	
+86018	Q  	O3 P ka S O2[+WH] O1 Verb Never Aux               	
+86046	Q  	O3 P ka S Adv O1[+WH] Verb Aux                    	
+86047	Q  	O3 P ka S Adv O2 O1[+WH] Verb Aux                 	
+86048	Q  	O3 P ka S Adv O2[+WH] O1 Verb Aux                 	
+86049	Q  	O3 P ka S Adv[+WH] O1 Verb Aux                    	
+86050	Q  	O3 P ka S Adv[+WH] O2 O1 Verb Aux                 	
+86051	Q  	O3 P ka S Adv[+WH] Verb Aux                       	
+86052	Q  	O3 P ka S O1[+WH] Verb Aux                        	
+86053	Q  	O3 P ka S O2 O1[+WH] Verb Aux                     	
+86054	Q  	O3 P ka S O2[+WH] O1 Verb Aux                     	
+86142	Q  	O3 P ka S[+WH] Adv O1 Verb Not Aux                	
+86143	Q  	O3 P ka S[+WH] Adv O2 O1 Verb Not Aux             	
+86144	Q  	O3 P ka S[+WH] Adv Verb Not Aux                   	
+86145	Q  	O3 P ka S[+WH] O1 Verb Not Aux                    	
+86146	Q  	O3 P ka S[+WH] O2 O1 Verb Not Aux                 	
+86147	Q  	O3 P ka S[+WH] Verb Not Aux                       	
+86148	Q  	O3 P ka S[+WH] Adv O1 Verb Never Aux              	
+86149	Q  	O3 P ka S[+WH] Adv O2 O1 Verb Never Aux           	
+86150	Q  	O3 P ka S[+WH] Adv Verb Never Aux                 	
+86151	Q  	O3 P ka S[+WH] O1 Verb Never Aux                  	
+86152	Q  	O3 P ka S[+WH] O2 O1 Verb Never Aux               	
+86153	Q  	O3 P ka S[+WH] Verb Never Aux                     	
+86172	Q  	O3 P ka S[+WH] Adv O1 Verb Aux                    	
+86173	Q  	O3 P ka S[+WH] Adv O2 O1 Verb Aux                 	
+86174	Q  	O3 P ka S[+WH] Adv Verb Aux                       	
+86175	Q  	O3 P ka S[+WH] O1 Verb Aux                        	
+86176	Q  	O3 P ka S[+WH] O2 O1 Verb Aux                     	
+86177	Q  	O3 P ka S[+WH] Verb Aux                           	
+92574	Q  	O3[+WH] P ka S Adv O1 Verb Not Aux                	
+92575	Q  	O3[+WH] P ka S Adv O2 O1 Verb Not Aux             	
+92576	Q  	O3[+WH] P ka S Adv Verb Not Aux                   	
+92577	Q  	O3[+WH] P ka S O1 Verb Not Aux                    	
+92578	Q  	O3[+WH] P ka S O2 O1 Verb Not Aux                 	
+92579	Q  	O3[+WH] P ka S Verb Not Aux                       	
+92580	Q  	O3[+WH] P ka S Adv O1 Verb Never Aux              	
+92581	Q  	O3[+WH] P ka S Adv O2 O1 Verb Never Aux           	
+92582	Q  	O3[+WH] P ka S Adv Verb Never Aux                 	
+92583	Q  	O3[+WH] P ka S O1 Verb Never Aux                  	
+92584	Q  	O3[+WH] P ka S O2 O1 Verb Never Aux               	
+92585	Q  	O3[+WH] P ka S Verb Never Aux                     	
+92604	Q  	O3[+WH] P ka S Adv O1 Verb Aux                    	
+92605	Q  	O3[+WH] P ka S Adv O2 O1 Verb Aux                 	
+92606	Q  	O3[+WH] P ka S Adv Verb Aux                       	
+92607	Q  	O3[+WH] P ka S O1 Verb Aux                        	
+92608	Q  	O3[+WH] P ka S O2 O1 Verb Aux                     	
+92609	Q  	O3[+WH] P ka S Verb Aux                           	

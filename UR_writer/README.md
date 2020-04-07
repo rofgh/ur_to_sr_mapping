@@ -1,45 +1,20 @@
 # Hidden-Sin
-## README NEEDS RE-WRITING AFTER .PY FILE SPLITS and GENERAL EXTENSION
-Right now there are four main .py files:  
-
-SR_creator.py, which is the user-run script  
-obj_maker.py, which is the original script, being harvested and split for better script interaction, it may be obsolete soon.
-
-
-IGNORE THE BELOW, UNTIL UPDATE
-
-
-
-## SR_creator.py
-SR_creator.py creates SRs/SOWs for all the language-agnostic URs (created by all_URs.py), for whatever languages are selected:
-
-There is a [boolean](https://github.com/rofgh/Hidden-Sin/blob/434a7e9c970c35f01e21bf55bc15415f6532940e/SR_creator.py#L12) to set to False if you want all languages, otherwise english = True and it will only produce for english, ie. [0,0,0,1,0,0,1,1,0,0,0,1,1].
+## UR_writer
 
 NOT python2 compatible:
 ```bash
-$ python3 SR_creator.py
+$ python3 all_URs.py
+$ python3 all_DURs.py
+$ python3 all_IURs.py
+$ python3 all_QURs.py
 ```
 
-SR Creator uses the following main modules:
+When the script is run it will create a file with the list of URs possible for each force, language-agnostic.
 
-nodes.py, which creates a list of node objects for each representation (i.e. a tree)
-parameters.py, which applies each parameter setting according to the language that is provided
-
+The output of these is used as the starting URs for the SR_creator.py
 
 
-
-## obj-maker.py
-The object-based data maker, when fully implemented, should produce all the realizable SRs for each language.  These SRs should hopefully match the SRs found below in the Grabber, which looks at the CoLAG's SRs.
-
-NOT python2 compatible:
-```bash
-$ python3 obj-maker.py
-```
-
-When the script is run it will create a file with the list of SRs created by each language (i.e. each of the different possible parameter setting combinations).  I haven't decided on the format of the file yet, so no point in entering it here as of now.  I want to be able to compare these SRs with the CoLAG SRs, but we won't have the UR IDs, so I am going to have to come up with some way to smartly do the comparison....?
-
-
-## grabber.py
+## TEMPLATE FROM grabber.py
 The grabber script allows us to look at the SRs and associated bracketed UR trees for specific parameter settings of the CoLAG languages.
 
 The [flat.txt file](http://www.colag.cs.hunter.cuny.edu/grammar/data/COLAG_2011_flat.zip) needs to be

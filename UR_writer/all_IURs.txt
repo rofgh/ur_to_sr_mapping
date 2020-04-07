@@ -1,0 +1,32 @@
+ Verb	
+ Verb	 NegP	
+ Verb	 Adv	
+ Verb	 O1	
+ Verb	 O2	
+ Verb	 PP	
+ Verb	 NegP	 Adv	
+ Verb	 NegP	 O1	
+ Verb	 NegP	 O2	
+ Verb	 NegP	 PP	
+ Verb	 Adv	 O1	
+ Verb	 Adv	 O2	
+ Verb	 Adv	 PP	
+ Verb	 O1	 O2	
+ Verb	 O1	 PP	
+ Verb	 O2	 PP	
+ Verb	 NegP	 Adv	 O1	
+ Verb	 NegP	 Adv	 O2	
+ Verb	 NegP	 Adv	 PP	
+ Verb	 NegP	 O1	 O2	
+ Verb	 NegP	 O1	 PP	
+ Verb	 NegP	 O2	 PP	
+ Verb	 Adv	 O1	 O2	
+ Verb	 Adv	 O1	 PP	
+ Verb	 Adv	 O2	 PP	
+ Verb	 O1	 O2	 PP	
+ Verb	 NegP	 Adv	 O1	 O2	
+ Verb	 NegP	 Adv	 O1	 PP	
+ Verb	 NegP	 Adv	 O2	 PP	
+ Verb	 NegP	 O1	 O2	 PP	
+ Verb	 Adv	 O1	 O2	 PP	
+ Verb	 NegP	 Adv	 O1	 O2	 PP	
