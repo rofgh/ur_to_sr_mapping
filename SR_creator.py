@@ -31,7 +31,7 @@ def languages(all=False):
             yield x
 
 # selects a illocutionary force and produces all the possible URs for that force
-# Requires pre-running of URs.py, if not already run
+# Requires pre-running of URs.py, if not already run in this script (currently line 68)
 def activate_force(force):
     filename = "UR_writer/all_"+force+"URs.txt"
     with open(filename, 'r') as u:

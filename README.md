@@ -17,7 +17,9 @@ There is a [boolean](https://github.com/rofgh/Hidden-Sin/blob/434a7e9c970c35f01e
 
 ```bash
 $ python3 SR_creator.py True
+```
 OR
+```bash
 $ python3 SR_creator.py
 ```
 True will run all languages (ENTER EST TIME HERE)
