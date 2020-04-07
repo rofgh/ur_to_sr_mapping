@@ -9,12 +9,13 @@ producing, hopefully, a list of SRs/SOWs
 from modules.nodes      import nodes
 from modules.parameters import apply_parameters
 from modules.URs        import all_URs
+import sys
 
 
 # generates all the language possibilities
-def languages(english=True):
+def languages(all=False):
     # FOR ALL LANGUAGES
-    if english == False:
+    if all == True:
         for x in range(0, 8192):
             language = []
             for digit in format(x, '013b'):
@@ -24,12 +25,13 @@ def languages(english=True):
                     language.append(1)
             yield language
     ### ENGLISH ONLY: (Or add other specific languages)
-    if english == True:
+    if all == False:
         english = [[0,0,0,1,0,0,1,1,0,0,0,1,1]]
         for x in english:
             yield x
 
 # selects a illocutionary force and produces all the possible URs for that force
+# Requires pre-running of URs.py, if not already run
 def activate_force(force):
     filename = "UR_writer/all_"+force+"URs.txt"
     with open(filename, 'r') as u:
@@ -55,11 +57,15 @@ def forces():
 
 
 if __name__ == '__main__':
+    try:
+        all = bool(sys.argv[1])
+    except: 
+        all = False
     all_URs()
     treecount = 0
     filename = "all_all.txt"
     with open(filename, 'w') as f:
-        for language in languages():
+        for language in languages(all):
             for force in forces():
                 all_URs = activate_force(force)
                 for ur in all_URs:

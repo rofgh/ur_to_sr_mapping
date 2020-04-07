@@ -103,7 +103,7 @@ def apply_parameters(Pa, force, UR):
         return UR
 
 def if_on(value):
-    if value == 0
+    pass
 
 ########################################### PARAMETERS ###########################################
 ########################################### HEADEDNESS PARAMETERS ###
