@@ -5,11 +5,11 @@ def nodes(UR):
             self.name       = name
             # Which node is this node's mother?
             self.mother     = mother
-            # Is this node the head of it's level?
+            # Is this node the head of it's level/phrase?
             self.head       = False
-            # What larger P is this part of? (CP, SP, IP)
+            # What larger P is this node part of? (CP, SP or IP)
             self.phrase     = None
-            # Is this node topicalizable?
+            # Is this node topicalizable?  OBSOLETE
             #self.top        = False
             # Is this node realizable?
             self.real       = False

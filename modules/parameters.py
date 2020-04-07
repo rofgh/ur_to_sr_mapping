@@ -102,6 +102,9 @@ def apply_parameters(Pa, force, UR):
                 pass
         return UR
 
+def if_on(value):
+    if value == 0
+
 ########################################### PARAMETERS ###########################################
 ########################################### HEADEDNESS PARAMETERS ###
     ### PARAMETER 1 ### ONLY AFFECTS HEADEDNESS OF NODES WITHIN SP (i.e. S)

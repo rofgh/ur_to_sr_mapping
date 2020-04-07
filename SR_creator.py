@@ -23,7 +23,7 @@ def languages(english=True):
                 if digit == '1':
                     language.append(1)
             yield language
-    ### English only: (Or add other specific languages)
+    ### ENGLISH ONLY: (Or add other specific languages)
     if english == True:
         english = [[0,0,0,1,0,0,1,1,0,0,0,1,1]]
         for x in english:
@@ -56,7 +56,7 @@ def forces():
 
 if __name__ == '__main__':
     all_URs()
-    count = 0
+    treecount = 0
     filename = "all_all.txt"
     with open(filename, 'w') as f:
         for language in languages():
@@ -67,7 +67,7 @@ if __name__ == '__main__':
                     node = apply_parameters(language, force, node)
                     if node != "Not parseable!":
                         #SR = produce(language, force, ur, nodes)
-                        count += 1
+                        treecount += 1
                         pass
                     else:
                         SR = node
@@ -77,4 +77,4 @@ if __name__ == '__main__':
                     f.write(ur)
                     #f.write(ur+"\t")
                     #f.write(SR)
-    print("assessed "+str(count)+" trees and wrote them to "+filename)
+    print("assessed "+str(treecount)+" trees and wrote them to "+filename)
