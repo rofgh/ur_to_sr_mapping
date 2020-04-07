@@ -2,17 +2,17 @@
 The main script is SR_creator.py, which accesses the other modules in the Modules folder.
 
 Folders:
-grabber: this script pulls the SRs (and, optionally, the URs) form the original CoLAG data
-modules: these are the modules used by SR_creator.py
-S_F_Y_Data_Files: Self-explanatory
-Misc: Items that got put into the Notes shared doc, etc.
-EDL Learner: Original 6 parameter script, etc.
-Reference Papers: 
-UR_writer:  Scripts that create the URs for the SR_creator, these are combined in the URs.py script in the modules folder
+grabber: this script pulls the SRs (and, optionally, the URs) form the original CoLAG data  
+modules: these are the modules used by SR_creator.py  
+S_F_Y_Data_Files: Self-explanatory  
+Misc: Items that got put into the Notes shared doc, etc.  
+EDL Learner: Original 6 parameter script, etc.  
+Reference Papers:   
+UR_writer:  Scripts that create the URs for the SR_creator, these are combined in the URs.py script in the modules folder  
 
 Other:
-obj_maker.py: old version of the SR_creator.py  Will probably soon be fully harvested and deleted
-all_all.txt: The output of SR_creator.py
+obj_maker.py: old version of the SR_creator.py  Will probably soon be fully harvested and deleted  
+all_all.txt: The output of SR_creator.py  
 
 
 
