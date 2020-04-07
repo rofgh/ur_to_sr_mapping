@@ -10,10 +10,6 @@ The main script is SR_creator.py, which accesses the other modules in the Module
 [Reference Papers](https://github.com/rofgh/Hidden-Sin/tree/master/Reference%20Papers):   
 [UR_writer](https://github.com/rofgh/Hidden-Sin/tree/master/UR_writer):  Scripts that create the URs for the SR_creator, these are combined in the URs.py script in the modules folder  
 
-### Other:
-obj_maker.py: old version of the SR_creator.py  Will probably soon be fully harvested and deleted  
-all_all.txt: The output of SR_creator.py, will be created locally, as it has potential for being too large for github
-
 ## SR_creator.py
 SR_creator.py creates SRs/SOWs for all the language-agnostic URs (created by all_URs.py), for whatever languages are selected:
 
@@ -29,6 +25,10 @@ SR Creator uses the following main modules:
 nodes.py, which creates a list of node objects for each representation (i.e. a tree)
 parameters.py, which applies each parameter setting according to the language that is provided
 
-Our thoughts/description/notes for the languages can be found [here](https://docs.google.com/document/d/1J_fS85IQWB9MPXB96ccHrKF_JHXn44iVyyemQOeFJQo/edit?usp=sharing)
+### Other:
+obj_maker.py: old version of the SR_creator.py  Will probably soon be fully harvested and deleted  
+all_all.txt: The output of SR_creator.py, will be created locally, as it has potential for being too large for github
+
+Our thoughts/description/notes/analysis of the original SFY grammar and languages can be found [here](https://docs.google.com/document/d/1J_fS85IQWB9MPXB96ccHrKF_JHXn44iVyyemQOeFJQo/edit?usp=sharing)
 
 
