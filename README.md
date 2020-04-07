@@ -15,17 +15,18 @@ SR_creator.py creates SRs/SOWs for all the language-agnostic URs (created by all
 
 There is a [boolean](https://github.com/rofgh/Hidden-Sin/blob/434a7e9c970c35f01e21bf55bc15415f6532940e/SR_creator.py#L16) in def languages() to set to True through an argument to the script if you want all languages, otherwise all = False and it will only produce for english, ie. [0,0,0,1,0,0,1,1,0,0,0,1,1] (Or some pre-entered [list](https://github.com/rofgh/Hidden-Sin/blob/434a7e9c970c35f01e21bf55bc15415f6532940e/SR_creator.py#L29) of languages).
 
+True will run all languages (ENTER EST TIME HERE)
 ```bash
 $ python3 SR_creator.py True
 ```
-OR
+
+OR False or empty arg[1] will run only English parameters (ENTER EST TIME HERE)
+
 ```bash
 $ python3 SR_creator.py
 ```
-True will run all languages (ENTER EST TIME HERE)
-False or empty arg[1] will run only English parameters (ENTER EST TIME HERE)
 
-SR Creator uses the following main modules:
+### SR Creator accesses the following modules:
 
 nodes.py, which creates a list of node objects for each representation (i.e. a tree)
 parameters.py, which applies each parameter setting according to the language that is provided
