@@ -1,7 +1,7 @@
 # Hidden-Sin
 The main script is SR_creator.py, which accesses the other modules in the Modules folder.
 
-### Folders:
+### Folders:  
 grabber: this script pulls the SRs (and, optionally, the URs) form the original CoLAG data  
 modules: these are the modules used by SR_creator.py  
 S_F_Y_Data_Files: Self-explanatory  
