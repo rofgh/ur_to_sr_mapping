@@ -67,6 +67,9 @@ def apply_parameters(Pa, force, UR):
     def no_parse():
         return "Not parseable"
 
+    def filler():
+        return "string"
+
     ###DELETABLE
     # def output(x):
     #     #print to terminal
@@ -102,8 +105,13 @@ def apply_parameters(Pa, force, UR):
                 pass
         return UR
 
-def if_on(value):
-    pass
+    def if_on(value):
+        pass
+
+    def topic_setup():
+        for x in UR:
+            if "+t" in x:
+                
 
 ########################################### PARAMETERS ###########################################
 ########################################### HEADEDNESS PARAMETERS ###
@@ -142,40 +150,69 @@ def if_on(value):
     ### PARAMETER 4 (Pa[3]) ### OptTop
     if Pa[3] == 0:
         Topic is obligatory (something from top_nodes MUST move to Spec,CP)
+        if UR does not have topic in it:
+            no_parse()
+        if UR does have a topic:
+            continue with this node
         for x in top_nodes:
             attach -wa, set each one as daughter of the CP, then produce an SR
             Could this just be done by adding -wa to the NAME of the topicalized node?
             If there is a Spec,CP, attach -wa to it.
+
     # The following setting should have more SRs if they all get realized...
     if Pa[3] == 1:
         Topic is optional (Can we just leave it off?)
         Same as above plus no topics?  
     '''
 
-    '''
+
     ### PARAMETER 5 (Pa[4]) ### Null Subject
-    
+    # The other way to code this is to add Null Subject to the UR, 
+    # but how would that work for Null Topic?
     if Pa[4] == 0:
+        for x in UR:
+            if x.name == "S":
+                x.null = False
         pass
     # The following setting should have more SRs if they all (i.e. null and non-null) get realized...
     if Pa[4] == 1:
         # S can be null or not
-        S.null = True
-    '''
+        ###
+        # Run another version of this UR/Parameter set, with null sub off:
+        unnull_sub_nodes           = copy(nodes)
+        unnull_sub_parameters      = copy(Pa)
+        unnull_sub_parameters[4]   = 0
+        UR.append(apply_parameters(unnull_sub_parameters, force, unnull_sub_nodes))
+        ###
+        for x in UR:
+            if x.name == "S":
+                x.null = True
+        pass
 
-    '''
+    
+
     ### PARAMETER 6 (Pa[5]) ### Null Topic
     #No null topic
     if Pa[5] == 0:
         # topic is always realized, so:
         pass
     if Pa[5] == 1:
-        Excluding the sentences created by this setting being off, above, this language will create
-        only Obligatory NullTop, unless changed a bit:
+        #Excluding the sentences created by this setting being off, above, this language will create
+        #only Obligatory NullTop, unless changed a bit:
         #Whichever word is the topic:
-            #TOPIC can be null or not
-            x.null = True
-    '''
+        #TOPIC can be null or not
+        ###
+        # Run another version of this UR/Parameter set, with null top off:
+        unnull_top_nodes           = copy(nodes)
+        unnull_top_parameters      = copy(Pa)
+        unnull_top_parameters[5]   = 0
+        UR.append(apply_parameters(unnull_top_parameters, force, unnull_top_nodes))
+
+        for x in UR:
+            if x.mother == "S":
+                x.null = True
+
+
 ########################################### MOVEMENT PARAMETERS ###
     '''
     ### PARAMETER 7 (Pa[6]) ### Wh-Movement
@@ -192,10 +229,9 @@ def if_on(value):
                 x.mother = CP
     '''
 
-    '''
     ### PARAMETER 8 (Pa[7]) ### Preposition Stranding
 
-    IDEA:  PP gets the topicalizer, then this parameter moves it to just O3 if need be?
+    # IDEA:  PP gets the topicalizer, then this parameter moves it to just O3 if need be?
     # If PP is topicalized:
     # P is topicalized (Never O3), PP must move as a group
     if Pa[7] == 0:
@@ -203,13 +239,18 @@ def if_on(value):
     # O3 is topicalized (Never P), P does not have to move 
     if Pa[7] == 1:
         O3.top  = True
-    '''
 
     ### PARAMETER 9 (Pa[8]) ### Topic Marking
     if Pa[8] == 0:
-        wa.null = True
+        for x in UR:
+            if x.name == "wa"
+                x.null = True
+
     if Pa[8] == 1:
         #if there is a topicalized item, attach [+WA] to it
+        for x in UR:
+            if x.name == "wa"
+                x.null = True
         wa.null = False
 
     '''
@@ -263,7 +304,7 @@ def if_on(value):
     '''
     ##### Parameter settings aren't needed after here for Declaratives
     if force == "D":
-        return UR
+        return filler()
 
     ### PARAMETER 13 (Pa[12]) ### Q-Inv  (i.e. ItoC for Qs)
 
@@ -298,7 +339,7 @@ def if_on(value):
     if force == "I":
         UR = set_head_position(UR, headedness_values)
         #no other parameters come into play, so exit
-        return UR
+        return filler()
 
     headedness_values = Parameter1(Pa[2], headedness_values)
     UR = set_head_position(UR, headedness_values)
@@ -312,6 +353,6 @@ def if_on(value):
     nodes = Parameter11(Pa[10])
     nodes = Parameter12(Pa[11])
     if force == "D":
-        return UR
-    Parameter13(Pa[12])
-    return UR
+        return filler()
+    Parameter13(Pa[12]) 
+    return filler()

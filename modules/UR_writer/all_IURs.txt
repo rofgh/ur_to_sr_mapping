@@ -1,0 +1,36 @@
+Verb	
+Verb	Adv	
+Verb	O1	
+Verb	PP	
+Verb	Adv	O1	
+Verb	Adv	PP	
+Verb	O1	O2	
+Verb	O1	PP	
+Verb	Adv	O1	O2	
+Verb	Adv	O1	PP	
+Verb	O1	O2	PP	
+Verb	Adv	O1	O2	PP	
+Verb	not	
+Verb	never	
+Verb	not	Adv	
+Verb	never	Adv	
+Verb	not	O1	
+Verb	never	O1	
+Verb	not	PP	
+Verb	never	PP	
+Verb	not	Adv	O1	
+Verb	never	Adv	O1	
+Verb	not	Adv	PP	
+Verb	never	Adv	PP	
+Verb	not	O1	O2	
+Verb	never	O1	O2	
+Verb	not	O1	PP	
+Verb	never	O1	PP	
+Verb	not	Adv	O1	O2	
+Verb	never	Adv	O1	O2	
+Verb	not	Adv	O1	PP	
+Verb	never	Adv	O1	PP	
+Verb	not	O1	O2	PP	
+Verb	never	O1	O2	PP	
+Verb	not	Adv	O1	O2	PP	
+Verb	never	Adv	O1	O2	PP	
