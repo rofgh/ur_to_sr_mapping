@@ -64,6 +64,14 @@ def apply_parameters(Pa, force, UR):
         func = "Parameter"+str(x)+"(Pa["+str(Pa[x])+"], UR)"
         eval(func)
     '''
+    def move_topic(nodes):
+        for n in nodes:
+            if n.name == "CP":
+                CP = n
+        for n in nodes:
+            if n.top == True:
+                n.mother = CP
+
     def no_parse():
         return "Not parseable"
 
@@ -107,14 +115,10 @@ def apply_parameters(Pa, force, UR):
 
     def if_on(value):
         pass
-
-    def topic_setup():
-        for x in UR:
-            if "+t" in x:
                 
 
-########################################### PARAMETERS ###########################################
-########################################### HEADEDNESS PARAMETERS ###
+    ########################################### PARAMETERS ###########################################
+    ########################################### HEADEDNESS PARAMETERS ###
     ### PARAMETER 1 ### ONLY AFFECTS HEADEDNESS OF NODES WITHIN SP (i.e. S)
     def Parameter1(value, h_v):
         if value == 0:
@@ -145,189 +149,204 @@ def apply_parameters(Pa, force, UR):
             h_v[2] = "R"
         return h_v
 
-    '''
+        '''
 ########################################### EXISTENTIAL PARAMETERS ###
     ### PARAMETER 4 (Pa[3]) ### OptTop
-    if Pa[3] == 0:
-        Topic is obligatory (something from top_nodes MUST move to Spec,CP)
-        if UR does not have topic in it:
-            no_parse()
-        if UR does have a topic:
-            continue with this node
-        for x in top_nodes:
-            attach -wa, set each one as daughter of the CP, then produce an SR
-            Could this just be done by adding -wa to the NAME of the topicalized node?
-            If there is a Spec,CP, attach -wa to it.
+    def Parameter4(value):
+        if value == 0:
+            Topic is obligatory (something from top_nodes MUST move to Spec,CP)
+            if UR does not have topic in it:
+                no_parse()
+            if UR does have a topic:
+                continue with this node
+            for x in top_nodes:
+                attach -wa, set each one as daughter of the CP, then produce an SR
+                Could this just be done by adding -wa to the NAME of the topicalized node?
+                If there is a Spec,CP, attach -wa to it.
 
-    # The following setting should have more SRs if they all get realized...
-    if Pa[3] == 1:
-        Topic is optional (Can we just leave it off?)
-        Same as above plus no topics?  
-    '''
+        # The following setting should have more SRs if they all get realized...
+        if value == 1:
+            Topic is optional (Can we just leave it off?)
+            Same as above plus no topics?  
+        '''
 
-
-    ### PARAMETER 5 (Pa[4]) ### Null Subject
-    # The other way to code this is to add Null Subject to the UR, 
-    # but how would that work for Null Topic?
-    if Pa[4] == 0:
-        for x in UR:
-            if x.name == "S":
-                x.null = False
-        pass
-    # The following setting should have more SRs if they all (i.e. null and non-null) get realized...
-    if Pa[4] == 1:
-        # S can be null or not
-        ###
-        # Run another version of this UR/Parameter set, with null sub off:
-        unnull_sub_nodes           = copy(nodes)
-        unnull_sub_parameters      = copy(Pa)
-        unnull_sub_parameters[4]   = 0
-        UR.append(apply_parameters(unnull_sub_parameters, force, unnull_sub_nodes))
-        ###
-        for x in UR:
-            if x.name == "S":
-                x.null = True
-        pass
+    def Parameter5(value):
+        ### PARAMETER 5 (Pa[4]) ### Null Subject
+        # The other way to code this is to add Null Subject to the UR, 
+        # but how would that work for Null Topic?
+        if value == 0:
+            for x in UR:
+                if x.name == "S":
+                    x.null = False
+            pass
+        # The following setting should have more SRs if they all (i.e. null and non-null) get realized...
+        if value == 1:
+            # S can be null or not
+            ###
+            # Run another version of this UR/Parameter set, with null sub off:
+            unnull_sub_nodes           = copy(nodes)
+            unnull_sub_parameters      = copy(Pa)
+            unnull_sub_parameters[4]   = 0
+            UR.append(apply_parameters(unnull_sub_parameters, force, unnull_sub_nodes))
+            ###
+            for x in UR:
+                if x.name == "S":
+                    x.null = True
+            pass
 
     
 
     ### PARAMETER 6 (Pa[5]) ### Null Topic
     #No null topic
-    if Pa[5] == 0:
-        # topic is always realized, so:
-        pass
-    if Pa[5] == 1:
-        #Excluding the sentences created by this setting being off, above, this language will create
-        #only Obligatory NullTop, unless changed a bit:
-        #Whichever word is the topic:
-        #TOPIC can be null or not
-        ###
-        # Run another version of this UR/Parameter set, with null top off:
-        unnull_top_nodes           = copy(nodes)
-        unnull_top_parameters      = copy(Pa)
-        unnull_top_parameters[5]   = 0
-        UR.append(apply_parameters(unnull_top_parameters, force, unnull_top_nodes))
+    def Parameter6(value):
+        if value == 0:
+            # topic is always realized, so:
+            pass
+        if value == 1:
+            #Excluding the sentences created by this setting being off, above, this language will create
+            #only Obligatory NullTop, unless changed a bit:
+            #Whichever word is the topic:
+            #TOPIC can be null or not
+            ###
+            # Run another version of this UR/Parameter set, with null top off:
+            unnull_top_nodes           = copy(nodes)
+            unnull_top_parameters      = copy(Pa)
+            unnull_top_parameters[5]   = 0
+            UR.append(apply_parameters(unnull_top_parameters, force, unnull_top_nodes))
 
-        for x in UR:
-            if x.mother == "S":
-                x.null = True
+            for x in UR:
+                if x.mother == "S":
+                    x.null = True
 
 
 ########################################### MOVEMENT PARAMETERS ###
     '''
     ### PARAMETER 7 (Pa[6]) ### Wh-Movement
     #Wh-in situ
-    if Pa[6] == 0:
-        pass
-    # [+WH] word goes to Spec,CP (NOT Spec,C') (NOT AFFECTED BY CP HEADEDNESS)
-    if Pa[6] == 1:
-        if TOPIC != WH:
-            #ERRORORORORO
+    def Parameter7(value):
+        if value == 0:
             pass
-        for x in nodes:
-            if x.daughter == Wh:
-                x.mother = CP
+        # [+WH] word goes to Spec,CP (NOT Spec,C') (NOT AFFECTED BY CP HEADEDNESS)
+        if value == 1:
+            if TOPIC != WH:
+                #ERRORORORORO
+                pass
+            for x in nodes:
+                if x.daughter == Wh:
+                    x.mother = CP
     '''
 
     ### PARAMETER 8 (Pa[7]) ### Preposition Stranding
+    def Parameter8(value, nodes):
+        if value == 0:
+            # P is topicalized (Never O3), PP must move as a group
+            pass
+        if value == 1:
+            # O3 is topicalized (Never P), P does not have to move
+            for x in nodes:
+                if x.name == "PP":
+                    if x.inUR == True:
+                        for n in nodes:
+                            if x.name == "O3":
+                                x.top = True
+                            else:
+                                x.top = False 
 
     # IDEA:  PP gets the topicalizer, then this parameter moves it to just O3 if need be?
     # If PP is topicalized:
-    # P is topicalized (Never O3), PP must move as a group
-    if Pa[7] == 0:
-        pass
-    # O3 is topicalized (Never P), P does not have to move 
-    if Pa[7] == 1:
-        O3.top  = True
+        if value == 0:
+            pass
 
     ### PARAMETER 9 (Pa[8]) ### Topic Marking
-    if Pa[8] == 0:
-        for x in UR:
-            if x.name == "wa"
-                x.null = True
+    def Parameter9(value):
+        if value == 0:
+            # wa is already null, so skip
+            pass
 
-    if Pa[8] == 1:
-        #if there is a topicalized item, attach [+WA] to it
-        for x in UR:
-            if x.name == "wa"
-                x.null = True
-        wa.null = False
+        if value == 1:
+            #if there is a topicalized item, attach [+WA] to it
+            for x in UR:
+                if x.name == "wa":
+                    x.null = True
+            wa.null = False
 
     '''
     ### PARAMETER 10 (Pa[9]) ### VtoI Movement
-    if Pa[9] == 0:
-        #If off, no movement occurs
-        pass
-    if Pa[9] == 1:
-        #If on, Verb tries to move to Spec,IP, unless Aux already occupies this node
-        For current nodes:
-            if Aux.inUR:
-                pass
-            else:
-                VtoI(Verb)
+    def Parameter10(value):
+        if value == 0:
+            #If off, no movement occurs
+            pass
+        if value == 1:
+            #If on, Verb tries to move to Spec,IP, unless Aux already occupies this node
+            For current nodes:
+                if Aux.inUR:
+                    pass
+                else:
+                    VtoI(Verb)
     '''
     ### PARAMETER 11 (Pa[10]) ### ItoC Movement
-    if Pa[10] == 0:
-        pass
-    if Pa[10] == 1:
-        # +ItoC invalidates the need for P13 so we can just turn it off
-        pa[13] = 0
-        # This requires a base-generated Aux or a VtoI Verb
-        # If no BG Aux
-        if Aux.inUR == False:
-            if Pa[9] == 0:
-                # Not parseable
-                return no_parse()
+    def Parameter11(value):
+        if value == 0:
+            pass
+        if value == 1:
+            # +ItoC invalidates the need for P13 so we can just turn it off
+            # This requires a base-generated Aux or a VtoI Verb
+            # If no BG Aux
+            if Aux.inUR == False:
+                if Pa[9] == 0:
+                    # Not parseable
+                    return no_parse()
+                else:
+                    assert Verb.mother == IP, "Verb didn't move"
+                    ItoC(V)
+            #BG Aux
             else:
-                assert Verb.mother == IP, "Verb didn't move"
-                ItoC(V)
-        #BG Aux
-        else:
-            assert Aux.mother == IP, "Aux already moved?"
-            ItoC(Aux)
+                assert Aux.mother == IP, "Aux already moved?"
+                ItoC(Aux)
     '''      
     ### PARAMETER 12 (Pa[11]) ### Affix Hopping
     # Does not allow Verb to stay in VP without an outside Aux
-    if Pa[11] == 0:
-        if Aux.inUR == True:
-            pass
-        if Aux.inUR == False:
-            # not parseable
-            return no_parse()
-    #  Allows Verb to take finiteness inside the VP
-    if Pa[11] == 1:
-        if Pa[9] == 1:
-            # Not parseable
-            return no_parse()
-        else:
-            pass
+    def Parameter12(value):
+        if value == 0:
+            if Aux.inUR == True:
+                pass
+            if Aux.inUR == False:
+                # not parseable
+                return no_parse()
+        #  Allows Verb to take finiteness inside the VP
+        if value == 1:
+            if Pa[9] == 1:
+                # Not parseable
+                return no_parse()
+            else:
+                pass
     '''
     ##### Parameter settings aren't needed after here for Declaratives
     if force == "D":
         return filler()
 
     ### PARAMETER 13 (Pa[12]) ### Q-Inv  (i.e. ItoC for Qs)
-
-    if Pa[12] == 0:
-        if Pa[10] == 0:
-            # ka appears only in languages where P11 and P13 are off
-            ka.null = False
-        else:
-            pass
-    if Pa[12] == 1:
-        # This requires a base-generated Aux or a VtoI Verb
-        # If no BG Aux
-        if Aux.inUR == False:
-            if Pa[9] == 0:
-                # Not parseable
-                return no_parse()
+    def Parameter13(value):
+        if value == 0:
+            if Pa[10] == 0:
+                # ka appears only in languages where P11 and P13 are off
+                ka.null = False
             else:
-                assert V.mother == IP, "Verb didn't move up, so can't continue"
-                ItoC(V)
-        #BG Aux
-        else:
-            assert Aux.mother == IP, "Aux already moved?"
-            ItoC(Aux)
+                pass
+        if value == 1:
+            # This requires a base-generated Aux or a VtoI Verb
+            # If no BG Aux
+            if Aux.inUR == False:
+                if Pa[9] == 0:
+                    # Not parseable
+                    return no_parse()
+                else:
+                    assert V.mother == IP, "Verb didn't move up, so can't continue"
+                    ItoC(V)
+            #BG Aux
+            else:
+                assert Aux.mother == IP, "Aux already moved?"
+                ItoC(Aux)
 
     assert len(Pa) == 13
     assert isinstance(Pa, list)
@@ -351,8 +370,14 @@ def apply_parameters(Pa, force, UR):
     nodes = Parameter9(Pa[8])
     nodes = Parameter10(Pa[9])
     nodes = Parameter11(Pa[10])
+    # Parameter 11 being on invalidates the need for Parameter 13 to be assessed
+    if Pa[10] == 1:
+        Pa[12] = 0
     nodes = Parameter12(Pa[11])
     if force == "D":
         return filler()
     Parameter13(Pa[12]) 
+
+    move_topic(UR)
+
     return filler()

@@ -99,9 +99,9 @@ def out(language, force, ur, string):
             f.write(string+"\n")
         else:
             for n in string:
-                if n.name != "CP":
+                if n != "CP":
                     pass
-                if n.name == "CP":
+                if n == "CP":
                     string = ''
                     f.write(expand(n, string))
         f.write("\n")
@@ -132,14 +132,14 @@ if __name__ == '__main__':
     for language in languages(all):
         for force in forces():
             all_URs = activate_force(force)
+            # for each UR in this force's overall list
             for ur in all_URs:
-                #Take the UR, turn it into list of node objects
+                # Take the UR, turn it into list of node objects
                 node_list = nodes(ur)
                 # Each UR (and its nodes/tree) can produce multiple SR/strings
-                strings = apply_parameters(language, force, node_list))
-                assert len(strings)>0
-                for string in strings:
+                list_of_list_of_nodes = apply_parameters(language, force, node_list)
+                assert len(list_of_list_of_nodes)>0
+                for list_of_nodes in list_of_list_of_nodes:
                     tree_count += 1
-                    string = get_daughters(string)
-                    out(language, force, ur, string)       
-    print("assessed "+str(tree_co   unt)+" trees and wrote them to "+"all_all.txt")
+                    out(language, force, ur, list_of_nodes)       
+    print("assessed "+str(tree_count)+" trees and wrote them to "+"all_all.txt")

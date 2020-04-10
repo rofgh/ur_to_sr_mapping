@@ -1,5 +1,5 @@
 def nodes(UR):
-    nodes = []
+    node_list = []
     class Node:
         def __init__(self, name, mother):
             self.name       = name
@@ -22,7 +22,7 @@ def nodes(UR):
             # IS this node in the current UR?
             self.inUR       = False
             # Every node is added to this list--don't worry, we'll sort it out later....
-            nodes.append(self)
+            node_list.append(self)
 
     # Set up all doz nodez brah
     CP      = Node("CP",       None)
@@ -80,15 +80,24 @@ def nodes(UR):
     SP_nodes    = [S, IP]
     for x in SP_nodes:
         x.phrase = SP
-
+    '''
+    for x in UR:
+        if "+t" in x:
+            for n in node_list:
+                if n.name == topname:
+                    n.top = True
+                    print(x.name+" got topicalized")
+    '''
+    print(UR)
      
-    for node in nodes:
+    for n in node_list:
         if "PP" in UR:
-            if node.mother == PP:
-                node.inUR = True
-        if node.name in UR:
-            node.inUR = True
-    for node in nodes:
-        if node.inUR == True:
-            print(node.name)
+            if n.mother == PP:
+                n.inUR = True
+        if n.name in UR:
+            n.inUR = True
+    
+    for n in node_list:
+        if n.inUR == True:
+            print(n.name)
     return nodes
