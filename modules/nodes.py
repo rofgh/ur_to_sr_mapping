@@ -55,40 +55,41 @@ def nodes(UR):
     for x in head_nodes:
         x.head = True
 
-    # REALIZABLE nodes:
+    # possibly REALIZABLE nodes:
     real_nodes  = [ka, wa, Wh, S, Aux, Not, Nev, Verb, O1, O2, P, O3, Adv]
     for x in real_nodes:
         x.real  = True
 
-    # TOPICALIZABLE nodes:
+    # possibly TOPICALIZABLE nodes:
     #top_nodes   = [S, Adv, O1, 02, PP, O3]
 
-    # +WH-able nodes:
+    # possibly +WH-able nodes:
     #WH_nodes    = [S, Adv, O1, O2, O3]
     
     # Nodes BG under IP (i.e. they will flip according to Parameter 2!):
     IP_nodes    = [Aux, NegP, Not, Nev, VP, Adv, Vbar3, Vbar2, O2, PP, P, O3, Vbar1, Verb, O1]
     for x in IP_nodes:
-        x.phrase = IP
+        x.phrase = "IP"
 
     # Nodes BG under CP (i.e. they will flip according to Parameter 3!):
     CP_nodes    = [Cbar, ka, SP, Wh]
     for x in CP_nodes:
-        x.phrase = CP
+        x.phrase = "CP"
 
     # Nodes BG under SP (i.e. they will flip according to Parameter 1!):
     SP_nodes    = [S, IP]
     for x in SP_nodes:
-        x.phrase = SP
-    '''
+        x.phrase = "SP"
+
+    # Find topicalized object, apply .top = True (Parameter 8 deals with stranding)
     for x in UR:
         if "+t" in x:
+            t = x.strip("+t")
             for n in node_list:
-                if n.name == topname:
-                    n.top = True
-                    print(x.name+" got topicalized")
-    '''
-    print(UR)
+                if n.name == t:
+                    n.top   = True
+                    n.inUR  = True
+                    #print(n.name+" got topicalized")
      
     for n in node_list:
         if "PP" in UR:
@@ -96,8 +97,11 @@ def nodes(UR):
                 n.inUR = True
         if n.name in UR:
             n.inUR = True
-    
+    '''
     for n in node_list:
         if n.inUR == True:
             print(n.name)
-    return nodes
+    '''
+    node_list = [CP,Cbar,ka,SP,wa,Wh,S,IP,Aux,NegP,Not,Nev,
+                VP,Adv,Vbar3,Vbar2,PP,O2,Vbar1,Verb,O1,P,O3]
+    return node_list

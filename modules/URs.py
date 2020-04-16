@@ -29,7 +29,7 @@ def new_all_URs(Q=False, D=False, I=False):
         if "O2" in x:
             if "O1" not in x:
                 total.remove(x)
-                print("deleted"+str(x))
+                # print("deleted"+str(x))
                 continue
     
     # If we want to print a difference between NOT/NEVER:
@@ -85,7 +85,7 @@ def new_all_URs(Q=False, D=False, I=False):
                 f.write(str(item)+"\t")
             f.write("\n")
     
-    print("wrote "+str(count)+" URs to UR_writer/all_"+force+"URs.txt")
+    # print("wrote "+str(count)+" URs to UR_writer/all_"+force+"URs.txt")
 
 
 

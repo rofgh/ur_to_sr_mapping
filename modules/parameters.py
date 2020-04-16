@@ -47,7 +47,10 @@ UR within that?
 -->>  process_parameters produces all the URs for a language?
 
 '''
-def apply_parameters(Pa, force, UR):
+import copy
+def apply_parameters(PFN):
+    # list of possible nodes lists *2 for each parameter that may add another list 
+    l_of_l_of_nodes = []
     '''
     #First two, which happen for all forces
     for x in range(1,3):
@@ -71,38 +74,33 @@ def apply_parameters(Pa, force, UR):
         for n in nodes:
             if n.top == True:
                 n.mother = CP
+        return nodes
 
     def no_parse():
         return "Not parseable"
 
     def filler():
-        return "string"
-
-    ###DELETABLE
-    # def output(x):
-    #     #print to terminal
-    #     print(x)
-    #     #print to output file:
-    #     with open(out_filename, 'w') as f:
-    #         f.write(x)
+        return UR
 
     def ItoC(node):
             node.mother = Cbar
-            CP_nodes.append(node)
-            IP_nodes.remove(node)
+            node.phrase = "CP"
 
     def VtoI(node):
             node.mother = IP
 
-    def set_head_position(UR, headedness_values):
-        for node in UR:
-            if node.phrase == SP:
-                node.pos = headedness_values[0]
-            if node.phrase == IP:
-                node.pos = headedness_values[1]
-            if node.phrase == CP:
-                node.pos = headedness_values[2]
-        return UR
+
+    def set_head_position(PFN, headedness_values):
+        for node in PFN[2]:
+            if node.name not in ["CP", "-wa"]:
+                assert node.phrase in ["SP","CP","IP"], [node.name, node.phrase]
+                if node.phrase == "SP":
+                    node.pos = headedness_values[0]
+                if node.phrase == "IP":
+                    node.pos = headedness_values[1]
+                if node.phrase == "CP":
+                    node.pos = headedness_values[2]
+        return PFN
                 
     def get_daughters(UR):
         for x in UR:
@@ -120,7 +118,10 @@ def apply_parameters(Pa, force, UR):
     ########################################### PARAMETERS ###########################################
     ########################################### HEADEDNESS PARAMETERS ###
     ### PARAMETER 1 ### ONLY AFFECTS HEADEDNESS OF NODES WITHIN SP (i.e. S)
-    def Parameter1(value, h_v):
+    def Parameter1(PFN, h_v):
+        value             = PFN[0][0]
+        force             = PFN[1]
+        UR                = PFN[2]
         if value == 0:
             h_v[0] = "L"
         if value == 1:
@@ -128,32 +129,35 @@ def apply_parameters(Pa, force, UR):
         return h_v
 
     ### PARAMETER 2 (Pa[1]) ###  ONLY AFFECTS HEADEDNESS OF NODES WITHIN IP
-    def Parameter2(value, h_v):
+    def Parameter2(PFN, h_v):
+        value             = PFN[0][1]
+        force             = PFN[1]
+        UR                = PFN[2]
         if value == 0:
             h_v[1] = "L"
         if value == 1:
             h_v[1] = "R"
         return h_v
-    
-    ###### Parameter settings aren't needed beyond here if Imperative
-    if force == "I":
-        return UR
 
     ### PARAMETER 3 (Pa[2]) ### ONLY AFFECTS HEADEDNESS OF NODES WITHIN CP
     # ka or a QInv/ItoC Aux/Verb are the only things that move for this parameter
     # If Pa[2]==1 and Pa[10]==1 and Aux == True: Aux will be CP final (and necessarily sentence final)
-    def Parameter3(value, h_v):
+    def Parameter3(PFN, h_v):
+        value             = PFN[0][2]
+        force             = PFN[1]
+        UR                = PFN[2]
         if value == 0:
             h_v[2] = "L"
         if value == 1:
             h_v[2] = "R"
         return h_v
 
-        '''
 ########################################### EXISTENTIAL PARAMETERS ###
     ### PARAMETER 4 (Pa[3]) ### OptTop
-    def Parameter4(value):
+    def Parameter4(PFN):
+        value             = PFN[0][4]
         if value == 0:
+            '''
             Topic is obligatory (something from top_nodes MUST move to Spec,CP)
             if UR does not have topic in it:
                 no_parse()
@@ -163,42 +167,51 @@ def apply_parameters(Pa, force, UR):
                 attach -wa, set each one as daughter of the CP, then produce an SR
                 Could this just be done by adding -wa to the NAME of the topicalized node?
                 If there is a Spec,CP, attach -wa to it.
-
+            '''
+            return PFN
         # The following setting should have more SRs if they all get realized...
         if value == 1:
+            '''
             Topic is optional (Can we just leave it off?)
-            Same as above plus no topics?  
-        '''
+            Same as above plus no topics?
+            '''
+            return PFN
 
-    def Parameter5(value):
+    def Parameter5(PFN):
+        value             = PFN[0][4]
         ### PARAMETER 5 (Pa[4]) ### Null Subject
         # The other way to code this is to add Null Subject to the UR, 
         # but how would that work for Null Topic?
         if value == 0:
+            '''
             for x in UR:
                 if x.name == "S":
                     x.null = False
+            '''
             pass
         # The following setting should have more SRs if they all (i.e. null and non-null) get realized...
         if value == 1:
             # S can be null or not
             ###
             # Run another version of this UR/Parameter set, with null sub off:
-            unnull_sub_nodes           = copy(nodes)
-            unnull_sub_parameters      = copy(Pa)
-            unnull_sub_parameters[4]   = 0
-            UR.append(apply_parameters(unnull_sub_parameters, force, unnull_sub_nodes))
+            unnull_sub_PFN             = copy(PFN)
+            unnull_sub_PFN[0][4]       = 0
+
+            l_of_l_of_nodes.append(do_it(unnull_sub_PFN))
             ###
-            for x in UR:
+            for x in PFN[2]:
                 if x.name == "S":
                     x.null = True
-            pass
+        return PFN
 
     
 
     ### PARAMETER 6 (Pa[5]) ### Null Topic
     #No null topic
-    def Parameter6(value):
+    def Parameter6(PFN):
+        assert isinstance(PFN, list), PFN
+        assert isinstance(PFN[0], list), PFN
+        value             = PFN[0][5]
         if value == 0:
             # topic is always realized, so:
             pass
@@ -209,68 +222,77 @@ def apply_parameters(Pa, force, UR):
             #TOPIC can be null or not
             ###
             # Run another version of this UR/Parameter set, with null top off:
-            unnull_top_nodes           = copy(nodes)
-            unnull_top_parameters      = copy(Pa)
-            unnull_top_parameters[5]   = 0
-            UR.append(apply_parameters(unnull_top_parameters, force, unnull_top_nodes))
+            unnull_top_PFN             = copy(PFN)
+            unnull_top_PFN[0][5]       = 0
 
-            for x in UR:
+            l_of_l_of_nodes.append(do_it(unnull_top_PFN))
+
+            for x in PFN[2]:
                 if x.mother == "S":
                     x.null = True
+        return PFN
 
 
 ########################################### MOVEMENT PARAMETERS ###
-    '''
     ### PARAMETER 7 (Pa[6]) ### Wh-Movement
     #Wh-in situ
-    def Parameter7(value):
+    def Parameter7(PFN):
+        value             = PFN[0][6]
         if value == 0:
             pass
         # [+WH] word goes to Spec,CP (NOT Spec,C') (NOT AFFECTED BY CP HEADEDNESS)
         if value == 1:
+            '''
             if TOPIC != WH:
                 #ERRORORORORO
                 pass
-            for x in nodes:
+            '''
+            '''
+            for x in PFN[2]:
                 if x.daughter == Wh:
                     x.mother = CP
-    '''
+            '''
+            pass
+        return PFN
 
     ### PARAMETER 8 (Pa[7]) ### Preposition Stranding
-    def Parameter8(value, nodes):
+    def Parameter8(PFN):
+        value                = PFN[0][7]
         if value == 0:
             # P is topicalized (Never O3), PP must move as a group
             pass
         if value == 1:
             # O3 is topicalized (Never P), P does not have to move
-            for x in nodes:
+            pied_piping_PFN             = copy.copy(PFN)
+            pied_piping_PFN[0][7]       = 0
+
+            l_of_l_of_nodes.append(do_it(pied_piping_PFN))
+
+            for x in PFN[2]:
                 if x.name == "PP":
                     if x.inUR == True:
-                        for n in nodes:
-                            if x.name == "O3":
-                                x.top = True
-                            else:
-                                x.top = False 
-
-    # IDEA:  PP gets the topicalizer, then this parameter moves it to just O3 if need be?
-    # If PP is topicalized:
-        if value == 0:
-            pass
+                        if x.top == True:
+                            for n in PFN[2]:
+                                if x.name == "O3":
+                                    x.top = True
+                                else:
+                                    x.top = False
+        return PFN
 
     ### PARAMETER 9 (Pa[8]) ### Topic Marking
-    def Parameter9(value):
+    def Parameter9(PFN):
+        value                = PFN[0][8]
         if value == 0:
             # wa is already null, so skip
             pass
 
         if value == 1:
             #if there is a topicalized item, attach [+WA] to it
-            for x in UR:
-                if x.name == "wa":
-                    x.null = True
-            wa.null = False
-
-    '''
+            for x in PFN[2]:
+                if x.name == "-wa":
+                    x.null = False
+        return PFN
+            
     ### PARAMETER 10 (Pa[9]) ### VtoI Movement
     def Parameter10(value):
         if value == 0:
@@ -278,68 +300,85 @@ def apply_parameters(Pa, force, UR):
             pass
         if value == 1:
             #If on, Verb tries to move to Spec,IP, unless Aux already occupies this node
+            pass
+            '''
             For current nodes:
                 if Aux.inUR:
                     pass
                 else:
                     VtoI(Verb)
-    '''
+            '''
+        return PFN
+
     ### PARAMETER 11 (Pa[10]) ### ItoC Movement
-    def Parameter11(value):
+    def Parameter11(PFN):
+        value             = PFN[0][10]
         if value == 0:
             pass
         if value == 1:
             # +ItoC invalidates the need for P13 so we can just turn it off
             # This requires a base-generated Aux or a VtoI Verb
             # If no BG Aux
-            if Aux.inUR == False:
-                if Pa[9] == 0:
-                    # Not parseable
-                    return no_parse()
-                else:
-                    assert Verb.mother == IP, "Verb didn't move"
-                    ItoC(V)
+            for x in PFN[2]:
+                if x.name == "Aux":
+                    if x.inUR == False:
+                        if PFN[0][9] == 0:
+                            # Not parseable
+                            PFN[2] = no_parse()
+                        else:
+                            for x in PFN[2]:
+                                if x.name == "Verb":
+                                    assert x.mother == IP, "Verb didn't move"
+                                    ItoC(x)
             #BG Aux
-            else:
-                assert Aux.mother == IP, "Aux already moved?"
-                ItoC(Aux)
-    '''      
+                    else:
+                        assert Aux.mother == IP, "Aux already moved?"
+                        ItoC(Aux)
+        return PFN
+             
     ### PARAMETER 12 (Pa[11]) ### Affix Hopping
     # Does not allow Verb to stay in VP without an outside Aux
-    def Parameter12(value):
+    def Parameter12(PFN):
+        value             = PFN[0][11]
         if value == 0:
             if Aux.inUR == True:
-                pass
+                return PFN
             if Aux.inUR == False:
                 # not parseable
-                return no_parse()
+                PFN[2] = no_parse()
+                return PFN
         #  Allows Verb to take finiteness inside the VP
         if value == 1:
-            if Pa[9] == 1:
+            if PFN[0][9] == 1:
                 # Not parseable
-                return no_parse()
+                PFN[2] = no_parse()
+                return PFN
             else:
-                pass
-    '''
-    ##### Parameter settings aren't needed after here for Declaratives
-    if force == "D":
-        return filler()
+                return PFN
 
     ### PARAMETER 13 (Pa[12]) ### Q-Inv  (i.e. ItoC for Qs)
-    def Parameter13(value):
+    def Parameter13(PFN):
+        value             = PFN[0][12]
+        P10               = PFN[0][10]
+        if P10 == 1:
+            value = 0
         if value == 0:
-            if Pa[10] == 0:
+            if P10 == 0:
                 # ka appears only in languages where P11 and P13 are off
-                ka.null = False
+                for x in PFN[2]:
+                    if x.name == "ka":
+                        x.null = False
             else:
                 pass
         if value == 1:
             # This requires a base-generated Aux or a VtoI Verb
             # If no BG Aux
+            '''
             if Aux.inUR == False:
                 if Pa[9] == 0:
                     # Not parseable
-                    return no_parse()
+                    PFN[2] = no_parse()
+                    return PFN
                 else:
                     assert V.mother == IP, "Verb didn't move up, so can't continue"
                     ItoC(V)
@@ -347,37 +386,47 @@ def apply_parameters(Pa, force, UR):
             else:
                 assert Aux.mother == IP, "Aux already moved?"
                 ItoC(Aux)
+            '''
+        return PFN
 
-    assert len(Pa) == 13
-    assert isinstance(Pa, list)
+    #assert len(Pa) == 13
+    #assert isinstance(Pa, list)
 
-    headedness_values = [None,None,None]
-    headedness_values = Parameter1(Pa[0], headedness_values)
-    headedness_values = Parameter1(Pa[1], headedness_values)
-    
-    if force == "I":
-        UR = set_head_position(UR, headedness_values)
-        #no other parameters come into play, so exit
-        return filler()
+    def do_it(PFN):
+        Pa                = PFN[0]
+        force             = PFN[1]
+        UR                = PFN[2]
 
-    headedness_values = Parameter1(Pa[2], headedness_values)
-    UR = set_head_position(UR, headedness_values)
-    nodes = Parameter4(Pa[3])
-    nodes = Parameter5(Pa[4])
-    nodes = Parameter6(Pa[5])
-    nodes = Parameter7(Pa[6])
-    nodes = Parameter8(Pa[7])
-    nodes = Parameter9(Pa[8])
-    nodes = Parameter10(Pa[9])
-    nodes = Parameter11(Pa[10])
-    # Parameter 11 being on invalidates the need for Parameter 13 to be assessed
-    if Pa[10] == 1:
-        Pa[12] = 0
-    nodes = Parameter12(Pa[11])
-    if force == "D":
-        return filler()
-    Parameter13(Pa[12]) 
+        headedness_values = [None,None,None]
+        headedness_values = Parameter1(PFN, headedness_values)
+        headedness_values = Parameter2(PFN, headedness_values)
+        # If imperative, no other parameters come into play, so we can exit
+        # with only 1 SOW/SR possibility
+        if force == "I":
+            PFN = set_head_position(PFN, headedness_values)
+            #no other parameters come into play, so exit
+            return PFN[2]
+        headedness_values = Parameter3(PFN, headedness_values)
+        # all headedness parameters set, the positions can be 
+        PFN = set_head_position(PFN, headedness_values)
+        while PFN[2] != "Not parseable":
+            PFN  = Parameter4(PFN)
+            PFN  = Parameter5(PFN)
+            PFN  = Parameter6(PFN)
+            PFN  = Parameter7(PFN)
+            PFN  = Parameter8(PFN)
+            PFN  = Parameter9(PFN)
+            PFN = Parameter10(PFN)
+            PFN = Parameter11(PFN)
+            # Parameter 11 being on invalidates the need for Parameter 13 to be assessed
+            PFN = Parameter12(PFN)
+            if PFN[1] == "D":
+                PFN[2] = move_topic(PFN[2])
+                return PFN[2]
+            Parameter13(PFN) 
+            PFN[2] = move_topic(PFN[2])
+        return PFN[2]
 
-    move_topic(UR)
 
-    return filler()
+    l_of_l_of_nodes.append(do_it(PFN))
+    return l_of_l_of_nodes

@@ -46,7 +46,7 @@ def activate_force(force):
             for x in range(len(UR)):
                 full_UR[x] = UR[x]
             all_URs.append(full_UR)
-            print(len(full_UR))
+            #print(len(full_UR))
     return all_URs
 
 # just a test
@@ -83,25 +83,29 @@ def expand(node, string):
                 string = expand(x, string)
     return string
 
-
-def out(language, force, ur, string):
+# out gets called for each SOW
+def out(language, force, ur, nodes):
     with open("all_all.txt", 'a') as f:
+        # writes out the language
         for dig in language:
             f.write(str(dig)+"")
+        # Writes out the force
         f.write("\t"+force+"\t")
+        # Writes out the UR
         for item in ur:
             if item != "\t":
                 f.write(item+"\t")
             else:
                 f.write(item)
         f.write("SR:\t")
-        if string == "Not parseable!":
-            f.write(string+"\n")
+        if nodes == "Not parseable!":
+            f.write(nodes+"\n")
         else:
-            for n in string:
-                if n != "CP":
+            assert isinstance(nodes, list), type(nodes)
+            for n in nodes:
+                if n.name != "CP":
                     pass
-                if n == "CP":
+                if n.name == "CP":
                     string = ''
                     f.write(expand(n, string))
         f.write("\n")
@@ -127,19 +131,33 @@ if __name__ == '__main__':
             all = False
     except:
         all = False
+    # runs the UR_writing script, creating .txt files for each force
     all_URs()
     tree_count = 0
     for language in languages(all):
+        # runs through the list of forces
         for force in forces():
+            # returns list of lists, padded to 14 items (i.e. the most lexical items possible)
             all_URs = activate_force(force)
-            # for each UR in this force's overall list
+            # for each UR in this force's list of URs
             for ur in all_URs:
                 # Take the UR, turn it into list of node objects
                 node_list = nodes(ur)
+                # Run each UR through the parameter settings;
                 # Each UR (and its nodes/tree) can produce multiple SR/strings
-                list_of_list_of_nodes = apply_parameters(language, force, node_list)
-                assert len(list_of_list_of_nodes)>0
-                for list_of_nodes in list_of_list_of_nodes:
-                    tree_count += 1
-                    out(language, force, ur, list_of_nodes)       
+                # so l_of_l_of_nodes can be max 6 lists of nodes
+                # based on optional parameter settings: (null_subXnull_topXprep_stranding) = 6
+                PFN             = [[]]*3
+                PFN[0]          = language
+                PFN[1]          = force
+                PFN[2]          = node_list
+                l_of_l_of_nodes = apply_parameters(PFN)
+                assert len(l_of_l_of_nodes)>0
+                # Finally make the SOWs/SRs
+                for l_of_nodes in l_of_l_of_nodes:
+                    if len(l_of_nodes)>0:
+                        tree_count += 1
+                        # Make an SOW/SR for each node list
+                        # i.e. for each possible outcome of parameters & ur
+                        out(language, force, ur, l_of_nodes)       
     print("assessed "+str(tree_count)+" trees and wrote them to "+"all_all.txt")
