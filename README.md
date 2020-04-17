@@ -1,5 +1,5 @@
 # Hidden-Sin
-This project creates an UR-SR mapping for a 13 parameter language system. The main script is SR_creator.py, which accesses the other modules in the Modules folder.
+This project creates a mapping of possible underlying lexical items (UR) to a surface order of words (SR/SOW), according to 13 binary parameters and a static syntactic tree. The main script is SR_creator.py, which accesses the other modules in the Modules folder.
 
 ## SR_creator.py
 SR_creator.py creates SRs/SOWs for all the language-agnostic URs (created by all_URs.py), for whatever languages are selected:
