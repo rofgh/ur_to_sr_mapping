@@ -341,20 +341,24 @@ def apply_parameters(PFN):
     def Parameter12(PFN):
         value             = PFN[0][11]
         if value == 0:
+            pass
+            '''
             if Aux.inUR == True:
                 return PFN
             if Aux.inUR == False:
                 # not parseable
                 PFN[2] = no_parse()
                 return PFN
+            '''
         #  Allows Verb to take finiteness inside the VP
         if value == 1:
             if PFN[0][9] == 1:
                 # Not parseable
                 PFN[2] = no_parse()
-                return PFN
+                pass
             else:
-                return PFN
+                pass
+        return PFN
 
     ### PARAMETER 13 (Pa[12]) ### Q-Inv  (i.e. ItoC for Qs)
     def Parameter13(PFN):
