@@ -165,3 +165,6 @@ if __name__ == '__main__':
 
     print("assessed "+str(tree_count)+" trees and wrote them to "+"all_all.txt")
     test_parse
+
+
+

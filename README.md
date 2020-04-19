@@ -19,9 +19,36 @@ $ python3 SR_creator.py
 
 all_all.txt currently looks like (No SRs are being printed currently):
 ```bash
-0001001100011	I	 Verb	 O1	 PP	
-0001001100011	I	 Verb	 O2	 PP
+0001001000011	D	S	Verb													SR:	
+0001001000011	D	S	Verb													SR:	
+0001001000011	D	S	Verb	Aux												SR:	
+0001001000011	D	S	Verb	Adv												SR:	
+0001001000011	D	S	Verb	O1												SR:	
+0001001000011	D	S	Verb	PP												SR:	
+0001001000011	D	S	Verb	Aux	Adv											SR:	
+0001001000011	D	S	Verb	Aux	O1											SR:	
+0001001000011	D	S	Verb	Aux	PP											SR:	
+0001001000011	D	S	Verb	Adv	O1											SR:	
+0001001000011	D	S	Verb	Adv	PP											SR:	
+0001001000011	D	S	Verb	O1	O2											SR:	
+0001001000011	D	S	Verb	O1	PP											SR:	
+0001001000011	D	S	Verb	Aux	Adv	O1										SR:	
+0001001000011	D	S	Verb	Aux	Adv	PP										SR:	
+0001001000011	D	S	Verb	Aux	O1	O2										SR:	
 ```
+
+At the end of the run, this script will run a test that compares the SR_creator output to a test.txt which contains a list of UR-SR maps known/expected to be produced by the creator.
+
+There are two outcomes from the test:
+```
+Failure!  Test lines not found in the output!
+```
+OR
+```
+Success! Test lines found in the output!
+```
+
+
 
 
 ### SR Creator accesses the following modules:
