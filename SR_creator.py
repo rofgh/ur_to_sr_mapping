@@ -9,10 +9,11 @@ producing, hopefully, a list of SRs/SOWs
 from modules.nodes      import nodes
 from modules.parameters import apply_parameters
 from modules.URs        import all_URs
+from modules            import test_parse
 import sys
 
 
-# generates all the language possibilities
+# generates the language possibilities
 def languages(all=False):
     # FOR ALL LANGUAGES
     if all == True:
@@ -159,5 +160,8 @@ if __name__ == '__main__':
                         tree_count += 1
                         # Make an SOW/SR for each node list
                         # i.e. for each possible outcome of parameters & ur
-                        out(language, force, ur, l_of_nodes)       
+                        out(language, force, ur, l_of_nodes)
+            
+
     print("assessed "+str(tree_count)+" trees and wrote them to "+"all_all.txt")
+    test_parse
