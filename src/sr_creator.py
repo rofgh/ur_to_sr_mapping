@@ -1,6 +1,6 @@
 
 from .nodes      import nodes
-from .parameters import apply_parameters
+from .parameters import *
 from .URs        import all_URs
 from .various    import *
 from .test_parse import test
@@ -32,12 +32,13 @@ def sr_creator(lang, forces):
                 PFN[0]          = language
                 PFN[1]          = force
                 PFN[2]          = node_list
+                assert len(PFN[2])>0
                 l_of_l_of_nodes = apply_parameters(PFN)
-                assert len(l_of_l_of_nodes)>0
+                #assert len(l_of_l_of_nodes)>0
                 # Finally make the SOWs/SRs
+                print(l_of_l_of_nodes)
                 for l_of_nodes in l_of_l_of_nodes:
-                    print(l_of_nodes)
-                    assert len(l_of_nodes)>0, l_of_nodes
+                    assert len(l_of_nodes)>0, l_of_l_of_nodes
                     tree_count += 1
                     print(str(tree_count), end=",")
                     # Make an SOW/SR for each node list
