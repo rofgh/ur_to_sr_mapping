@@ -1,9 +1,9 @@
 
 from .nodes      import nodes
 from .parameters import apply_parameters
-from .URs     import all_URs
+from .URs        import all_URs
 from .various    import *
-from .           import test_parse
+from .test_parse import test
 
 def sr_creator(all):
     # runs the UR_writing script, creating .txt files for each force
@@ -37,4 +37,4 @@ def sr_creator(all):
                         # i.e. for each possible outcome of parameters & ur
                         out(language, force, ur, l_of_nodes)
     print("assessed "+str(tree_count)+" trees and wrote them to "+"all_all.txt")
-    test_parse
+    test()

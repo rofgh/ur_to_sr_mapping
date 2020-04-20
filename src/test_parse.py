@@ -1,5 +1,5 @@
 
-def test_parse():
+def test():
     testfilename    = "test.txt"
     outputfilename  = "all_all.txt"
     outcome         = "Test lines found in the output! Success!"
