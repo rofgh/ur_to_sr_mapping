@@ -11,15 +11,16 @@ def sr_creator(lang, forces):
     tree_count = 0
     open("all_all.txt", 'w')
     for language in languages(lang):
-        print(language)
+        print("Lang:"+str(language))
         # runs through the list of forces
         for force in force_finder(forces):
-            print(force)
+            print("Force:"+ str(force))
+            print("Trees:", end=" ")
             # returns list of lists, padded to 14 items (i.e. the most lexical items possible)
             all_URs_ = activate_force(force)
             # for each UR in this force's list of URs
             for ur in all_URs_:
-                print(ur)
+                #print(ur)
                 # Take the UR, turn it into list of node objects
 
                 node_list = nodes(ur)
@@ -35,12 +36,14 @@ def sr_creator(lang, forces):
                 assert len(l_of_l_of_nodes)>0
                 # Finally make the SOWs/SRs
                 for l_of_nodes in l_of_l_of_nodes:
-                    print(l_of_nodes)
+                    #print(l_of_nodes)
                     if len(l_of_nodes)>0:
                         tree_count += 1
-                        print(tree_count, end=",")
+                        print(str(tree_count), end=",")
                         # Make an SOW/SR for each node list
                         # i.e. for each possible outcome of parameters & ur
+                        l_of_nodes = get_daughters(l_of_nodes)
                         out(language, force, ur, l_of_nodes)
+            print("\n")
     print("\nAssessed "+str(tree_count)+" trees and wrote them to "+"all_all.txt\n")
     test()

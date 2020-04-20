@@ -1,4 +1,1 @@
-0001001000011	D	S	Verb													SR:
-0001001000011	D	S	Verb													SR:
-0001001000011	D	S	Verb	Aux												SR:
-0001001000011	D	S	Verb	Adv												SR:
+0001001000011	D	S	Verb	Aux												SR:	S	Aux	Verb	
