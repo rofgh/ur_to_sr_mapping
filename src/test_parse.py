@@ -15,7 +15,13 @@ def test():
                 else:
                     count += 1
     if count > 0:
-        outcome = "Failure:  some of the test lines are not present in the output!"
+        outcome = "Failure:  {f} of the test lines are not present in the output!"
     if count == 0:
         outcome = "Success:  It seems all the test lines are present in the output!"
     print(outcome)
+
+    print(outcome.format(f= fail_count))
+    '''
+    txt = "For only {price:.2f} dollars!"
+    print(txt.format(price = 49))
+    '''
