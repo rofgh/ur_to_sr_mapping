@@ -24,7 +24,7 @@ def languages(all=False):
 
 ###  PAD LIST WITH 14, instead of what is happening here
 def activate_force(force):
-    filename = "modules/UR_writer/all_"+force+"URs.txt"
+    filename = "src/UR_writer/all_"+force+"URs.txt"
     with open(filename, 'r') as u:
         URs = u
         all_URs = []
