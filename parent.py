@@ -5,7 +5,6 @@ producing, hopefully, a list of SRs/SOWs
 '''
 
 from src import sr_creator
-
 import sys
 
 

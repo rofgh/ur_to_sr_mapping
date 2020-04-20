@@ -1,15 +1,16 @@
 
 from .nodes      import nodes
 from .parameters import apply_parameters
-from .URs        import all_URs
 from .various    import *
 from .           import test_parse
 
 def sr_creator(all):
     # runs the UR_writing script, creating .txt files for each force
-    from src.URs import all_URs
+    
+    from src.URs     import all_URs
     all_URs()
     tree_count = 0
+    open("all_all.txt")
     for language in languages(all):
         # runs through the list of forces
         for force in forces():
@@ -36,7 +37,5 @@ def sr_creator(all):
                         # Make an SOW/SR for each node list
                         # i.e. for each possible outcome of parameters & ur
                         out(language, force, ur, l_of_nodes)
-            
-
     print("assessed "+str(tree_count)+" trees and wrote them to "+"all_all.txt")
     test_parse

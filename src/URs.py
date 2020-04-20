@@ -318,12 +318,3 @@ def all_URs():
     new_all_URs(Q=True)
     new_all_URs(D=True)
     new_all_URs(I=True)
-
-
-
-
-if __name__ == '__main__':
-    new_all_URs(Q=True)
-    new_all_URs(D=True)
-    new_all_URs(I=True)
-
