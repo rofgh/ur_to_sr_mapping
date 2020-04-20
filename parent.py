@@ -13,12 +13,20 @@ if __name__ == '__main__':
     try:
         arg = sys.argv[1]
         if arg == 'True':
-            all = True
+            lang = True
         else:
-            all = False
+            lang = False
     except:
-        all = False
-    sr_creator.sr_creator(all)
+        lang = False
+    try:
+        arg2 = sys.argv[12]
+        if arg2 == 'True':
+            forces = True
+        else:
+            forces = False
+    except:
+        forces = False
+    sr_creator.sr_creator(lang, forces)
     timer.end(start)
     
 

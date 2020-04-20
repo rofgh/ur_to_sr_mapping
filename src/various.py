@@ -45,9 +45,11 @@ def assert_length(doc):
     assert i+1 == (len(all_forces)*len(current_langs)*len(all_URs))
 
 #mostly just playing with yield, but a generator for the forces
-def forces():
-    all_forces      = ["D","I","Q"]
-    #all_forces      = ["D"]
+def force_finder(forces):
+    if forces == True:
+        all_forces      = ["D","I","Q"]
+    else:
+        all_forces      = ["D"]
     for x in all_forces:
         yield x
 

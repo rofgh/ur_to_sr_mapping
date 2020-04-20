@@ -5,14 +5,14 @@ from .URs        import all_URs
 from .various    import *
 from .test_parse import test
 
-def sr_creator(all):
+def sr_creator(lang, forces):
     # runs the UR_writing script, creating .txt files for each force
     all_URs()
     tree_count = 0
     open("all_all.txt")
-    for language in languages(all):
+    for language in languages(lang):
         # runs through the list of forces
-        for force in forces():
+        for force in force_finder(forces):
             # returns list of lists, padded to 14 items (i.e. the most lexical items possible)
             all_URs_ = activate_force(force)
             # for each UR in this force's list of URs
