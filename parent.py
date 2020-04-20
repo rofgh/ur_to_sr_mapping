@@ -4,7 +4,7 @@ takes the UR list, at all_URs.txt, for each one of them it runs the obj-maker, a
 producing, hopefully, a list of SRs/SOWs
 '''
 
-from modules import sr_creator
+from src import sr_creator
 
 import sys
 
