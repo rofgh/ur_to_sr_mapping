@@ -6,7 +6,7 @@ install:
 	pip install flake8
 
 run:
-	python3 parent.py
+	python3 parent.py False False
 
 test:
 	python3 test.py

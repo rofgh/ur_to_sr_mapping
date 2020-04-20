@@ -36,14 +36,14 @@ def sr_creator(lang, forces):
                 assert len(l_of_l_of_nodes)>0
                 # Finally make the SOWs/SRs
                 for l_of_nodes in l_of_l_of_nodes:
-                    #print(l_of_nodes)
-                    if len(l_of_nodes)>0:
-                        tree_count += 1
-                        print(str(tree_count), end=",")
-                        # Make an SOW/SR for each node list
-                        # i.e. for each possible outcome of parameters & ur
-                        l_of_nodes = get_daughters(l_of_nodes)
-                        out(language, force, ur, l_of_nodes)
+                    print(l_of_nodes)
+                    assert len(l_of_nodes)>0, l_of_nodes
+                    tree_count += 1
+                    print(str(tree_count), end=",")
+                    # Make an SOW/SR for each node list
+                    # i.e. for each possible outcome of parameters & ur
+                    l_of_nodes = get_daughters(l_of_nodes)
+                    out(language, force, ur, l_of_nodes)
             print("\n")
     print("\nAssessed "+str(tree_count)+" trees and wrote them to "+"all_all.txt\n")
     test()

@@ -14,11 +14,12 @@ def languages(all=False):
             yield language
     ### ENGLISH ONLY: (Or add other specific languages)
     if all == False:
-        english = [ [0,0,0,1,0,0,1,1,0,0,0,1,1],
-                    [0,0,0,0,0,0,0,0,0,0,0,0,0],
-                    [0,0,0,0,0,0,0,0,0,0,0,0,1],
-                    [1,0,0,0,0,0,0,0,0,0,0,0,0],
-                    [1,1,1,1,1,1,1,1,1,1,1,1,1]]
+        english = [ [0,0,0,1,0,0,1,1,0,0,0,1,1]]
+                    #,
+                    #[0,0,0,0,0,0,0,0,0,0,0,0,0],
+                    #[0,0,0,0,0,0,0,0,0,0,0,0,1],
+                    #[1,0,0,0,0,0,0,0,0,0,0,0,0],
+                    #[1,1,1,1,1,1,1,1,1,1,1,1,1]]
         for x in english:
             yield x
 
@@ -62,7 +63,7 @@ def realize(node, string):
     return string
 
 def expand(node, string):
-    if node.real == True and node.inUR == True and node.null == False:
+    if node.null == False:
         string = realize(node, string)
     lis = node.daughters
     if len(lis) != 0:
@@ -107,10 +108,10 @@ def out(language, force, ur, nodes):
         
 def get_daughters(UR):
     if UR != "Not parseable!":
-        for x in UR:
-            if x.mother:
-                y = x.mother
-                for daughter in UR:
-                    if daughter.name == y:
-                        daughter.daughters.append(x)
+        for daughter in UR:
+            if daughter.mother:
+                mommy = daughter.mother
+                for mother in UR:
+                    if mother.name == mommy:
+                        mother.daughters.append(daughter)
     return UR
