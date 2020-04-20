@@ -77,7 +77,7 @@ def apply_parameters(PFN):
         return nodes
 
     def no_parse():
-        return "Not parseable"
+        return "Not parseable!"
 
     def filler():
         return UR
@@ -194,14 +194,17 @@ def apply_parameters(PFN):
             # S can be null or not
             ###
             # Run another version of this UR/Parameter set, with null sub off:
-            unnull_sub_PFN             = copy(PFN)
+            unnull_sub_PFN             = copy.copy(PFN)
             unnull_sub_PFN[0][4]       = 0
 
             l_of_l_of_nodes.append(do_it(unnull_sub_PFN))
             ###
-            for x in PFN[2]:
-                if x.name == "S":
-                    x.null = True
+            if PFN[2] == "Not parseable!":
+                pass
+            else:
+                for x in PFN[2]:
+                    if x.name == "S":
+                        x.null = True
         return PFN
 
     
@@ -222,14 +225,16 @@ def apply_parameters(PFN):
             #TOPIC can be null or not
             ###
             # Run another version of this UR/Parameter set, with null top off:
-            unnull_top_PFN             = copy(PFN)
+            unnull_top_PFN             = copy.copy(PFN)
             unnull_top_PFN[0][5]       = 0
 
             l_of_l_of_nodes.append(do_it(unnull_top_PFN))
-
-            for x in PFN[2]:
-                if x.mother == "S":
-                    x.null = True
+            if PFN[2] == "Not parseable!":
+                pass
+            else:
+                for x in PFN[2]:
+                    if x.mother == "S":
+                        x.null = True
         return PFN
 
 
@@ -267,16 +272,18 @@ def apply_parameters(PFN):
             pied_piping_PFN[0][7]       = 0
 
             l_of_l_of_nodes.append(do_it(pied_piping_PFN))
-
-            for x in PFN[2]:
-                if x.name == "PP":
-                    if x.inUR == True:
-                        if x.top == True:
-                            for n in PFN[2]:
-                                if x.name == "O3":
-                                    x.top = True
-                                else:
-                                    x.top = False
+            if PFN[2] == "Not parseable!":
+                pass
+            else:
+                for x in PFN[2]:
+                    if x.name == "PP":
+                        if x.inUR == True:
+                            if x.top == True:
+                                for n in PFN[2]:
+                                    if x.name == "O3":
+                                        x.top = True
+                                    else:
+                                        x.top = False
         return PFN
 
     ### PARAMETER 9 (Pa[8]) ### Topic Marking
@@ -288,9 +295,12 @@ def apply_parameters(PFN):
 
         if value == 1:
             #if there is a topicalized item, attach [+WA] to it
-            for x in PFN[2]:
-                if x.name == "-wa":
-                    x.null = False
+            if PFN[2] == "Not parseable!":
+                pass
+            else:
+                for x in PFN[2]:
+                    if x.name == "-wa":
+                        x.null = False
         return PFN
             
     ### PARAMETER 10 (Pa[9]) ### VtoI Movement
@@ -319,21 +329,26 @@ def apply_parameters(PFN):
             # +ItoC invalidates the need for P13 so we can just turn it off
             # This requires a base-generated Aux or a VtoI Verb
             # If no BG Aux
-            for x in PFN[2]:
-                if x.name == "Aux":
-                    if x.inUR == False:
-                        if PFN[0][9] == 0:
-                            # Not parseable
-                            PFN[2] = no_parse()
-                        else:
-                            for x in PFN[2]:
-                                if x.name == "Verb":
-                                    assert x.mother == IP, "Verb didn't move"
-                                    ItoC(x)
+            if PFN[2] == "Not parseable!":
+                pass
+            else:
+                for x in PFN[2]:
+                    if x.name == "Aux":
+                        if x.inUR == False:
+                            if PFN[0][9] == 0:
+                                # Not parseable
+                                PFN[2] = no_parse()
+                            else:
+                                for x in PFN[2]:
+                                    if x.name == "Verb":
+                                        #assert x.mother == IP, "Verb didn't move"
+                                        #ItoC(x)
+                                        pass
             #BG Aux
                     else:
-                        assert Aux.mother == IP, "Aux already moved?"
-                        ItoC(Aux)
+                        #assert Aux.mother == IP, "Aux already moved?"
+                        #ItoC(Aux)
+                        pass
         return PFN
              
     ### PARAMETER 12 (Pa[11]) ### Affix Hopping
@@ -369,9 +384,12 @@ def apply_parameters(PFN):
         if value == 0:
             if P10 == 0:
                 # ka appears only in languages where P11 and P13 are off
-                for x in PFN[2]:
-                    if x.name == "ka":
-                        x.null = False
+                if PFN[2] == "Not parseable!":
+                    pass
+                else:
+                    for x in PFN[2]:
+                        if x.name == "ka":
+                            x.null = False
             else:
                 pass
         if value == 1:
@@ -391,6 +409,7 @@ def apply_parameters(PFN):
                 assert Aux.mother == IP, "Aux already moved?"
                 ItoC(Aux)
             '''
+            pass
         return PFN
 
     #assert len(Pa) == 13
@@ -413,7 +432,7 @@ def apply_parameters(PFN):
         headedness_values = Parameter3(PFN, headedness_values)
         # all headedness parameters set, the positions can be 
         PFN = set_head_position(PFN, headedness_values)
-        while PFN[2] != "Not parseable":
+        while PFN[2] != "Not parseable!":
             PFN  = Parameter4(PFN)
             PFN  = Parameter5(PFN)
             PFN  = Parameter6(PFN)
@@ -425,10 +444,10 @@ def apply_parameters(PFN):
             # Parameter 11 being on invalidates the need for Parameter 13 to be assessed
             PFN = Parameter12(PFN)
             if PFN[1] == "D":
-                PFN[2] = move_topic(PFN[2])
+                #PFN[2] = move_topic(PFN[2])
                 return PFN[2]
             Parameter13(PFN) 
-            PFN[2] = move_topic(PFN[2])
+            #PFN[2] = move_topic(PFN[2])
         return PFN[2]
 
 

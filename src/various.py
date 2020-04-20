@@ -89,7 +89,7 @@ def out(language, force, ur, nodes):
         if nodes == "Not parseable!":
             f.write(nodes+"\n")
         else:
-            assert isinstance(nodes, list), type(nodes)
+            assert isinstance(nodes, list), nodes
             for n in nodes:
                 if n.name != "CP":
                     pass
