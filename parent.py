@@ -19,7 +19,7 @@ if __name__ == '__main__':
     except:
         lang = False
     try:
-        arg2 = sys.argv[12]
+        arg2 = sys.argv[2]
         if arg2 == 'True':
             forces = True
         else:
