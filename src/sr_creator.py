@@ -9,7 +9,7 @@ def sr_creator(lang, forces):
     # runs the UR_writing script, creating .txt files for each force
     all_URs()
     tree_count = 0
-    open("all_all.txt")
+    open("all_all.txt", 'w')
     for language in languages(lang):
         print(language)
         # runs through the list of forces
