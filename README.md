@@ -11,7 +11,7 @@ True will run all languages (ENTER EST TIME HERE)
 $ python3 SR_creator.py True
 ```
 
-False or empty arg[1] will run only English parameters (ENTER EST TIME HERE)
+False or empty arg[1] will run only English parameters (1 second)
 
 ```bash
 $ python3 SR_creator.py

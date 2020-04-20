@@ -48,6 +48,41 @@ UR within that?
 
 '''
 import copy
+
+def move_topic(nodes):
+    for n in nodes:
+        if n.name == "CP":
+            CP = n
+    for n in nodes:
+        if n.top == True:
+            n.mother = CP
+    return nodes
+
+def no_parse():
+    return "Not parseable!"
+
+def ItoC(node):
+    node.mother = "Cbar"
+    node.phrase = "CP"
+
+def VtoI(node):
+    node.mother = "IP"
+    return node
+
+
+def set_head_position(PFN, headedness_values):
+    for node in PFN[2]:
+        if node.name not in ["CP", "-wa"]:
+            assert node.phrase in ["SP","CP","IP"], [node.name, node.phrase]
+            if node.phrase == "SP":
+                node.pos = headedness_values[0]
+            if node.phrase == "IP":
+                node.pos = headedness_values[1]
+            if node.phrase == "CP":
+                node.pos = headedness_values[2]
+    return PFN
+
+
 def apply_parameters(PFN):
     # list of possible nodes lists *2 for each parameter that may add another list 
     l_of_l_of_nodes = []
@@ -67,50 +102,6 @@ def apply_parameters(PFN):
         func = "Parameter"+str(x)+"(Pa["+str(Pa[x])+"], UR)"
         eval(func)
     '''
-    def move_topic(nodes):
-        for n in nodes:
-            if n.name == "CP":
-                CP = n
-        for n in nodes:
-            if n.top == True:
-                n.mother = CP
-        return nodes
-
-    def no_parse():
-        return "Not parseable!"
-
-    def filler():
-        return UR
-
-    def ItoC(node):
-            node.mother = Cbar
-            node.phrase = "CP"
-
-    def VtoI(node):
-            node.mother = IP
-
-
-    def set_head_position(PFN, headedness_values):
-        for node in PFN[2]:
-            if node.name not in ["CP", "-wa"]:
-                assert node.phrase in ["SP","CP","IP"], [node.name, node.phrase]
-                if node.phrase == "SP":
-                    node.pos = headedness_values[0]
-                if node.phrase == "IP":
-                    node.pos = headedness_values[1]
-                if node.phrase == "CP":
-                    node.pos = headedness_values[2]
-        return PFN
-                
-    def get_daughters(UR):
-        for x in UR:
-            if x.mother:
-                y = x.mother
-                y.daughters.append(x)
-            else:
-                pass
-        return UR
-
     def if_on(value):
         pass
                 
@@ -304,20 +295,25 @@ def apply_parameters(PFN):
         return PFN
             
     ### PARAMETER 10 (Pa[9]) ### VtoI Movement
-    def Parameter10(value):
+    def Parameter10(PFN):
+        value             = PFN[0][9]
         if value == 0:
             #If off, no movement occurs
             pass
         if value == 1:
             #If on, Verb tries to move to Spec,IP, unless Aux already occupies this node
-            pass
-            '''
-            For current nodes:
-                if Aux.inUR:
+            for x in PFN[2]:
+                if x.name == "Aux":
+                    Aux = x
+                if x.name == "Verb":
+                    Verb = x
+            if Aux.inUR == True:
+                if Aux.mother == "Cbar":
+                    Verb.mother = "IP"
+                if Aux.mother == "IP":
                     pass
-                else:
-                    VtoI(Verb)
-            '''
+            if Aux.inUR == False:
+                Verb.mother = "IP"
         return PFN
 
     ### PARAMETER 11 (Pa[10]) ### ItoC Movement
@@ -341,13 +337,17 @@ def apply_parameters(PFN):
                             else:
                                 for x in PFN[2]:
                                     if x.name == "Verb":
-                                        #assert x.mother == IP, "Verb didn't move"
-                                        #ItoC(x)
+                                        assert x.mother == "IP", "Verb didn't move"
+                                        x.mother = "Cbar"
+                                        x.phrase = "CP"
                                         pass
             #BG Aux
                     else:
-                        #assert Aux.mother == IP, "Aux already moved?"
-                        #ItoC(Aux)
+                        for x in PFN[2]:
+                            if x.name == "Aux":
+                                assert x.mother == "IP" or "Cbar", "Aux already moved? Mother: "+x.mother
+                                x.mother = "Cbar"
+                                x.phrase = "CP"
                         pass
         return PFN
              
@@ -356,15 +356,14 @@ def apply_parameters(PFN):
     def Parameter12(PFN):
         value             = PFN[0][11]
         if value == 0:
-            pass
-            '''
-            if Aux.inUR == True:
-                return PFN
-            if Aux.inUR == False:
-                # not parseable
-                PFN[2] = no_parse()
-                return PFN
-            '''
+            for x in PFN[2]:
+                if x.name == "Aux":
+                    if x.inUR == True:
+                        pass
+                    if x.inUR == False:
+                        # not parseable
+                        PFN[2] = no_parse()
+                    return PFN
         #  Allows Verb to take finiteness inside the VP
         if value == 1:
             if PFN[0][9] == 1:

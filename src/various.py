@@ -110,7 +110,7 @@ def get_daughters(UR):
         for x in UR:
             if x.mother:
                 y = x.mother
-                y.daughters.append(x)
-            else:
-                pass
+                for daughter in UR:
+                    if daughter.name == y:
+                        daughter.daughters.append(x)
     return UR

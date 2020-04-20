@@ -18,37 +18,37 @@ def nodes(UR):
             # This will be determined by the headedness and the parameter settings: L or R
             self.pos        = None
             # Is this node nullified?
-            self.null       = False
-            # IS this node in the current UR?
+            self.null       = True
+            # Is this node in the current UR?
             self.inUR       = False
             # Every node is added to this list--don't worry, we'll sort it out later....
             node_list.append(self)
 
     # Set up all doz nodez brah
     CP      = Node("CP",       None)
-    Cbar    = Node("Cbar",     CP)
-    ka      = Node("ka",       Cbar)
-    SP      = Node("SP",       Cbar)
+    Cbar    = Node("Cbar",     "CP")
+    ka      = Node("ka",       "Cbar")
+    SP      = Node("SP",       "Cbar")
     wa      = Node("-wa",       None)
     #that    = Node(" that",     Cbar)
     Wh      = Node("[+WH]",     None)
-    S       = Node("S",        SP)
-    IP      = Node("IP",       SP)
-    Aux     = Node("Aux",      IP)
-    NegP    = Node("NegP",     IP)
-    Not     = Node("not",      NegP)
-    Nev     = Node("never",    NegP)
-    VP      = Node("VP",       NegP)
-    Adv     = Node("Adv",      VP)
-    Vbar3   = Node("Vbar3",    VP)
-    Vbar2   = Node("Vbar2",    Vbar3)
-    PP      = Node("PP",       Vbar3)
-    O2      = Node("O2",       Vbar2)
-    Vbar1   = Node("Vbar1",    Vbar2)
-    Verb    = Node("Verb",     Vbar1)
-    O1      = Node("O1",       Vbar1)
-    P       = Node("P",        PP)
-    O3      = Node("O3",       PP)
+    S       = Node("S",        "SP")
+    IP      = Node("IP",       "SP")
+    Aux     = Node("Aux",      "IP")
+    NegP    = Node("NegP",     "IP")
+    Not     = Node("not",      "NegP")
+    Nev     = Node("never",    "NegP")
+    VP      = Node("VP",       "NegP")
+    Adv     = Node("Adv",      "VP")
+    Vbar3   = Node("Vbar3",    "VP")
+    Vbar2   = Node("Vbar2",    "Vbar3")
+    PP      = Node("PP",       "Vbar3")
+    O2      = Node("O2",       "Vbar2")
+    Vbar1   = Node("Vbar1",    "Vbar2")
+    Verb    = Node("Verb",     "Vbar1")
+    O1      = Node("O1",       "Vbar1")
+    P       = Node("P",        "PP")
+    O3      = Node("O3",       "PP")
 
     # HEAD nodes:
     head_nodes  = [ka, S, Aux, Not, Nev, P, Verb, Vbar1, Vbar2]
@@ -93,9 +93,11 @@ def nodes(UR):
      
     for n in node_list:
         if "PP" in UR:
-            if n.mother == PP:
+            if n.mother == "PP":
+                n.null = False
                 n.inUR = True
         if n.name in UR:
+            n.null = False
             n.inUR = True
     '''
     for n in node_list:
