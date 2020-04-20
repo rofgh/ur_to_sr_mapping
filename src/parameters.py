@@ -383,13 +383,16 @@ def apply_parameters(PFN):
             value = 0
         if value == 0:
             if P10 == 0:
+                pass
                 # ka appears only in languages where P11 and P13 are off
+                '''
                 if PFN[2] == "Not parseable!":
                     pass
                 else:
                     for x in PFN[2]:
                         if x.name == "ka":
                             x.null = False
+                '''
             else:
                 pass
         if value == 1:
