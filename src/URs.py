@@ -77,7 +77,7 @@ def new_all_URs(Q=False, D=False, I=False):
                     whUR.remove(wh)
                     total.append(whUR)
     count = 0
-    with open("modules/UR_writer/all_"+force+"URs.txt", 'w') as f:
+    with open("UR_writer/all_"+force+"URs.txt", 'w') as f:
         for UR in total:
             count += 1
             for item in UR:

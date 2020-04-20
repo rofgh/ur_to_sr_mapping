@@ -1,13 +1,15 @@
 
-from .nodes      import nodes
-from .parameters import apply_parameters
-from .URs        import all_URs
-from .various    import *
-
+from src.URs.py            import *
+'''
+from src.nodes      import nodes
+from src.parameters import apply_parameters
+from src.URs        import all_URs
+from src.various    import *
+'''
 
 def sr_creator(all):
     # runs the UR_writing script, creating .txt files for each force
-    all_URs()
+    URs.all_URs()
     tree_count = 0
     for language in languages(all):
         # runs through the list of forces
