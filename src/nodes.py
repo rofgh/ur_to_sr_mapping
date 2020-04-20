@@ -90,9 +90,24 @@ def nodes(UR):
                     n.top   = True
                     n.inUR  = True
                     n.null  = False
+                #attach -wa to the topic
                 if n.name == "-wa":
                     n.mother = t
                     #print(n.name+" got topicalized")
+    
+    for x in UR:
+        if "+wh" in x:
+            w = x.strip("+wh")
+            for n in node_list:
+                if n.name == w:
+                    n.inUR  = True
+                    n.null  = False
+                if n.name == "[+WH]":
+                    #attach [+WH] as daughter of appropriate node
+                    n.mother    = w
+                    n.inUR      = True
+                    n.null      = False
+                    #print(n.name+" got wh'd")
      
     for n in node_list:
         if n.name in UR:

@@ -36,7 +36,6 @@ def sr_creator(lang, forces):
                 l_of_l_of_nodes = apply_parameters(PFN)
                 #assert len(l_of_l_of_nodes)>0
                 # Finally make the SOWs/SRs
-                print(l_of_l_of_nodes)
                 for l_of_nodes in l_of_l_of_nodes:
                     assert len(l_of_nodes)>0, l_of_l_of_nodes
                     tree_count += 1

@@ -14,12 +14,13 @@ def languages(all=False):
             yield language
     ### ENGLISH ONLY: (Or add other specific languages)
     if all == False:
-        english = [ [0,0,0,1,0,0,1,1,0,0,0,1,1]]
-                    #,
-                    #[0,0,0,0,0,0,0,0,0,0,0,0,0],
-                    #[0,0,0,0,0,0,0,0,0,0,0,0,1],
-                    #[1,0,0,0,0,0,0,0,0,0,0,0,0],
-                    #[1,1,1,1,1,1,1,1,1,1,1,1,1]]
+        english = [ [0,0,0,1,0,0,1,1,0,0,0,1,1],
+                    [0,0,0,0,0,0,0,0,0,0,0,0,0],
+                    [0,0,0,0,0,0,0,0,0,0,0,0,1],
+                    [1,0,0,0,0,0,0,0,0,0,0,0,0],
+                    [1,1,1,1,1,1,1,1,1,1,1,1,1],
+                    [0,0,0,1,1,1,0,0,1,0,0,0,0],
+                    [1,1,1,0,0,0,0,0,0,0,0,0,0]]
         for x in english:
             yield x
 
@@ -63,9 +64,10 @@ def realize(node, string):
     return string
 
 def expand(node, string):
-    if node.null == False:
-        string = realize(node, string)
     lis = node.daughters
+    if len(lis) == 0:
+        if node.null == False:
+            string = realize(node, string)
     if len(lis) != 0:
         for x in lis:
             if x.pos == "L":
@@ -80,6 +82,7 @@ def expand(node, string):
 
 # out gets called for each SOW
 def out(language, force, ur, nodes):
+    assert len(nodes)<24, str(len(nodes))+" nodes in this list..."
     with open("all_all.txt", 'a') as f:
         # writes out the language
         for dig in language:
@@ -94,7 +97,7 @@ def out(language, force, ur, nodes):
                 f.write(item)
         f.write("SR:\t")
         if nodes == "Not parseable!":
-            f.write(nodes+"\n")
+            f.write(nodes)
         else:
             assert isinstance(nodes, list), nodes
             for n in nodes:
