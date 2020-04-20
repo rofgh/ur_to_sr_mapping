@@ -1,13 +1,12 @@
 
 from .nodes      import nodes
 from .parameters import apply_parameters
+from .URs     import all_URs
 from .various    import *
 from .           import test_parse
 
 def sr_creator(all):
     # runs the UR_writing script, creating .txt files for each force
-    
-    from src.URs     import all_URs
     all_URs()
     tree_count = 0
     open("all_all.txt")
@@ -15,9 +14,9 @@ def sr_creator(all):
         # runs through the list of forces
         for force in forces():
             # returns list of lists, padded to 14 items (i.e. the most lexical items possible)
-            all_URs = activate_force(force)
+            all_URs_ = activate_force(force)
             # for each UR in this force's list of URs
-            for ur in all_URs:
+            for ur in all_URs_:
                 # Take the UR, turn it into list of node objects
                 node_list = nodes(ur)
                 # Run each UR through the parameter settings;
