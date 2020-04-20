@@ -10,7 +10,6 @@ import sys
 
 
 if __name__ == '__main__':
-    open("all_all.txt", 'w')
     try:
         arg = sys.argv[1]
         if arg == 'True':

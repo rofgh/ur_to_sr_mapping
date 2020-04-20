@@ -36,5 +36,5 @@ def sr_creator(all):
                         # Make an SOW/SR for each node list
                         # i.e. for each possible outcome of parameters & ur
                         out(language, force, ur, l_of_nodes)
-    print("assessed "+str(tree_count)+" trees and wrote them to "+"all_all.txt")
+    print("\nAssessed "+str(tree_count)+" trees and wrote them to "+"all_all.txt\n")
     test()
