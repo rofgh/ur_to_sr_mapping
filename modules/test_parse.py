@@ -1,13 +1,6 @@
-import os
 
-os.chdir("..")
-
-from ..HiddenSin import SR_creator
-
-SR_creator
-
-testfilename    = "test.txt"
-outputfilename  = "all_all.txt"
+testfilename    = "../test.txt"
+outputfilename  = "../all_all.txt"
 outcome         = "Test lines found in the output! Success!"
 failed_line     = ""
 with open(testfilename, 'r') as t:
