@@ -6,10 +6,10 @@ producing, hopefully, a list of SRs/SOWs
 
 from src import sr_creator
 import sys
-from timeit import default_timer as timer
+from src import timer
 
 if __name__ == '__main__':
-    start = timer()
+    start = timer.start()
     try:
         arg = sys.argv[1]
         if arg == 'True':
@@ -19,10 +19,8 @@ if __name__ == '__main__':
     except:
         all = False
     sr_creator.sr_creator(all)
-    end = timer()
-    total_time = end - start
-    time_elapsed = "Total for this run: {tt:.2} seconds\n"
-    print(time_elapsed.format(tt=total_time))
+    timer.end(start)
+    
 
 
 

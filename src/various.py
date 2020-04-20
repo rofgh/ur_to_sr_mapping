@@ -46,8 +46,8 @@ def assert_length(doc):
 
 #mostly just playing with yield, but a generator for the forces
 def forces():
-    #all_forces      = ["D","I","Q"]
-    all_forces      = ["D"]
+    all_forces      = ["D","I","Q"]
+    #all_forces      = ["D"]
     for x in all_forces:
         yield x
 
