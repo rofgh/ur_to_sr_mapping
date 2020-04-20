@@ -14,7 +14,11 @@ def languages(all=False):
             yield language
     ### ENGLISH ONLY: (Or add other specific languages)
     if all == False:
-        english = [[0,0,0,1,0,0,1,1,0,0,0,1,1]]
+        english = [ [0,0,0,1,0,0,1,1,0,0,0,1,1],
+                    [0,0,0,0,0,0,0,0,0,0,0,0,0],
+                    [0,0,0,0,0,0,0,0,0,0,0,0,1],
+                    [1,0,0,0,0,0,0,0,0,0,0,0,0],
+                    [1,1,1,1,1,1,1,1,1,1,1,1,1]]
         for x in english:
             yield x
 
@@ -102,10 +106,11 @@ def out(language, force, ur, nodes):
     return
         
 def get_daughters(UR):
-    for x in UR:
-        if x.mother:
-            y = x.mother
-            y.daughters.append(x)
-        else:
-            pass
+    if UR != "Not parseable!":
+        for x in UR:
+            if x.mother:
+                y = x.mother
+                y.daughters.append(x)
+            else:
+                pass
     return UR

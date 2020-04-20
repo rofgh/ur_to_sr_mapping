@@ -1,1 +1,2 @@
-0001001000011	D	S	Verb	Aux												SR:	S	Aux	Verb	
+0001001000011	D	S	Verb	Aux												SR:	S	Aux	Verb
+0001001000011	D	S	Verb	PP												SR:	S	Verb	P	O3	
