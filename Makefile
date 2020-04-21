@@ -13,7 +13,7 @@ test:
 
 watch:
 	echo "Watching for changes to .py files in /src/"
-	pywatch "python3 parent.py" ./src/*.py
+	pywatch "python parent.py" ./src/*.py
 
 lint:
 	echo "Linting code for Python syntax errors or undefined names"

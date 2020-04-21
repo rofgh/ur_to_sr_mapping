@@ -44,16 +44,27 @@ UR within that?
 
 '''
 import copy
+
 def apply_parameters(PFN):
     l_of_l_of_nodes = []
 
     def move_topic(nodes):
-        for n in nodes:
-            if n.name == "CP":
-                CP = n
-        for n in nodes:
-            if n.top == True:
-                n.mother = CP
+        CP = None
+        for cp in nodes:
+            if cp.name == "CP":
+                CP = cp
+        for topic in nodes:
+            if topic.top == True:
+                topic.mother = CP
+        '''
+        for x in nodes:
+            print(x.name, end=", ")
+            print(x.daughters, end=", ")
+            if x.mother:
+                print(x.mother.name)
+            else:
+                print()
+        '''
         return nodes
 
     def no_parse(x):
@@ -98,8 +109,6 @@ def apply_parameters(PFN):
     ### PARAMETER 1 ### ONLY AFFECTS HEADEDNESS OF NODES WITHIN SP (i.e. S)
     def Parameter1(PFN, h_v):
         value             = PFN[0][0]
-        force             = PFN[1]
-        UR                = PFN[2]
         if value == 0:
             h_v[0] = "L"
         if value == 1:
@@ -109,8 +118,6 @@ def apply_parameters(PFN):
     ### PARAMETER 2 (Pa[1]) ###  ONLY AFFECTS HEADEDNESS OF NODES WITHIN IP
     def Parameter2(PFN, h_v):
         value             = PFN[0][1]
-        force             = PFN[1]
-        UR                = PFN[2]
         if value == 0:
             h_v[1] = "L"
         if value == 1:
@@ -122,8 +129,6 @@ def apply_parameters(PFN):
     # If Pa[2]==1 and Pa[10]==1 and Aux == True: Aux will be CP final (and necessarily sentence final)
     def Parameter3(PFN, h_v):
         value             = PFN[0][2]
-        force             = PFN[1]
-        UR                = PFN[2]
         if value == 0:
             h_v[2] = "L"
         if value == 1:
@@ -140,7 +145,7 @@ def apply_parameters(PFN):
                 if x.top == True:
                     found_topic = True
             if found_topic == False:
-                PFN[2] = no_parse("4")
+                PFN[2] = no_parse("4: no topic and topic is obligatory")
         # The following setting should have more SRs...
         if value == 1:
             pass
@@ -158,8 +163,16 @@ def apply_parameters(PFN):
             # Run another version of this UR/Parameter set, with null sub off:
             #This alternate runs every time, since every "D" and "Q" sentence have subjects
             assert len(PFN[2]) < 30, "len(PFN[2]) is too high... why?"
-            unnull_sub_PFN             = copy.copy(PFN)
+            unnull_sub_PFN             = copy.deepcopy(PFN)
             unnull_sub_PFN[0][4]       = 0
+            def run_error():
+                print("PFN")
+                for x in PFN:
+                    print(x)
+                print("unnull_sub_PFN")
+                for x in unnull_sub_PFN:
+                    print(x)
+            assert PFN != unnull_sub_PFN, run_error()
             l_of_l_of_nodes.append(do_it(unnull_sub_PFN))
             ###
             for x in PFN[2]:
@@ -181,8 +194,9 @@ def apply_parameters(PFN):
             for n in PFN[2]:
                 if n.top == True:
                     # Run another version of this UR/Parameter set, with null top off:
-                    unnull_top_PFN             = copy.copy(PFN)
+                    unnull_top_PFN             = copy.deepcopy(PFN)
                     unnull_top_PFN[0][5]       = 0
+                    assert PFN != unnull_top_PFN
                     l_of_l_of_nodes.append(do_it(unnull_top_PFN))
                     n.null = True
         return PFN
@@ -223,11 +237,12 @@ def apply_parameters(PFN):
                     if x.inUR == True:
                         if x.top == True:
                             #if the PP is top, run again without this parameter on
-                            pied_piping_PFN             = copy.copy(PFN)
+                            pied_piping_PFN             = copy.deepcopy(PFN)
                             pied_piping_PFN[0][7]       = 0
+                            assert PFN != pied_piping_PFN
                             l_of_l_of_nodes.append(do_it(pied_piping_PFN))
                             ###
-                            for n in PFN[2]:
+                            for x in PFN[2]:
                                 if x.name == "O3":
                                     x.top = True
                                 else:
@@ -284,7 +299,7 @@ def apply_parameters(PFN):
                     if x.inUR == False:
                         if PFN[0][9] == 0:
                             # Not parseable
-                            PFN[2] = no_parse("11")
+                            PFN[2] = no_parse("11: No Aux and no VtoI")
                         else:
                             for x in PFN[2]:
                                 if x.name == "Verb":
@@ -347,7 +362,7 @@ def apply_parameters(PFN):
                     if Aux.inUR == False:
                         if PFN[0][9] == 0:
                             # Not parseable
-                            PFN[2] = no_parse("13")
+                            PFN[2] = no_parse("13: no aux and no VtoI")
                             return PFN
                         else:
                             #Does this move with affix hopping?!?!?!?
@@ -394,10 +409,6 @@ def apply_parameters(PFN):
         return product
 
     def do_it(PFN):
-        Pa                = PFN[0]
-        force             = PFN[1]
-        UR                = PFN[2]
-        done = False
         counter = 1
         if PFN[1] == "I":
             PFN[0] = PFN[0][0:3]

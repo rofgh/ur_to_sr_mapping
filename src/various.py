@@ -20,7 +20,7 @@ def languages(all=False):
                     [1,0,0,0,0,0,0,0,0,0,0,0,0],
                     [1,1,1,1,1,1,1,1,1,1,1,1,1],
                     [0,0,0,1,1,1,0,0,1,0,0,0,0],
-                    [1,1,1,0,0,0,0,0,0,0,0,0,0]]
+                    [1,1,1,1,0,0,0,0,0,0,0,1,0]]
         for x in english:
             yield x
 
@@ -69,8 +69,10 @@ def expand(node, string):
     for x in lis:
         lis_names.append(x.name)
     assert len(lis) < 4, str(node.name)+" has too many daughters: "+str(len(lis))+": "+str(lis_names)
+    '''
     for x in lis:
         print(x, end=",")
+    '''
     if len(lis) == 0:
         if node.null == False:
             string = realize(node, string)
@@ -121,8 +123,8 @@ def out(language, force, ur, nodes):
         
 def get_daughters(UR):
     if "Not parseable" not in UR:
-        for daughter in UR:
-            if daughter.mother:
-                mommy = daughter.mother
-                mommy.daughters.append(daughter)
+        assert len(UR) == 22
+        for n in UR:
+            if n.mother:
+                n.mother.daughters.append(n)
     return UR
