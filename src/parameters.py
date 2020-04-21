@@ -56,13 +56,16 @@ def apply_parameters(PFN):
                 n.mother = CP
         return nodes
 
-    def no_parse():
-        return "Not parseable!"
+    def no_parse(x):
+        return "Not parseable because of Parameter: "+x
 
     def set_head_position(PFN, headedness_values):
-        assert type(PFN) is list, "PFN is not list?"
+        assert isinstance(PFN, list), "PFN is not list?"
         assert len(headedness_values) == 3, "HV is messed up?"
+        #print(PFN[2])
         for node in PFN[2]:
+            #print(node, end=", ")
+            #print(PFN[2].index(node))
             if node.name not in ["CP", "-wa"]:
                 assert node.phrase in ["SP","CP","IP"], [node.name, node.phrase]
                 if node.phrase == "SP":
@@ -137,7 +140,7 @@ def apply_parameters(PFN):
                 if x.top == True:
                     found_topic = True
             if found_topic == False:
-                PFN[2] = no_parse()
+                PFN[2] = no_parse("4")
         # The following setting should have more SRs...
         if value == 1:
             pass
@@ -154,6 +157,7 @@ def apply_parameters(PFN):
             ###
             # Run another version of this UR/Parameter set, with null sub off:
             #This alternate runs every time, since every "D" and "Q" sentence have subjects
+            assert len(PFN[2]) < 30, "len(PFN[2]) is too high... why?"
             unnull_sub_PFN             = copy.copy(PFN)
             unnull_sub_PFN[0][4]       = 0
             l_of_l_of_nodes.append(do_it(unnull_sub_PFN))
@@ -239,12 +243,9 @@ def apply_parameters(PFN):
 
         if value == 1:
             #if there is a topicalized item, attach [+WA] to it
-            if PFN[2] == "Not parseable!":
-                pass
-            else:
-                for x in PFN[2]:
-                    if x.name == "-wa":
-                        x.null = False
+            for x in PFN[2]:
+                if x.name == "-wa":
+                    x.null = False
         return PFN
             
     ### PARAMETER 10 (Pa[9]) ### VtoI Movement
@@ -283,7 +284,7 @@ def apply_parameters(PFN):
                     if x.inUR == False:
                         if PFN[0][9] == 0:
                             # Not parseable
-                            PFN[2] = no_parse()
+                            PFN[2] = no_parse("11")
                         else:
                             for x in PFN[2]:
                                 if x.name == "Verb":
@@ -312,13 +313,13 @@ def apply_parameters(PFN):
                         pass
                     if x.inUR == False:
                         # not parseable
-                        PFN[2] = no_parse()
+                        PFN[2] = no_parse("12a: Affix Hopping, No Aux in UR")
                     return PFN
         #  Allows Verb to take finiteness inside the VP
         if value == 1:
             if PFN[0][9] == 1:
                 # Not parseable
-                PFN[2] = no_parse()
+                PFN[2] = no_parse("12b: Affix Hopping, VtoI is obligatory.")
                 pass
             else:
                 pass
@@ -332,16 +333,10 @@ def apply_parameters(PFN):
             value = 0
         if value == 0:
             if P10 == 0:
-                pass
                 # ka appears only in languages where P11 and P13 are off
-                '''
-                if PFN[2] == "Not parseable!":
-                    pass
-                else:
-                    for x in PFN[2]:
-                        if x.name == "ka":
-                            x.null = False
-                '''
+                for x in PFN[2]:
+                    if x.name == "ka":
+                        x.null = False
             else:
                 pass
         if value == 1:
@@ -352,15 +347,15 @@ def apply_parameters(PFN):
                     if Aux.inUR == False:
                         if PFN[0][9] == 0:
                             # Not parseable
-                            PFN[2] = no_parse()
-                            pass
+                            PFN[2] = no_parse("13")
+                            return PFN
                         else:
                             #Does this move with affix hopping?!?!?!?
                             for Verb in PFN[2]:
-                                    if Verb.name == "Verb":
-                                        assert Verb.mother == "IP", "Verb didn't move out of Vbar"
-                                        Verb.mother = "Cbar"
-                                        Verb.phrase = "CP"
+                                if Verb.name == "Verb":
+                                    assert Verb.mother == "IP", "Verb didn't move out of Vbar"
+                                    Verb.mother = "Cbar"
+                                    Verb.phrase = "CP"
                     #BG Aux
                     else:
                         if Aux.mother == "IP":
@@ -368,56 +363,60 @@ def apply_parameters(PFN):
                             Aux.phrase = "CP"
         return PFN
 
-    def Parameter(x, PFN, headedness_values):
+    def Parameter(PFN, headedness_values, x):
+        product = None
         if x == 1:
-            return Parameter1(PFN, headedness_values)
+            product = Parameter1(PFN, headedness_values)
         if x == 2:
-            return Parameter2(PFN, headedness_values)
+            product = Parameter2(PFN, headedness_values)
         if x == 3:
-            return Parameter3(PFN, headedness_values)
+            product = Parameter3(PFN, headedness_values)
         if x == 4:
-            return Parameter4(PFN)
+            product = Parameter4(PFN)
         if x == 5:
-            return Parameter5(PFN)
+            product = Parameter5(PFN)
         if x == 6:
-            return Parameter6(PFN)
+            product = Parameter6(PFN)
         if x == 7:
-            return Parameter7(PFN)
+            product = Parameter7(PFN)
         if x == 8:
-            return Parameter8(PFN)
+            product = Parameter8(PFN)
         if x == 9:
-            return Parameter9(PFN)
+            product = Parameter9(PFN)
         if x == 10:
-            return Parameter10(PFN)
+            product = Parameter10(PFN)
         if x == 11:
-            return Parameter11(PFN)
+            product = Parameter11(PFN)
         if x == 12:
-            return Parameter12(PFN)
+            product = Parameter12(PFN)
         if x == 13:
-            return Parameter13(PFN)
+            product = Parameter13(PFN)
+        return product
 
     def do_it(PFN):
         Pa                = PFN[0]
         force             = PFN[1]
         UR                = PFN[2]
+        done = False
+        counter = 1
         if PFN[1] == "I":
             PFN[0] = PFN[0][0:3]
         if PFN[1] == "D":
-            PFN[0] = PFN[0][0:13]
+            PFN[0] = PFN[0][0:12]
         #initialize three headedness values, for SP, IP, CP
         headedness_values = [None,None,None]
         #continue through the parameters until the end, or until not parseable
-        while PFN[2] != "Not parseable!" or done == False:
-            for x in range(1,len(PFN[0])+1):
-                if x<4:
-                    headedness_values   = Parameter(x, PFN, headedness_values)
-                if x == 3:
-                    PFN                 = set_head_position(PFN, headedness_values)
-                if x>3:
-                    PFN                 = Parameter(x, PFN, headedness_values)
-                if x == len(PFN[0]):
-                    done = True
-        if PFN[2] != "Not parseable!":
+        while counter <= len(PFN[0]):
+            if "Not parseable" in PFN[2]:
+                break
+            if counter < 4:
+                headedness_values   = Parameter(PFN, headedness_values, counter)
+            if counter == 3:
+                PFN                 = set_head_position(PFN, headedness_values)
+            if counter > 3:
+                PFN                 = Parameter(PFN, headedness_values, counter)
+            counter += 1
+        if "Not parseable" not in PFN[2]:
             PFN[2] = move_topic(PFN[2])
         return PFN[2]
 

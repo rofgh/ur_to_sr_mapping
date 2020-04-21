@@ -22,53 +22,29 @@ S	Verb	Aux	Adv	O1	PP
 S	Verb	Aux	O1	O2	PP	
 S	Verb	Adv	O1	O2	PP	
 S	Verb	Aux	Adv	O1	O2	PP	
-S	Verb	not	
 S	Verb	never	
-S	Verb	Aux	not	
 S	Verb	Aux	never	
-S	Verb	not	Adv	
 S	Verb	never	Adv	
-S	Verb	not	O1	
 S	Verb	never	O1	
-S	Verb	not	PP	
 S	Verb	never	PP	
-S	Verb	Aux	not	Adv	
 S	Verb	Aux	never	Adv	
-S	Verb	Aux	not	O1	
 S	Verb	Aux	never	O1	
-S	Verb	Aux	not	PP	
 S	Verb	Aux	never	PP	
-S	Verb	not	Adv	O1	
 S	Verb	never	Adv	O1	
-S	Verb	not	Adv	PP	
 S	Verb	never	Adv	PP	
-S	Verb	not	O1	O2	
 S	Verb	never	O1	O2	
-S	Verb	not	O1	PP	
 S	Verb	never	O1	PP	
-S	Verb	Aux	not	Adv	O1	
 S	Verb	Aux	never	Adv	O1	
-S	Verb	Aux	not	Adv	PP	
 S	Verb	Aux	never	Adv	PP	
-S	Verb	Aux	not	O1	O2	
 S	Verb	Aux	never	O1	O2	
-S	Verb	Aux	not	O1	PP	
 S	Verb	Aux	never	O1	PP	
-S	Verb	not	Adv	O1	O2	
 S	Verb	never	Adv	O1	O2	
-S	Verb	not	Adv	O1	PP	
 S	Verb	never	Adv	O1	PP	
-S	Verb	not	O1	O2	PP	
 S	Verb	never	O1	O2	PP	
-S	Verb	Aux	not	Adv	O1	O2	
 S	Verb	Aux	never	Adv	O1	O2	
-S	Verb	Aux	not	Adv	O1	PP	
 S	Verb	Aux	never	Adv	O1	PP	
-S	Verb	Aux	not	O1	O2	PP	
 S	Verb	Aux	never	O1	O2	PP	
-S	Verb	not	Adv	O1	O2	PP	
 S	Verb	never	Adv	O1	O2	PP	
-S	Verb	Aux	not	Adv	O1	O2	PP	
 S	Verb	Aux	never	Adv	O1	O2	PP	
 S+t	Verb	
 S+t	Verb	Aux	
@@ -142,145 +118,73 @@ S	Verb	Aux	Adv+t	O1	O2	PP
 S	Verb	Aux	Adv	O1+t	O2	PP	
 S	Verb	Aux	Adv	O1	O2+t	PP	
 S	Verb	Aux	Adv	O1	O2	PP+t	
-S+t	Verb	not	
 S+t	Verb	never	
-S+t	Verb	Aux	not	
 S+t	Verb	Aux	never	
-S+t	Verb	not	Adv	
-S	Verb	not	Adv+t	
 S+t	Verb	never	Adv	
 S	Verb	never	Adv+t	
-S+t	Verb	not	O1	
-S	Verb	not	O1+t	
 S+t	Verb	never	O1	
 S	Verb	never	O1+t	
-S+t	Verb	not	PP	
-S	Verb	not	PP+t	
 S+t	Verb	never	PP	
 S	Verb	never	PP+t	
-S+t	Verb	Aux	not	Adv	
-S	Verb	Aux	not	Adv+t	
 S+t	Verb	Aux	never	Adv	
 S	Verb	Aux	never	Adv+t	
-S+t	Verb	Aux	not	O1	
-S	Verb	Aux	not	O1+t	
 S+t	Verb	Aux	never	O1	
 S	Verb	Aux	never	O1+t	
-S+t	Verb	Aux	not	PP	
-S	Verb	Aux	not	PP+t	
 S+t	Verb	Aux	never	PP	
 S	Verb	Aux	never	PP+t	
-S+t	Verb	not	Adv	O1	
-S	Verb	not	Adv+t	O1	
-S	Verb	not	Adv	O1+t	
 S+t	Verb	never	Adv	O1	
 S	Verb	never	Adv+t	O1	
 S	Verb	never	Adv	O1+t	
-S+t	Verb	not	Adv	PP	
-S	Verb	not	Adv+t	PP	
-S	Verb	not	Adv	PP+t	
 S+t	Verb	never	Adv	PP	
 S	Verb	never	Adv+t	PP	
 S	Verb	never	Adv	PP+t	
-S+t	Verb	not	O1	O2	
-S	Verb	not	O1+t	O2	
-S	Verb	not	O1	O2+t	
 S+t	Verb	never	O1	O2	
 S	Verb	never	O1+t	O2	
 S	Verb	never	O1	O2+t	
-S+t	Verb	not	O1	PP	
-S	Verb	not	O1+t	PP	
-S	Verb	not	O1	PP+t	
 S+t	Verb	never	O1	PP	
 S	Verb	never	O1+t	PP	
 S	Verb	never	O1	PP+t	
-S+t	Verb	Aux	not	Adv	O1	
-S	Verb	Aux	not	Adv+t	O1	
-S	Verb	Aux	not	Adv	O1+t	
 S+t	Verb	Aux	never	Adv	O1	
 S	Verb	Aux	never	Adv+t	O1	
 S	Verb	Aux	never	Adv	O1+t	
-S+t	Verb	Aux	not	Adv	PP	
-S	Verb	Aux	not	Adv+t	PP	
-S	Verb	Aux	not	Adv	PP+t	
 S+t	Verb	Aux	never	Adv	PP	
 S	Verb	Aux	never	Adv+t	PP	
 S	Verb	Aux	never	Adv	PP+t	
-S+t	Verb	Aux	not	O1	O2	
-S	Verb	Aux	not	O1+t	O2	
-S	Verb	Aux	not	O1	O2+t	
 S+t	Verb	Aux	never	O1	O2	
 S	Verb	Aux	never	O1+t	O2	
 S	Verb	Aux	never	O1	O2+t	
-S+t	Verb	Aux	not	O1	PP	
-S	Verb	Aux	not	O1+t	PP	
-S	Verb	Aux	not	O1	PP+t	
 S+t	Verb	Aux	never	O1	PP	
 S	Verb	Aux	never	O1+t	PP	
 S	Verb	Aux	never	O1	PP+t	
-S+t	Verb	not	Adv	O1	O2	
-S	Verb	not	Adv+t	O1	O2	
-S	Verb	not	Adv	O1+t	O2	
-S	Verb	not	Adv	O1	O2+t	
 S+t	Verb	never	Adv	O1	O2	
 S	Verb	never	Adv+t	O1	O2	
 S	Verb	never	Adv	O1+t	O2	
 S	Verb	never	Adv	O1	O2+t	
-S+t	Verb	not	Adv	O1	PP	
-S	Verb	not	Adv+t	O1	PP	
-S	Verb	not	Adv	O1+t	PP	
-S	Verb	not	Adv	O1	PP+t	
 S+t	Verb	never	Adv	O1	PP	
 S	Verb	never	Adv+t	O1	PP	
 S	Verb	never	Adv	O1+t	PP	
 S	Verb	never	Adv	O1	PP+t	
-S+t	Verb	not	O1	O2	PP	
-S	Verb	not	O1+t	O2	PP	
-S	Verb	not	O1	O2+t	PP	
-S	Verb	not	O1	O2	PP+t	
 S+t	Verb	never	O1	O2	PP	
 S	Verb	never	O1+t	O2	PP	
 S	Verb	never	O1	O2+t	PP	
 S	Verb	never	O1	O2	PP+t	
-S+t	Verb	Aux	not	Adv	O1	O2	
-S	Verb	Aux	not	Adv+t	O1	O2	
-S	Verb	Aux	not	Adv	O1+t	O2	
-S	Verb	Aux	not	Adv	O1	O2+t	
 S+t	Verb	Aux	never	Adv	O1	O2	
 S	Verb	Aux	never	Adv+t	O1	O2	
 S	Verb	Aux	never	Adv	O1+t	O2	
 S	Verb	Aux	never	Adv	O1	O2+t	
-S+t	Verb	Aux	not	Adv	O1	PP	
-S	Verb	Aux	not	Adv+t	O1	PP	
-S	Verb	Aux	not	Adv	O1+t	PP	
-S	Verb	Aux	not	Adv	O1	PP+t	
 S+t	Verb	Aux	never	Adv	O1	PP	
 S	Verb	Aux	never	Adv+t	O1	PP	
 S	Verb	Aux	never	Adv	O1+t	PP	
 S	Verb	Aux	never	Adv	O1	PP+t	
-S+t	Verb	Aux	not	O1	O2	PP	
-S	Verb	Aux	not	O1+t	O2	PP	
-S	Verb	Aux	not	O1	O2+t	PP	
-S	Verb	Aux	not	O1	O2	PP+t	
 S+t	Verb	Aux	never	O1	O2	PP	
 S	Verb	Aux	never	O1+t	O2	PP	
 S	Verb	Aux	never	O1	O2+t	PP	
 S	Verb	Aux	never	O1	O2	PP+t	
-S+t	Verb	not	Adv	O1	O2	PP	
-S	Verb	not	Adv+t	O1	O2	PP	
-S	Verb	not	Adv	O1+t	O2	PP	
-S	Verb	not	Adv	O1	O2+t	PP	
-S	Verb	not	Adv	O1	O2	PP+t	
 S+t	Verb	never	Adv	O1	O2	PP	
 S	Verb	never	Adv+t	O1	O2	PP	
 S	Verb	never	Adv	O1+t	O2	PP	
 S	Verb	never	Adv	O1	O2+t	PP	
 S	Verb	never	Adv	O1	O2	PP+t	
-S+t	Verb	Aux	not	Adv	O1	O2	PP	
-S	Verb	Aux	not	Adv+t	O1	O2	PP	
-S	Verb	Aux	not	Adv	O1+t	O2	PP	
-S	Verb	Aux	not	Adv	O1	O2+t	PP	
-S	Verb	Aux	not	Adv	O1	O2	PP+t	
 S+t	Verb	Aux	never	Adv	O1	O2	PP	
 S	Verb	Aux	never	Adv+t	O1	O2	PP	
 S	Verb	Aux	never	Adv	O1+t	O2	PP	
@@ -358,145 +262,73 @@ S	Verb	Aux	Adv+wh	O1	O2	PP
 S	Verb	Aux	Adv	O1+wh	O2	PP	
 S	Verb	Aux	Adv	O1	O2+wh	PP	
 S	Verb	Aux	Adv	O1	O2	PP+wh	
-S+wh	Verb	not	
 S+wh	Verb	never	
-S+wh	Verb	Aux	not	
 S+wh	Verb	Aux	never	
-S+wh	Verb	not	Adv	
-S	Verb	not	Adv+wh	
 S+wh	Verb	never	Adv	
 S	Verb	never	Adv+wh	
-S+wh	Verb	not	O1	
-S	Verb	not	O1+wh	
 S+wh	Verb	never	O1	
 S	Verb	never	O1+wh	
-S+wh	Verb	not	PP	
-S	Verb	not	PP+wh	
 S+wh	Verb	never	PP	
 S	Verb	never	PP+wh	
-S+wh	Verb	Aux	not	Adv	
-S	Verb	Aux	not	Adv+wh	
 S+wh	Verb	Aux	never	Adv	
 S	Verb	Aux	never	Adv+wh	
-S+wh	Verb	Aux	not	O1	
-S	Verb	Aux	not	O1+wh	
 S+wh	Verb	Aux	never	O1	
 S	Verb	Aux	never	O1+wh	
-S+wh	Verb	Aux	not	PP	
-S	Verb	Aux	not	PP+wh	
 S+wh	Verb	Aux	never	PP	
 S	Verb	Aux	never	PP+wh	
-S+wh	Verb	not	Adv	O1	
-S	Verb	not	Adv+wh	O1	
-S	Verb	not	Adv	O1+wh	
 S+wh	Verb	never	Adv	O1	
 S	Verb	never	Adv+wh	O1	
 S	Verb	never	Adv	O1+wh	
-S+wh	Verb	not	Adv	PP	
-S	Verb	not	Adv+wh	PP	
-S	Verb	not	Adv	PP+wh	
 S+wh	Verb	never	Adv	PP	
 S	Verb	never	Adv+wh	PP	
 S	Verb	never	Adv	PP+wh	
-S+wh	Verb	not	O1	O2	
-S	Verb	not	O1+wh	O2	
-S	Verb	not	O1	O2+wh	
 S+wh	Verb	never	O1	O2	
 S	Verb	never	O1+wh	O2	
 S	Verb	never	O1	O2+wh	
-S+wh	Verb	not	O1	PP	
-S	Verb	not	O1+wh	PP	
-S	Verb	not	O1	PP+wh	
 S+wh	Verb	never	O1	PP	
 S	Verb	never	O1+wh	PP	
 S	Verb	never	O1	PP+wh	
-S+wh	Verb	Aux	not	Adv	O1	
-S	Verb	Aux	not	Adv+wh	O1	
-S	Verb	Aux	not	Adv	O1+wh	
 S+wh	Verb	Aux	never	Adv	O1	
 S	Verb	Aux	never	Adv+wh	O1	
 S	Verb	Aux	never	Adv	O1+wh	
-S+wh	Verb	Aux	not	Adv	PP	
-S	Verb	Aux	not	Adv+wh	PP	
-S	Verb	Aux	not	Adv	PP+wh	
 S+wh	Verb	Aux	never	Adv	PP	
 S	Verb	Aux	never	Adv+wh	PP	
 S	Verb	Aux	never	Adv	PP+wh	
-S+wh	Verb	Aux	not	O1	O2	
-S	Verb	Aux	not	O1+wh	O2	
-S	Verb	Aux	not	O1	O2+wh	
 S+wh	Verb	Aux	never	O1	O2	
 S	Verb	Aux	never	O1+wh	O2	
 S	Verb	Aux	never	O1	O2+wh	
-S+wh	Verb	Aux	not	O1	PP	
-S	Verb	Aux	not	O1+wh	PP	
-S	Verb	Aux	not	O1	PP+wh	
 S+wh	Verb	Aux	never	O1	PP	
 S	Verb	Aux	never	O1+wh	PP	
 S	Verb	Aux	never	O1	PP+wh	
-S+wh	Verb	not	Adv	O1	O2	
-S	Verb	not	Adv+wh	O1	O2	
-S	Verb	not	Adv	O1+wh	O2	
-S	Verb	not	Adv	O1	O2+wh	
 S+wh	Verb	never	Adv	O1	O2	
 S	Verb	never	Adv+wh	O1	O2	
 S	Verb	never	Adv	O1+wh	O2	
 S	Verb	never	Adv	O1	O2+wh	
-S+wh	Verb	not	Adv	O1	PP	
-S	Verb	not	Adv+wh	O1	PP	
-S	Verb	not	Adv	O1+wh	PP	
-S	Verb	not	Adv	O1	PP+wh	
 S+wh	Verb	never	Adv	O1	PP	
 S	Verb	never	Adv+wh	O1	PP	
 S	Verb	never	Adv	O1+wh	PP	
 S	Verb	never	Adv	O1	PP+wh	
-S+wh	Verb	not	O1	O2	PP	
-S	Verb	not	O1+wh	O2	PP	
-S	Verb	not	O1	O2+wh	PP	
-S	Verb	not	O1	O2	PP+wh	
 S+wh	Verb	never	O1	O2	PP	
 S	Verb	never	O1+wh	O2	PP	
 S	Verb	never	O1	O2+wh	PP	
 S	Verb	never	O1	O2	PP+wh	
-S+wh	Verb	Aux	not	Adv	O1	O2	
-S	Verb	Aux	not	Adv+wh	O1	O2	
-S	Verb	Aux	not	Adv	O1+wh	O2	
-S	Verb	Aux	not	Adv	O1	O2+wh	
 S+wh	Verb	Aux	never	Adv	O1	O2	
 S	Verb	Aux	never	Adv+wh	O1	O2	
 S	Verb	Aux	never	Adv	O1+wh	O2	
 S	Verb	Aux	never	Adv	O1	O2+wh	
-S+wh	Verb	Aux	not	Adv	O1	PP	
-S	Verb	Aux	not	Adv+wh	O1	PP	
-S	Verb	Aux	not	Adv	O1+wh	PP	
-S	Verb	Aux	not	Adv	O1	PP+wh	
 S+wh	Verb	Aux	never	Adv	O1	PP	
 S	Verb	Aux	never	Adv+wh	O1	PP	
 S	Verb	Aux	never	Adv	O1+wh	PP	
 S	Verb	Aux	never	Adv	O1	PP+wh	
-S+wh	Verb	Aux	not	O1	O2	PP	
-S	Verb	Aux	not	O1+wh	O2	PP	
-S	Verb	Aux	not	O1	O2+wh	PP	
-S	Verb	Aux	not	O1	O2	PP+wh	
 S+wh	Verb	Aux	never	O1	O2	PP	
 S	Verb	Aux	never	O1+wh	O2	PP	
 S	Verb	Aux	never	O1	O2+wh	PP	
 S	Verb	Aux	never	O1	O2	PP+wh	
-S+wh	Verb	not	Adv	O1	O2	PP	
-S	Verb	not	Adv+wh	O1	O2	PP	
-S	Verb	not	Adv	O1+wh	O2	PP	
-S	Verb	not	Adv	O1	O2+wh	PP	
-S	Verb	not	Adv	O1	O2	PP+wh	
 S+wh	Verb	never	Adv	O1	O2	PP	
 S	Verb	never	Adv+wh	O1	O2	PP	
 S	Verb	never	Adv	O1+wh	O2	PP	
 S	Verb	never	Adv	O1	O2+wh	PP	
 S	Verb	never	Adv	O1	O2	PP+wh	
-S+wh	Verb	Aux	not	Adv	O1	O2	PP	
-S	Verb	Aux	not	Adv+wh	O1	O2	PP	
-S	Verb	Aux	not	Adv	O1+wh	O2	PP	
-S	Verb	Aux	not	Adv	O1	O2+wh	PP	
-S	Verb	Aux	not	Adv	O1	O2	PP+wh	
 S+wh	Verb	Aux	never	Adv	O1	O2	PP	
 S	Verb	Aux	never	Adv+wh	O1	O2	PP	
 S	Verb	Aux	never	Adv	O1+wh	O2	PP	
@@ -746,67 +578,32 @@ S	Verb	Aux	Adv+wh	O1	O2	PP+t
 S	Verb	Aux	Adv	O1+wh	O2	PP+t	
 S	Verb	Aux	Adv	O1	O2+wh	PP+t	
 S	Verb	Aux	Adv	O1	O2	PP+t+wh	
-S+t+wh	Verb	not	
 S+t+wh	Verb	never	
-S+t+wh	Verb	Aux	not	
 S+t+wh	Verb	Aux	never	
-S+t	Verb	not	Adv+wh	
-S+t+wh	Verb	not	Adv	
-S+wh	Verb	not	Adv+t	
-S	Verb	not	Adv+t+wh	
 S+t	Verb	never	Adv+wh	
 S+t+wh	Verb	never	Adv	
 S+wh	Verb	never	Adv+t	
 S	Verb	never	Adv+t+wh	
-S+t	Verb	not	O1+wh	
-S+t+wh	Verb	not	O1	
-S+wh	Verb	not	O1+t	
-S	Verb	not	O1+t+wh	
 S+t	Verb	never	O1+wh	
 S+t+wh	Verb	never	O1	
 S+wh	Verb	never	O1+t	
 S	Verb	never	O1+t+wh	
-S+t	Verb	not	PP+wh	
-S+t+wh	Verb	not	PP	
-S+wh	Verb	not	PP+t	
-S	Verb	not	PP+t+wh	
 S+t	Verb	never	PP+wh	
 S+t+wh	Verb	never	PP	
 S+wh	Verb	never	PP+t	
 S	Verb	never	PP+t+wh	
-S+t	Verb	Aux	not	Adv+wh	
-S+t+wh	Verb	Aux	not	Adv	
-S+wh	Verb	Aux	not	Adv+t	
-S	Verb	Aux	not	Adv+t+wh	
 S+t	Verb	Aux	never	Adv+wh	
 S+t+wh	Verb	Aux	never	Adv	
 S+wh	Verb	Aux	never	Adv+t	
 S	Verb	Aux	never	Adv+t+wh	
-S+t	Verb	Aux	not	O1+wh	
-S+t+wh	Verb	Aux	not	O1	
-S+wh	Verb	Aux	not	O1+t	
-S	Verb	Aux	not	O1+t+wh	
 S+t	Verb	Aux	never	O1+wh	
 S+t+wh	Verb	Aux	never	O1	
 S+wh	Verb	Aux	never	O1+t	
 S	Verb	Aux	never	O1+t+wh	
-S+t	Verb	Aux	not	PP+wh	
-S+t+wh	Verb	Aux	not	PP	
-S+wh	Verb	Aux	not	PP+t	
-S	Verb	Aux	not	PP+t+wh	
 S+t	Verb	Aux	never	PP+wh	
 S+t+wh	Verb	Aux	never	PP	
 S+wh	Verb	Aux	never	PP+t	
 S	Verb	Aux	never	PP+t+wh	
-S+t	Verb	not	Adv+wh	O1	
-S+t	Verb	not	Adv	O1+wh	
-S+t+wh	Verb	not	Adv	O1	
-S+wh	Verb	not	Adv+t	O1	
-S	Verb	not	Adv+t	O1+wh	
-S	Verb	not	Adv+t+wh	O1	
-S+wh	Verb	not	Adv	O1+t	
-S	Verb	not	Adv+wh	O1+t	
-S	Verb	not	Adv	O1+t+wh	
 S+t	Verb	never	Adv+wh	O1	
 S+t	Verb	never	Adv	O1+wh	
 S+t+wh	Verb	never	Adv	O1	
@@ -816,15 +613,6 @@ S	Verb	never	Adv+t+wh	O1
 S+wh	Verb	never	Adv	O1+t	
 S	Verb	never	Adv+wh	O1+t	
 S	Verb	never	Adv	O1+t+wh	
-S+t	Verb	not	Adv+wh	PP	
-S+t	Verb	not	Adv	PP+wh	
-S+t+wh	Verb	not	Adv	PP	
-S+wh	Verb	not	Adv+t	PP	
-S	Verb	not	Adv+t	PP+wh	
-S	Verb	not	Adv+t+wh	PP	
-S+wh	Verb	not	Adv	PP+t	
-S	Verb	not	Adv+wh	PP+t	
-S	Verb	not	Adv	PP+t+wh	
 S+t	Verb	never	Adv+wh	PP	
 S+t	Verb	never	Adv	PP+wh	
 S+t+wh	Verb	never	Adv	PP	
@@ -834,15 +622,6 @@ S	Verb	never	Adv+t+wh	PP
 S+wh	Verb	never	Adv	PP+t	
 S	Verb	never	Adv+wh	PP+t	
 S	Verb	never	Adv	PP+t+wh	
-S+t	Verb	not	O1+wh	O2	
-S+t	Verb	not	O1	O2+wh	
-S+t+wh	Verb	not	O1	O2	
-S+wh	Verb	not	O1+t	O2	
-S	Verb	not	O1+t	O2+wh	
-S	Verb	not	O1+t+wh	O2	
-S+wh	Verb	not	O1	O2+t	
-S	Verb	not	O1+wh	O2+t	
-S	Verb	not	O1	O2+t+wh	
 S+t	Verb	never	O1+wh	O2	
 S+t	Verb	never	O1	O2+wh	
 S+t+wh	Verb	never	O1	O2	
@@ -852,15 +631,6 @@ S	Verb	never	O1+t+wh	O2
 S+wh	Verb	never	O1	O2+t	
 S	Verb	never	O1+wh	O2+t	
 S	Verb	never	O1	O2+t+wh	
-S+t	Verb	not	O1+wh	PP	
-S+t	Verb	not	O1	PP+wh	
-S+t+wh	Verb	not	O1	PP	
-S+wh	Verb	not	O1+t	PP	
-S	Verb	not	O1+t	PP+wh	
-S	Verb	not	O1+t+wh	PP	
-S+wh	Verb	not	O1	PP+t	
-S	Verb	not	O1+wh	PP+t	
-S	Verb	not	O1	PP+t+wh	
 S+t	Verb	never	O1+wh	PP	
 S+t	Verb	never	O1	PP+wh	
 S+t+wh	Verb	never	O1	PP	
@@ -870,15 +640,6 @@ S	Verb	never	O1+t+wh	PP
 S+wh	Verb	never	O1	PP+t	
 S	Verb	never	O1+wh	PP+t	
 S	Verb	never	O1	PP+t+wh	
-S+t	Verb	Aux	not	Adv+wh	O1	
-S+t	Verb	Aux	not	Adv	O1+wh	
-S+t+wh	Verb	Aux	not	Adv	O1	
-S+wh	Verb	Aux	not	Adv+t	O1	
-S	Verb	Aux	not	Adv+t	O1+wh	
-S	Verb	Aux	not	Adv+t+wh	O1	
-S+wh	Verb	Aux	not	Adv	O1+t	
-S	Verb	Aux	not	Adv+wh	O1+t	
-S	Verb	Aux	not	Adv	O1+t+wh	
 S+t	Verb	Aux	never	Adv+wh	O1	
 S+t	Verb	Aux	never	Adv	O1+wh	
 S+t+wh	Verb	Aux	never	Adv	O1	
@@ -888,15 +649,6 @@ S	Verb	Aux	never	Adv+t+wh	O1
 S+wh	Verb	Aux	never	Adv	O1+t	
 S	Verb	Aux	never	Adv+wh	O1+t	
 S	Verb	Aux	never	Adv	O1+t+wh	
-S+t	Verb	Aux	not	Adv+wh	PP	
-S+t	Verb	Aux	not	Adv	PP+wh	
-S+t+wh	Verb	Aux	not	Adv	PP	
-S+wh	Verb	Aux	not	Adv+t	PP	
-S	Verb	Aux	not	Adv+t	PP+wh	
-S	Verb	Aux	not	Adv+t+wh	PP	
-S+wh	Verb	Aux	not	Adv	PP+t	
-S	Verb	Aux	not	Adv+wh	PP+t	
-S	Verb	Aux	not	Adv	PP+t+wh	
 S+t	Verb	Aux	never	Adv+wh	PP	
 S+t	Verb	Aux	never	Adv	PP+wh	
 S+t+wh	Verb	Aux	never	Adv	PP	
@@ -906,15 +658,6 @@ S	Verb	Aux	never	Adv+t+wh	PP
 S+wh	Verb	Aux	never	Adv	PP+t	
 S	Verb	Aux	never	Adv+wh	PP+t	
 S	Verb	Aux	never	Adv	PP+t+wh	
-S+t	Verb	Aux	not	O1+wh	O2	
-S+t	Verb	Aux	not	O1	O2+wh	
-S+t+wh	Verb	Aux	not	O1	O2	
-S+wh	Verb	Aux	not	O1+t	O2	
-S	Verb	Aux	not	O1+t	O2+wh	
-S	Verb	Aux	not	O1+t+wh	O2	
-S+wh	Verb	Aux	not	O1	O2+t	
-S	Verb	Aux	not	O1+wh	O2+t	
-S	Verb	Aux	not	O1	O2+t+wh	
 S+t	Verb	Aux	never	O1+wh	O2	
 S+t	Verb	Aux	never	O1	O2+wh	
 S+t+wh	Verb	Aux	never	O1	O2	
@@ -924,15 +667,6 @@ S	Verb	Aux	never	O1+t+wh	O2
 S+wh	Verb	Aux	never	O1	O2+t	
 S	Verb	Aux	never	O1+wh	O2+t	
 S	Verb	Aux	never	O1	O2+t+wh	
-S+t	Verb	Aux	not	O1+wh	PP	
-S+t	Verb	Aux	not	O1	PP+wh	
-S+t+wh	Verb	Aux	not	O1	PP	
-S+wh	Verb	Aux	not	O1+t	PP	
-S	Verb	Aux	not	O1+t	PP+wh	
-S	Verb	Aux	not	O1+t+wh	PP	
-S+wh	Verb	Aux	not	O1	PP+t	
-S	Verb	Aux	not	O1+wh	PP+t	
-S	Verb	Aux	not	O1	PP+t+wh	
 S+t	Verb	Aux	never	O1+wh	PP	
 S+t	Verb	Aux	never	O1	PP+wh	
 S+t+wh	Verb	Aux	never	O1	PP	
@@ -942,22 +676,6 @@ S	Verb	Aux	never	O1+t+wh	PP
 S+wh	Verb	Aux	never	O1	PP+t	
 S	Verb	Aux	never	O1+wh	PP+t	
 S	Verb	Aux	never	O1	PP+t+wh	
-S+t	Verb	not	Adv+wh	O1	O2	
-S+t	Verb	not	Adv	O1+wh	O2	
-S+t	Verb	not	Adv	O1	O2+wh	
-S+t+wh	Verb	not	Adv	O1	O2	
-S+wh	Verb	not	Adv+t	O1	O2	
-S	Verb	not	Adv+t	O1+wh	O2	
-S	Verb	not	Adv+t	O1	O2+wh	
-S	Verb	not	Adv+t+wh	O1	O2	
-S+wh	Verb	not	Adv	O1+t	O2	
-S	Verb	not	Adv+wh	O1+t	O2	
-S	Verb	not	Adv	O1+t	O2+wh	
-S	Verb	not	Adv	O1+t+wh	O2	
-S+wh	Verb	not	Adv	O1	O2+t	
-S	Verb	not	Adv+wh	O1	O2+t	
-S	Verb	not	Adv	O1+wh	O2+t	
-S	Verb	not	Adv	O1	O2+t+wh	
 S+t	Verb	never	Adv+wh	O1	O2	
 S+t	Verb	never	Adv	O1+wh	O2	
 S+t	Verb	never	Adv	O1	O2+wh	
@@ -974,22 +692,6 @@ S+wh	Verb	never	Adv	O1	O2+t
 S	Verb	never	Adv+wh	O1	O2+t	
 S	Verb	never	Adv	O1+wh	O2+t	
 S	Verb	never	Adv	O1	O2+t+wh	
-S+t	Verb	not	Adv+wh	O1	PP	
-S+t	Verb	not	Adv	O1+wh	PP	
-S+t	Verb	not	Adv	O1	PP+wh	
-S+t+wh	Verb	not	Adv	O1	PP	
-S+wh	Verb	not	Adv+t	O1	PP	
-S	Verb	not	Adv+t	O1+wh	PP	
-S	Verb	not	Adv+t	O1	PP+wh	
-S	Verb	not	Adv+t+wh	O1	PP	
-S+wh	Verb	not	Adv	O1+t	PP	
-S	Verb	not	Adv+wh	O1+t	PP	
-S	Verb	not	Adv	O1+t	PP+wh	
-S	Verb	not	Adv	O1+t+wh	PP	
-S+wh	Verb	not	Adv	O1	PP+t	
-S	Verb	not	Adv+wh	O1	PP+t	
-S	Verb	not	Adv	O1+wh	PP+t	
-S	Verb	not	Adv	O1	PP+t+wh	
 S+t	Verb	never	Adv+wh	O1	PP	
 S+t	Verb	never	Adv	O1+wh	PP	
 S+t	Verb	never	Adv	O1	PP+wh	
@@ -1006,22 +708,6 @@ S+wh	Verb	never	Adv	O1	PP+t
 S	Verb	never	Adv+wh	O1	PP+t	
 S	Verb	never	Adv	O1+wh	PP+t	
 S	Verb	never	Adv	O1	PP+t+wh	
-S+t	Verb	not	O1+wh	O2	PP	
-S+t	Verb	not	O1	O2+wh	PP	
-S+t	Verb	not	O1	O2	PP+wh	
-S+t+wh	Verb	not	O1	O2	PP	
-S+wh	Verb	not	O1+t	O2	PP	
-S	Verb	not	O1+t	O2+wh	PP	
-S	Verb	not	O1+t	O2	PP+wh	
-S	Verb	not	O1+t+wh	O2	PP	
-S+wh	Verb	not	O1	O2+t	PP	
-S	Verb	not	O1+wh	O2+t	PP	
-S	Verb	not	O1	O2+t	PP+wh	
-S	Verb	not	O1	O2+t+wh	PP	
-S+wh	Verb	not	O1	O2	PP+t	
-S	Verb	not	O1+wh	O2	PP+t	
-S	Verb	not	O1	O2+wh	PP+t	
-S	Verb	not	O1	O2	PP+t+wh	
 S+t	Verb	never	O1+wh	O2	PP	
 S+t	Verb	never	O1	O2+wh	PP	
 S+t	Verb	never	O1	O2	PP+wh	
@@ -1038,22 +724,6 @@ S+wh	Verb	never	O1	O2	PP+t
 S	Verb	never	O1+wh	O2	PP+t	
 S	Verb	never	O1	O2+wh	PP+t	
 S	Verb	never	O1	O2	PP+t+wh	
-S+t	Verb	Aux	not	Adv+wh	O1	O2	
-S+t	Verb	Aux	not	Adv	O1+wh	O2	
-S+t	Verb	Aux	not	Adv	O1	O2+wh	
-S+t+wh	Verb	Aux	not	Adv	O1	O2	
-S+wh	Verb	Aux	not	Adv+t	O1	O2	
-S	Verb	Aux	not	Adv+t	O1+wh	O2	
-S	Verb	Aux	not	Adv+t	O1	O2+wh	
-S	Verb	Aux	not	Adv+t+wh	O1	O2	
-S+wh	Verb	Aux	not	Adv	O1+t	O2	
-S	Verb	Aux	not	Adv+wh	O1+t	O2	
-S	Verb	Aux	not	Adv	O1+t	O2+wh	
-S	Verb	Aux	not	Adv	O1+t+wh	O2	
-S+wh	Verb	Aux	not	Adv	O1	O2+t	
-S	Verb	Aux	not	Adv+wh	O1	O2+t	
-S	Verb	Aux	not	Adv	O1+wh	O2+t	
-S	Verb	Aux	not	Adv	O1	O2+t+wh	
 S+t	Verb	Aux	never	Adv+wh	O1	O2	
 S+t	Verb	Aux	never	Adv	O1+wh	O2	
 S+t	Verb	Aux	never	Adv	O1	O2+wh	
@@ -1070,22 +740,6 @@ S+wh	Verb	Aux	never	Adv	O1	O2+t
 S	Verb	Aux	never	Adv+wh	O1	O2+t	
 S	Verb	Aux	never	Adv	O1+wh	O2+t	
 S	Verb	Aux	never	Adv	O1	O2+t+wh	
-S+t	Verb	Aux	not	Adv+wh	O1	PP	
-S+t	Verb	Aux	not	Adv	O1+wh	PP	
-S+t	Verb	Aux	not	Adv	O1	PP+wh	
-S+t+wh	Verb	Aux	not	Adv	O1	PP	
-S+wh	Verb	Aux	not	Adv+t	O1	PP	
-S	Verb	Aux	not	Adv+t	O1+wh	PP	
-S	Verb	Aux	not	Adv+t	O1	PP+wh	
-S	Verb	Aux	not	Adv+t+wh	O1	PP	
-S+wh	Verb	Aux	not	Adv	O1+t	PP	
-S	Verb	Aux	not	Adv+wh	O1+t	PP	
-S	Verb	Aux	not	Adv	O1+t	PP+wh	
-S	Verb	Aux	not	Adv	O1+t+wh	PP	
-S+wh	Verb	Aux	not	Adv	O1	PP+t	
-S	Verb	Aux	not	Adv+wh	O1	PP+t	
-S	Verb	Aux	not	Adv	O1+wh	PP+t	
-S	Verb	Aux	not	Adv	O1	PP+t+wh	
 S+t	Verb	Aux	never	Adv+wh	O1	PP	
 S+t	Verb	Aux	never	Adv	O1+wh	PP	
 S+t	Verb	Aux	never	Adv	O1	PP+wh	
@@ -1102,22 +756,6 @@ S+wh	Verb	Aux	never	Adv	O1	PP+t
 S	Verb	Aux	never	Adv+wh	O1	PP+t	
 S	Verb	Aux	never	Adv	O1+wh	PP+t	
 S	Verb	Aux	never	Adv	O1	PP+t+wh	
-S+t	Verb	Aux	not	O1+wh	O2	PP	
-S+t	Verb	Aux	not	O1	O2+wh	PP	
-S+t	Verb	Aux	not	O1	O2	PP+wh	
-S+t+wh	Verb	Aux	not	O1	O2	PP	
-S+wh	Verb	Aux	not	O1+t	O2	PP	
-S	Verb	Aux	not	O1+t	O2+wh	PP	
-S	Verb	Aux	not	O1+t	O2	PP+wh	
-S	Verb	Aux	not	O1+t+wh	O2	PP	
-S+wh	Verb	Aux	not	O1	O2+t	PP	
-S	Verb	Aux	not	O1+wh	O2+t	PP	
-S	Verb	Aux	not	O1	O2+t	PP+wh	
-S	Verb	Aux	not	O1	O2+t+wh	PP	
-S+wh	Verb	Aux	not	O1	O2	PP+t	
-S	Verb	Aux	not	O1+wh	O2	PP+t	
-S	Verb	Aux	not	O1	O2+wh	PP+t	
-S	Verb	Aux	not	O1	O2	PP+t+wh	
 S+t	Verb	Aux	never	O1+wh	O2	PP	
 S+t	Verb	Aux	never	O1	O2+wh	PP	
 S+t	Verb	Aux	never	O1	O2	PP+wh	
@@ -1134,31 +772,6 @@ S+wh	Verb	Aux	never	O1	O2	PP+t
 S	Verb	Aux	never	O1+wh	O2	PP+t	
 S	Verb	Aux	never	O1	O2+wh	PP+t	
 S	Verb	Aux	never	O1	O2	PP+t+wh	
-S+t	Verb	not	Adv+wh	O1	O2	PP	
-S+t	Verb	not	Adv	O1+wh	O2	PP	
-S+t	Verb	not	Adv	O1	O2+wh	PP	
-S+t	Verb	not	Adv	O1	O2	PP+wh	
-S+t+wh	Verb	not	Adv	O1	O2	PP	
-S+wh	Verb	not	Adv+t	O1	O2	PP	
-S	Verb	not	Adv+t	O1+wh	O2	PP	
-S	Verb	not	Adv+t	O1	O2+wh	PP	
-S	Verb	not	Adv+t	O1	O2	PP+wh	
-S	Verb	not	Adv+t+wh	O1	O2	PP	
-S+wh	Verb	not	Adv	O1+t	O2	PP	
-S	Verb	not	Adv+wh	O1+t	O2	PP	
-S	Verb	not	Adv	O1+t	O2+wh	PP	
-S	Verb	not	Adv	O1+t	O2	PP+wh	
-S	Verb	not	Adv	O1+t+wh	O2	PP	
-S+wh	Verb	not	Adv	O1	O2+t	PP	
-S	Verb	not	Adv+wh	O1	O2+t	PP	
-S	Verb	not	Adv	O1+wh	O2+t	PP	
-S	Verb	not	Adv	O1	O2+t	PP+wh	
-S	Verb	not	Adv	O1	O2+t+wh	PP	
-S+wh	Verb	not	Adv	O1	O2	PP+t	
-S	Verb	not	Adv+wh	O1	O2	PP+t	
-S	Verb	not	Adv	O1+wh	O2	PP+t	
-S	Verb	not	Adv	O1	O2+wh	PP+t	
-S	Verb	not	Adv	O1	O2	PP+t+wh	
 S+t	Verb	never	Adv+wh	O1	O2	PP	
 S+t	Verb	never	Adv	O1+wh	O2	PP	
 S+t	Verb	never	Adv	O1	O2+wh	PP	
@@ -1184,31 +797,6 @@ S	Verb	never	Adv+wh	O1	O2	PP+t
 S	Verb	never	Adv	O1+wh	O2	PP+t	
 S	Verb	never	Adv	O1	O2+wh	PP+t	
 S	Verb	never	Adv	O1	O2	PP+t+wh	
-S+t	Verb	Aux	not	Adv+wh	O1	O2	PP	
-S+t	Verb	Aux	not	Adv	O1+wh	O2	PP	
-S+t	Verb	Aux	not	Adv	O1	O2+wh	PP	
-S+t	Verb	Aux	not	Adv	O1	O2	PP+wh	
-S+t+wh	Verb	Aux	not	Adv	O1	O2	PP	
-S+wh	Verb	Aux	not	Adv+t	O1	O2	PP	
-S	Verb	Aux	not	Adv+t	O1+wh	O2	PP	
-S	Verb	Aux	not	Adv+t	O1	O2+wh	PP	
-S	Verb	Aux	not	Adv+t	O1	O2	PP+wh	
-S	Verb	Aux	not	Adv+t+wh	O1	O2	PP	
-S+wh	Verb	Aux	not	Adv	O1+t	O2	PP	
-S	Verb	Aux	not	Adv+wh	O1+t	O2	PP	
-S	Verb	Aux	not	Adv	O1+t	O2+wh	PP	
-S	Verb	Aux	not	Adv	O1+t	O2	PP+wh	
-S	Verb	Aux	not	Adv	O1+t+wh	O2	PP	
-S+wh	Verb	Aux	not	Adv	O1	O2+t	PP	
-S	Verb	Aux	not	Adv+wh	O1	O2+t	PP	
-S	Verb	Aux	not	Adv	O1+wh	O2+t	PP	
-S	Verb	Aux	not	Adv	O1	O2+t	PP+wh	
-S	Verb	Aux	not	Adv	O1	O2+t+wh	PP	
-S+wh	Verb	Aux	not	Adv	O1	O2	PP+t	
-S	Verb	Aux	not	Adv+wh	O1	O2	PP+t	
-S	Verb	Aux	not	Adv	O1+wh	O2	PP+t	
-S	Verb	Aux	not	Adv	O1	O2+wh	PP+t	
-S	Verb	Aux	not	Adv	O1	O2	PP+t+wh	
 S+t	Verb	Aux	never	Adv+wh	O1	O2	PP	
 S+t	Verb	Aux	never	Adv	O1+wh	O2	PP	
 S+t	Verb	Aux	never	Adv	O1	O2+wh	PP	

@@ -33,7 +33,7 @@ def new_all_URs(Q=False, D=False, I=False):
                 continue
     
     # If we want to print a difference between NOT/NEVER:
-    negs = ["not", "never"]
+    negs = ["never"]
     negatives = total.copy()
     for UR in negatives:
         if "NegP" in UR:

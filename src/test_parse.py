@@ -31,7 +31,6 @@ def test():
         outcome = "Success:  It seems all {tfc} test lines are present in the {tc} output lines!"
     fail_list_outcome = "Failed test: {}"
     print(outcome.format(fc=fail_count, tfc=test_count, tc=output_count))
-
     for x in fail_list:
         print(fail_list_outcome.format(x))
     '''

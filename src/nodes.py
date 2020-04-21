@@ -26,37 +26,37 @@ def nodes(UR):
 
     # Set up all doz nodez brah
     CP      = Node("CP",       None)
-    Cbar    = Node("Cbar",     "CP")
-    ka      = Node("ka",       "Cbar")
-    SP      = Node("SP",       "Cbar")
+    Cbar    = Node("Cbar",     CP)
+    ka      = Node("ka",       Cbar)
+    SP      = Node("SP",       Cbar)
     wa      = Node("-wa",       None)
-    #that    = Node(" that",     Cbar)
+    #that    = Node("that",     Cbar)
     Wh      = Node("[+WH]",     None)
-    S       = Node("S",        "SP")
-    IP      = Node("IP",       "SP")
-    Aux     = Node("Aux",      "IP")
-    NegP    = Node("NegP",     "IP")
-    Not     = Node("not",      "NegP")
-    Nev     = Node("never",    "NegP")
-    VP      = Node("VP",       "NegP")
-    Adv     = Node("Adv",      "VP")
-    Vbar3   = Node("Vbar3",    "VP")
-    Vbar2   = Node("Vbar2",    "Vbar3")
-    PP      = Node("PP",       "Vbar3")
-    O2      = Node("O2",       "Vbar2")
-    Vbar1   = Node("Vbar1",    "Vbar2")
-    Verb    = Node("Verb",     "Vbar1")
-    O1      = Node("O1",       "Vbar1")
-    P       = Node("P",        "PP")
-    O3      = Node("O3",       "PP")
+    S       = Node("S",        SP)
+    IP      = Node("IP",       SP)
+    Aux     = Node("Aux",      IP)
+    NegP    = Node("NegP",     IP)
+    #Not     = Node("not",      "NegP")
+    Nev     = Node("never",    NegP)
+    VP      = Node("VP",       NegP)
+    Adv     = Node("Adv",      VP)
+    Vbar3   = Node("Vbar3",    VP)
+    Vbar2   = Node("Vbar2",    Vbar3)
+    PP      = Node("PP",       Vbar3)
+    O2      = Node("O2",       Vbar2)
+    Vbar1   = Node("Vbar1",    Vbar2)
+    Verb    = Node("Verb",     Vbar1)
+    O1      = Node("O1",       Vbar1)
+    P       = Node("P",        PP)
+    O3      = Node("O3",       PP)
 
     # HEAD nodes:
-    head_nodes  = [ka, S, Aux, Not, Nev, P, Verb, Vbar1, Vbar2]
+    head_nodes  = [ka, S, Aux, Nev, P, Verb, Vbar1, Vbar2]
     for x in head_nodes:
         x.head = True
 
     # possibly REALIZABLE nodes:
-    real_nodes  = [ka, wa, Wh, S, Aux, Not, Nev, Verb, O1, O2, P, O3, Adv]
+    real_nodes  = [ka, wa, Wh, S, Aux, Nev, Verb, O1, O2, P, O3, Adv]
     for x in real_nodes:
         x.real  = True
 
@@ -67,7 +67,7 @@ def nodes(UR):
     #WH_nodes    = [S, Adv, O1, O2, O3]
     
     # Nodes BG under IP (i.e. they will flip according to Parameter 2!):
-    IP_nodes    = [Aux, NegP, Not, Nev, VP, Adv, Vbar3, Vbar2, O2, PP, P, O3, Vbar1, Verb, O1]
+    IP_nodes    = [Aux, NegP, Nev, VP, Adv, Vbar3, Vbar2, O2, PP, P, O3, Vbar1, Verb, O1]
     for x in IP_nodes:
         x.phrase = "IP"
 
@@ -90,9 +90,11 @@ def nodes(UR):
                     n.top   = True
                     n.inUR  = True
                     n.null  = False
+                    top     = n
                 #attach -wa to the topic
+            for n in node_list: 
                 if n.name == "-wa":
-                    n.mother = t
+                    n.mother = top
                     #print(n.name+" got topicalized")
     
     for x in UR:
@@ -102,9 +104,11 @@ def nodes(UR):
                 if n.name == w:
                     n.inUR  = True
                     n.null  = False
+                    wh      = n
+            for n in node_list:
                 if n.name == "[+WH]":
                     #attach [+WH] as daughter of appropriate node
-                    n.mother    = w
+                    n.mother    = wh
                     n.inUR      = True
                     n.null      = False
                     #print(n.name+" got wh'd")
@@ -128,6 +132,6 @@ def nodes(UR):
         if n.inUR == True:
             print(n.name)
     '''
-    node_list = [CP,Cbar,ka,SP,wa,Wh,S,IP,Aux,NegP,Not,Nev,
+    node_list = [CP,Cbar,ka,SP,wa,Wh,S,IP,Aux,NegP,Nev,
                 VP,Adv,Vbar3,Vbar2,PP,O2,Vbar1,Verb,O1,P,O3]
     return node_list

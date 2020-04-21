@@ -65,6 +65,12 @@ def realize(node, string):
 
 def expand(node, string):
     lis = node.daughters
+    lis_names = []
+    for x in lis:
+        lis_names.append(x.name)
+    assert len(lis) < 4, str(node.name)+" has too many daughters: "+str(len(lis))+": "+str(lis_names)
+    for x in lis:
+        print(x, end=",")
     if len(lis) == 0:
         if node.null == False:
             string = realize(node, string)
@@ -82,7 +88,9 @@ def expand(node, string):
 
 # out gets called for each SOW
 def out(language, force, ur, nodes):
-    assert len(nodes)<24, str(len(nodes))+" nodes in this list..."
+    if len(nodes)>24 and isinstance(nodes, list):
+        print("why are there "+str(len(nodes))+" nodes in this list...")
+        return
     with open("all_all.txt", 'a') as f:
         # writes out the language
         for dig in language:
@@ -96,10 +104,12 @@ def out(language, force, ur, nodes):
             else:
                 f.write(item)
         f.write("SR:\t")
-        if nodes == "Not parseable!":
+        #After this the SR items are produced
+        #If SR is unparseable, a not parseable message is produced
+        if isinstance(nodes, str):
             f.write(nodes)
-        else:
-            assert isinstance(nodes, list), nodes
+        #Else, start in the CP node and work down the tree
+        if isinstance(nodes, list):
             for n in nodes:
                 if n.name != "CP":
                     pass
@@ -110,11 +120,9 @@ def out(language, force, ur, nodes):
     return
         
 def get_daughters(UR):
-    if UR != "Not parseable!":
+    if "Not parseable" not in UR:
         for daughter in UR:
             if daughter.mother:
                 mommy = daughter.mother
-                for mother in UR:
-                    if mother.name == mommy:
-                        mother.daughters.append(daughter)
+                mommy.daughters.append(daughter)
     return UR
