@@ -29,9 +29,9 @@ def nodes(UR):
     Cbar    = Node("Cbar",     CP)
     ka      = Node("ka",       Cbar)
     SP      = Node("SP",       Cbar)
-    wa      = Node("-wa",       None)
+    wa      = Node("[+wa]",    None)
     #that    = Node("that",     Cbar)
-    Wh      = Node("[+WH]",     None)
+    Wh      = Node("[+WH]",    None)
     S       = Node("S",        SP)
     IP      = Node("IP",       SP)
     Aux     = Node("Aux",      IP)
@@ -87,13 +87,14 @@ def nodes(UR):
             t = x.strip("+t")
             for n in node_list:
                 if n.name == t:
+                    print(t)
                     n.top   = True
                     n.inUR  = True
                     n.null  = False
                     top     = n
                 #attach -wa to the topic
             for n in node_list: 
-                if n.name == "-wa":
+                if n.name == "[+wa]":
                     n.mother = top
                     #print(n.name+" got topicalized")
     

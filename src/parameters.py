@@ -77,7 +77,7 @@ def apply_parameters(PFN):
         for node in PFN[2]:
             #print(node, end=", ")
             #print(PFN[2].index(node))
-            if node.name not in ["CP", "-wa"]:
+            if node.name not in ["CP", "[+wa]", "[+WH]"]:
                 assert node.phrase in ["SP","CP","IP"], [node.name, node.phrase]
                 if node.phrase == "SP":
                     node.pos = headedness_values[0]
@@ -255,11 +255,10 @@ def apply_parameters(PFN):
         if value == 0:
             # wa is already null, so skip
             pass
-
         if value == 1:
             #if there is a topicalized item, attach [+WA] to it
             for x in PFN[2]:
-                if x.name == "-wa":
+                if x.name == "[+wa]":
                     x.null = False
         return PFN
             
