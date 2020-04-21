@@ -97,6 +97,7 @@ def nodes(UR):
                     n.mother = top
                     #print(n.name+" got topicalized")
     
+    # Attach +WH
     for x in UR:
         if "+wh" in x:
             w = x.strip("+wh")
@@ -115,14 +116,16 @@ def nodes(UR):
      
     for n in node_list:
         if n.name in UR:
+            if n.name == "PP":
+                continue
             n.null = False
             n.inUR = True
         if "PP" in UR:
-            if n.mother == "PP":
+            if n.mother == PP:
                 n.null = False
                 n.inUR = True
     
-    #Annoying have to turn PP off now, after it allows for turning on of P and O3
+    #Annoyingly have to turn PP off now, after it allows for turning on of P and O3
     for n in node_list:
         if n.name == "PP":
             n.null = True

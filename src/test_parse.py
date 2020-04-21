@@ -16,7 +16,17 @@ def test():
 
     output_lines    = []
     for line in o:
-        output_lines.append(line.split())
+        l_split = line.split()
+        output_lines.append(l_split)
+        #Check for PP-->P O3
+        if "parseable" not in l_split:
+            if "PP" in l_split:
+                assert "O3" in l_split, "PP is present in UR, but O3 is missing from SR"
+        '''
+        assert l_split[16] == "SR:"
+        if "PP" in l_split[0:16]:
+            assert "O3" in l_split[16:31]
+        '''
 
     fail_list = []
     for test in test_lines:
@@ -25,6 +35,7 @@ def test():
         else:
             fail_count += 1
             fail_list.append(test)
+    
     if fail_count > 0:
         outcome = "Failure:  {f} out of {t} of the test lines are not present in the output!"
     if fail_count == 0:
