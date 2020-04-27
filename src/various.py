@@ -14,16 +14,15 @@ def languages(all=False):
             yield language
     ### ENGLISH ONLY: (Or add other specific languages)
     if all == False:
-        english = [ [0,0,0,0,0,0,0,0,1,0,0,0,0]]
-        '''
-        [0,0,0,1,0,0,1,1,0,0,0,1,1],
-        [0,0,0,0,0,0,0,0,0,0,0,0,0],
-        [0,0,0,0,0,0,0,0,0,0,0,0,1],
-        [1,0,0,0,0,0,0,0,0,0,0,0,0],
-        [1,1,1,1,1,1,1,1,1,1,1,1,1],
-        [0,0,0,1,1,1,0,0,1,0,0,0,0],
-        [1,1,1,1,0,0,0,0,0,0,0,1,0]]
-        '''
+        english = [ 
+        [0,0,0,0,0,0,0,0,1,0,0,0,0],    #Topic Marking
+        [0,0,0,1,0,0,1,1,0,0,0,1,1],    #English
+        [0,0,0,0,0,0,0,0,0,0,0,0,0],    #All off
+        [0,0,0,0,0,0,0,0,0,0,0,0,1],    #All off, but obl Q inversion
+        [1,0,0,0,0,0,0,0,0,0,0,0,0],    #All off, but Left Subject pos
+        [1,1,1,1,1,1,1,1,1,1,1,1,1],    #All on
+        [0,0,0,1,1,1,0,0,1,0,0,0,0],    #OptTop, Null Top, Null Sub, Topic Marking
+        [1,1,1,1,0,0,0,0,0,0,0,1,0]]    #All Right Head, OptTop, Affix Hopping
         for x in english:
             yield x
 

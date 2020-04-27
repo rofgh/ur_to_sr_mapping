@@ -87,7 +87,7 @@ def nodes(UR):
             t = x.strip("+t")
             for n in node_list:
                 if n.name == t:
-                    print(t)
+                    #print(t)
                     n.top   = True
                     n.inUR  = True
                     n.null  = False
