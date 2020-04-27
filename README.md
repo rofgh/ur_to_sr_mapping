@@ -1,5 +1,21 @@
 # UR to SR mapping over 13 parameters
 This project creates a mapping of possible underlying lexical items (UR) to a surface order of words (SR/SOW), according to 13 binary parameters and a static syntactic tree.
+USES Python3
+
+## parent.py
+Run this on the command line
+Takes two arguments, default=False, and begins the ur_to_sr_mapping code
+```
+$ python parent.py True True
+```
+The first boolean argument determines whether all possible languages are run (True) or whether only the limited user-modified list is assessed (False).
+
+The second argument determines whether all forces are assessed (True) or whether just one or two of the three possible forces are assessed (False) (Currently set to "D"eclarative)
+
+Also times the whole operation. ()
+
+Running this could be replaced by 'make run' if make is installed.
+
 
 ## SR_creator.py
 SR_creator.py creates SRs/SOWs for all the language-agnostic URs (created by all_URs.py), for whatever languages are selected:
@@ -7,15 +23,9 @@ SR_creator.py creates SRs/SOWs for all the language-agnostic URs (created by all
 There is a [boolean](https://github.com/rofgh/Hidden-Sin/blob/434a7e9c970c35f01e21bf55bc15415f6532940e/SR_creator.py#L12) to set to True through an argument to the script if you want all languages, otherwise all = False and it will only produce for the limited language list found in [src/various.py](https://github.com/rofgh/ur_to_sr_mapping/blob/2f1071dfdfc60d8a66af5612a6bafb468588b8b8/src/various.py#L4), ie. [0,0,0,1,0,0,1,1,0,0,0,1,1].
 
 True will run all languages (ENTER EST TIME HERE)
-```bash
-$ python3 SR_creator.py True
-```
 
 False or empty arg[1] will run only English parameters (1 second)
 
-```bash
-$ python3 SR_creator.py
-```
 
 all_all.txt currently looks like (No SRs are being printed currently):
 ```bash
