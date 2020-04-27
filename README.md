@@ -1,10 +1,10 @@
 # UR to SR mapping over 13 parameters
-This project creates a mapping of possible underlying lexical items (UR) to a surface order of words (SR/SOW), according to 13 binary parameters and a static syntactic tree. The main script is SR_creator.py, which accesses the other modules in the Modules folder.
+This project creates a mapping of possible underlying lexical items (UR) to a surface order of words (SR/SOW), according to 13 binary parameters and a static syntactic tree.
 
 ## SR_creator.py
 SR_creator.py creates SRs/SOWs for all the language-agnostic URs (created by all_URs.py), for whatever languages are selected:
 
-There is a [boolean](https://github.com/rofgh/Hidden-Sin/blob/434a7e9c970c35f01e21bf55bc15415f6532940e/SR_creator.py#L16) in def languages() to set to True through an argument to the script if you want all languages, otherwise all = False and it will only produce for english, ie. [0,0,0,1,0,0,1,1,0,0,0,1,1] (Or some pre-entered [list](https://github.com/rofgh/Hidden-Sin/blob/434a7e9c970c35f01e21bf55bc15415f6532940e/SR_creator.py#L29) of languages).
+There is a [boolean](https://github.com/rofgh/Hidden-Sin/blob/434a7e9c970c35f01e21bf55bc15415f6532940e/SR_creator.py#L12) to set to True through an argument to the script if you want all languages, otherwise all = False and it will only produce for the limited language list found in [src/various.py](https://github.com/rofgh/ur_to_sr_mapping/blob/2f1071dfdfc60d8a66af5612a6bafb468588b8b8/src/various.py#L4), ie. [0,0,0,1,0,0,1,1,0,0,0,1,1].
 
 True will run all languages (ENTER EST TIME HERE)
 ```bash
