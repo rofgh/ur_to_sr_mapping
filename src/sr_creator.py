@@ -20,9 +20,7 @@ def sr_creator(lang, forces):
             all_URs_ = activate_force(force)
             # for each UR in this force's list of URs
             for ur in all_URs_:
-                #print(ur)
                 # Take the UR, turn it into list of node objects
-
                 node_list = nodes(ur)
                 # Run each UR through the parameter settings;
                 # Each UR (and its nodes/tree) can produce multiple SR/strings
@@ -45,5 +43,5 @@ def sr_creator(lang, forces):
                         l_of_nodes = get_daughters(l_of_nodes)
                     out(language, force, ur, l_of_nodes)
             print("\n")
-    print("\nAssessed "+str(tree_count)+" trees and wrote them to "+"all_all.txt\n")
+    print("\nAssessed "+str(tree_count)+" trees and wrote them to "+"all_all.tsv\n")
     test()

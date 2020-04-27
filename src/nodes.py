@@ -81,39 +81,52 @@ def nodes(UR):
     for x in SP_nodes:
         x.phrase = "SP"
 
-    # Find topicalized object, apply .top = True (Parameter 8 deals with stranding)
-    for x in UR:
-        if "+t" in x:
-            t = x.strip("+t")
-            for n in node_list:
-                if n.name == t:
-                    #print(t)
-                    n.top   = True
-                    n.inUR  = True
-                    n.null  = False
-                    top     = n
-                #attach -wa to the topic
-            for n in node_list: 
-                if n.name == "[+wa]":
-                    n.mother = top
-                    #print(n.name+" got topicalized")
+    # Find topicalized object, apply .top = True (See Parameter 8 for PP stranding)
+    def tizer(node_list, x):
+        t = x.strip("+t")
+        topic = None
+        for n in node_list:
+            #print(n.name)
+            if n.name == t:
+                #print("This is the node getting topicalized:"+t+" "+n.name)
+                n.top   = True
+                n.inUR  = True
+                n.null  = False
+                #print(topic)
+                topic   = n
+        assert topic != None, "name incorrect?"+t
+        assert topic.name == t, "name incorrect?"+t
+        #attach [+wa] to the topic
+        for n in node_list: 
+            if n.name == "[+wa]":
+                n.mother = topic
+                #print(n.name+" got topicalized")
+        return node_list, t
     
     # Attach +WH
+    def whizer(node_list, x):
+        w = x.strip("+wh")
+        if "+t" in w:
+            node_list, w = tizer(node_list, w)
+        for n in node_list:
+            if n.name == w:
+                n.inUR  = True
+                n.null  = False
+                wh      = n
+        for n in node_list:
+            if n.name == "[+WH]":
+                #attach [+WH] as daughter of appropriate node
+                n.mother    = wh
+                n.inUR      = True
+                n.null      = False
+                #print(n.name+" got wh'd")
+
     for x in UR:
         if "+wh" in x:
-            w = x.strip("+wh")
-            for n in node_list:
-                if n.name == w:
-                    n.inUR  = True
-                    n.null  = False
-                    wh      = n
-            for n in node_list:
-                if n.name == "[+WH]":
-                    #attach [+WH] as daughter of appropriate node
-                    n.mother    = wh
-                    n.inUR      = True
-                    n.null      = False
-                    #print(n.name+" got wh'd")
+            whizer(node_list, x)
+        if "+wh" not in x:
+            if "+t" in x:
+                tizer(node_list, x)
      
     for n in node_list:
         if n.name in UR:

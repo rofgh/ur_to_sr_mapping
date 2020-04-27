@@ -1,7 +1,6 @@
 '''
-SR creator
-takes the UR list, at all_URs.txt, for each one of them it runs the obj-maker, at obj-maker.py
-producing, hopefully, a list of SRs/SOWs
+Takes two arguments, default=False, and begins the ur_to_sr_mapping code
+Also times the whole operation 
 '''
 
 from src import sr_creator

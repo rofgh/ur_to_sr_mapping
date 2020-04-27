@@ -1,4 +1,4 @@
-
+import csv
 
 # generates the language possibilities
 def languages(all=False):
@@ -16,13 +16,13 @@ def languages(all=False):
     if all == False:
         english = [ 
         [0,0,0,0,0,0,0,0,1,0,0,0,0],    #Topic Marking
-        #[0,0,0,1,0,0,1,1,0,0,0,1,1],    #English
-        #[0,0,0,0,0,0,0,0,0,0,0,0,0],    #All off
-        #[0,0,0,0,0,0,0,0,0,0,0,0,1],    #All off, but obl Q inversion
-        #[1,0,0,0,0,0,0,0,0,0,0,0,0],    #All off, but Left Subject pos
-        #[1,1,1,1,1,1,1,1,1,1,1,1,1],    #All on
-        #[0,0,0,1,1,1,0,0,1,0,0,0,0],    #OptTop, Null Top, Null Sub, Topic Marking
-        #[1,1,1,1,0,0,0,0,0,0,0,1,0]     #All Right Head, OptTop, Affix Hopping
+        [0,0,0,1,0,0,1,1,0,0,0,1,1],    #English
+        [0,0,0,0,0,0,0,0,0,0,0,0,0],    #All off
+        [0,0,0,0,0,0,0,0,0,0,0,0,1],    #All off, but obl Q inversion
+        [1,0,0,0,0,0,0,0,0,0,0,0,0],    #All off, but Left Subject pos
+        [1,1,1,1,1,1,1,1,1,1,1,1,1],    #All on
+        [0,0,0,1,1,1,0,0,1,0,0,0,0],    #OptTop, Null Top, Null Sub, Topic Marking
+        [1,1,1,1,0,0,0,0,0,0,0,1,0]     #All Right Head, OptTop, Affix Hopping
         ]    
         for x in english:
             yield x
@@ -71,7 +71,7 @@ def expand(node, string):
     lis_names = []
     for x in lis:
         lis_names.append(x.name)
-    assert len(lis) < 4, str(node.name)+" has too many daughters: "+str(len(lis))+": "+str(lis_names)
+    #assert len(lis) < 4, str(node.name)+" has too many daughters: "+str(len(lis))+": "+str(lis_names)
     '''
     for x in lis:
         print(x, end=",")
@@ -96,23 +96,27 @@ def out(language, force, ur, nodes):
     if len(nodes)>24 and isinstance(nodes, list):
         print("why are there "+str(len(nodes))+" nodes in this list...")
         return
-    with open("all_all.txt", 'a') as f:
-        # writes out the language
+    with open('all_all.tsv', 'a') as f:
+        output = csv.writer(f, delimiter='\t')
+        #initializes row
+        row = []  
+        #row[0]=language
+        digits = ''
         for dig in language:
-            f.write(str(dig)+"")
-        # Writes out the force
-        f.write("\t"+force+"\t")
+            digits += str(dig)
+        row.append(digits)
+        # row[1]=force
+        row.append(force)
         # Writes out the UR
+        #row[2:16]=ur
         for item in ur:
-            if item != "\t":
-                f.write(item+"\t")
-            else:
-                f.write(item)
-        f.write("SR:\t")
+            row.append(item)
+        #row[16]="SR:"
+        row.append("SR:")
         #After this the SR items are produced
         #If SR is unparseable, a not parseable message is produced
         if isinstance(nodes, str):
-            f.write(nodes)
+            row.append(nodes)
         #Else, start in the CP node and work down the tree
         if isinstance(nodes, list):
             for n in nodes:
@@ -120,8 +124,9 @@ def out(language, force, ur, nodes):
                     pass
                 if n.name == "CP":
                     string = ''
-                    f.write(expand(n, string))
-        f.write("\n")
+                    row.append(expand(n, string))
+        row.append('\n')
+        output.writerow(row)
     return
         
 def get_daughters(UR):
