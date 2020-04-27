@@ -228,7 +228,7 @@ def apply_parameters(PFN):
     def Parameter8(PFN):
         value                = PFN[0][7]
         if value == 0:
-            # P is topicalized (Never O3), PP must move as a group
+            # PP is topicalized (Never O3), PP must move as a group
             pass
         if value == 1:
             # O3 is topicalized (Never P), P does not have to move
