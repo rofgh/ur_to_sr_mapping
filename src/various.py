@@ -1,4 +1,4 @@
-
+import csv
 
 # generates the language possibilities
 def languages(all=False):
@@ -96,23 +96,27 @@ def out(language, force, ur, nodes):
     if len(nodes)>24 and isinstance(nodes, list):
         print("why are there "+str(len(nodes))+" nodes in this list...")
         return
-    with open("all_all.txt", 'a') as f:
-        # writes out the language
+    with open('all_all.tsv', 'a') as f:
+        output = csv.writer(f, delimiter='\t')
+        #initializes row
+        row = []  
+        #row[0]=language
+        digits = ''
         for dig in language:
-            f.write(str(dig)+"")
-        # Writes out the force
-        f.write("\t"+force+"\t")
+            digits += str(dig)
+        row.append(digits)
+        # row[1]=force
+        row.append(force)
         # Writes out the UR
+        #row[2:16]=ur
         for item in ur:
-            if item != "\t":
-                f.write(item+"\t")
-            else:
-                f.write(item)
-        f.write("SR:\t")
+            row.append(item)
+        #row[16]="SR:"
+        row.append("SR:")
         #After this the SR items are produced
         #If SR is unparseable, a not parseable message is produced
         if isinstance(nodes, str):
-            f.write(nodes)
+            row.append(nodes)
         #Else, start in the CP node and work down the tree
         if isinstance(nodes, list):
             for n in nodes:
@@ -120,8 +124,9 @@ def out(language, force, ur, nodes):
                     pass
                 if n.name == "CP":
                     string = ''
-                    f.write(expand(n, string))
-        f.write("\n")
+                    row.append(expand(n, string))
+        row.append('\n')
+        output.writerow(row)
     return
         
 def get_daughters(UR):
