@@ -86,13 +86,13 @@ def nodes(UR):
         t = x.strip("+t")
         topic = None
         for n in node_list:
-            print(n.name)
+            #print(n.name)
             if n.name == t:
-                print("This is the node getting topicalized:"+t+" "+n.name)
+                #print("This is the node getting topicalized:"+t+" "+n.name)
                 n.top   = True
                 n.inUR  = True
                 n.null  = False
-                print(topic)
+                #print(topic)
                 topic   = n
         assert topic != None, "name incorrect?"+t
         assert topic.name == t, "name incorrect?"+t
