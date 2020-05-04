@@ -11,7 +11,7 @@ The first boolean argument determines whether all possible languages are run (Tr
 
 The second argument determines whether all forces are assessed (True) or whether just one or two of the three are used (False) (Currently set to "D"eclarative)
 
-Also times the whole operation.
+This script also times the whole operation.
 
 Running this could be replaced by 'make run' if make is installed.
 
@@ -21,35 +21,23 @@ SR_creator.py creates SRs/SOWs for all the language-agnostic URs (created by all
 
 The boolean input to the parent script gets used [here] (https://github.com/rofgh/Hidden-Sin/blob/434a7e9c970c35f01e21bf55bc15415f6532940e/SR_creator.py#L12) to set to True through an argument to the script if you want all languages, otherwise all = False and it will only produce for the limited language list found in [src/various.py](https://github.com/rofgh/ur_to_sr_mapping/blob/7ff5902a9bee21921103af8eb64e9ea210dd250c/src/various.py#L4), ie. [0,0,0,1,0,0,1,1,0,0,0,1,1].
 
-True will run all languages (ENTER EST TIME HERE)
+True will run all languages (~2secs/lang= 4.5 HOURS)
 ```bash
-$ python3 SR_creator.py True
+$ python3 SR_creator.py True True outputfilename
 ```
 
-False or empty arg[1] will run only English parameters (1 second)
+False or empty arg[1] will run only English* parameters (<2 seconds)
 
 ```bash
-$ python3 SR_creator.py
+$ python3 SR_creator.py False True outputfilename
 ```
 
 all_all.txt currently looks like (No SRs are being printed currently):
 ```bash
-0001001000011	D	S	Verb													SR:	
-0001001000011	D	S	Verb													SR:	
-0001001000011	D	S	Verb	Aux												SR:	
-0001001000011	D	S	Verb	Adv												SR:	
-0001001000011	D	S	Verb	O1												SR:	
-0001001000011	D	S	Verb	PP												SR:	
-0001001000011	D	S	Verb	Aux	Adv											SR:	
-0001001000011	D	S	Verb	Aux	O1											SR:	
-0001001000011	D	S	Verb	Aux	PP											SR:	
-0001001000011	D	S	Verb	Adv	O1											SR:	
-0001001000011	D	S	Verb	Adv	PP											SR:	
-0001001000011	D	S	Verb	O1	O2											SR:	
-0001001000011	D	S	Verb	O1	PP											SR:	
-0001001000011	D	S	Verb	Aux	Adv	O1										SR:	
-0001001000011	D	S	Verb	Aux	Adv	PP										SR:	
-0001001000011	D	S	Verb	Aux	O1	O2										SR:	
+0000000000100	D	S	Verb	SR:	Not parseable because of Parameter: 4: no topic and topic is obligatory			
+0000000000100	D	S	Verb	Aux		SR:	Not parseable because of Parameter: 4: no topic and topic is obligatory			
+0000000000100	D	S	Verb	Adv		SR:	Not parseable because of Parameter: 4: no topic and topic is obligatory			
+0000000000100	D	S	Verb	O1		SR:	Not parseable because of Parameter: 4: no topic and topic is obligatory		
 ```
 
 At the end of the run, this script will run a test that compares the SR_creator output to a test.txt which contains a list of UR-SR maps known/expected to be produced by the creator.
