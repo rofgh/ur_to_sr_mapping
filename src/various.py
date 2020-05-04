@@ -16,13 +16,13 @@ def languages(all=False):
     if all == False:
         english = [ 
         [0,0,0,0,0,0,0,0,1,0,0,0,0],    #Topic Marking
-        [0,0,0,1,0,0,1,1,0,0,0,1,1],    #English
-        [0,0,0,0,0,0,0,0,0,0,0,0,0],    #All off
-        [0,0,0,0,0,0,0,0,0,0,0,0,1],    #All off, but obl Q inversion
-        [1,0,0,0,0,0,0,0,0,0,0,0,0],    #All off, but Left Subject pos
-        [1,1,1,1,1,1,1,1,1,1,1,1,1],    #All on
-        [0,0,0,1,1,1,0,0,1,0,0,0,0],    #OptTop, Null Top, Null Sub, Topic Marking
-        [1,1,1,1,0,0,0,0,0,0,0,1,0]     #All Right Head, OptTop, Affix Hopping
+        #[0,0,0,1,0,0,1,1,0,0,0,1,1],    #English
+        #[0,0,0,0,0,0,0,0,0,0,0,0,0],    #All off
+        #[0,0,0,0,0,0,0,0,0,0,0,0,1],    #All off, but obl Q inversion
+        #[1,0,0,0,0,0,0,0,0,0,0,0,0],    #All off, but Left Subject pos
+        #[1,1,1,1,1,1,1,1,1,1,1,1,1],    #All on
+        #[0,0,0,1,1,1,0,0,1,0,0,0,0],    #OptTop, Null Top, Null Sub, Topic Marking
+        #[1,1,1,1,0,0,0,0,0,0,0,1,0]     #All Right Head, OptTop, Affix Hopping
         ]    
         for x in english:
             yield x
@@ -62,34 +62,32 @@ def force_finder(forces):
     for x in all_forces:
         yield x
 
-def realize(node, string):
-    string += node.name+"\t"
-    return string
+def realize(node, row):
+    row.append(node.name)
+    return row
 
-def expand(node, string):
-    lis = node.daughters
-    lis_names = []
-    for x in lis:
-        lis_names.append(x.name)
-    #assert len(lis) < 4, str(node.name)+" has too many daughters: "+str(len(lis))+": "+str(lis_names)
+def expand(node, row):
     '''
-    for x in lis:
-        print(x, end=",")
+    if len(daught)>0:
+        print(node.name, end=": ")
+        for x in daught:
+            print(x.name, end=',')
+        print()
     '''
-    if len(lis) == 0:
-        if node.null == False:
-            string = realize(node, string)
-    if len(lis) != 0:
-        for x in lis:
+    if node.null == False:
+        row = realize(node, row)
+        print(node.name)
+    if len(node.daughters) != 0:
+        for x in node.daughters:
             if x.pos == "L":
-                string = expand(x, string)
-        for x in lis:
+                row = expand(x, row)
+        for x in node.daughters:
             if x.pos == None:
-                string = expand(x, string)
-        for x in lis:
+                row = expand(x, row)
+        for x in node.daughters:
             if x.pos == "R":
-                string = expand(x, string)
-    return string
+                row = expand(x, row)
+    return row
 
 # out gets called for each SOW
 def out(language, force, ur, nodes):
@@ -123,8 +121,12 @@ def out(language, force, ur, nodes):
                 if n.name != "CP":
                     pass
                 if n.name == "CP":
-                    string = ''
-                    row.append(expand(n, string))
+                    print("start CP: ")
+                    for x in n.daughters:
+                        print(x.name, end=", ")
+                        print(x.null, end=", ")
+                    print("start expansion:")
+                    row = expand(n, row)
         row.append('\n')
         output.writerow(row)
     return
@@ -135,4 +137,11 @@ def get_daughters(UR):
         for n in UR:
             if n.mother:
                 n.mother.daughters.append(n)
+                if n.name == '[+wa]':
+                    print("[+wa]'s mother: ", end='')
+                    print(n.mother.name, end=' is null: ')
+                    print(n.mother.null)
+                    pass
+            if n.null == False:
+                print(n.name, end=' ')
     return UR

@@ -78,13 +78,18 @@ def apply_parameters(PFN):
             #print(node, end=", ")
             #print(PFN[2].index(node))
             if node.name not in ["CP", "[+wa]", "[+WH]"]:
-                assert node.phrase in ["SP","CP","IP"], [node.name, node.phrase]
+                assert node.phrase in ["SP","CP","IP", "topic"], [node.name, node.phrase]
                 if node.phrase == "SP":
-                    node.pos = headedness_values[0]
+                    if node.head == True:
+                        node.pos = headedness_values[0]
                 if node.phrase == "IP":
-                    node.pos = headedness_values[1]
+                    if node.head == True:
+                        node.pos = headedness_values[1]
                 if node.phrase == "CP":
-                    node.pos = headedness_values[2]
+                    if node.head == True:
+                        node.pos = headedness_values[2]
+                if node.phrase == "topic":
+                    node.pos = "L"
         return PFN
     '''
     #First two, which happen for all forces
@@ -256,7 +261,7 @@ def apply_parameters(PFN):
             # wa is already null, so skip
             pass
         if value == 1:
-            #if there is a topicalized item, attach [+WA] to it
+            #if there is a topicalized item, attach [+wa] to it
             for x in PFN[2]:
                 if x.name == "[+wa]":
                     x.null = False

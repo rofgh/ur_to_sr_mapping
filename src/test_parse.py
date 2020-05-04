@@ -1,7 +1,7 @@
 
 def test():
     testfilename    = "test.txt"
-    outputfilename  = "all_all.txt"
+    outputfilename  = "all_all.tsv"
     outcome         = ""
     failed_line     = ""
     fail_count      = 0
@@ -11,18 +11,17 @@ def test():
     test_lines      = []
     for line in t:
         test_lines.append(line.split())
+
     o               = open(outputfilename, 'r').readlines()
     output_count    = len(o)
 
     output_lines    = []
     for line in o:
-        l_split = line.split()
-        output_lines.append(l_split)
         #Check for PP-->P O3
-        if "parseable" not in l_split:
-            if "PP" in l_split:
-                assert "O3" in l_split, "PP is present in UR, but O3 is missing from SR"
         '''
+        if "parseable" not in line:
+            if "PP" in line:
+                assert "O3" in line, "PP is present in UR, but O3 is missing from SR"
         assert l_split[16] == "SR:"
         if "PP" in l_split[0:16]:
             assert "O3" in l_split[16:31]

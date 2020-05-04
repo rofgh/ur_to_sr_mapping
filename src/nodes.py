@@ -51,14 +51,14 @@ def nodes(UR):
     O3      = Node("O3",       PP)
 
     # HEAD nodes:
-    head_nodes  = [ka, S, Aux, Nev, P, Verb, Vbar1, Vbar2]
+    head_nodes  = [ka, S, Aux, Nev, P, Verb, Vbar1, Vbar2, Vbar3]
     for x in head_nodes:
         x.head = True
 
-    # possibly REALIZABLE nodes:
-    real_nodes  = [ka, wa, Wh, S, Aux, Nev, Verb, O1, O2, P, O3, Adv]
-    for x in real_nodes:
-        x.real  = True
+    # possibly REALIZABLE nodes:  #OBSOLETE
+    #real_nodes  = [ka, wa, Wh, S, Aux, Nev, Verb, O1, O2, P, O3, Adv]
+    #for x in real_nodes:
+    #    x.real  = True
 
     # possibly TOPICALIZABLE nodes:
     #top_nodes   = [S, Adv, O1, 02, PP, O3]
@@ -72,7 +72,7 @@ def nodes(UR):
         x.phrase = "IP"
 
     # Nodes BG under CP (i.e. they will flip according to Parameter 3!):
-    CP_nodes    = [Cbar, ka, SP, Wh]
+    CP_nodes    = [Cbar, ka, SP]
     for x in CP_nodes:
         x.phrase = "CP"
 
@@ -82,32 +82,35 @@ def nodes(UR):
         x.phrase = "SP"
 
     # Find topicalized object, apply .top = True (See Parameter 8 for PP stranding)
-    def tizer(node_list, x):
-        t = x.strip("+t")
+    def tizer(node_list, w):
         topic = None
         for n in node_list:
-            #print(n.name)
-            if n.name == t:
+            if n.name == w:
                 #print("This is the node getting topicalized:"+t+" "+n.name)
                 n.top   = True
                 n.inUR  = True
                 n.null  = False
                 #print(topic)
                 topic   = n
-        assert topic != None, "name incorrect?"+t
-        assert topic.name == t, "name incorrect?"+t
+                for cp_search in node_list:
+                    if cp_search.name == "CP":
+                        #print("change "+n.name+" mother to "+cp_search.name)
+                        n.mother    = cp_search
+                        n.phrase    = "topic"
+                        n.pos       = "L"
+                
+        assert topic != None, "name incorrect?"+w
+        assert topic.name == w, "name incorrect?"+w
         #attach [+wa] to the topic
+        #but we won't know until Parameter 9 if it is null or not!
         for n in node_list: 
             if n.name == "[+wa]":
                 n.mother = topic
                 #print(n.name+" got topicalized")
-        return node_list, t
+        return node_list
     
     # Attach +WH
-    def whizer(node_list, x):
-        w = x.strip("+wh")
-        if "+t" in w:
-            node_list, w = tizer(node_list, w)
+    def whizer(node_list, w):
         for n in node_list:
             if n.name == w:
                 n.inUR  = True
@@ -120,13 +123,23 @@ def nodes(UR):
                 n.inUR      = True
                 n.null      = False
                 #print(n.name+" got wh'd")
+        return node_list
 
     for x in UR:
+        w = x
+        wh_t_list = [False, False]
         if "+wh" in x:
-            whizer(node_list, x)
-        if "+wh" not in x:
-            if "+t" in x:
-                tizer(node_list, x)
+            wh_t_list[0]   = True
+            w = w.strip("+wh")
+        if "+t" in x:
+            wh_t_list[1]   = True
+            w = w.strip("+t")
+        if wh_t_list[0] == True:
+            #print("+wh: ", end=w+"\t")
+            node_list = whizer(node_list, w)
+        if wh_t_list[1] == True:
+            #print("+t: ", end=w+"\t")
+            node_list = tizer(node_list, w)
      
     for n in node_list:
         if n.name in UR:
@@ -139,16 +152,20 @@ def nodes(UR):
                 n.null = False
                 n.inUR = True
     
+    '''
     #Annoyingly have to turn PP off now, after it allows for turning on of P and O3
     for n in node_list:
         if n.name == "PP":
             n.null = True
+    '''
             
     '''
     for n in node_list:
         if n.inUR == True:
             print(n.name)
     '''
+    '''
     node_list = [CP,Cbar,ka,SP,wa,Wh,S,IP,Aux,NegP,Nev,
                 VP,Adv,Vbar3,Vbar2,PP,O2,Vbar1,Verb,O1,P,O3]
+    '''
     return node_list

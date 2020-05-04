@@ -1,2 +1,1 @@
-0000000010000	D	?	?	?	?	?		SR:	Adv[+WA]	S	Aux	Never	Verb
-0000000010000	D	S+t	Aux	Verb				SR:	S+WA	Aux	Verb
+0000000010000	D	S+t	Verb	Aux	SR:	S	[+wa]	Aux	Verb
