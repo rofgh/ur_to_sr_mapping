@@ -15,13 +15,15 @@ def languages(all=False):
     ### ENGLISH ONLY: (Or add other specific languages)
     if all == False:
         english = [ 
-        [0,0,0,0,0,0,0,0,1,0,0,0,0],    #Topic Marking
-        #[0,0,0,1,0,0,1,1,0,0,0,1,1],    #English
+        #[0,0,0,0,0,0,0,0,1,0,0,0,0],    #Topic Marking
+        [0,0,0,1,0,0,1,1,0,0,0,1,1],    #English
         #[0,0,0,0,0,0,0,0,0,0,0,0,0],    #All off
         #[0,0,0,0,0,0,0,0,0,0,0,0,1],    #All off, but obl Q inversion
         #[1,0,0,0,0,0,0,0,0,0,0,0,0],    #All off, but Left Subject pos
+        #[0,1,0,0,0,0,0,0,0,0,0,0,0],    #All off, but Left IP pos
+        #[0,1,0,1,0,0,0,0,0,0,0,0,0],    #All off, but Left IP pos and optTop
         #[1,1,1,1,1,1,1,1,1,1,1,1,1],    #All on
-        #[0,0,0,1,1,1,0,0,1,0,0,0,0],    #OptTop, Null Top, Null Sub, Topic Marking
+        [0,0,0,1,1,1,0,0,1,0,0,0,0],    #OptTop, Null Top, Null Sub, Topic Marking
         #[1,1,1,1,0,0,0,0,0,0,0,1,0]     #All Right Head, OptTop, Affix Hopping
         ]    
         for x in english:
@@ -76,7 +78,7 @@ def expand(node, row):
     '''
     if node.null == False:
         row = realize(node, row)
-        print(node.name)
+        #print(node.name)
     if len(node.daughters) != 0:
         for x in node.daughters:
             if x.pos == "L":
@@ -121,11 +123,12 @@ def out(language, force, ur, nodes):
                 if n.name != "CP":
                     pass
                 if n.name == "CP":
-                    print("start CP: ")
+                    #print("start CP: ")
                     for x in n.daughters:
-                        print(x.name, end=", ")
-                        print(x.null, end=", ")
-                    print("start expansion:")
+                        pass
+                        #print(x.name, end=", ")
+                        #print(x.null, end=", ")
+                    #print("start expansion:")
                     row = expand(n, row)
         #row.append('\n')
         output.writerow(row)
@@ -138,10 +141,11 @@ def get_daughters(UR):
             if n.mother:
                 n.mother.daughters.append(n)
                 if n.name == '[+wa]':
-                    print("[+wa]'s mother: ", end='')
-                    print(n.mother.name, end=' is null: ')
-                    print(n.mother.null)
+                    #print("[+wa]'s mother: ", end='')
+                    #print(n.mother.name, end=' is null: ')
+                    #print(n.mother.null)
                     pass
             if n.null == False:
-                print(n.name, end=' ')
+                #print(n.name, end=' ')
+                pass
     return UR

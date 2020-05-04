@@ -43,5 +43,8 @@ def sr_creator(lang, forces):
                         l_of_nodes = get_daughters(l_of_nodes)
                     out(language, force, ur, l_of_nodes)
             print("\n")
+    print("\nAssessed:\n", end='')
+    for x in languages(lang):
+        print(x)
     print("\nAssessed "+str(tree_count)+" trees and wrote them to "+"all_all.tsv\n")
     test()

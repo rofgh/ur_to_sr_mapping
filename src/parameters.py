@@ -78,7 +78,7 @@ def apply_parameters(PFN):
             #print(node, end=", ")
             #print(PFN[2].index(node))
             if node.name not in ["CP", "[+wa]", "[+WH]"]:
-                assert node.phrase in ["SP","CP","IP", "topic"], [node.name, node.phrase]
+                assert node.phrase in ["SP", "CP", "IP", "topic"], [node.name, node.phrase]
                 if node.phrase == "SP":
                     if node.head == True:
                         node.pos = headedness_values[0]
@@ -170,13 +170,6 @@ def apply_parameters(PFN):
             assert len(PFN[2]) < 30, "len(PFN[2]) is too high... why?"
             unnull_sub_PFN             = copy.deepcopy(PFN)
             unnull_sub_PFN[0][4]       = 0
-            def run_error():
-                print("PFN")
-                for x in PFN:
-                    print(x)
-                print("unnull_sub_PFN")
-                for x in unnull_sub_PFN:
-                    print(x)
             assert PFN != unnull_sub_PFN, run_error()
             l_of_l_of_nodes.append(do_it(unnull_sub_PFN))
             ###
