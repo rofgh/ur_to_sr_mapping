@@ -1,19 +1,28 @@
 
-from .nodes      import nodes
-from .parameters import *
-from .URs        import all_URs
-from .various    import *
-from .test_parse import test
+from .nodes         import nodes
+from .parameters    import *
+from .URs           import all_URs
+from .various       import *
+from .test_parse    import test
+from .timeme        import *
 
-def sr_creator(lang, forces):
+def tsvcheck(filename):
+    if ".tsv" not in filename:
+        filename += ".tsv"
+    return filename
+
+def sr_creator(lang, forces, start_time, outputfilename):
     # runs the UR_writing script, creating .txt files for each force
     all_URs()
+    now = start_time
+    #Beginning of main code, where each input language will be run through
     tree_count = 0
     lang_count = 0
-    open("all_all.tsv", 'w')
+    outputfilename = tsvcheck(outputfilename)
+    open(outputfilename, 'w')
     for language in languages(lang):
-        lang += 1
-        print("Lang "+str(lang)+":"+str(language))
+        lang_count += 1
+        print("Lang "+str(lang_count)+":"+str(language))
         # runs through the list of forces
         for force in force_finder(forces):
             print("Force:"+ str(force))
@@ -45,8 +54,10 @@ def sr_creator(lang, forces):
                         l_of_nodes = get_daughters(l_of_nodes)
                     out(language, force, ur, l_of_nodes)
             print("\n")
-    print("\nAssessed:\n", end='')
-    for x in languages(lang):
-        print(x)
-    print("\nAssessed "+str(tree_count)+" trees and wrote them to "+"all_all.tsv\n")
+        now = check(start_time, now, lang_count)
+    if lang == False:
+        print("\nAssessed:\n", end='')
+        for x in languages(lang):
+            print(x)
+    print("\nAssessed "+str(tree_count)+" trees and wrote them to "+outputfilename+"\n")
     test()

@@ -5,10 +5,10 @@ Also times the whole operation
 
 from src import sr_creator
 import sys
-from src import timer
+from src import timeme
 
 if __name__ == '__main__':
-    start = timer.start()
+    start_time = timeme.start()
     try:
         #For all languages or not
         arg = sys.argv[1]
@@ -27,8 +27,14 @@ if __name__ == '__main__':
             forces = False
     except:
         forces = False
-    sr_creator.sr_creator(lang, forces)
-    timer.end(start)
+    try:
+        #Did the user put in a outputfilename?
+        arg3 = sys.argv[3]
+        outputfilename = arg3
+    except:
+        outputfilename = "all_all.tsv"
+    sr_creator.sr_creator(lang, forces, start_time, outputfilename)
+    timeme.end(start_time)
     
 
 

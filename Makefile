@@ -5,6 +5,9 @@ install:
 	echo "Install flake8 linter, install pywatch yourself."
 	pip install flake8
 
+full:
+	python3 parent.py True True
+
 run:
 	python3 parent.py False True
 
