@@ -290,10 +290,11 @@ def apply_parameters(PFN):
         if value == 1:
             # +ItoC invalidates the need for P13 so we can just turn it off
             # This requires a base-generated Aux or a VtoI Verb
-            # If no BG Aux
             for x in PFN[2]:
                 if x.name == "Aux":
+                    # If no BG Aux
                     if x.inUR == False:
+                        #If lang doesnt allow VtoI, fail
                         if PFN[0][9] == 0:
                             # Not parseable
                             PFN[2] = no_parse("11: No Aux and no VtoI")
@@ -301,17 +302,21 @@ def apply_parameters(PFN):
                             for x in PFN[2]:
                                 if x.name == "Verb":
                                     assert x.mother == "IP", "Verb didn't move"
-                                    x.mother = "Cbar"
+                                    for cbar_search in PFN[2]:
+                                        if cbar_search.name == "Cbar":
+                                            x.mother = cbar_search
                                     x.phrase = "CP"
                                     pass
-        #BG Aux
-                else:
-                    for x in PFN[2]:
-                        if x.name == "Aux":
-                            assert x.mother == "IP" or "Cbar", "Aux already moved? Mother: "+x.mother
-                            x.mother = "Cbar"
-                            x.phrase = "CP"
-                    pass
+                    #BG Aux
+                    else:
+                        for x in PFN[2]:
+                            if x.name == "Aux":
+                                assert x.mother == "IP" or "Cbar", "Aux already moved? Mother: "+x.mother
+                                for cbar_search in PFN[2]:
+                                    if cbar_search.name == "Cbar":
+                                        x.mother = cbar_search
+                                x.phrase = "CP"
+                        pass
         return PFN
                 
     ### PARAMETER 12 (Pa[11]) ### Affix Hopping

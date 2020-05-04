@@ -10,6 +10,7 @@ from src import timer
 if __name__ == '__main__':
     start = timer.start()
     try:
+        #For all languages or not
         arg = sys.argv[1]
         if arg == 'True':
             lang = True
@@ -18,6 +19,7 @@ if __name__ == '__main__':
     except:
         lang = False
     try:
+        #For all forces or not
         arg2 = sys.argv[2]
         if arg2 == 'True':
             forces = True

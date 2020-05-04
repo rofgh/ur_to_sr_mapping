@@ -16,15 +16,18 @@ def languages(all=False):
     if all == False:
         english = [ 
         #[0,0,0,0,0,0,0,0,1,0,0,0,0],    #Topic Marking
-        [0,0,0,1,0,0,1,1,0,0,0,1,1],    #English
+        #[0,0,0,1,0,0,1,1,0,0,0,1,1],    #English
         #[0,0,0,0,0,0,0,0,0,0,0,0,0],    #All off
         #[0,0,0,0,0,0,0,0,0,0,0,0,1],    #All off, but obl Q inversion
+        #[0,0,0,0,0,0,0,0,0,0,0,1,0],    #All off, but Affix hopping
+        [0,0,0,0,0,0,0,0,0,0,1,0,0],     #All off, but ItoC movement
         #[1,0,0,0,0,0,0,0,0,0,0,0,0],    #All off, but Left Subject pos
         #[0,1,0,0,0,0,0,0,0,0,0,0,0],    #All off, but Left IP pos
         #[0,1,0,1,0,0,0,0,0,0,0,0,0],    #All off, but Left IP pos and optTop
         #[1,1,1,1,1,1,1,1,1,1,1,1,1],    #All on
-        [0,0,0,1,1,1,0,0,1,0,0,0,0],    #OptTop, Null Top, Null Sub, Topic Marking
+        #[0,0,0,1,1,1,0,0,1,0,0,0,0],    #OptTop, Null Top, Null Sub, Topic Marking
         #[1,1,1,1,0,0,0,0,0,0,0,1,0]     #All Right Head, OptTop, Affix Hopping
+
         ]    
         for x in english:
             yield x
@@ -139,6 +142,8 @@ def get_daughters(UR):
         assert len(UR) == 22
         for n in UR:
             if n.mother:
+                if isinstance(n.mother, str):
+                    print(n.mother)
                 n.mother.daughters.append(n)
                 if n.name == '[+wa]':
                     #print("[+wa]'s mother: ", end='')
