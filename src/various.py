@@ -39,7 +39,7 @@ def activate_force(force):
         all_URs = []
         for UR in URs.readlines():
             UR = UR.split()
-            full_UR = ['\t']*14
+            full_UR = [""]*14
             for x in range(len(UR)):
                 full_UR[x] = UR[x]
             all_URs.append(full_UR)
@@ -127,7 +127,7 @@ def out(language, force, ur, nodes):
                         print(x.null, end=", ")
                     print("start expansion:")
                     row = expand(n, row)
-        row.append('\n')
+        #row.append('\n')
         output.writerow(row)
     return
         

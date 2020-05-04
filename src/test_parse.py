@@ -17,6 +17,8 @@ def test():
 
     output_lines    = []
     for line in o:
+        output_lines.append(line.split())
+        print(line)
         #Check for PP-->P O3
         '''
         if "parseable" not in line:
