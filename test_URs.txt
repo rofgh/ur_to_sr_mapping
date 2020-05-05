@@ -1,0 +1,2 @@
+S	Verb	
+S	Verb	Aux

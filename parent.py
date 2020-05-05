@@ -33,7 +33,12 @@ if __name__ == '__main__':
         outputfilename = arg3
     except:
         outputfilename = "all_all.tsv"
-    sr_creator.sr_creator(lang, forces, start_time, outputfilename)
+    try:
+        #Are we just looking at some test URs?
+        arg4 = sys.argv[4]
+    except:
+        arg4 = False
+    sr_creator.sr_creator(lang, forces, start_time, outputfilename, arg4)
     timeme.end(start_time)
     
 

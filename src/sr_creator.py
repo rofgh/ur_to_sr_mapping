@@ -11,24 +11,28 @@ def tsvcheck(filename):
         filename += ".tsv"
     return filename
 
-def sr_creator(lang, forces, start_time, outputfilename):
+def sr_creator(lang, forces, start_time, outputfilename, test_URs):
     # runs the UR_writing script, creating .txt files for each force
-    all_URs()
+    if test_URs == False:
+        print("creating UR file")
+        all_URs()
     now = start_time
     #Beginning of main code, where each input language will be run through
     tree_count = 0
     lang_count = 0
     outputfilename = tsvcheck(outputfilename)
+    # CHECK POINTER!
     open(outputfilename, 'w')
     for language in languages(lang):
         lang_count += 1
         print("Lang "+str(lang_count)+":"+str(language))
         # runs through the list of forces
         for force in force_finder(forces):
-            print("Force:"+ str(force))
+            print("Force: "+ str(force), end='; ')
             print("Trees:", end=" ")
+            starting_tree_count = tree_count
             # returns list of lists, padded to 14 items (i.e. the most lexical items possible)
-            all_URs_ = activate_force(force)
+            all_URs_ = activate_force(force, test_URs)
             # for each UR in this force's list of URs
             for ur in all_URs_:
                 # Take the UR, turn it into list of node objects
@@ -47,17 +51,20 @@ def sr_creator(lang, forces, start_time, outputfilename):
                 # Finally make the SOWs/SRs
                 for l_of_nodes in l_of_l_of_nodes:
                     tree_count += 1
-                    print(str(tree_count), end=",")
+                    #print(str(tree_count), end=",")
                     # Make an SOW/SR for each node list
                     # i.e. for each possible outcome of parameters & ur
                     if isinstance(l_of_nodes, list):
                         l_of_nodes = get_daughters(l_of_nodes)
-                    out(language, force, ur, l_of_nodes)
-            print("\n")
+                    out(language, force, ur, l_of_nodes, outputfilename, test_URs)
+            print(tree_count-starting_tree_count, end="; ")
+        print()
         now = check(start_time, now, lang_count)
+        # SAVE POINTER
     if lang == False:
         print("\nAssessed:\n", end='')
         for x in languages(lang):
             print(x)
     print("\nAssessed "+str(tree_count)+" trees and wrote them to "+outputfilename+"\n")
-    test()
+    if test_URs == False:
+        test()

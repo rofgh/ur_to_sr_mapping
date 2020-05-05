@@ -274,7 +274,7 @@ def apply_parameters(PFN):
                 if x.name == "Verb":
                     Verb = x
             if Aux.inUR == True:
-                if Aux.mother == "Cbar":
+                if Aux.mother.name == "Cbar":
                     Verb.mother = "IP"
                 if Aux.mother == "IP":
                     pass
@@ -371,12 +371,16 @@ def apply_parameters(PFN):
                             for Verb in PFN[2]:
                                 if Verb.name == "Verb":
                                     assert Verb.mother == "IP", "Verb didn't move out of Vbar"
-                                    Verb.mother = "Cbar"
+                                    for cbar_search in PFN[2]:
+                                        if cbar_search.name == "Cbar":
+                                            Verb.mother = cbar_search
                                     Verb.phrase = "CP"
                     #BG Aux
                     else:
                         if Aux.mother == "IP":
-                            Aux.mother = "Cbar"
+                            for cbar_search in PFN[2]:
+                                if cbar_search.name == "Cbar":
+                                    Aux.mother = cbar_search
                             Aux.phrase = "CP"
         return PFN
 

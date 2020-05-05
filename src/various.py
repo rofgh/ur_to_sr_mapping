@@ -14,22 +14,35 @@ def languages(all=False):
             yield language
     ### ENGLISH ONLY: (Or add other specific languages)
     if all == False:
-        english = [ 
+        test_languages = [ 
         #[0,0,0,0,0,0,0,0,1,0,0,0,0],    #Topic Marking
-        #[0,0,0,1,0,0,1,1,0,0,0,1,1],    #English
+        [0,0,0,1,0,0,1,1,0,0,0,1,1],    #English
         #[0,0,0,0,0,0,0,0,0,0,0,0,0],    #All off
         #[0,0,0,0,0,0,0,0,0,0,0,0,1],    #All off, but obl Q inversion
         #[0,0,0,0,0,0,0,0,0,0,0,1,0],    #All off, but Affix hopping
-        [0,0,0,0,0,0,0,0,0,0,1,0,0],     #All off, but ItoC movement
+        #[0,0,0,0,0,0,0,0,0,0,1,0,0],     #All off, but ItoC movement
         #[1,0,0,0,0,0,0,0,0,0,0,0,0],    #All off, but Left Subject pos
         #[0,1,0,0,0,0,0,0,0,0,0,0,0],    #All off, but Left IP pos
         #[0,1,0,1,0,0,0,0,0,0,0,0,0],    #All off, but Left IP pos and optTop
         #[1,1,1,1,1,1,1,1,1,1,1,1,1],    #All on
         #[0,0,0,1,1,1,0,0,1,0,0,0,0],    #OptTop, Null Top, Null Sub, Topic Marking
         #[1,1,1,1,0,0,0,0,0,0,0,1,0]     #All Right Head, OptTop, Affix Hopping
-
+        # [1,0,0,0,0,0,0,0,0,0,0,0,0],
+        # [0,1,0,0,0,0,0,0,0,0,0,0,0],
+        # [0,0,1,0,0,0,0,0,0,0,0,0,0],
+        # [0,0,0,1,0,0,0,0,0,0,0,0,0],
+        # [0,0,0,0,1,0,0,0,0,0,0,0,0],
+        # [0,0,0,0,0,1,0,0,0,0,0,0,0],
+        # [0,0,0,0,0,0,1,0,0,0,0,0,0],
+        # [0,0,0,0,0,0,0,1,0,0,0,0,0],
+        # [0,0,0,0,0,0,0,0,1,0,0,0,0],
+        # [0,0,0,0,0,0,0,0,0,1,0,0,0],
+        # [0,0,0,0,0,0,0,0,0,0,1,0,0],
+        # [0,0,0,0,0,0,0,0,0,0,0,1,0],
+        # [0,0,0,0,0,0,0,0,0,0,0,0,1],
+        
         ]    
-        for x in english:
+        for x in test_languages:
             yield x
 
 # selects a illocutionary force and produces all the possible URs for that force
@@ -37,8 +50,11 @@ def languages(all=False):
 
 
 ###  PAD LIST WITH 14, instead of what is happening here
-def activate_force(force):
-    filename = "src/UR_writer/all_"+force+"URs.txt"
+def activate_force(force, UR_file):
+    if UR_file == False:
+        filename = "src/UR_writer/all_"+force+"URs.txt"
+    else:
+        filename = UR_file
     with open(filename, 'r') as u:
         URs = u
         all_URs = []
@@ -95,11 +111,11 @@ def expand(node, row):
     return row
 
 # out gets called for each SOW
-def out(language, force, ur, nodes):
+def out(language, force, ur, nodes, outputfilename, test):
     if len(nodes)>24 and isinstance(nodes, list):
         print("why are there "+str(len(nodes))+" nodes in this list...")
         return
-    with open('all_all.tsv', 'a') as f:
+    with open(outputfilename, 'a') as f:
         output = csv.writer(f, delimiter='\t')
         #initializes row
         row = []  
@@ -135,6 +151,10 @@ def out(language, force, ur, nodes):
                     row = expand(n, row)
         #row.append('\n')
         output.writerow(row)
+        if test == True:
+            print("\n")
+            for x in row:
+                print(x, end='')
     return
         
 def get_daughters(UR):
