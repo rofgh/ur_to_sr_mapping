@@ -97,7 +97,6 @@ def nodes(UR):
                         #print("change "+n.name+" mother to "+cp_search.name)
                         n.mother    = cp_search
                         n.phrase    = "topic"
-                        n.pos       = "L"
                 
         assert topic != None, "name incorrect?"+w
         assert topic.name == w, "name incorrect?"+w
