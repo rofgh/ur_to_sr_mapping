@@ -1,19 +1,25 @@
+# INTRO  
+This project creates 
+
+
 # UR to SR mapping over 13 parameters
-This project creates a mapping of possible underlying lexical items (UR) to a surface order of words (SR/SOW), according to 13 binary parameters and a static syntactic tree.
+This project creates a mapping of meaninglessly ordered possible underlying lexical items (UR) to a surface order of words (SR/SOW), according to a hopefully scalable parameter set (13 at the moment) and a static syntactic tree represented by a [Node class](https://github.com/rofgh/ur_to_sr_mapping/blob/1ab96bdabc231e07334c53806e0bcb91129e5752/src/nodes.py#L1).
 
 ## parent.py
-Run this on the command line
-Takes two arguments, default=False, and begins the ur_to_sr_mapping code
+Run this on the command line  
+Takes four arguments, default=False in order to run a smaller domain, and begins the ur_to_sr_mapping code
+
 ```
 $ python parent.py True True
 ```
-The first boolean argument determines whether all possible languages are run (True) or whether only the limited user-modified list is assessed (False).
 
-The second argument determines whether all forces are assessed (True) or whether just one or two of the three are used (False) (Currently set to "D"eclarative)
+The first boolean argument determines whether all possible languages are run (True) or whether only the [limited user-modified list](https://github.com/rofgh/ur_to_sr_mapping/blob/1ab96bdabc231e07334c53806e0bcb91129e5752/src/various.py#L4) is assessed (False).
+
+The second argument determines whether all forces are assessed (True) or whether just one or two of the three are used (False) ([Currently set to "D"eclarative in the various.py scripts](https://github.com/rofgh/ur_to_sr_mapping/blob/1ab96bdabc231e07334c53806e0bcb91129e5752/src/various.py#L62))
 
 This script also times the whole operation.
 
-Running this could be replaced by 'make run' if make is installed.
+Running this could be replaced by 'make run' or its various permutations if make is installed.
 
 
 ## SR_creator.py

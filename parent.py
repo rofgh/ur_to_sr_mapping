@@ -9,6 +9,7 @@ from src import timeme
 
 if __name__ == '__main__':
     start_time = timeme.start()
+    #Boolean for All languages versus only the list of desired languages
     try:
         #For all languages or not
         arg = sys.argv[1]
@@ -18,6 +19,7 @@ if __name__ == '__main__':
             lang = False
     except:
         lang = False
+    #Boolean for All forces versus only the list of desired forces
     try:
         #For all forces or not
         arg2 = sys.argv[2]
@@ -27,18 +29,19 @@ if __name__ == '__main__':
             forces = False
     except:
         forces = False
+    #Are we just looking at some test URs?
     try:
-        #Did the user put in a outputfilename?
         arg3 = sys.argv[3]
-        outputfilename = arg3
+    except:
+        arg3 = False
+    #Did the user put in a outputfilename?
+    try:
+        arg4 = sys.argv[4]
+        outputfilename = arg4
     except:
         outputfilename = "all_all.tsv"
-    try:
-        #Are we just looking at some test URs?
-        arg4 = sys.argv[4]
-    except:
-        arg4 = False
-    sr_creator.sr_creator(lang, forces, start_time, outputfilename, arg4)
+    #Send all to the SR_creator script
+    sr_creator.sr_creator(lang, forces, start_time, arg3, outputfilename)
     timeme.end(start_time)
     
 

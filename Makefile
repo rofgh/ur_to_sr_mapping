@@ -9,7 +9,7 @@ full:
 	python3 parent.py True True
 
 run:
-	python3 parent.py False True
+	python3 parent.py
 
 test:
 	python3 test.py

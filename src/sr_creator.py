@@ -11,7 +11,7 @@ def tsvcheck(filename):
         filename += ".tsv"
     return filename
 
-def sr_creator(lang, forces, start_time, outputfilename, test_URs):
+def sr_creator(lang, forces, start_time, test_URs, outputfilename):
     # runs the UR_writing script, creating .txt files for each force
     if test_URs == False:
         print("creating UR file")
