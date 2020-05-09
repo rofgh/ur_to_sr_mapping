@@ -14,7 +14,7 @@ False or empty arg[1] will run only [limited user-modified list](https://github.
 $ python3 SR_creator.py False True outputfilename
 ```
 
-all_all.txt currently looks like (No SRs are being printed currently):
+all_all.tsv currently looks like:
 ```bash
 0000000000100	D	S	Verb	SR:	Not parseable because of Parameter: 4: no topic and topic is obligatory			
 0000000000100	D	S	Verb	Aux		SR:	Not parseable because of Parameter: 4: no topic and topic is obligatory			
