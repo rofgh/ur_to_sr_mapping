@@ -6,11 +6,6 @@ from .various       import *
 from .test_parse    import test
 from .timeme        import *
 
-def tsvcheck(filename):
-    if ".tsv" not in filename:
-        filename += ".tsv"
-    return filename
-
 def sr_creator(lang, forces, start_time, test_URs, outputfilename):
     # runs the UR_writing script, creating .txt files for each force
     if test_URs == False:
@@ -21,7 +16,7 @@ def sr_creator(lang, forces, start_time, test_URs, outputfilename):
     tree_count = 0
     lang_count = 0
     outputfilename = tsvcheck(outputfilename)
-    # CHECK POINTER!
+    # Create pointer here for segmentally printing the all_all.tsv file
     open(outputfilename, 'w')
     for language in languages(lang):
         lang_count += 1
@@ -61,6 +56,7 @@ def sr_creator(lang, forces, start_time, test_URs, outputfilename):
         print()
         now = check(start_time, now, lang_count)
         # SAVE POINTER
+    #If not all the possible parameter settings are being produced, show the set that are
     if lang == False:
         print("\nAssessed:\n", end='')
         for x in languages(lang):

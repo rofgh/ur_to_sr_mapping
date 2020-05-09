@@ -4,10 +4,13 @@ import csv
 # Requires pre-running of URs.py, if not already run in this script (currently line 68)
 ###  PAD LIST WITH 14, instead of what is happening here??
 def activate_force(force, UR_file):
+    #for all forces and all URS
     if UR_file == False:
         filename = "src/UR_writer/all_"+force+"URs.txt"
+    #If user defined URs are in play
     else:
         filename = UR_file
+    
     with open(filename, 'r') as u:
         URs = u
         all_URs = []
