@@ -1,11 +1,13 @@
 # UR to SR mapping over 13 parameters
-This project creates a mapping of meaninglessly ordered possible underlying lexical items (URs) to a surface order of words (SRs/SOWs), according to a hopefully scalable parameter set (a "language family") (13 parameter settings currently make up a language family), and a static syntactic tree (each lexical item has a fixed birthplace, and prescribed movement loci).
+This project creates a mapping of meaninglessly ordered possible underlying lexical items (URs) to a surface order of words (SRs/SOWs), according to a parameter set (a "language family") (13 parameter settings currently make up a language family), and a static syntactic tree (each lexical item has a fixed birthplace, and prescribed movement loci).
 
 This project is intended to be used by an Expectation Maximization learning algorithm (Expectation Driven Learning (EDL)) as language family (i.e. a particular set of parameters) input data.  Working through each UR-to-SR mapping in a language family's data, the algorithm updates its beliefs about what language is being viewed.  This algorithm is essentially a proxy for human language learning under the principles and parameters model, in which the marginal addition of language data from each utterance updates a learner's assumptions about the language family they are learning, and the grammatical attributes of their language family.
 
+Thus, this project represents the abstracted language data that a learner would encounter while learning a language, with the UR representing something like the semantically meaningful items and the SR representing the heard or produced utterance.
+
 The current project is based on the 13 parameters of a [Sakas & Fodor 2012 article](http://www.colag.cs.hunter.cuny.edu/pub/Sakas_Fodor_Disambiguating_prepub.pdf#24).  We wanted to plumb the structure of their parametric grammar, and produce a mapping that would be more appropriate for feeding to the EDL algorithm.
 
-The language family set should be extendable/scalable by adding additional parameters.  Depending on the format of this parameter, this may require addition of syntactic tree lexical items (Nodes in the code) 
+The language family set should be extendable/scalable by adding additional parameters in [src/parameters.py].  Depending on the format of this parameter, this may require addition of syntactic tree lexical items (Nodes.py), changes to the UR producer, and node class attributes, among perhaps other changes.  Essentially, scaling by another parameter requires some fluency in the script, but should be possible without changing any of the existing sscript (i.e. just additions).
 
 ## parent.py
 Run this on the command line (python3)  (or 'make run' if make is installed)
