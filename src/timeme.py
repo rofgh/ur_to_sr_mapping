@@ -1,5 +1,6 @@
 
-from timeit import default_timer as timer
+from timeit     import default_timer as timer
+from datetime   import datetime
 
 def start():
     start           = timer()
@@ -24,8 +25,12 @@ def check(start, then, iters):
 def end(start):
     end             = timer()
     total_time      = end - start
-    time_elapsed    = "Total for this run: {tt} seconds\n"
+    time_elapsed    = "Total for this run: {tt} seconds"
     if total_time > 60:
         total_time  = total_time/60
-        time_elapsed= "Total for this run: {tt:.5} minutes\n"
+        time_elapsed= "Total for this run: {tt:.5} minutes"
+    #Also time of day
+    tod             = end
+    time_of_day     = "Ending at {tt}\n"
     print(time_elapsed.format(tt=total_time))
+    print(time_of_day.format(tt=datetime.now()))

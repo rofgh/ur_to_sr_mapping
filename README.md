@@ -1,5 +1,5 @@
 # UR to SR mapping over 13 parameters
-This project creates a mapping of meaninglessly ordered possible underlying lexical items (URs) to a surface order of words (SRs/SOWs), according to a hopefully scalable parameter set (a "language") (there are 13 parameters that make up a language at the moment), and a static syntactic tree represented by a [Node class](https://github.com/rofgh/ur_to_sr_mapping/blob/1ab96bdabc231e07334c53806e0bcb91129e5752/src/nodes.py#L1).
+This project creates a mapping of meaninglessly ordered possible underlying lexical items (URs) to a surface order of words (SRs/SOWs), according to a hopefully scalable parameter set (a "language family") (there are 13 parameters that make up a language at the moment), and a static syntactic tree represented by a [Node class](https://github.com/rofgh/ur_to_sr_mapping/blob/1ab96bdabc231e07334c53806e0bcb91129e5752/src/nodes.py#L1).
 
 ## parent.py
 Run this on the command line (python3)  (or 'make run' if make is installed)
@@ -30,18 +30,18 @@ This script also times how long each language family takes to produce, as well a
 Running this could be replaced by 'make run' or its various permutations if make is installed.
 
 ### Github Folders:  
-[grabber](https://github.com/rofgh/Hidden-Sin/tree/master/grabber): this script pulls the SRs (and, optionally, the URs) form the original CoLAG data.  It is used for confirming correct production of this project.
-[src](https://github.com/rofgh/Hidden-Sin/tree/master/modules): these are the modules accessed by parent.py and sr_creator.py 
+[src](https://github.com/rofgh/Hidden-Sin/tree/master/modules): these are the modules accessed by parent.py and sr_creator.py.  Also contains [UR_writer](https://github.com/rofgh/Hidden-Sin/tree/master/UR_writer):  Scripts that create the URs
+
+[grabber](https://github.com/rofgh/Hidden-Sin/tree/master/grabber): this script pulls the SRs (and, optionally, the URs) form the original CoLAG data.  It is used for confirming correct production of this project.  
+
 [S_F_Y_Data_Files](https://github.com/rofgh/Hidden-Sin/tree/master/S_F_Y_Data_Files): Self-explanatory  
+
 [Misc](https://github.com/rofgh/Hidden-Sin/tree/master/Misc): Items that got put into the Notes shared doc, etc.  
+
 [EDL Learner](https://github.com/rofgh/Hidden-Sin/tree/master/EDL%20Learner): Original 6 parameter script, etc.  
+
 [Reference Papers](https://github.com/rofgh/Hidden-Sin/tree/master/Reference%20Papers):   
-[UR_writer](https://github.com/rofgh/Hidden-Sin/tree/master/UR_writer):  Scripts that create the URs for the SR_creator, these are combined in the URs.py script in the modules folder  
-
-### Other:
-obj_maker.py: old version of the SR_creator.py  Will probably soon be fully harvested, obsolete, and deleted  
-all_all.tsv: The output of the script, will be created locally, as it is too large for github  
-
+ 
 Our thoughts/description/notes/analysis/interpretation of the original SFY grammar and languages can be found [here](https://docs.google.com/document/d/1J_fS85IQWB9MPXB96ccHrKF_JHXn44iVyyemQOeFJQo/edit?usp=sharing)
 
 
