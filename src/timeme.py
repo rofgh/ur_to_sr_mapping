@@ -30,7 +30,6 @@ def end(start):
         total_time  = total_time/60
         time_elapsed= "Total for this run: {tt:.5} minutes"
     #Also time of day
-    tod             = end
     time_of_day     = "Ending at {tt}\n"
     print(time_elapsed.format(tt=total_time))
     print(time_of_day.format(tt=datetime.now()))
