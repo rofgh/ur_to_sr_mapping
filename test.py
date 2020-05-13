@@ -10,7 +10,7 @@ import sys
 
 
 if __name__ == '__main__':
-    sr_creator.sr_creator(False, False, start(), "test_output.tsv")
+    sr_creator.sr_creator(False, False, start(), False, "test_output.tsv")
 
 
 
