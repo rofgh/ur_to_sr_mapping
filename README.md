@@ -1,5 +1,5 @@
 # UR to SR mapping over 13 parameters
-This project creates a mapping of meaninglessly ordered possible underlying lexical items (URs) to a surface order of words (SRs/SOWs), according to an applied parameter set (a "language family"), and a static syntactic tree (each lexical item has a fixed birthplace, and prescribed movement loci).
+This project creates mappings of a. meaninglessly ordered possible underlying lexical items (URs) to b. surface order of words (SRs/SOWs).  Each mapping is produced according to an applied parameter set ("language family features"), and a static syntactic tree (each lexical item has a fixed birthplace, prescribed movement loci, and is either underlying present or not).
 
 This project is intended to be used by an Expectation Maximization learning algorithm (Expectation Driven Learning (EDL)) as input data.  Working through each UR-to-SR mapping in a language family's data, the algorithm updates its beliefs about what language is being viewed.  This algorithm is essentially a proxy for human language learning under the principles and parameters model, in which the marginal addition of language data from each utterance updates a learner's assumptions about the language family they are learning, and the grammatical attributes of their language family.
 
@@ -9,7 +9,9 @@ The parameters of the current project are based on the 13 outlined in a [Sakas &
 
 The language family set should be extendable/scalable by adding additional parameters in [src/parameters.py](https://github.com/rofgh/ur_to_sr_mapping/blob/04ee506608f7c58b81418987d333ec76d639e712/src/parameters.py#L1).  Depending on the format of this parameter, this will require the addition of syntactic tree lexical item(s), which would need to be reflected in [nodes.py](https://github.com/rofgh/ur_to_sr_mapping/blob/04ee506608f7c58b81418987d333ec76d639e712/src/nodes.py#L1) and changes to the [UR_writer](https://github.com/rofgh/Hidden-Sin/tree/master/UR_writer).  Essentially, scaling by another parameter requires some fluency in the script, but should be possible without changing any of the existing script.
 
-See the src readme for more in depth descriptions of the deeper code.
+See the [src readme](https://github.com/rofgh/ur_to_sr_mapping/blob/master/src/README.md) for more in depth descriptions of the deeper code.
+
+Our preliminary thoughts/description/notes/analysis/interpretation of the original SFY grammar and languages can be found [here](https://docs.google.com/document/d/1J_fS85IQWB9MPXB96ccHrKF_JHXn44iVyyemQOeFJQo/edit?usp=sharing)
 
 ## parent.py
 Run this on the command line (python3)  (or 'make run' if make is installed, see [makefile](https://github.com/rofgh/ur_to_sr_mapping/blob/04ee506608f7c58b81418987d333ec76d639e712/Makefile#L1))  
@@ -51,6 +53,6 @@ This script also times how long each language family takes to produce, as well a
 
 [Reference Papers](https://github.com/rofgh/Hidden-Sin/tree/master/Reference%20Papers):   
  
-Our thoughts/description/notes/analysis/interpretation of the original SFY grammar and languages can be found [here](https://docs.google.com/document/d/1J_fS85IQWB9MPXB96ccHrKF_JHXn44iVyyemQOeFJQo/edit?usp=sharing)
+
 
 
