@@ -13,11 +13,12 @@ def check(start, then, iters):
     average         = elapsed/iters
     time_elapsed    = "Elapsed time since start:\t {tt} seconds"
     if elapsed > 60:
-        elapsed     = elapsed/60
-        time_elapsed= "Elapsed time since start:\t {tt:.5} minutes"
-    if elapsed > 3600:
-        elapsed     = elapsed/3600
-        time_elapsed= "Elapsed time since start:\t {tt:.5} hours"
+        if elapsed > 3600:
+            elapsed     = elapsed/3600
+            time_elapsed= "Elapsed time since start:\t {tt:.5} hours"
+        else:
+            elapsed     = elapsed/60
+            time_elapsed= "Elapsed time since start:\t {tt:.5} minutes"
     print(time_elapsed.format(tt=elapsed))
     lang_elapsed    = "Elapsed time for this language:\t {tt} seconds"
     print(lang_elapsed.format(tt=one_lang))
