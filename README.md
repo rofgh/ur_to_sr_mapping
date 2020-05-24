@@ -35,9 +35,12 @@ The second argument determines whether all forces are assessed (True) or whether
 Limits the set of URs to assess (see [various.py def activate_force()](https://github.com/rofgh/ur_to_sr_mapping/blob/efaf037f7c93b0af515be8cef8e0796705f152d4/src/various.py#L6)).  If a file is given, the script will run on a limited set of URs, which reduces the run time of the program, especially if all languages are being assessed.  Otherwise, this argument is False and all UR permutations are produced and mapped.
 
 4  
-Argument 4 is an output filename different from the default all_all.tsv  This deafult filename should only be used for the running of all parameter settings, all forces, and all URs.
+Argument 4 is an output filename different from the default all_all.tsv  This default filename should only be used for the running of all parameter settings, all forces, and all URs.  Otherwise it will overwrite the all languages file if it ahs already been made (and thus overwrite 8 hours of work)
 
 This script also times how long each language family takes to produce, as well as the whole operation.
+
+## Results Examples
+The last time the code was fully run it took 7.66 hours.  This speed could be improved greatly by changing how the data is saved.  Since the data file starts out at 0MB and by the end of the run it is 2GB, it starts being taxing to open the file in order to write to it.  ![Code Complete](ScreenshotAllFinished.png)
 
 
 ### Github Folders:  
