@@ -32,17 +32,24 @@ if __name__ == '__main__':
     #Are we just looking at some test URs?
     try:
         arg3 = sys.argv[3]
+        if arg3 == 'False':
+            test_URs = False
+        else:
+            test_URs = arg3
     except:
-        arg3 = False
+        test_URs = False
 
     #Did the user put in a outputfilename?
     try:
         arg4 = sys.argv[4]
-        outputfilename = arg4
+        if arg4 == 'False':
+            outputfilename = False
+        else:
+            outputfilename = arg4
     except:
         outputfilename = "all_all.tsv"
     #Send all to the SR_creator script
-    sr_creator.sr_creator(lang, forces, start_time, arg3, outputfilename)
+    sr_creator.sr_creator(lang, forces, start_time, test_URs, outputfilename)
     timeme.end(start_time)
     
 

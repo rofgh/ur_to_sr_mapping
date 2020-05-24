@@ -17,7 +17,7 @@ def sr_creator(lang_fam, forces, start_time, test_URs, outputfilename):
     lang_count = 0
     outputfilename = tsvcheck(outputfilename)
     # Create pointer here for segmentally printing the all_all.tsv file
-    open(outputfilename, 'w')
+    open(outputfilename, 'w+')
     for language in languages(lang_fam):
         lang_count += 1
         print("Lang "+str(lang_count)+":"+str(language))

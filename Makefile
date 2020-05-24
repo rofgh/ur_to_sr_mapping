@@ -9,7 +9,7 @@ full:
 	python3 parent.py True True
 
 run:
-	python3 parent.py
+	python3 parent.py False False False run.tsv
 
 test:
 	python3 test.py
