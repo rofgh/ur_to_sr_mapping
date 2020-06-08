@@ -1,9 +1,9 @@
 # UR to SR mapping over 13 parameters
-This project creates mappings of every licit combination of (meaninglessly ordered) underlying lexical items (n=8) to a resultant surface order of words (SRs/SOWs/"a sentence").  Each "sentence" mapping is produced by applying a parameter set ("language family features") to a static syntactic tree, wherein each lexical item has a fixed birthplace, prescribed movement loci, and is either underlying null or present.
+This project creates mappings of every licit combination of (meaninglessly ordered) underlying lexical items (n=8) to a resultant Surface Order of Words (SOWs/SRs/"a sentence").  Each "sentence" mapping is produced by applying a parameter set ("language family features") to a static syntactic tree, wherein each lexical item has a fixed birthplace, prescribed movement loci, and is either underlying null or present.
 
 This project is intended to be used by an Expectation Maximization learning algorithm (Expectation Driven Learning (EDL)) as input data.  Working through each UR-to-SR mapping in a language family's data, the algorithm updates its beliefs about what language is being viewed.  This algorithm is essentially a proxy for human language learning under the principles and parameters model, in which the marginal addition of language data from each utterance updates a learner's assumptions about the language family they are learning, and the grammatical attributes of their language family.
 
-Thus, this project represents an abstracted sample of language data that a human learner would encounter while learning a language, with the UR representing something like the semantically meaningful items and the SR representing the heard or produced utterance.
+Thus, this project represents an abstracted sample of language data that a human learner would encounter while learning a language, with the UR representing something like the semantically meaningful items and the SR/SOW representing the heard or produced utterance.
 
 The parameters of the current project are based on the 13 outlined in a [Sakas & Fodor 2012 article](http://www.colag.cs.hunter.cuny.edu/pub/Sakas_Fodor_Disambiguating_prepub.pdf#24).  We wanted to plumb the structure of their parametric grammar, and produce a mapping that would be more appropriate for feeding to the EDL algorithm.
 
