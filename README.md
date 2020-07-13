@@ -57,6 +57,8 @@ A sample from all_all.tsv looks like:
 ```
 For this example language family (0000000000100), none of these sentences are parseable.  If the UR were parseable, the licit SR(s) would be provided.
 
+With this structure a learning algorithm could easily pull the UR-SR mappings from the all_all.tsv file.
+
 
 ### Github Folders:  
 [src](https://github.com/rofgh/Hidden-Sin/tree/master/src): these are the modules accessed by parent.py and sr_creator.py.  Also contains [UR_writer](https://github.com/rofgh/Hidden-Sin/tree/master/src/UR_writer):  Scripts that create the URs
