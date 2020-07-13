@@ -50,11 +50,11 @@ The last time the code was fully run it took 7.66 hours.  This speed could be im
 
 A sample from all_all.tsv looks like:
 ```bash
-0000000000100	D	S	Verb	        SR:	Not parseable because of Parameter: 4: no topic and topic is obligatory			
-0000000000100	D	S	Verb	Aux		SR:	Not parseable because of Parameter: 4: no topic and topic is obligatory			
-0000000000100	D	S	Verb	Adv		SR:	Not parseable because of Parameter: 4: no topic and topic is obligatory			
+0000000000100	D	S	Verb    SR:	Not parseable because of Parameter: 4: no topic and topic is obligatory			
+0000000000100	D	S	Verb	Aux     SR:	Not parseable because of Parameter: 4: no topic and topic is obligatory			
+0000000000100	D	S	Verb	Adv	    SR:	Not parseable because of Parameter: 4: no topic and topic is obligatory			
 0000000000100	D	S	Verb	O1		SR:	Not parseable because of Parameter: 4: no topic and topic is obligatory
-0001001100011	D	S	Verb			SR:	S	Verb
+0001001100011	D	S	Verb    SR:	S	Verb
 0001001100011	D	S	Verb	Aux		SR:	S	Aux	Verb
 0001001100011	D	S	Verb	Adv	    SR:	S	Verb	Adv
 0001001100011	D	S	Verb	O1		SR:	S	Verb	O1
