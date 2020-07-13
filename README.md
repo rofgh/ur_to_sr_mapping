@@ -50,18 +50,18 @@ The last time the code was fully run it took 7.66 hours.  This speed could be im
 
 A sample from all_all.tsv looks like:
 ```bash
-0000000000100	D	S	Verb	SR:	Not parseable because of Parameter: 4: no topic and topic is obligatory			
+0000000000100	D	S	Verb	        SR:	Not parseable because of Parameter: 4: no topic and topic is obligatory			
 0000000000100	D	S	Verb	Aux		SR:	Not parseable because of Parameter: 4: no topic and topic is obligatory			
 0000000000100	D	S	Verb	Adv		SR:	Not parseable because of Parameter: 4: no topic and topic is obligatory			
 0000000000100	D	S	Verb	O1		SR:	Not parseable because of Parameter: 4: no topic and topic is obligatory
-0001001100011	D	S	Verb													SR:	S	Verb
-0001001100011	D	S	Verb	Aux												SR:	S	Aux	Verb
-0001001100011	D	S	Verb	Adv												SR:	S	Verb	Adv
-0001001100011	D	S	Verb	O1												SR:	S	Verb	O1
-0001001100011	D	S	Verb	PP												SR:	S	Verb	P	O3
-0001001100011	D	S	Verb	Aux	Adv											SR:	S	Aux	Verb	Adv
-0001001100011	D	S	Verb	Aux	O1											SR:	S	Aux	Verb	O1
-0001001100011	D	S	Verb	Aux	PP											SR:	S	Aux	Verb	P	O3	
+0001001100011	D	S	Verb			SR:	S	Verb
+0001001100011	D	S	Verb	Aux		SR:	S	Aux	Verb
+0001001100011	D	S	Verb	Adv	    SR:	S	Verb	Adv
+0001001100011	D	S	Verb	O1		SR:	S	Verb	O1
+0001001100011	D	S	Verb	PP		SR:	S	Verb	P	O3
+0001001100011	D	S	Verb	Aux	Adv	SR:	S	Aux	Verb	Adv
+0001001100011	D	S	Verb	Aux	O1	SR:	S	Aux	Verb	O1
+0001001100011	D	S	Verb	Aux	PP	SR:	S	Aux	Verb	P	O3	
 ```
 For this example language family (0000000000100), none of these sentences are parseable.  If the UR were parseable, the licit SR(s) would be provided.
 
