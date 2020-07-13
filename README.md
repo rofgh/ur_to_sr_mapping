@@ -63,9 +63,9 @@ A sample from all_all.tsv looks like:
 0001001100011	D	S	Verb	Aux	O1	SR:	S	Aux	Verb	O1
 0001001100011	D	S	Verb	Aux	PP	SR:	S	Aux	Verb	P	O3	
 ```
-For the first example language family (0000000000100), none of the sentences are parseable.  If the UR were parseable, the licit SR(s) would be provided, as with the second language family (0001001100011), where the srs are shown following the urs.
+For the first example language family (0000000000100), none of the sentences are parseable.  If the UR were parseable, the licit SR(s) would be provided, as with the second language family (0001001100011), where the SRs are shown following the URs.
 
-With this structure, a learning algorithm could easily pull the UR-SR mappings from the all_all.tsv file by separating the language, force, ur and sr on each line.
+With this structure, a learning algorithm could easily pull the UR-SR mappings from the all_all.tsv file by separating the language, force, UR and SR on each line.
 
 ### Github Folders:  
 [src](https://github.com/rofgh/Hidden-Sin/tree/master/src): these are the modules accessed by parent.py and sr_creator.py.  Also contains [UR_writer](https://github.com/rofgh/Hidden-Sin/tree/master/src/UR_writer):  Scripts that create the URs

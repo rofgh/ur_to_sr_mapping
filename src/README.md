@@ -16,10 +16,18 @@ $ python3 SR_creator.py False True outputfilename
 
 all_all.tsv currently looks like:
 ```bash
-0000000000100	D	S	Verb	SR:	Not parseable because of Parameter: 4: no topic and topic is obligatory			
-0000000000100	D	S	Verb	Aux		SR:	Not parseable because of Parameter: 4: no topic and topic is obligatory			
-0000000000100	D	S	Verb	Adv		SR:	Not parseable because of Parameter: 4: no topic and topic is obligatory			
-0000000000100	D	S	Verb	O1		SR:	Not parseable because of Parameter: 4: no topic and topic is obligatory		
+0000000000100	D	S	Verb            SR:	Not parseable because of Parameter: 4: no topic and topic is obligatory			
+0000000000100	D	S	Verb	Aux     SR:	Not parseable because of Parameter: 4: no topic and topic is obligatory			
+0000000000100	D	S	Verb	Adv	    SR:	Not parseable because of Parameter: 4: no topic and topic is obligatory			
+0000000000100	D	S	Verb	O1		SR:	Not parseable because of Parameter: 4: no topic and topic is obligatory
+0001001100011	D	S	Verb            SR:	S	Verb
+0001001100011	D	S	Verb	Aux		SR:	S	Aux	Verb
+0001001100011	D	S	Verb	Adv	    SR:	S	Verb	Adv
+0001001100011	D	S	Verb	O1		SR:	S	Verb	O1
+0001001100011	D	S	Verb	PP		SR:	S	Verb	P	O3
+0001001100011	D	S	Verb	Aux	Adv	SR:	S	Aux	Verb	Adv
+0001001100011	D	S	Verb	Aux	O1	SR:	S	Aux	Verb	O1
+0001001100011	D	S	Verb	Aux	PP	SR:	S	Aux	Verb	P	O3	
 ```
 
 At the end of the run, this script will run a test that compares the SR_creator output to a test.txt which contains a list of UR-SR maps known/expected to be produced by the creator.
