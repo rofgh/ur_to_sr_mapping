@@ -1,5 +1,5 @@
 # UR to SR mapping over 13 parameters
-This project creates mappings of every licit combination of (meaninglessly ordered) underlying lexical items (n=8) to a resultant Surface Order of Words (SOWs/SRs/"a sentence").  Each "sentence" mapping is produced by applying a parameter set ("language family features") to a static syntactic tree, wherein each lexical item has a fixed birthplace, prescribed movement loci, and is either underlying null or present.
+This project creates mappings of every licit combination of (meaninglessly ordered) underlying lexical items (n=8) to a resultant Surface Order of Words (SOWs/SRs/"a sentence").  Each "sentence" mapping is produced by feeding a UR into a static syntactic tree and then applying the rules of a particular parameter set (features of a "language family").  In the syntactic tree each lexical item has a fixed birthplace, prescribed movement loci, and is unerlyingly null until it is turned on (through presence in the UR or a setting being on or off, etc.).
 
 This project is intended to be used by an Expectation Maximization learning algorithm (Expectation Driven Learning (EDL)) as input data.  Working through each UR-to-SR mapping in a language family's data, the algorithm updates its beliefs about what language is being viewed.  This algorithm is essentially a proxy for human language learning under the principles and parameters model, in which the marginal addition of language data from each utterance updates a learner's assumptions about the language family they are learning, and the grammatical attributes of their language family.
 
@@ -41,7 +41,7 @@ Limits the set of URs to assess (see [various.py def activate_force()](https://g
 An example of a test UR list is in test.URs.txt: "S Verb" + "S  Verb    Aux"
 
 4  
-Argument 4 is an output filename different from the default all_all.tsv  This default filename should only be used for the running of all parameter settings, all forces, and all URs.  Otherwise it will overwrite the all languages file if it ahs already been made (and thus overwrite 8 hours of work)
+Argument 4 is an output filename different from the default all_all.tsv  The DEFAULT filename should only be used for the running of all parameter settings, all forces, and all URs.  Otherwise the script will overwrite the all languages file if it has already been made (and thus overwrite 8 hours of work).
 
 This script also times how long each language family takes to produce, as well as the whole operation.
 
