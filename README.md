@@ -63,7 +63,7 @@ A sample from all_all.tsv looks like:
 0001001100011	D	S	Verb	Aux	O1	SR:	S	Aux	Verb	O1
 0001001100011	D	S	Verb	Aux	PP	SR:	S	Aux	Verb	P	O3	
 ```
-For this example language family (0000000000100), none of these sentences are parseable.  If the UR were parseable, the licit SR(s) would be provided.
+For the first example language family (0000000000100), none of the sentences are parseable.  If the UR were parseable, the licit SR(s) would be provided, as with the second language family (0001001100011), where the srs are shown following the urs.
 
 With this structure, a learning algorithm could easily pull the UR-SR mappings from the all_all.tsv file by separating the language, force, ur and sr on each line.
 
