@@ -48,6 +48,15 @@ This script also times how long each language family takes to produce, as well a
 ## Results Examples
 The last time the code was fully run it took 7.66 hours.  This speed could be improved greatly by changing how the data is saved.  Since the data file starts out at 0MB and by the end of the run it is 2GB, it starts being taxing to open the file in order to write to it.  ![Code Complete](ScreenshotAllFinished.png)
 
+A sample from all_all.tsv looks like:
+```bash
+0000000000100	D	S	Verb	SR:	Not parseable because of Parameter: 4: no topic and topic is obligatory			
+0000000000100	D	S	Verb	Aux		SR:	Not parseable because of Parameter: 4: no topic and topic is obligatory			
+0000000000100	D	S	Verb	Adv		SR:	Not parseable because of Parameter: 4: no topic and topic is obligatory			
+0000000000100	D	S	Verb	O1		SR:	Not parseable because of Parameter: 4: no topic and topic is obligatory		
+```
+For this example language family (0000000000100), none of these sentences are parseable.  If the UR were parseable, the licit SR(s) would be provided.
+
 
 ### Github Folders:  
 [src](https://github.com/rofgh/Hidden-Sin/tree/master/src): these are the modules accessed by parent.py and sr_creator.py.  Also contains [UR_writer](https://github.com/rofgh/Hidden-Sin/tree/master/src/UR_writer):  Scripts that create the URs
