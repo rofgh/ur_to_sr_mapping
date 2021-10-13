@@ -45,8 +45,17 @@ Argument 4 is an output filename different from the default all_all.tsv  The DEF
 
 This script also times how long each language family takes to produce, as well as the whole operation.
 
-## various.py
+### various.py
 This script contains a range of smaller functions, which don't seem to have a better place to be brought together
+
+### timeme.py
+Contains the various timing functions
+
+### URs.py
+Produces all needed URs, defaulting to all three illocutionary forces
+
+### test_parse.py
+A quick tester to ensure that known licit SR parses, found in "test.txt", are produced by the parent UR-->SR script.
 
 ## Results Examples
 The last time the code was fully run it took 7.66 hours.  This speed could be improved greatly by changing how the data is saved.  Since the data file starts out at 0MB and by the end of the run it is 2GB, it starts being taxing to open the file in order to write to it.  ![Code Complete](ScreenshotAllFinished.png)

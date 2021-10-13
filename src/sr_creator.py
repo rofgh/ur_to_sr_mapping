@@ -6,7 +6,7 @@ from .test_parse import test
 from .timeme import *
 
 
-def sr_creator(lang_fam, forces, start_time, test_URs, outputfilename):
+def sr_creator(start_time, lang_fam, forces, test_URs, outputfoldername):
     # runs the UR_writing script, creating .txt files for each force
     if test_URs == False:
         print("creating UR file")
@@ -15,10 +15,15 @@ def sr_creator(lang_fam, forces, start_time, test_URs, outputfilename):
     # Beginning of main code, where each input language will be run through
     tree_count = 0
     lang_count = 0
-    outputfilename = tsvcheck(outputfilename)
+    #outputfilename = tsvcheck(outputfilename)
     # Create pointer here for segmentally printing the all_all.tsv file
-    open(outputfilename, "w+")
+    file_add        = "0"
+    new_file_add    = "0"
+    outputfilename = outputfoldername+"/"+file_add+".tsv"
     for language in languages(lang_fam):
+        if new_file_add != file_add:
+            file_add = new_file_add
+            outputfilename = outputfoldername+"/"+file_add+".tsv"
         lang_count += 1
         print("Lang " + str(lang_count) + ":" + str(language))
         # runs through the list of forces
@@ -54,7 +59,7 @@ def sr_creator(lang_fam, forces, start_time, test_URs, outputfilename):
                     out(language, force, ur, l_of_nodes, outputfilename, test_URs)
             print(tree_count - starting_tree_count, end="; ")
         print()
-        now = check(start_time, now, lang_count)
+        now, new_file_add = check(start_time, now, lang_count)
         # SAVE POINTER
     # If not all the possible parameter settings are being produced, show the set that are
     if lang_fam == False:
@@ -64,9 +69,8 @@ def sr_creator(lang_fam, forces, start_time, test_URs, outputfilename):
     print(
         "\nAssessed "
         + str(tree_count)
-        + " trees and wrote them to "
-        + outputfilename
-        + "\n"
+        + " trees and wrote them to the "
+        + outputfoldername
+        + " series\n"
     )
-    if test_URs == False:
-        test()
+

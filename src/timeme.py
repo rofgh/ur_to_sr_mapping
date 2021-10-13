@@ -6,6 +6,11 @@ def start():
     start = timer()
     return start
 
+def allowed_per_file(now):
+    minutes_per_file    = 5
+    seconds_per_file    = minutes_per_file*60
+    file_add            = now//seconds_per_file
+    return file_add
 
 def check(start, then, iters):
     now = timer()
@@ -25,13 +30,14 @@ def check(start, then, iters):
     print(lang_elapsed.format(tt=one_lang))
     average_time = "Average time per language:\t {tt:.5} seconds\n"
     print(average_time.format(tt=average))
-    return now
+    file_add = str(allowed_per_file(now))
+    return now, file_add
 
 
 def end(start):
     end = timer()
     total_time = end - start
-    time_elapsed = "Total for this run: {tt} seconds"
+    time_elapsed = "Total for this run: {tt:.5} seconds"
     if total_time > 60:
         total_time = total_time / 60
         time_elapsed = "Total for this run: {tt:.5} minutes"

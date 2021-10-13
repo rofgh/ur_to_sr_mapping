@@ -1,12 +1,19 @@
 
-def test():
-    testfilename    = "test.txt"
-    outputfilename  = "all_all.tsv"
+def test(test, output):
+    if test     == False:
+        testfilename    = "test.txt"
+    else: 
+        testfilename    = test
+    if output   == False:
+        outputfilename  = "all_all.tsv"
+    else:
+        outputfilename  = output
     outcome         = ""
     failed_line     = ""
     fail_count      = 0
     t               = open(testfilename, 'r').readlines()
     test_count      = len(t)
+    output_name     = str(outputfilename)
 
     test_lines      = []
     for line in t:
@@ -38,11 +45,11 @@ def test():
             fail_list.append(test)
     
     if fail_count > 0:
-        outcome = "Failure:  {f} out of {t} of the test lines are not present in the output!"
+        outcome = "Failure:  {f} out of {t} of the test lines are not present in the {n} output file!"
     if fail_count == 0:
-        outcome = "Success:  It seems all {t} test lines are present in the {o} output lines!"
+        outcome = "Success:  It seems all {t} test lines are present in the {o} output lines in the {n} file!"
     fail_list_outcome = "Failed test: {}"
-    print(outcome.format(f=fail_count, t=test_count, o=output_count))
+    print(outcome.format(f=fail_count, t=test_count, o=output_count, n=output_name))
     for x in fail_list:
         print(fail_list_outcome.format(x))
     '''
