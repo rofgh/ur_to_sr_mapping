@@ -15,7 +15,7 @@ Our preliminary thoughts/description/notes/analysis/interpretation of the origin
 
 ## parent.py
 Run this on the command line (python3)  (or 'make run' if make is installed, see [makefile](https://github.com/rofgh/ur_to_sr_mapping/blob/04ee506608f7c58b81418987d333ec76d639e712/Makefile#L1))  
-This file takes four arguments, default=False/None in order to run a smaller domain, and begins the ur_to_sr_mapping code set.  
+This file takes four arguments, default=False/None in order to run a smaller domain, and begins the ur_to_sr_mapping code set.   ("python parent.py" = "python parent.py False False False run.tsv" )
 
 Make full, which will run all 8192 language families (2GB tsv file at the moment (5/24/20)) (~8 hour run time)
 ```
@@ -30,13 +30,13 @@ OR
 $ make run
 
 ```
-1  
+1  (True OR False)
 The first boolean argument determines whether all languages families are run (True) (n=8192) or whether only the [limited user-modified list](https://github.com/rofgh/ur_to_sr_mapping/blob/1ab96bdabc231e07334c53806e0bcb91129e5752/src/various.py#L4) is assessed (False) (e.g. [0,0,0,1,0,0,1,1,0,0,0,1,1]).
 
-2  
+2  (True OR False)
 The second argument determines whether all forces are assessed (True) or whether just one or two of the three are used (False) (Currently set to "D"eclarative in the [various.py scripts](https://github.com/rofgh/ur_to_sr_mapping/blob/1ab96bdabc231e07334c53806e0bcb91129e5752/src/various.py#L62))
 
-3  
+3  (filename OR False)
 Limits the set of URs to assess (see [various.py def activate_force()](https://github.com/rofgh/ur_to_sr_mapping/blob/efaf037f7c93b0af515be8cef8e0796705f152d4/src/various.py#L6)).  If a file is given, the script will run on a limited set of URs, which reduces the run time of the program, especially if all languages are being assessed.  Otherwise, this argument is False and all UR permutations are produced and mapped.  
 An example of a test UR list is in test.URs.txt: "S Verb" + "S  Verb    Aux"
 
@@ -44,6 +44,9 @@ An example of a test UR list is in test.URs.txt: "S Verb" + "S  Verb    Aux"
 Argument 4 is an output filename different from the default all_all.tsv  The DEFAULT filename should only be used for the running of all parameter settings, all forces, and all URs.  Otherwise the script will overwrite the all languages file if it has already been made (and thus overwrite 8 hours of work).
 
 This script also times how long each language family takes to produce, as well as the whole operation.
+
+## various.py
+This script contains a range of smaller functions, which don't seem to have a better place to be brought together
 
 ## Results Examples
 The last time the code was fully run it took 7.66 hours.  This speed could be improved greatly by changing how the data is saved.  Since the data file starts out at 0MB and by the end of the run it is 2GB, it starts being taxing to open the file in order to write to it.  ![Code Complete](ScreenshotAllFinished.png)
