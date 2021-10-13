@@ -7,7 +7,7 @@ def start():
     return start
 
 def allowed_per_file(now):
-    minutes_per_file    = 5
+    minutes_per_file    = 1  # minutes spent on each tsv file
     seconds_per_file    = minutes_per_file*60
     file_add            = now//seconds_per_file
     return file_add
@@ -30,7 +30,7 @@ def check(start, then, iters):
     print(lang_elapsed.format(tt=one_lang))
     average_time = "Average time per language:\t {tt:.5} seconds\n"
     print(average_time.format(tt=average))
-    file_add = str(allowed_per_file(now))
+    file_add = str(int(allowed_per_file(now)))
     return now, file_add
 
 

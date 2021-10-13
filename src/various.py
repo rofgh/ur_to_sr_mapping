@@ -1,11 +1,12 @@
 import csv
+from .ind_variables import * 
 
 # selects a illocutionary force and produces all the possible URs for that force
 # Requires pre-running of URs.py, if not already run in this script (currently line 68)
 ###  PAD LIST WITH 14, instead of what is happening here??
 def activate_force(force, UR_file):
     #for all forces and all URS
-    if UR_file == False:
+    if UR_file == True:
         filename = "src/UR_writer/all_"+force+"URs.txt"
     #If user defined URs are in play
     else:
@@ -57,10 +58,10 @@ def expand(node, row):
 #mostly just playing with yield, but a generator for the forces
 def force_finder(forces):
     if forces == True:
-        all_forces      = ["D","I","Q"]
+        selected_forces      = ["D","I","Q"]
     else:
-        all_forces      = ["D"]
-    for x in all_forces:
+        selected_forces      = limited_forces_list()
+    for x in selected_forces:
         yield x
 
 #Produces daughters from all node.mothers, but must happen after all movement       
@@ -84,7 +85,7 @@ def get_daughters(UR):
 
 # generates the 8192 parameter setting possibilities, or returns the user-modified list
 def languages(all=False):
-    # FOR ALL LANGUAGES
+    # FOR ALL LANGUAGE FAMILIES (i.e. every permutation of parameters)
     if all == True:
         for x in range(0, 8192):
             language = []
@@ -94,37 +95,10 @@ def languages(all=False):
                 if digit == '1':
                     language.append(1)
             yield language
-    ### ENGLISH ONLY: (Or add other specific languages)
+    ### SEE INDEPENDENT VARIABLES LIST
     if all == False:
-        test_languages = [ 
-        [0,0,0,0,0,0,0,0,1,0,0,0,0],    #Topic Marking
-        [0,0,0,1,0,0,1,1,0,0,0,1,1],    #English
-        [0,0,0,0,0,0,0,0,0,0,0,0,0],    #All off
-        [0,0,0,0,0,0,0,0,0,0,0,0,1],    #All off, but obl Q inversion
-        [0,0,0,0,0,0,0,0,0,0,0,1,0],    #All off, but Affix hopping
-        [0,0,0,0,0,0,0,0,0,0,1,0,0],    #All off, but ItoC movement
-        [1,0,0,0,0,0,0,0,0,0,0,0,0],    #All off, but Left Subject pos
-        [0,1,0,0,0,0,0,0,0,0,0,0,0],    #All off, but Left IP pos
-        [0,1,0,1,0,0,0,0,0,0,0,0,0],    #All off, but Left IP pos and optTop
-        [1,1,1,1,1,1,1,1,1,1,1,1,1],    #All on
-        [0,0,0,1,1,1,0,0,1,0,0,0,0],    #OptTop, Null Top, Null Sub, Topic Marking
-        [1,1,1,1,0,0,0,0,0,0,0,1,0],    #All Right Head, OptTop, Affix Hopping
-        # [1,0,0,0,0,0,0,0,0,0,0,0,0],
-        # [0,1,0,0,0,0,0,0,0,0,0,0,0],
-        # [0,0,1,0,0,0,0,0,0,0,0,0,0],
-        # [0,0,0,1,0,0,0,0,0,0,0,0,0],
-        # [0,0,0,0,1,0,0,0,0,0,0,0,0],
-        # [0,0,0,0,0,1,0,0,0,0,0,0,0],
-        # [0,0,0,0,0,0,1,0,0,0,0,0,0],
-        # [0,0,0,0,0,0,0,1,0,0,0,0,0],
-        # [0,0,0,0,0,0,0,0,1,0,0,0,0],
-        # [0,0,0,0,0,0,0,0,0,1,0,0,0],
-        # [0,0,0,0,0,0,0,0,0,0,1,0,0],
-        # [0,0,0,0,0,0,0,0,0,0,0,1,0],
-        # [0,0,0,0,0,0,0,0,0,0,0,0,1],
-        
-        ]    
-        for x in test_languages:
+        limited_languages = limited_languages_list()
+        for x in limited_languages:
             yield x
 
 # out gets called for each SOW, writes a row to the tsv
@@ -172,6 +146,7 @@ def out(language, force, ur, nodes, outputfilename, test):
             print("\n")
             for x in row:
                 print(x, end='')
+        f.close()
     return
  
 # Adds the node.name to the row that will be written to the tsv file
@@ -184,3 +159,12 @@ def tsvcheck(filename):
     if ".tsv" not in filename:
         filename += ".tsv"
     return filename
+
+def output_final_count(tree_count, outputfoldername):
+    print(
+        "\nAssessed "
+        + str(tree_count)
+        + " trees and wrote them to the '"
+        + outputfoldername
+        + "' series\n"
+    )

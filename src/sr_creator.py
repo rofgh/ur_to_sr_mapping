@@ -8,7 +8,7 @@ from .timeme import *
 
 def sr_creator(start_time, lang_fam, forces, test_URs, outputfoldername):
     # runs the UR_writing script, creating .txt files for each force
-    if test_URs == False:
+    if test_URs == True:
         print("creating UR file")
         all_URs()
     now = start_time
@@ -19,11 +19,12 @@ def sr_creator(start_time, lang_fam, forces, test_URs, outputfoldername):
     # Create pointer here for segmentally printing the all_all.tsv file
     file_add        = "0"
     new_file_add    = "0"
-    outputfilename = outputfoldername+"/"+file_add+".tsv"
+    outputfilename  = outputfoldername+"/"+file_add+".tsv"
     for language in languages(lang_fam):
         if new_file_add != file_add:
             file_add = new_file_add
             outputfilename = outputfoldername+"/"+file_add+".tsv"
+            print("Max time elapsed, changed to " +outputfilename)
         lang_count += 1
         print("Lang " + str(lang_count) + ":" + str(language))
         # runs through the list of forces
@@ -66,11 +67,6 @@ def sr_creator(start_time, lang_fam, forces, test_URs, outputfoldername):
         print("\nAssessed:\n", end="")
         for x in languages(lang_fam):
             print(x)
-    print(
-        "\nAssessed "
-        + str(tree_count)
-        + " trees and wrote them to the "
-        + outputfoldername
-        + " series\n"
-    )
+    #Final output before running test
+    output_final_count(tree_count, outputfoldername)
 

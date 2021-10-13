@@ -1,5 +1,5 @@
 """
-Takes four arguments, default=False, and begins the ur_to_sr_mapping code
+Takes four arguments, default=False False False run, and begins the ur_to_sr_mapping code
 Also times the whole operation 
 """
 
@@ -22,6 +22,7 @@ if __name__ == "__main__":
             lang = False
     except:
         lang = False
+        
 
     # Boolean for All forces (True) versus only the list of desired forces (False)
     # gets sent to force_finder() in various.py
@@ -34,13 +35,14 @@ if __name__ == "__main__":
     except:
         forces = False
 
-    # Are we using all URs (True) or a limited set (Filename)?
+    # Are we using all URs (True) or a limited set (False)
+    # gets sent to activate_force() in various.py
     try:
         arg3 = sys.argv[3]
-        if arg3 == "False":
-            test_URs = False
+        if arg3 == "True":
+            test_URs = True
         else:
-            test_URs = arg3
+            test_URs = False
     except:
         test_URs = False
 
