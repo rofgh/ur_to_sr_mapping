@@ -7,7 +7,7 @@ def start():
     return start
 
 def allowed_per_file(now):
-    minutes_per_file    = 5  # minutes spent on each tsv file
+    minutes_per_file    = 10  # minutes spent on each tsv file
     seconds_per_file    = minutes_per_file*60
     file_add            = now//seconds_per_file
     return file_add

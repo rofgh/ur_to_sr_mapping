@@ -12,13 +12,6 @@ def activate_force(force, UR_file):
     #If user defined URs are in play
     else:
         URs = limited_UR_list()
-        # for UR in URs.readlines():
-        #     UR = UR.split()
-        #     full_UR = [""]*14
-        #     for x in range(len(UR)):
-        #         full_UR[x] = UR[x]
-        #     all_URs.append(full_UR)
-        #     #print(len(full_UR))
     return URs
 
 # just a check function, it should now be obsolete
@@ -139,10 +132,10 @@ def out(language, force, ur, nodes, outputfilename, test):
                     row = expand(n, row)
         #row.append('\n')
         output.writerow(row)
-        if test == True:
-            print("\n")
-            for x in row:
-                print(x, end='')
+        # if test == True:
+        #     print("\n")
+        #     for x in row:
+        #         print(x, end='')
         f.close()
     return
  
@@ -151,7 +144,7 @@ def realize(node, row):
     row.append(node.name)
     return row
 
-#Adds .tsv to the outputfile name if the user didn't put it in.
+#Adds .tsv to the outputfile name if the user didn't put it in.  ###NOW OBSOLETE
 def tsvcheck(filename):
     if ".tsv" not in filename:
         filename += ".tsv"

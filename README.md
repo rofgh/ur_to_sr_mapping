@@ -15,17 +15,17 @@ Our preliminary thoughts/description/notes/analysis/interpretation of the origin
 
 ## parent.py
 Run this on the command line (python3)  (or 'make run' if make is installed, see [makefile](https://github.com/rofgh/ur_to_sr_mapping/blob/04ee506608f7c58b81418987d333ec76d639e712/Makefile#L1))  
-This file takes four arguments, default=False/None in order to run a smaller domain, and begins the ur_to_sr_mapping code set.   ("python parent.py" = "python parent.py False False False run.tsv" )
+This file takes four arguments, default=False/None in order to run a smaller domain, and begins the ur_to_sr_mapping code set.   ("python parent.py" = "python parent.py False False False run" )
 
-Make full, which will run all 8192 language families (2GB tsv file at the moment (5/24/20)) (~8 hour run time)
+Make full, which will run all 8192 language families (2GB worth of tsv files) (~8 hour run time)
 ```
-$ python parent.py True True True all_all.tsv
+$ python parent.py True True True all_all
 OR
 $ make full
 ```
-Make run, which will run just the small subset of language families:
+Make run, which will run a small subset of user-modified variables (see below):
 ```
-$ python3 parent.py False False False run.tsv
+$ python3 parent.py False False False run
 OR
 $ make run
 
@@ -60,7 +60,7 @@ Produces all needed URs, defaulting to all three illocutionary forces
 Ensures that known licit SR parses, cataloged in ind_variables.py, are produced by the parent.py UR-->SR script.  (Currently does not pass if the parent script is only given a limited UR list, as the test cases include many of the possible lexical items.)
 
 ## Results Examples
-The last time the code was fully run it took 7.66 hours.  This speed could be improved greatly by changing how the data is saved.  Since the data file starts out at 0MB and by the end of the run it is 2GB, it starts being taxing to open the file in order to write to it.  ![Code Complete](ScreenshotAllFinished.png)
+The last time the code was fully run it took 7.66 hours.  One change, that I am hoping helps this speed is to split the tsv files, so that a large fil isn't being opened to be appended to, though I haven't run the full mapping since implementing these changes.  Since the data file starts out at 0MB and by the end of the run it is 2GB, it starts being taxing to open the file in order to write to it (I presume?).  ![Code Complete](ScreenshotAllFinished.png)
 
 A sample from all_all.tsv looks like:
 ```bash

@@ -9,6 +9,7 @@ from src import timeme
 from src import test_parse
 import os
 import shutil
+from src import ind_variables
 
 if __name__ == "__main__":
     start_time = timeme.start()
@@ -55,14 +56,13 @@ if __name__ == "__main__":
             outputfoldername = arg4
     except:
         outputfoldername = "run"
-
+    outputfoldername = "output_"+outputfoldername
     # Create folder to hold output files
     if os.path.isdir(outputfoldername):
         shutil.rmtree(outputfoldername)
     os.mkdir(outputfoldername)
     # Send all to the SR_creator script
     sr_creator.sr_creator(start_time, lang, forces, test_URs, outputfoldername)
-    # If all URs are not being used, run the test to ensure that the cataloged licit parses are present
-    if test_URs == False:
-        test_parse.test(False, outputfoldername)
+    # Run the test to ensure that the cataloged licit parses are present in the output
+    test_parse.test(outputfoldername, ind_variables.limited_UR_list())
     timeme.end(start_time)
