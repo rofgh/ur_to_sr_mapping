@@ -82,17 +82,17 @@ For the first example language family (0000000000100), none of the sentences are
 With this structure, a learning algorithm could easily pull the UR-SR mappings from the all_all.tsv file by separating the language, force, UR and SR on each line.
 
 ### Github Folders:  
-[src](https://github.com/rofgh/Hidden-Sin/tree/master/src): these are the modules accessed by parent.py and sr_creator.py.  Also contains [UR_writer](https://github.com/rofgh/Hidden-Sin/tree/master/src/UR_writer):  Scripts that create the URs
+[src](https://github.com/rofgh/ur_to_sr_mapping/tree/master/src): these are the modules accessed by parent.py and sr_creator.py.  Also contains [UR_writer](https://github.com/rofgh/Hidden-Sin/tree/master/src/UR_writer):  Scripts that create the URs
 
-[grabber](https://github.com/rofgh/Hidden-Sin/tree/master/grabber): this script pulls the SRs (and, optionally, the URs) form the original CoLAG data.  It is used for confirming correct production of this project.  
+[grabber](https://github.com/rofgh/ur_to_sr_mapping/tree/master/grabber): this script pulls the SRs (and, optionally, the URs) form the original CoLAG data.  It is used for confirming correct production of this project.  
 
-[S_F_Y_Data_Files](https://github.com/rofgh/Hidden-Sin/tree/master/S_F_Y_Data_Files): Self-explanatory  
+[S_F_Y_Data_Files](https://github.com/rofgh/ur_to_sr_mapping/tree/master/S_F_Y_Data_Files)  
 
 [Misc](https://github.com/rofgh/Hidden-Sin/tree/master/Misc): Items that got put into the Notes shared doc, etc.  
 
 [EDL Learner](https://github.com/rofgh/Hidden-Sin/tree/master/EDL%20Learner): Original 6 parameter script, etc.  
 
-[Reference Papers](https://github.com/rofgh/Hidden-Sin/tree/master/Reference%20Papers):   
+[Reference Papers](https://github.com/rofgh/ur_to_sr_mapping/tree/master/Reference%20Papers)   
  
 
 
