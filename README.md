@@ -14,22 +14,13 @@ See the [src readme](https://github.com/rofgh/ur_to_sr_mapping/blob/master/src/R
 Our preliminary thoughts/description/notes/analysis/interpretation of the original SFY grammar and languages can be found [here](https://docs.google.com/document/d/1J_fS85IQWB9MPXB96ccHrKF_JHXn44iVyyemQOeFJQo/edit?usp=sharing)
 
 ## parent.py
-Run this on the command line (python3)  (or 'make run' if make is installed, see [makefile](https://github.com/rofgh/ur_to_sr_mapping/blob/04ee506608f7c58b81418987d333ec76d639e712/Makefile#L1))  
+This is the script to run on the command line (python3).  (There is a [Makefile](https://github.com/rofgh/ur_to_sr_mapping/blob/04ee506608f7c58b81418987d333ec76d639e712/Makefile#L1))  
 This file takes four arguments, default=False/None in order to run a smaller domain, and begins the ur_to_sr_mapping code set.   ("python parent.py" = "python parent.py False False False run" )
 
-Make full, which will run all 8192 language families (2GB worth of tsv files) (~8 hour run time)
-```
-$ python parent.py True True True all_all
-OR
-$ make full
-```
-Make run, which will run a small subset of user-modified variables (see below):
-```
-$ python3 parent.py False False False run
-OR
-$ make run
+`make full` or `python parent.py True True True all_all`, which will run all 8192 language families (2GB worth of tsv files) (~8 hour run time)
 
-```
+`make run` or `python3 parent.py False False False run` which will run a small subset of user-modified variables (see Arguments, below)
+
 #### Arguments  
 1  (True OR False) (Default = False)  
 The first boolean argument determines whether all 13 parameter language families are run (True) (n=8192) or whether only the [limited, user-modified list](https://github.com/rofgh/ur_to_sr_mapping/blob/1ab96bdabc231e07334c53806e0bcb91129e5752/src/ind_variables.py#L16) is assessed (False).
@@ -41,7 +32,7 @@ The second boolean argument determines whether all forces are assessed (True) (n
 All possible UR permutations are assessed (True) (n=???) or the [limited, user-modified list](https://github.com/rofgh/ur_to_sr_mapping/blob/1ab96bdabc231e07334c53806e0bcb91129e5752/src/ind_variables.py#L47)) (False).
 
 4  (folder name) (default = "run")
-Argument 4 is an output folder name into which to create the output files. Avoid "all_all", unless re-making the master list of all permutations ("parent.py True True True all_all").  Otherwise the script will overwrite the entire library of mappings (and thus overwrite 8 hours of work).
+Argument 4 is an output folder name into which to create the output files. Avoid "all_all", unless re-making the master list of all permutations (`parent.py True True True all_all`).  Otherwise the script will overwrite the entire library of mappings (and thus overwrite 8 hours of work).
 ***
 
 ### ind_variables.py  
@@ -79,7 +70,7 @@ A sample from all_all.tsv looks like:
 ```
 For the first example language family (0000000000100), none of the sentences are parseable.  If the UR were parseable, the licit SR(s) would be provided, as with the second language family (0001001100011), where the SRs are shown following the URs.
 
-With this structure, a learning algorithm could easily pull the UR-SR mappings from the all_all.tsv file by separating the language, force, UR and SR on each line.
+With this structure, a learning algorithm would pull the UR-SR mappings from the all_all.tsv files by separating the language, force, UR and SR on each line.
 
 ### Github Folders:  
 [src](https://github.com/rofgh/ur_to_sr_mapping/tree/master/src): these are the modules accessed by parent.py and sr_creator.py.  Also contains [UR_writer](https://github.com/rofgh/Hidden-Sin/tree/master/src/UR_writer):  Scripts that create the URs

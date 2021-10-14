@@ -21,3 +21,6 @@ watch:
 lint:
 	echo "Linting code for Python syntax errors or undefined names"
 	flake8 . --count --select=E9,F63,F7,F82 --show-source --statistics
+
+clean:
+	rm -rf __pycache__
