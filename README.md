@@ -30,32 +30,34 @@ OR
 $ make run
 
 ```
-1  (True OR False)
-The first boolean argument determines whether all languages families are run (True) (n=8192) or whether only the [limited user-modified list](https://github.com/rofgh/ur_to_sr_mapping/blob/1ab96bdabc231e07334c53806e0bcb91129e5752/src/various.py#L4) is assessed (False) (e.g. [0,0,0,1,0,0,1,1,0,0,0,1,1]).
+#### Arguments  
+1  (True OR False) (Default = False)  
+The first boolean argument determines whether all 13 parameter language families are run (True) (n=8192) or whether only the [limited, user-modified list](https://github.com/rofgh/ur_to_sr_mapping/blob/1ab96bdabc231e07334c53806e0bcb91129e5752/src/ind_variables.py#L16) is assessed (False).
 
-2  (True OR False)
-The second argument determines whether all forces are assessed (True) or whether just one or two of the three are used (False) (Currently set to "D"eclarative in the [various.py scripts](https://github.com/rofgh/ur_to_sr_mapping/blob/1ab96bdabc231e07334c53806e0bcb91129e5752/src/various.py#L62))
+2  (True OR False) (Default = False)  
+The second boolean argument determines whether all forces are assessed (True) (n=3) or whether only the [limited, user-modified list](https://github.com/rofgh/ur_to_sr_mapping/blob/1ab96bdabc231e07334c53806e0bcb91129e5752/src/ind_variables.py#L5) is assessed (False).
 
-3  (filename OR False)
-Limits the set of URs to assess (see [various.py def activate_force()](https://github.com/rofgh/ur_to_sr_mapping/blob/efaf037f7c93b0af515be8cef8e0796705f152d4/src/various.py#L6)).  If a file is given, the script will run on a limited set of URs, which reduces the run time of the program, especially if all languages are being assessed.  Otherwise, this argument is False and all UR permutations are produced and mapped.  
-An example of a test UR list is in test.URs.txt: "S Verb" + "S  Verb    Aux"
+3  (True OR False) (Default = False)  
+All possible UR permutations are assessed (True) (n=???) or the [limited, user-modified list](https://github.com/rofgh/ur_to_sr_mapping/blob/1ab96bdabc231e07334c53806e0bcb91129e5752/src/ind_variables.py#L47)) (False).
 
-4  
-Argument 4 is an output filename different from the default all_all.tsv  The DEFAULT filename should only be used for the running of all parameter settings, all forces, and all URs.  Otherwise the script will overwrite the all languages file if it has already been made (and thus overwrite 8 hours of work).
+4  (folder name) (default = "run")
+Argument 4 is an output folder name into which to create the output files. Avoid "all_all", unless re-making the master list of all permutations ("parent.py True True True all_all").  Otherwise the script will overwrite the entire library of mappings (and thus overwrite 8 hours of work).
+***
 
-This script also times how long each language family takes to produce, as well as the whole operation.
+### ind_variables.py  
+Contains all the limited lists of forces, language families, URs to map if for the respective False arguments given to parent.py, and the list of licit SRs to test against the output SRs after the mapping is complete.
 
-### various.py
+### various.py  
 This script contains a range of smaller functions, which don't seem to have a better place to be brought together
 
-### timeme.py
-Contains the various timing functions
+### timeme.py  
+Contains the various timing functions, including how often to change to a new filename (allowed_per_file())
 
-### URs.py
+### URs.py  
 Produces all needed URs, defaulting to all three illocutionary forces
 
-### test_parse.py
-A quick tester to ensure that known licit SR parses, found in "test.txt", are produced by the parent UR-->SR script.
+### test_parse.py  
+Ensures that known licit SR parses, cataloged in ind_variables.py, are produced by the parent.py UR-->SR script.  (Currently does not pass if the parent script is only given a limited UR list, as the test cases include many of the possible lexical items.)
 
 ## Results Examples
 The last time the code was fully run it took 7.66 hours.  This speed could be improved greatly by changing how the data is saved.  Since the data file starts out at 0MB and by the end of the run it is 2GB, it starts being taxing to open the file in order to write to it.  ![Code Complete](ScreenshotAllFinished.png)

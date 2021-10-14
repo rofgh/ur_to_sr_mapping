@@ -5,7 +5,7 @@
 def limited_forces_list():
     forces_list=[
         "D",
-        "I",
+        #"I",
         "Q"
 
     ]
@@ -43,10 +43,20 @@ def limited_languages_list():
     ]
     return languages_list
 
-#Which underlying representations to include in the mapping
+# Which underlying representations to include in the mapping
 def limited_UR_list():
     UR_list = [
-        ['S','Verb']	
+        ['S','Verb'],	
         ['S','Verb','Aux']
     ]
     return UR_list
+
+# Which licit SRs should the mapping verify
+def test_SRs():
+    test_lines = [
+        ['0000000010000',	'D',	'S+t',	'Verb',	'Aux',	'SR:',	'S',	'[+wa]',	'Aux',	'Verb'  ],
+        ['0001001100011',	'D',	'S',	'Verb',	'PP',	'SR:',	'S',	'Verb',	    'P',	'O3'    ],
+        ['0001110010000',	'D',	'S',	'Verb',	'Aux',	'SR:',	'S',	'Aux',	    'Verb'          ],		
+        ['0001110010000',	'D',	'S',    'Verb',	'Aux',	'SR:',	'Aux',	'Verb'                      ],	
+    ]
+    return test_lines

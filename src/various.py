@@ -1,5 +1,6 @@
 import csv
 from .ind_variables import * 
+from .URs import *
 
 # selects a illocutionary force and produces all the possible URs for that force
 # Requires pre-running of URs.py, if not already run in this script (currently line 68)
@@ -7,22 +8,18 @@ from .ind_variables import *
 def activate_force(force, UR_file):
     #for all forces and all URS
     if UR_file == True:
-        filename = "src/UR_writer/all_"+force+"URs.txt"
+        URs = new_all_URs(force)
     #If user defined URs are in play
     else:
-        filename = UR_file
-    
-    with open(filename, 'r') as u:
-        URs = u
-        all_URs = []
-        for UR in URs.readlines():
-            UR = UR.split()
-            full_UR = [""]*14
-            for x in range(len(UR)):
-                full_UR[x] = UR[x]
-            all_URs.append(full_UR)
-            #print(len(full_UR))
-    return all_URs
+        URs = limited_UR_list()
+        # for UR in URs.readlines():
+        #     UR = UR.split()
+        #     full_UR = [""]*14
+        #     for x in range(len(UR)):
+        #         full_UR[x] = UR[x]
+        #     all_URs.append(full_UR)
+        #     #print(len(full_UR))
+    return URs
 
 # just a check function, it should now be obsolete
 def assert_length(doc):

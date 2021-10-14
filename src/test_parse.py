@@ -1,4 +1,5 @@
 import os
+from .ind_variables import *
 
 # This test compares the SR output of the preceding script against a list of licit, known SRs
 # found in the test.txt file
@@ -17,9 +18,10 @@ def test(test, outputfoldername):
     test_count      = len(t)
     output_name     = str(outputfoldername)
 
-    test_lines      = []
-    for line in t:
-        test_lines.append(line.split())
+    test_lines      = test_SRs()
+    # for line in t:
+    #     test_lines.append(line.split())
+
 
     
 

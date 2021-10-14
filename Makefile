@@ -6,7 +6,7 @@ install:
 	pip install flake8
 
 full:
-	python3 parent.py True True False all_all
+	python3 parent.py True True True all_all
 
 run:
 	python3 parent.py False False False run

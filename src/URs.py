@@ -1,6 +1,14 @@
 from itertools import combinations
 
-def new_all_URs(Q=False, D=False, I=False):
+def new_all_URs(force, Q=False, D=False, I=False):
+    if force == "D":
+        D = True
+    if force == "I":
+        I = True
+    if force == "Q":
+        Q = True
+    
+    
     if Q:
         base = ["Verb", "S"]
         poss = ["Aux", "NegP", "Adv", "O1", "O2", "PP"]
@@ -76,14 +84,16 @@ def new_all_URs(Q=False, D=False, I=False):
                     whUR.insert(ind, wh+"+wh")
                     whUR.remove(wh)
                     total.append(whUR)
-    count = 0
-    with open("src/UR_writer/all_"+force+"URs.txt", 'w') as f:
-        for UR in total:
-            count += 1
-            for item in UR:
+    return total
+    # count = 0
+    # with open("src/UR_writer/all_"+force+"URs.txt", 'w') as f:
+    #     for UR in total:
+    #         print(UR)
+    #         count += 1
+    #         for item in UR:
 
-                f.write(str(item)+"\t")
-            f.write("\n")
+    #             f.write(str(item)+"\t")
+    #         f.write("\n")
     
     # print("wrote "+str(count)+" URs to UR_writer/all_"+force+"URs.txt")
 
@@ -313,8 +323,10 @@ def all_IURS():
             for item in UR:
                 f.write(str(item)+"\t")
             f.write("\n")
-'''
 def all_URs():
-    new_all_URs(Q=True)
-    new_all_URs(D=True)
-    new_all_URs(I=True)
+    total = []
+    total.append(new_all_URs(Q=True))
+    total.append(new_all_URs(D=True))
+    total.append(new_all_URs(I=True))
+    return total
+'''

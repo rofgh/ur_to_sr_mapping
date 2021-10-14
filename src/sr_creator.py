@@ -1,16 +1,12 @@
 from .nodes import nodes
 from .parameters import *
-from .URs import all_URs
+from .URs import new_all_URs
 from .various import *
 from .test_parse import test
 from .timeme import *
 
 
 def sr_creator(start_time, lang_fam, forces, test_URs, outputfoldername):
-    # runs the UR_writing script, creating .txt files for each force
-    if test_URs == True:
-        print("creating UR file")
-        all_URs()
     now = start_time
     # Beginning of main code, where each input language will be run through
     tree_count = 0
