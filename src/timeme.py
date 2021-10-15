@@ -37,11 +37,13 @@ def check(start, then, iters):
 def end(start):
     end = timer()
     total_time = end - start
-    time_elapsed = "Total for this run: {tt:.5} seconds"
-    if total_time > 60:
-        total_time = total_time / 60
-        time_elapsed = "Total for this run: {tt:.5} minutes"
+
+    time_elapsed    = "Total for this run: {h:.5} hours {m:.5} minutes {s:.2} seconds"
+    hours           = total_time//3600
+    minutes         = (total_time%3600)//60
+    seconds         = (total_time%60)
+    
     # Also time of day
     time_of_day = "Ending at {tt}\n"
-    print(time_elapsed.format(tt=total_time))
+    print(time_elapsed.format(h=hours, m=minutes, s=seconds))
     print(time_of_day.format(tt=datetime.now()))

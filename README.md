@@ -36,7 +36,7 @@ Argument 4 is an output folder name into which to create the output files. Avoid
 ***
 
 ### ind_variables.py  
-Contains all the limited lists of forces, language families, URs to map if for the respective False arguments given to parent.py, and the list of licit SRs to test against the output SRs after the mapping is complete.
+Contains all the limited lists of forces, language families, URs to map if the respective False arguments are given to parent.py; and the list of licit SRs to test against the output SRs after the mapping is complete.
 
 ### various.py  
 This script contains a range of smaller functions, which don't seem to have a better place to be brought together
@@ -51,7 +51,12 @@ Produces all needed URs, defaulting to all three illocutionary forces
 Ensures that known licit SR parses, cataloged in ind_variables.py, are produced by the parent.py UR-->SR script.  (Currently does not pass if the parent script is only given a limited UR list, as the test cases include many of the possible lexical items.)
 
 ## Results Examples
-The last time the code was fully run it took 7.66 hours.  One change, that I am hoping helps this speed is to split the tsv files, so that a large fil isn't being opened to be appended to, though I haven't run the full mapping since implementing these changes.  Since the data file starts out at 0MB and by the end of the run it is 2GB, it starts being taxing to open the file in order to write to it (I presume?).  ![Code Complete](ScreenshotAllFinished.png)
+The last time the code was fully run it took 7 hours 39 minutes.  One change, that I am hoping helps this speed is to split the tsv files, so that a large fil isn't being opened to be appended to, though I haven't run the full mapping since implementing these changes.  Since the data file starts out at 0MB and by the end of the run it is 2GB, it starts being taxing to open the file in order to write to it (I presume?).  ![Code Complete](ScreenshotAllFinished.png)
+
+### 10/14/21
+Update after running with the files being split every ten minutes, instead of using just one tsv file:  
+Entire run took 6 hours 47 minutes, so maybe splitting the tsv files helped reduce the time a bit, but only by 11%.  So, maybe I should scrutinize how the script is writing to the tsv files, as having it do so for every line is probably a waste of time and it should be, for example, storing all the mappings for a language family, then dumping these to the tsv file once all the mappings for that language family are complete, etc.
+![Code Complete 10/14/21](ScreenshotAllFinished10/21.png)
 
 A sample from all_all.tsv looks like:
 ```bash
