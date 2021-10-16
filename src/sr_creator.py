@@ -60,7 +60,7 @@ def sr_creator(start_time, lang_fam, forces, test_URs, outputfoldername):
         # SAVE POINTER
     # If not all the possible parameter settings are being produced, show the set that are
     if lang_fam == False:
-        print("\nLAnguage Families Assessed:\n", end="")
+        print("\nLanguage families assessed for this run:\n", end="")
         for x in languages(lang_fam):
             print(x)
     #Final output to terminal before returning to parent and running test against licit SRs

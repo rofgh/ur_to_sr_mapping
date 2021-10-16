@@ -56,7 +56,7 @@ The last time the code was fully run it took 7 hours 39 minutes.  One change, th
 ### 10/14/21
 Update after running with the files being split every ten minutes, instead of using just one tsv file:  
 Entire run took 6 hours 47 minutes, so maybe splitting the tsv files helped reduce the time a bit, but only by 11%.  So, maybe I should scrutinize how the script is writing to the tsv files, as having it do so for every line is probably a waste of time and it should be, for example, storing all the mappings for a language family, then dumping these to the tsv file once all the mappings for that language family are complete, etc.
-![Code Complete 10/14/21](ScreenshotAllFinished10/21.png)
+![Code Complete 10/14/21](ScreenshotAllFinished21.png)
 
 A sample from all_all.tsv looks like:
 ```bash
